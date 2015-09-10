@@ -85,7 +85,7 @@
         \ 0><rsup|1>\<Lambda\><rsub| \ 1><rsup|1>=0>>>>>>|<cell|>|<cell|>>>>
       </eqnarray*>
 
-      I<with|color|red| haven't solve the equation groups(could solve)>. just
+      I<with|color|| haven't solve the equation groups(could solve)>. just
       know there are one free degree.
 
       and
@@ -130,8 +130,138 @@
 
       I don't know the reason that <math|\<gamma\><rsub|i>=1> in the end\ 
 
-      \;
+      and the determination
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\||\<Lambda\>|\|>>|<cell|=>|<cell|\<gamma\><rsub|1>\<gamma\><rsub|2>>>>>
+      </eqnarray*>
+
+      <item>in the general case
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<mathd\><around*|(|c
+        t|)><rsup|2>-\<mathd\>x<rsup|2>-\<mathd\>y<rsup|2>-\<mathd\>z<rsup|2>>|<cell|=>|<cell|\<mathd\><around*|(|c
+        t<rprime|'>|)><rsup|2>-\<mathd\>x<rprime|'><rsup|2>-\<mathd\>y<rprime|'><rsup|2>-\<mathd\>z<rprime|'><rsup|2>>>>>
+      </eqnarray*>
+
+      then similarly
+
+      <\equation*>
+        \<mathd\>x<rsup|i>=\<Lambda\><rsub|
+        \ \ j><rsup|i>\<mathd\>x<rprime|'><rsup|j>
+      </equation*>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<mathd\><around*|(|c
+        t|)><rsup|2>>|<cell|=>|<cell|<around*|(|\<Lambda\><rsub|
+        \ \ j><rsup|0>\<mathd\>x<rprime|'><rsup|j>|)><rsup|2>>>|<row|<cell|>|<cell|=>|<cell|\<Lambda\><rsub|
+        \ \ j><rsup|0>\<Lambda\><rsub| \ \ i><rsup|0>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>>>|<row|<cell|\<mathd\>x<rsup|2>>|<cell|=>|<cell|\<Lambda\><rsub|
+        \ \ j><rsup|1>\<Lambda\><rsub| \ \ i><rsup|1>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>>>|<row|<cell|\<mathd\>y<rsup|2>>|<cell|=>|<cell|\<Lambda\><rsub|
+        \ \ j><rsup|2>\<Lambda\><rsub| \ \ i><rsup|2>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>>>|<row|<cell|\<mathd\>z<rsup|2>>|<cell|=>|<cell|\<Lambda\><rsub|
+        \ \ j><rsup|3>\<Lambda\><rsub| \ \ i><rsup|3>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>>>>>
+      </eqnarray*>
+
+      therefore
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<Lambda\><rsub|
+        \ \ j><rsup|0>\<Lambda\><rsub| \ \ i><rsup|0>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>-\<Lambda\><rsub|
+        \ \ j><rsup|1>\<Lambda\><rsub| \ \ i><rsup|1>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>-\<Lambda\><rsub|
+        \ \ j><rsup|2>\<Lambda\><rsub| \ \ i><rsup|2>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>-\<Lambda\><rsub|
+        \ \ j><rsup|3>\<Lambda\><rsub| \ \ i><rsup|3>\<mathd\>x<rprime|'><rsup|j>\<mathd\>x<rprime|'><rsup|i>>|<cell|=>|<cell|\<mathd\>x<rprime|'><rsup|0>\<mathd\>x<rprime|'><rsup|0>-\<mathd\>x<rprime|'><rsup|m>\<mathd\>x<rprime|'><rsup|m>>>>>
+      </eqnarray*>
+
+      <\equation*>
+        <choice|<tformat|<table|<row|<cell|\<Lambda\><rsup|0><rsub|
+        \ \ 0>\<Lambda\><rsup|0><rsub| \ \ 0>-\<Lambda\><rsup|1><rsub|
+        \ \ 0>\<Lambda\><rsup|1><rsub| \ \ 0>-\<Lambda\><rsup|2><rsub|
+        \ \ 0>\<Lambda\><rsup|2><rsub| \ \ 0>-\<Lambda\><rsup|3><rsub|
+        \ \ 0>\<Lambda\><rsup|3><rsub| \ \ 0>=1>>|<row|<cell|\<Lambda\><rsup|0><rsub|
+        \ \ 1>\<Lambda\><rsup|0><rsub| \ \ 1>-\<Lambda\><rsup|1><rsub|
+        \ \ 1>\<Lambda\><rsup|1><rsub| \ \ 1>-\<Lambda\><rsup|2><rsub|
+        \ \ 1>\<Lambda\><rsup|2><rsub| \ \ 1>-\<Lambda\><rsup|3><rsub|
+        \ \ 1>\<Lambda\><rsup|3><rsub| \ \ 1>=-1>>|<row|<cell|\<Lambda\><rsup|0><rsub|
+        \ \ 2>\<Lambda\><rsup|0><rsub| \ \ 2>-\<Lambda\><rsup|1><rsub|
+        \ \ 2>\<Lambda\><rsup|1><rsub| \ \ 2>-\<Lambda\><rsup|2><rsub|
+        \ \ 2>\<Lambda\><rsup|2><rsub| \ \ 2>-\<Lambda\><rsup|3><rsub|
+        \ \ 2>\<Lambda\><rsup|3><rsub| \ \ 2>=-1>>|<row|<cell|\<Lambda\><rsup|0><rsub|
+        \ \ 3>\<Lambda\><rsup|0><rsub| \ \ 3>-\<Lambda\><rsup|1><rsub|
+        \ \ 3>\<Lambda\><rsup|1><rsub| \ \ 3>-\<Lambda\><rsup|2><rsub|
+        \ \ 3>\<Lambda\><rsup|2><rsub| \ \ 3>-\<Lambda\><rsup|3><rsub|
+        \ \ 3>\<Lambda\><rsup|3><rsub| \ \ 3>=-1>>|<row|<cell|\<ldots\>=0>>|<row|<cell|\<ldots\>=0>>|<row|<cell|\<ldots\>orz>>>>>
+      </equation*>
+
+      <\enumerate>
+        <item>the other angle
+
+        if the quaity <math|v> really mean the the speed of
+        coor-<math|O<rprime|'>> related to coor-<math|O>
+
+        then set <math|\<gamma\><rsub|i>=<frac|1|<sqrt|1-<frac|v<rsub|i><rsup|2>|c>>>;\<beta\><rsub|i>=<frac|v<rsub|i>|c>>,
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<around*|\<\|\|\>|\<Lambda\>|\<\|\|\>>>|<cell|=>|<cell|<around*|\<\|\|\>|\<Lambda\><rsub|x>|\<\|\|\>><around*|\<\|\|\>|\<Lambda\><rsub|y>|\<\|\|\>><around*|\<\|\|\>|\<Lambda\><rsub|z>|\<\|\|\>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|x>>|<cell|\<beta\><rsub|x>\<gamma\><rsub|x>>|<cell|>|<cell|>>|<row|<cell|\<beta\><rsub|x>\<gamma\><rsub|x>>|<cell|\<gamma\><rsub|x>>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>>>>><matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|y>>|<cell|>|<cell|\<beta\><rsub|y>\<gamma\><rsub|y>>|<cell|>>|<row|<cell|>|<cell|1>|<cell|>|<cell|>>|<row|<cell|\<beta\><rsub|y>\<gamma\><rsub|y>>|<cell|>|<cell|\<gamma\><rsub|y>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>>>>><matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|z>>|<cell|>|<cell|>|<cell|>|<cell|\<beta\><rsub|z>\<gamma\><rsub|z>>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|\<beta\><rsub|z>\<gamma\><rsub|z>>|<cell|>|<cell|>|<cell|>|<cell|\<gamma\><rsub|z>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|x>\<gamma\><rsub|y>>|<cell|\<beta\><rsub|x>\<gamma\><rsub|x>>|<cell|\<beta\><rsub|y>\<gamma\><rsub|y>\<gamma\><rsub|x>>|<cell|0>>|<row|<cell|\<beta\><rsub|x>\<gamma\><rsub|x>\<gamma\><rsub|y>>|<cell|\<gamma\><rsub|x>>|<cell|\<beta\><rsub|x>\<beta\><rsub|y>\<gamma\><rsub|x>\<gamma\><rsub|y>>|<cell|0>>|<row|<cell|\<beta\><rsub|y>\<gamma\><rsub|y>>|<cell|0>|<cell|\<gamma\><rsub|y>>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|1>>>>><matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|z>>|<cell|>|<cell|>|<cell|>|<cell|\<beta\><rsub|z>\<gamma\><rsub|z>>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|\<beta\><rsub|z>\<gamma\><rsub|z>>|<cell|>|<cell|>|<cell|>|<cell|\<gamma\><rsub|z>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|x>\<gamma\><rsub|y>\<gamma\><rsub|z>>|<cell|\<beta\><rsub|x>\<gamma\><rsub|x>>|<cell|\<beta\><rsub|y>\<gamma\><rsub|y>\<gamma\><rsub|x>>|<cell|\<beta\><rsub|z>\<gamma\><rsub|x>\<gamma\><rsub|y>\<gamma\><rsub|z>>>|<row|<cell|\<beta\><rsub|x>\<gamma\><rsub|x>\<gamma\><rsub|y>\<gamma\><rsub|z>>|<cell|\<gamma\><rsub|x>>|<cell|\<beta\><rsub|x>\<beta\><rsub|y>\<gamma\><rsub|x>\<gamma\><rsub|y>>|<cell|\<beta\><rsub|x>\<beta\><rsub|z>\<gamma\><rsub|x>\<gamma\><rsub|y>\<gamma\><rsub|z>>>|<row|<cell|\<beta\><rsub|y>\<gamma\><rsub|y>\<gamma\><rsub|z>>|<cell|0>|<cell|\<gamma\><rsub|y>>|<cell|\<beta\><rsub|y>\<beta\><rsub|z>\<gamma\><rsub|y>\<gamma\><rsub|z>>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|\<gamma\><rsub|z>>>>>>>>|<row|<cell|>|<cell|>|<cell|>>>>
+        </eqnarray*>
+
+        it must be wrong
+
+        <item>the other angle too (wiki:transformation boost)
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<matrix|<tformat|<table|<row|<cell|c
+          t<rprime|'>>>|<row|<cell|x<rprime|'>>>|<row|<cell|0>>|<row|<cell|0>>>>>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|x>>|<cell|-\<beta\><rsub|x>\<gamma\><rsub|x>>|<cell|>|<cell|>>|<row|<cell|-\<beta\><rsub|x>\<gamma\><rsub|x>>|<cell|\<gamma\><rsub|x>>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>>>>><matrix|<tformat|<table|<row|<cell|c
+          t>>|<row|<cell|x>>|<row|<cell|0>>|<row|<cell|0>>>>>>>|<row|<cell|<matrix|<tformat|<table|<row|<cell|1>|<cell|>>|<row|<cell|>|<cell|R>>>>><matrix|<tformat|<table|<row|<cell|t<rprime|'>>>|<row|<cell|<wide|r|\<vect\>><rprime|'>>>>>>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|1>|<cell|>>|<row|<cell|>|<cell|R>>>>><matrix|<tformat|<table|<row|<cell|\<gamma\><rsub|>>|<cell|-\<beta\>\<gamma\>>|<cell|>|<cell|>>|<row|<cell|-\<beta\>\<gamma\><rsub|>>|<cell|\<gamma\>>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>>>>><matrix|<tformat|<table|<row|<cell|1>|<cell|>>|<row|<cell|>|<cell|R>>>>><rsup|-1><matrix|<tformat|<table|<row|<cell|1>|<cell|>>|<row|<cell|>|<cell|R>>>>><matrix|<tformat|<table|<row|<cell|t>>|<row|<cell|<wide|r|\<vect\>>>>>>>>>>>
+        </eqnarray*>
+
+        therefore
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|matrix>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>|<cell|0>|<cell|0>>>>>>>|<row|<cell|R<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>>|<row|<cell|0>>|<row|<cell|0>>>>>>|<cell|R<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|>|<cell|>>|<row|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>>>>>>>>>><matrix|<tformat|<table|<row|<cell|1>|<cell|>>|<row|<cell|>|<cell|R<rsup|-1>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>|<cell|0>|<cell|0>>>>>R<rsup|-1>>>|<row|<cell|R<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>>|<row|<cell|0>>|<row|<cell|0>>>>>>|<cell|R<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|>|<cell|>>|<row|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>>>>>R<rsup|-1>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>|<cell|0>|<cell|0>>>>>R<rsup|-1>>>|<row|<cell|R<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>>|<row|<cell|0>>|<row|<cell|0>>>>>>|<cell|R<around*|(|<matrix|<tformat|<table|<row|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>>>>>+<matrix|<tformat|<table|<row|<cell|\<gamma\>-1>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>>>>>|)>R<rsup|-1>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>|<cell|0>|<cell|0>>>>>R<rsup|-1>>>|<row|<cell|R<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>>>|<row|<cell|0>>|<row|<cell|0>>>>>>|<cell|\<bbb-I\>+R<matrix|<tformat|<table|<row|<cell|\<gamma\>-1>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>>>>>R<rsup|-1>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>R<rsup|-1><rsub|11>>|<cell|-\<beta\>\<gamma\>R<rsup|-1><rsub|12>>|<cell|-\<beta\>\<gamma\>R<rsup|-1><rsub|21>>>>>>>>|<row|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>R<rsub|11>>>|<row|<cell|-\<beta\>\<gamma\>R<rsub|21>>>|<row|<cell|-\<beta\>\<gamma\>R31>>>>>>|<cell|\<bbb-I\>+<around*|(|\<gamma\>-1|)><matrix|<tformat|<table|<row|<cell|R<rsub|11>>|<cell|>|<cell|>>|<row|<cell|R<rsub|21>>|<cell|0>|<cell|>>|<row|<cell|R<rsub|31>>|<cell|>|<cell|0>>>>>R<rsup|-1>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>R<rsup|-1><rsub|11>>|<cell|-\<beta\>\<gamma\>R<rsup|-1><rsub|12>>|<cell|-\<beta\>\<gamma\>R<rsup|-1><rsub|21>>>>>>>>|<row|<cell|<matrix|<tformat|<table|<row|<cell|-\<beta\>\<gamma\>R<rsub|11>>>|<row|<cell|-\<beta\>\<gamma\>R<rsub|21>>>|<row|<cell|-\<beta\>\<gamma\>R31>>>>>>|<cell|\<bbb-I\>+<around*|(|\<gamma\>-1|)><matrix|<tformat|<table|<row|<cell|R<rsub|11>R<rsub|11><rsup|-1>>|<cell|R<rsub|11>R<rsub|12><rsup|-1>>|<cell|R<rsub|11>R<rsub|13><rsup|-1>>>|<row|<cell|R<rsub|21>R<rsub|11><rsup|-1>>|<cell|R<rsub|21>R<rsub|12><rsup|-1>>|<cell|R<rsub|31>R<rsub|13>>>|<row|<cell|R<rsub|31>R<rsub|11><rsup|-1>>|<cell|R<rsub|21>R<rsub|12><rsup|-1>>|<cell|R<rsub|31>R<rsub|13>>>>>>>>>>>>>>>
+        </eqnarray*>
+
+        becuase of I know the answer in wiki.
+
+        then
+
+        <\equation*>
+          R<rsub|i 1>=R<rsup|-1><rsub|1i>=<frac|\<beta\><rsub|i>|\<beta\>>=<frac|v<rsub|i>|v>=<frac|x<rsup|i>|<sqrt|x<rsup|j>x<rsup|j>>>
+        </equation*>
+
+        oh! I forget it because of
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|R<matrix|<tformat|<table|<row|<cell|x>>|<row|<cell|0>>|<row|<cell|0>>>>>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|x>>|<row|<cell|y>>|<row|<cell|z>>>>>>>>>
+        </eqnarray*>
+
+        then
+
+        <\equation*>
+          <wide|e|\<vect\>><rsub|i>=<big|sum><rsub|j>R<rsub|i
+          j><wide|a|\<vect\>><rsub|j>
+        </equation*>
+
+        therefore
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|R<rsub|i
+          j>>|<cell|=>|<cell|<wide|e|\<vect\>><rsub|i>\<cdot\><wide|a|\<vect\>><rsub|j>>>>>
+        </eqnarray*>
+
+        under the representation formal.
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|R>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|<wide|e|\<vect\>><rsub|1>\<cdot\><wide|a|\<vect\>><rsub|1>>|<cell|<wide|e|\<vect\>><rsub|1>\<cdot\><wide|a|\<vect\>><rsub|2>>|<cell|<wide|e|\<vect\>><rsub|1>\<cdot\><wide|a|\<vect\>><rsub|3>>>|<row|<cell|<wide|e|\<vect\>><rsub|2>\<cdot\><wide|a|\<vect\>><rsub|1>>|<cell|<wide|e|\<vect\>><rsub|2>\<cdot\><wide|a|\<vect\>><rsub|2>>|<cell|<wide|e|\<vect\>><rsub|2>\<cdot\><wide|a|\<vect\>><rsub|3>>>|<row|<cell|<wide|e|\<vect\>><rsub|3>\<cdot\><wide|a|\<vect\>><rsub|1>>|<cell|<wide|e|\<vect\>><rsub|3>\<cdot\><wide|a|\<vect\>><rsub|2>>|<cell|<wide|e|\<vect\>><rsub|3>\<cdot\><wide|a|\<vect\>><rsub|3>>>>>>>>>>
+        </eqnarray*>
+
+        uesless seems like orz.
+
+        and how to get the <math|R> seems wired
+      </enumerate>
     </enumerate>
+
+    <item>the form of lorenz transformation
+
+    \;
 
     \;
 
