@@ -136,7 +136,7 @@
         <tformat|<table|<row|<cell|<around*|\||\<Lambda\>|\|>>|<cell|=>|<cell|\<gamma\><rsub|1>\<gamma\><rsub|2>>>>>
       </eqnarray*>
 
-      <item>in the general case
+      <with|color|red|<item>in the general case>
 
       <\eqnarray*>
         <tformat|<table|<row|<cell|\<mathd\><around*|(|c
@@ -256,12 +256,85 @@
         uesless seems like orz.
 
         and how to get the <math|R> seems wired
+
+        <\enumerate>
+          <item> reference : textbook of classical-mechanics Euler-angel
+
+          <\equation*>
+            R=<matrix|<tformat|<table|<row|<cell|<around|cos|\<psi\>|><around|cos|\<phi\>-sin\<psi\><around|cos|\<theta\>|><around|sin|\<phi\>|>|>>|<cell|<around|cos|\<psi\><around|sin|\<phi\>+<around|sin|\<psi\><around|cos|\<theta\>|><around|cos|\<phi\>|>|>|>|>>|<cell|<around|sin|\<psi\>|><around|sin|\<theta\>|>>>|<row|<cell|-<around|sin|\<psi\><around|cos|\<phi\>|>|>-<around|cos|\<psi\>|><around|cos|\<theta\>|><around|sin|\<phi\>|>>|<cell|-<around|sin|\<psi\>|><around|sin|\<phi\>|>+<around|cos|\<psi\>|><around|cos|\<theta\>|><around|cos|\<phi\>|>>|<cell|<around|cos|\<psi\>|><around|sin|\<theta\>|>>>|<row|<cell|<around|sin|\<theta\>|><around|sin|\<phi\>|>>|<cell|-<around|sin|\<theta\>|><around|cos|\<phi\>|>>|<cell|<around|cos|\<theta\>|>>>>>>
+          </equation*>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around|cos|\<psi\>|><around|cos|\<phi\>-sin\<psi\><around|cos|\<theta\>|><around|sin|\<phi\>|>|>>|<cell|=>|<cell|orz>>>>
+          </eqnarray*>
+        </enumerate>
       </enumerate>
     </enumerate>
 
     <item>the form of lorenz transformation
 
-    \;
+    there three kinds of\ 
+
+    <\enumerate>
+      <item>boost
+
+      <math|PS: \ \ \ \ \ <around|tan|h \<phi\><rsub|i>=<frac|\<upsilon\><rsub|i>|c>|>>
+
+      <\equation*>
+        <matrix|<tformat|<table|<row|<cell|<around|cos|h
+        \<phi\><rsub|1>|>>|<cell|-<around|sin|h
+        \<phi\><rsub|1>|\<nobracket\>>>|<cell|>|<cell|>>|<row|<cell|-<around|sin|h
+        \<phi\><rsub|1>|>>|<cell|<around|cos|h
+        \<phi\><rsub|1>|>>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>>>>>
+      </equation*>
+
+      <\equation*>
+        <matrix|<tformat|<table|<row|<cell|<around|cos|h
+        \<phi\><rsub|2>|\<nobracket\>>>|<cell|>|<cell|-<around|sin|h
+        \<phi\><rsub|2>|\<nobracket\>>>|<cell|>>|<row|<cell|>|<cell|1>|<cell|>|<cell|>>|<row|<cell|-<around|sin|h
+        \<phi\><rsub|2>|\<nobracket\>>>|<cell|>|<cell|<around|cos|h
+        \<phi\><rsub|2>|\<nobracket\>>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>>>>>
+      </equation*>
+
+      <\equation*>
+        <matrix|<tformat|<table|<row|<cell|<around|cos|h
+        \<phi\><rsub|3>|\<nobracket\>>>|<cell|>|<cell|>|<cell|-<around|sin|h
+        \<phi\><rsub|3>|\<nobracket\>>>>|<row|<cell|>|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|-<around|sin|h
+        \<phi\><rsub|3>|\<nobracket\>>>|<cell|>|<cell|>|<cell|<around|cos|h
+        \<phi\><rsub|3>|\<nobracket\>>>>>>>
+      </equation*>
+
+      <item>spatial transformation
+
+      <\equation*>
+        <matrix|<tformat|<table|<row|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|<around|cos|\<varphi\>|>>|<cell|-<around|sin||>\<varphi\>>|<cell|>>|<row|<cell|>|<cell|<around|sin|\<varphi\>|>>|<cell|<around|cos|\<varphi\>|>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|1>>>>>
+      </equation*>
+
+      <\equation*>
+        <matrix|<tformat|<table|<row|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|<around|cos|\<theta\>|>>|<cell|>|<cell|-<around|sin||>\<theta\>>>|<row|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|<around|sin|\<theta\>|>>|<cell|>|<cell|<around|cos|\<theta\>|\<nobracket\>>>>>>>
+      </equation*>
+
+      <\equation*>
+        <matrix|<tformat|<table|<row|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|<around|cos|\<psi\>|>>|<cell|-<around|sin||>\<psi\>>>|<row|<cell|>|<cell|>|<cell|<around|sin|\<psi\>|\<nobracket\>>>|<cell|<around|cos|\<psi\>|\<nobracket\>>>>>>>
+      </equation*>
+
+      tell nothing about the <math|<around*|(|x ,y,z|)>>
+
+      <item>translation
+
+      it seems to be more different: we can write down it as the matrix
+      representaion.
+
+      <\equation*>
+        x<rprime|'><rsup|\<mu\>>=x<rsup|\<mu\>>+\<varepsilon\><rsup|\<mu\>>
+      </equation*>
+
+      \;
+
+      <\equation*>
+        \;
+      </equation*>
+    </enumerate>
 
     \;
 
