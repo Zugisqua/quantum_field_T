@@ -174,7 +174,15 @@
             \<mu\>>|)>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|\<neq\>>|<cell|0?>>>>
           </eqnarray*>
 
-          \;
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|[|T<rsup|\<rho\>\<upsilon\>>T<rsub|\<upsilon\>\<sigma\>>T<rsup|\<sigma\>>T<rsub|\<rho\>>,T<rsup|\<mu\>>|]>>|<cell|=>|<cell|<around*|(|T<rsup|\<rho\>\<upsilon\>>T<rsub|\<upsilon\>\<sigma\>>T<rsup|\<mu\>>-T<rsup|\<mu\>>T<rsup|\<rho\>\<upsilon\>>T<rsub|\<upsilon\>\<sigma\>>|)>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|T<rsup|\<rho\>\<upsilon\>><around*|[|T<rsub|\<upsilon\>\<sigma\>>,T<rsup|\<mu\>>|]>+T<rsup|\<rho\>\<upsilon\>>T<rsup|\<mu\>>T<rsub|\<upsilon\>\<sigma\>>-T<rsup|\<mu\>>T<rsup|\<rho\>\<upsilon\>>T<rsub|\<upsilon\>\<sigma\>>|)>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|T<rsup|\<rho\>\<upsilon\>><around*|[|T<rsub|\<upsilon\>\<sigma\>>,T<rsup|\<mu\>>|]>+<around*|[|T<rsup|\<rho\>\<upsilon\>>,T<rsup|\<mu\>>|]>T<rsub|\<upsilon\>\<sigma\>>|)>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|T<rsup|\<rho\>\<upsilon\>><around*|(|\<delta\><rsup|\<mu\>><rsub|\<sigma\>>T<rsub|\<upsilon\>>-\<delta\><rsup|\<mu\>><rsub|\<upsilon\>>T<rsub|\<sigma\>>|)>+<around*|(|\<eta\><rsup|\<upsilon\>\<mu\>>T<rsup|\<rho\>>-\<eta\><rsup|\<rho\>\<mu\>>T<rsup|\<upsilon\>>|)>T<rsub|\<upsilon\>\<sigma\>>|)>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|T<rsup|\<rho\>>T<rsup|\<mu\>><rsub|
+            \ \ \ \ \ \ \<sigma\>>-T<rsup|\<rho\>\<mu\>>T<rsub|\<sigma\>>+\<delta\><rsup|\<mu\>><rsub|\<sigma\>>T<rsup|\<rho\>\<upsilon\>>T<rsub|\<upsilon\>>-\<eta\><rsup|\<rho\>\<mu\>>T<rsup|\<upsilon\>>T<rsub|\<upsilon\>\<sigma\>>|)>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|T<rsup|\<rho\>>T<rsup|\<mu\>><rsub|
+            \ \ \ \ \ \ \<sigma\>>-T<rsup|\<rho\>\<mu\>>T<rsub|\<sigma\>>|)>T<rsup|\<sigma\>>T<rsub|\<rho\>>+T<rsup|\<rho\>\<upsilon\>>T<rsub|\<upsilon\>>T<rsup|\<mu\>>T<rsub|\<rho\>>-T<rsup|\<upsilon\>>T<rsub|\<upsilon\>\<sigma\>>T<rsup|\<sigma\>>T<rsup|\<mu\>>>>|<row|<cell|>|<cell|=>|<cell|T<rsup|\<rho\>>T<rsup|\<mu\>><rsub|
+            \ \ \ \ \ \ \ \<sigma\>>T<rsup|\<sigma\>>T<rsub|\<rho\>>-T<rsup|\<rho\>\<mu\>>T<rsub|\<sigma\>>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|T<rsup|\<rho\>><around*|[|T<rsup|\<mu\>><rsub|
+            \ \ \ \ \ \ \ \ \<sigma\>>,T<rsub|\<rho\>>|]>T<rsup|\<sigma\>>+T<rsup|\<rho\>>T<rsub|\<rho\>>T<rsup|\<mu\>><rsub|
+            \ \ \ \ \ \ \ \<sigma\>>T<rsup|\<sigma\>>-T<rsup|\<rho\>\<mu\>>T<rsub|\<sigma\>>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|T<rsup|\<rho\>><around*|(|\<eta\><rsub|\<sigma\>\<rho\>>T<rsup|\<mu\>>-\<delta\><rsup|\<mu\>><rsub|\<rho\>>T<rsub|\<sigma\>>|)>T<rsup|\<sigma\>>+T<rsup|\<rho\>>T<rsub|\<rho\>>T<rsup|\<mu\>><rsub|
+            \ \ \ \ \ \ \ \<sigma\>>T<rsup|\<sigma\>>-T<rsup|\<rho\>\<mu\>>T<rsub|\<sigma\>>T<rsup|\<sigma\>>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|\<Delta\>T<rsup|\<mu\>>-T<rsup|\<mu\>>\<Delta\>+\<Delta\>T<rsup|\<mu\>\<sigma\>>T<rsub|\<sigma\>>-T<rsup|\<rho\>\<mu\>>\<Delta\>T<rsub|\<rho\>>>>|<row|<cell|>|<cell|=>|<cell|2\<Delta\>T<rsup|\<mu\>\<sigma\>>T<rsub|\<sigma\>>>>>>
+          </eqnarray*>
 
           \;
 
