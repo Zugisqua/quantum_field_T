@@ -83,6 +83,26 @@
         <item>the number of Casimir operators suggest the number of
         independent element in diagonal
       </itemize>
+
+      <item>Physical meaning
+
+      <\itemize>
+        <item>the core is that every eigenequation of casimir operators
+        identity with an important physical equation.
+
+        namely,physical equation comes from some kind of symmetry. for
+        instance, 4-dim space-time symmetry
+      </itemize>
+
+      <\enumerate>
+        <item>simple example
+
+        Consider the system which <math|spin=0> at rest frame.
+      </enumerate>
+
+      <item>in abstract.
+
+      peskin 15-17
     </enumerate>
 
     \;
