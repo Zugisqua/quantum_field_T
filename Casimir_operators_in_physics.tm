@@ -97,12 +97,39 @@
       <\enumerate>
         <item>simple example
 
-        Consider the system which <math|spin=0> at rest frame.
+        Consider the system which <math|spin=0> at rest frame. and it's a
+        classical case which the Klein-Gordon equation will show up.
+
+        the two condition indicate:
+
+        <\itemize>
+          <item><math|T<rsup|m>\<phi\>=0>
+
+          <item><math|T<rsup|0m>\<phi\>=0>
+
+          <math|<around*|(|m=1,2,3|)>>
+        </itemize>
+
+        then\ 
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|K<rsub|1>\<phi\>=-<wide|p|^><rsup|2>\<phi\>>|<cell|=>|<cell|T<rsub|\<mu\>>T<rsup|\<mu\>>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|0>\<partial\><rsup|0>\<phi\>-\<partial\><rsub|m>\<partial\><rsup|m>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|0>\<partial\><rsup|0>\<phi\>=m<rsup|2>\<varphi\>-<neg|p<rsup|2>\<phi\>>>>|<row|<cell|>|<cell|=>|<cell|m<rsup|2>\<phi\>>>>>
+        </eqnarray*>
+
+        and the Klein-Gordon equation
+
+        <\equation*>
+          <around*|(|<wide|p|^><rsup|2>+m<rsup|2>|)>\<phi\>=0
+        </equation*>
+
+        and
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|K<rsub|2>\<phi\>>|<cell|=>|<cell|>>>>
+        </eqnarray*>
       </enumerate>
 
-      <item>in abstract.
-
-      peskin 15-17
+      \;
     </enumerate>
 
     \;
