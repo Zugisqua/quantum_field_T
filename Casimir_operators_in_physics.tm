@@ -125,8 +125,11 @@
         and
 
         <\eqnarray*>
-          <tformat|<table|<row|<cell|K<rsub|2>\<phi\>>|<cell|=>|<cell|>>>>
+          <tformat|<table|<row|<cell|K<rsub|2>\<phi\>>|<cell|=>|<cell|<around*|(|<frac|1|2>T<rsub|\<mu\>>T<rsup|\<mu\>>T<rsub|s\<sigma\>>T<rsup|s\<sigma\>>-T<rsup|s\<upsilon\>>T<rsub|\<sigma\>\<upsilon\>>T<rsup|\<sigma\>>T<rsub|s>|)>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2>T<rsub|\<mu\>>T<rsup|\<mu\>>T<rsub|s\<sigma\>>T<rsup|s\<sigma\>>\<phi\>-T<rsup|0\<upsilon\>>T<rsub|0\<upsilon\>>T<rsup|0>T<rsub|0>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2>T<rsub|\<mu\>>T<rsup|\<mu\>>T<rsub|s\<sigma\>>T<rsup|s\<sigma\>>\<phi\>-0>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2>T<rsub|0>T<rsup|0>T<rsub|m
+          n>T<rsup|m n>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|(|-<wide|p|^><rsup|2><wide|l|^><rsup|2>|)>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|2>m<rsup|2>s<around*|(|s+1|)>\<phi\>>>>>
         </eqnarray*>
+
+        if spin=0 then <math|K<rsub|2>\<phi\>=0> nonsense here.
       </enumerate>
 
       \;
