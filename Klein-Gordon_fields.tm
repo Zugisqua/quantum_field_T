@@ -82,7 +82,8 @@
 
     <item>the general solution of Klein-Gordon equation
 
-    maybe I should solve it by hand = =
+    maybe I should solve it by hand = = ,and maybe there are using the
+    green's function.
 
     \;
   </enumerate>
