@@ -85,6 +85,19 @@
     maybe I should solve it by hand = = ,and maybe there are using the
     green's function.
 
+    try set <math|\<phi\><around*|(|x|)>=<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<varphi\><around*|(|p|)>e<rsup|i
+    p \<cdot\>x>\<mathd\><rsup|4>p> and <math|p\<cdot\>x=p<rsub|0>t-<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\ 
+
+    then
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<partial\><rsub|0>\<partial\><rsup|0>\<phi\><around*|(|x|)>>|<cell|=>|<cell|\<eta\><rsub|00><frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int><frac|\<partial\>|\<partial\>t><around*|(|\<varphi\><around*|(|p|)>e<rsup|i
+      <around*|(|p<rsub|0>t-<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>\<mathd\><rsup|4>p|)>>>|<row|<cell|>|<cell|=>|<cell|+<frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)>i
+      p<rsub|0>e<rsup|i p<rsub|0>t-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p<big|int>i
+      p<rsub|0>\<varphi\><around*|(|p|)>e<rsup|i
+      p<rsub|0>t-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<mathd\>p<rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p<around*|{|<big|int>|}>>>>>
+    </eqnarray*>
+
     \;
   </enumerate>
 </body>
