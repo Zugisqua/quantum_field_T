@@ -65,9 +65,9 @@
     <\itemize>
       <item>Define it in field view
 
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|<around*|[|\<phi\><around*|(|<wide|x|\<vect\>>,t|)>,\<pi\><around*|(|<wide|y|\<vect\>>,t|)>|]>>|<cell|=>|<cell|i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>>>>>
-      </eqnarray*>
+      <\equation*>
+        <choice|<tformat|<table|<row|<cell|<around*|[|\<phi\><around*|(|<wide|x|\<vect\>>,t|)>,\<pi\><around*|(|<wide|y|\<vect\>>,t|)>|]>>|<cell|=>|<cell|i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>>>|<row|<cell|<around*|[|\<phi\><around*|(|<wide|x|\<vect\>>,t|)>,\<phi\><around*|(|<wide|y|\<vect\>>,t|)>|]>>|<cell|=>|<cell|0>>|<row|<cell|<around*|[|\<pi\><around*|(|<wide|x|\<vect\>>,t|)>,\<pi\><around*|(|<wide|y|\<vect\>>,t|)>|]>>|<cell|=>|<cell|0>>>>>
+      </equation*>
 
       <\itemize>
         <item>which <math|\<pi\><around*|(|<wide|x|\<vect\>>,t|)> > is the
@@ -90,15 +90,306 @@
 
     then
 
+    \;
+
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<partial\><rsub|0>\<partial\><rsup|0>\<phi\><around*|(|x|)>>|<cell|=>|<cell|\<eta\><rsub|00><frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int><frac|\<partial\>|\<partial\>t><around*|(|\<varphi\><around*|(|p|)>e<rsup|i
-      <around*|(|p<rsub|0>t-<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>\<mathd\><rsup|4>p|)>>>|<row|<cell|>|<cell|=>|<cell|+<frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)>i
-      p<rsub|0>e<rsup|i p<rsub|0>t-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p<big|int>i
-      p<rsub|0>\<varphi\><around*|(|p|)>e<rsup|i
-      p<rsub|0>t-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<mathd\>p<rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>t><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p<around*|{|<big|int>|}>>>>>
+      <tformat|<table|<row|<cell|\<partial\><rsub|0>\<partial\><rsup|0>\<phi\><around*|(|x|)>>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>x<rsup|0>><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int><frac|\<partial\>|\<partial\>x<rsub|0>><around*|(|\<varphi\><around*|(|p|)>e<rsup|i
+      <around*|(|\<eta\><rsup|00>p<rsub|0>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>\<mathd\><rsup|4>p|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>x<rsup|0>><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)>i\<eta\><rsup|00>
+      p<rsub|0>e<rsup|i p<rsub|0>x<rsup|0>+i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p<around*|{|\<varphi\><around*|(|p|)>i
+      \<eta\><rsup|00>p<rsub|0>\<times\>i p<rsub|0>|}>e<rsup|i
+      p<rsub|0>x<rsup|0>+i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p<around*|{|-p<rsub|0><rsup|2>|}>\<varphi\><around*|(|p|)>e<rsup|i
+      p<rsub|0>x<rsup|0>+i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>>>>>
     </eqnarray*>
 
-    \;
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<partial\><rsub|m>\<partial\><rsup|m>\<phi\><around*|(|x|)>>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>x<rsup|m>><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)><around*|{|<frac|\<partial\>|\<partial\>x<rsub|m>>e<rsup|i
+      p<rsub|0>x<rsup|0>+i p<rsub|k>\<eta\><rsup|k
+      n>x<rsub|n>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>|\<partial\>x<rsup|m>><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)><around*|{|i
+      p<rsub|k>\<eta\><rsup|k n>\<delta\><rsup|m><rsub|n>|}>e<rsup|i
+      p<rsub|0>x<rsup|0>+i p<rsub|k>\<eta\><rsup|k
+      n>x<rsub|n>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)><around*|{|i
+      p<rsub|k>\<eta\><rsup|k n>\<delta\><rsup|m><rsub|n>\<times\>i
+      p<rsub|k<rprime|'>>\<delta\><rsup|k<rprime|'>><rsub|m>|}>e<rsup|i
+      p<rsub|0>x<rsup|0>+i p<rsub|k>\<eta\><rsup|k
+      n>x<rsub|n>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)><around*|{|-p<rsub|k>p<rsub|m>\<eta\><rsup|k
+      m>|}>e<rsup|i p<rsub|0>x<rsup|0>+i p<rsub|k>\<eta\><rsup|k
+      n>x<rsub|n>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)><around*|{|p<rsub|1><rsup|2>+p<rsup|2><rsub|2>+p<rsup|2><rsub|3>|}>e<rsup|i
+      p<rsub|0>x<rsup|0>+i p<rsub|k>\<eta\><rsup|k n>x<rsub|n>>>>>>
+    </eqnarray*>
+
+    there are a litte stange when say <math|p<rsub|k>p<rsub|m>\<eta\><rsup|k
+    m>=-p<rsup|2><rsub|m>> .As the Einstein-Sum-pricipal is nowhere.
+
+    therefore
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|\<box\>
+      +m<rsup|2>|)>\<phi\><around*|(|x|)>>|<cell|=>|<cell|<around*|(|\<partial\><rsub|0>\<partial\><rsup|0>+\<partial\><rsub|m>\<partial\><rsup|m>+m<rsup|2>|)>\<phi\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)>e<rsup|i
+      p\<cdot\>x><around*|{|-\<eta\><rsup|\<mu\>\<upsilon\>>p<rsub|\<mu\>>p<rsub|\<upsilon\>>+m<rsup|2>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)>e<rsup|i
+      p\<cdot\>x><around*|{|-p<rsub|0><rsup|2>+<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>|}>=0>>>>
+    </eqnarray*>
+
+    <\with|color|red>
+      can't understand the next step: follow the class note claim
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|4>p\<varphi\><around*|(|p|)>e<rsup|i
+        p\<cdot\>x>\<delta\><around*|(|-p<rsup|2><rsub|0>+<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>|)>>>>>
+      </eqnarray*>
+    </with>
+
+    anyway,I have another try
+
+    <\itemize>
+      <item>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>p
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><big|int>\<mathd\>p<rsub|0>\<varphi\><around*|(|p|)>e<rsup|i
+        p<rsub|0>x<rsub|0>><around*|{|-p<rsub|0><rsup|2>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>p
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><big|int>-p<rsup|2><rsub|0>\<varphi\><around*|(|p|)><frac|1|i
+        x<rsub|0>>\<mathd\>e<rsup|i p<rsub|0>x<rsub|0>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>p<around*|{|<around*|(|<frac|-p<rsup|2><rsub|0>\<varphi\><around*|(|p|)>|i
+        x<rsub|0>>e<rsup|i p<rsub|0>x<rsub|0>>|)><rsup|+\<infty\>><rsub|-\<infty\>>-<frac|1|i
+        x<rsub|0>><big|int>e<rsup|i p<rsub|0>\<cdot\>x<rsub|0>>\<mathd\><around*|{|-\<varphi\><around*|(|p|)>p<rsup|2><rsub|0>|}>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|i
+        x<rsub|0>><big|int>\<mathd\><rsup|3>p<big|int>e<rsup|i
+        p<rsub|0>x<rsub|0>><around*|{|-p<rsup|2><rsub|0>\<mathd\>\<varphi\><around*|(|p|)>-2p<rsub|0>\<varphi\><around*|(|p|)>\<mathd\>p<rsub|0>|}>>>>>
+      </eqnarray*>
+
+      there are some problem thar <math|\<mathd\>\<varphi\><around*|(|p|)>>
+      maybe not proper.\ 
+    </itemize>
+
+    orz if I accept the claim only today.then
+
+    <\itemize>
+      <item>because we just care about the communicator at the same time.
+
+      thererfore, we want to cancel the integrate parementer
+      <math|p<rsub|0>>,maybe not want to but have to
+    </itemize>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p
+      e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><big|int>\<mathd\><rsub|>p<rsub|0>\<varphi\><around*|(|p|)>e<rsup|i
+      p<rsub|0>x<rsub|0>>\<delta\><around*|(|-p<rsup|2><rsub|0>+<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>|)>>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<big|int>\<mathd\><rsub|>p<rsub|0>\<varphi\><around*|(|p|)>e<rsup|i
+      p<rsub|0>x<rsub|0>>\<delta\><around*|(|-p<rsup|2><rsub|0>+<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>|)>>>|<row|<cell|>|<cell|>|<cell|set
+      \ \ \ \ \ \ \ w<rsub|<wide|p|\<vect\>>>=<sqrt|<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>p<rsub|0>\<varphi\><around*|(|p|)>e<rsup|i
+      p<rsub|0>x<rsub|0>>\<delta\><around*|(|w<rsub|<wide|p|\<vect\>>><rsup|2>-p<rsub|0><rsup|2>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|1|2p<rsub|0>>\<mathd\>p<rsup|2><rsub|0>\<varphi\><around*|(|p|)>e<rsup|i
+      p<rsub|0>x<rsub|0>>\<delta\><around*|(|w<rsub|<wide|p|\<vect\>>><rsup|2>-p<rsub|0><rsup|2>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|{|<frac|\<varphi\><around*|(|p|)>e<rsup|i
+      p<rsub|0>x<rsub|0>>|2p<rsub|0>>|}>\<delta\><around*|(|p<rsup|2><rsub|0>-w<rsup|2><rsub|<wide|p|\<vect\>>>|)>\<mathd\>p<rsub|0><rsup|2>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<varphi\><around*|(|\<pm\>w<rsub|<wide|p|\<vect\>>>,<wide|p|\<vect\>>|)>e<rsup|\<pm\>i
+      w<rsub|<wide|p|\<vect\>>>x<rsub|0>>|\<pm\>2
+      w<rsub|<wide|p|\<vect\>>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<pm\>\<varphi\><around*|(|\<pm\>w<rsub|<wide|p|\<vect\>>>,<wide|p|\<vect\>>|)>e<rsup|\<pm\>i
+      w<rsub|<wide|p|\<vect\>>>x<rsub|0>>|2w<rsub|<wide|p|\<vect\>>>>>>>>
+    </eqnarray*>
+
+    therefore
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p<around*|{|<frac|1|2<around*|\||w<rsub|<wide|p|\<vect\>>>|\|>>\<varphi\><around*|(|<wide|p|\<vect\>>|)>
+      e<rsup|i<around*|(|<around*|\||w<rsub|<wide|p|\<vect\>>>|\|>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>>>
+    </eqnarray*>
+
+    since K-G equation is an order-2 differential equation.So there is the
+    other independent solution, from the note_Morse
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><rsub|2><around*|(|x|)>>|<cell|=>|<cell|\<phi\><rsub|1><around*|(|x|)><big|int><rsup|x><rsub|x<rsub|0>><frac|\<Delta\><around*|(|x<rsub|0>|)>e<rsup|-<big|int><rsup|u><rsub|v<rsub|0>>0\<mathd\>\<upsilon\>>|\<phi\><rsub|1><rsup|2>>\<mathd\>u>>>>
+    </eqnarray*>
+
+    0 0 I just know the form of 1-demension.\ 
+
+    could verify
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<Delta\>>|<cell|=>|<cell|\<phi\><rsub|+><around*|(|x|)>\<phi\><rsub|-><around*|(|x|)>-\<phi\><rsub|-><around*|(|x|)>\<phi\><rsub|+><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p
+      e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><around*|{|<frac|\<varphi\><around*|(|w<rsub|<wide|p|\<vect\>>>,<wide|p|\<vect\>>|)>e<rsup|i
+      w<rsub|<wide|p|\<vect\>>>x<rsub|0>>|2w<rsub|<wide|p|\<vect\>>>>|}><frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p<rprime|'>
+      e<rsup|i<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>>><around*|{|<frac|-\<varphi\><around*|(|w<rsub|<wide|p|\<vect\>><rprime|'>>,<wide|p|\<vect\>><rprime|'>|)>e<rsup|-i
+      w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0>>|2w<rsub|<wide|p|\<vect\>><rprime|'>>>|}>-\<ldots\>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
+    </eqnarray*>
+
+    therefore they are independent solution? = = seems any function could do
+    orz.
+
+    ok finally, I have been told the general sulutions.unforturnately.\ 
+
+    they are
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int>\<mathd\><rsup|3>p<frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|{|\<varphi\><rsub|w<rsub|<wide|p|\<vect\>>>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i
+      w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>-\<varphi\><rsub|-w<rsub|<wide|p|\<vect\>>>><around*|(|<wide|p|\<vect\>>|)>e<rsup|-i
+      w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>|}>>>>>
+    </eqnarray*>
+
+    not consist with the note and the textbook orz.
+
+    and there are wrong with the <math|\<alpha\>> where
+    <math|<around*|(|2\<pi\>|)><rsup|\<alpha\>>>
+
+    the general solution of Klein-Gordon equation II
+
+    if we have already know the Fourier expansion of
+    <math|\<phi\><around*|(|x|)>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>2w<rsub|<wide|p|\<vect\>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>|}>>>>>
+    </eqnarray*>
+
+    or <math|a<around*|(|<wide|p|\<vect\>>|)>=<frac|a<around*|(|<wide|p|\<vect\>>|)>|<sqrt|2w<rsub|<wide|p|\<vect\>>>>>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>|}>>>>>
+    </eqnarray*>
+
+    because of Hermitian requirement , the coefficient of
+    <math|e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>> conjugate with
+    each other.how to know the quantity <math|w<rsub|<wide|p|\<vect\>>>>?
+
+    <with|color|red|above all,I have been told the solutions,which I can't
+    handle .>
+
+    <item>verify the other consistent canonical relations
+
+    they are:
+
+    <\equation*>
+      <choice|<tformat|<table|<row|<cell|<around*|[|a<around*|(|<wide|p|\<vect\>>|)>,a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>|]>>|<cell|=>|<cell|<around*|(|2\<pi\>|)><rsup|3>\<delta\><rsup|3><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>>>|<row|<cell|<around*|[|a<around*|(|<wide|p|\<vect\>>|)>,a<around*|(|<wide|q|\<vect\>>|)>|]>>|<cell|=>|<cell|0>>|<row|<cell|<around*|[|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>,a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>|]>>|<cell|=>|<cell|0>>>>>
+    </equation*>
+
+    based the point 1&2
+
+    <\description>
+      <item*|1st step>inverse to get the <math|a<around*|(|<wide|p|\<vect\>>|)>>&<math|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>>
+      is a good idea
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>>>
+      </eqnarray*>
+
+      then
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<pi\><around*|(|x|)>>|<cell|=>|<cell|\<partial\><rsub|0>\<phi\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|-i
+        w<rsub|<wide|p|\<vect\>>>a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+i
+        w<rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>i<sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|2>><around*|{|-a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>>>
+      </eqnarray*>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x
+        <big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>e<rsup|-i<around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>e<rsup|i<around*|(|<wide|p|\<vect\>>+<wide|q|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<sqrt|2
+        w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>|}><frac|1|<around*|(|2\<pi\>|)><rsup|3>><big|int>\<mathd\><rsup|3>x
+        e<rsup|-i<around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>+<big|int><frac|\<mathd\><rsup|3>p|<sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>|}><frac|1|<around*|(|2\<pi\>|)><rsup|3>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<around*|(|<wide|p|\<vect\>>+<wide|q|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<sqrt|2
+        w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>|}>+<big|int><frac|\<mathd\><rsup|3>p|<rsup|><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>\<delta\><around*|(|<wide|p|\<vect\>>+<wide|q|\<vect\>>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>|<sqrt|2w<rsub|<wide|q|\<vect\>>>>>+<frac|a<rprime|\<dag\>><around*|(|-<wide|q|\<vect\>>|)>e<rsup|i
+        w<rsub|-<wide|q|\<vect\>>>x<rsub|0>>|<sqrt|2w<rsub|-<wide|q|\<vect\>>>>>>>>>
+      </eqnarray*>
+
+      <math|w<rsub|<wide|q|\<vect\>>>=<sqrt|<around*|\||<wide|q|\<vect\>>|\|>+m<rsup|2>>=<sqrt|<around*|\||-<wide|q|\<vect\>>|\|>+m<rsup|2>>=w<rsub|-<wide|q|\<vect\>>>>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>>|<cell|=>|<cell|<frac|1|<sqrt|2w<rsub|<wide|q|\<vect\>>>>><around*|{|a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>+a<rprime|\<dag\>><around*|(|-<wide|q|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>|}>>>>>
+      </eqnarray*>
+
+      similarly
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>>|<cell|=>|<cell|<frac|i|><sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|2>><around*|{|-a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>+a<rprime|\<dag\>><around*|(|-<wide|q|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>|}>>>>>
+      </eqnarray*>
+
+      therefore
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>+a<rprime|\<dag\>><around*|(|-<wide|q|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>>|<cell|=>|<cell|<sqrt|2w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>>>|<row|<cell|-a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>+a<rprime|\<dag\>><around*|(|-<wide|q|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>>|<cell|=>|<cell|<frac|1|i><sqrt|<frac|2|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>>>|<row|<cell|a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>-a<rprime|\<dag\>><around*|(|-<wide|q|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>>|<cell|=>|<cell|i<sqrt|<frac|2|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>>>>>
+      </eqnarray*>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>>|<cell|=>|<cell|<frac|1|<sqrt|2>><around*|(|<sqrt|w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>+<frac|i|<sqrt|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>|)>>>|<row|<cell|a<rprime|\<dag\>><around*|(|-<wide|q|\<vect\>>|)>e<rsup|i
+        w<rsub|<wide|q|\<vect\>>>x<rsub|0>>>|<cell|=>|<cell|<frac|1|<sqrt|2>><around*|(|<sqrt|w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>-<frac|i|<sqrt|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>|)>>>>>
+      </eqnarray*>
+
+      if we consider a simple case
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|a<around*|(|<wide|q|\<vect\>>|)>>|<cell|=>|<cell|<frac|1|<sqrt|2>><around*|(|<sqrt|w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>+<frac|i|<sqrt|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>|)>>>|<row|<cell|a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>>|<cell|=>|<cell|<frac|1|<sqrt|2>><around*|(|<sqrt|w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>-<frac|i|<sqrt|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>|)>>>>>
+      </eqnarray*>
+
+      ok done\ 
+
+      <item*|2nd step>verify
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|[|a<around*|(|<wide|p|\<vect\>>|)>,a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>|]>>|<cell|=>|<cell|<frac|1|2><around*|(|<around*|(|<sqrt|w<rsub|<wide|p|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>+<frac|i|<sqrt|w<rsub|<wide|p|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>|)><around*|(|<sqrt|w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|y|)>-<frac|i|<sqrt|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|y|)>|)>-<around*|(|<sqrt|w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<phi\><around*|(|y|)>-<frac|i|<sqrt|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<pi\><around*|(|y|)>|)><around*|(|<sqrt|w<rsub|<wide|p|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>+<frac|i|<sqrt|w<rsub|<wide|p|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|(|<sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<phi\><around*|(|y|)>-i<sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|y|)>+i<sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|w<rsub|<wide|p|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<phi\><around*|(|y|)>+<frac|1|<sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<ast\><wide|x|\<vect\>>>\<pi\><around*|(|y|)>|)>-<frac|1|2><around*|(|<sqrt|w<rsub|<wide|q|\<vect\>>>w<rsub|<wide|p|\<vect\>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<phi\><around*|(|y|)><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>+i<sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|w<rsub|<wide|p|\<vect\>>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<phi\><around*|(|y|)><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>-i<sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<pi\><around*|(|y|)><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<phi\><around*|(|x|)>
+        +<frac|1|<sqrt|w<rsub|<wide|q|\<vect\>>>w<rsub|<wide|p|\<vect\>>>>><big|int>\<mathd\><rsup|3>y
+        e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<pi\><around*|(|y|)><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<pi\><around*|(|x|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|2><sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|w<rsub|<wide|p|\<vect\>>>>><around*|(|<big|int>\<mathd\><rsup|3>x\<mathd\><rsup|3>y
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>><around*|{|\<pi\><around*|(|x|)>\<phi\><around*|(|y|)>-\<phi\><around*|(|y|)>\<pi\><around*|(|x|)>|}>|)>-<frac|i|2><sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|w<rsub|<wide|q|\<vect\>>>>><around*|(|<big|int>\<mathd\><rsup|3>x\<mathd\><rsup|3>y
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>><around*|{|\<phi\><around*|(|x|)>\<pi\><around*|(|y|)>-\<pi\><around*|(|y|)>\<phi\><around*|(|x|)>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|2><sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|w<rsub|<wide|p|\<vect\>>>>><big|int>\<mathd\><rsup|3>x\<mathd\><rsup|3>y
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>><around*|(|-i\<delta\><around*|(|<wide|y|\<vect\>>-<wide|x|\<vect\>>|)>|)>-<frac|i|2><sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|w<rsub|<wide|q|\<vect\>>>>><big|int>\<mathd\><rsup|3>x\<mathd\><rsup|3>y
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|2><around*|(|-i<sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|w<rsub|<wide|p|\<vect\>>>>>-i<sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|w<rsub|<wide|q|\<vect\>>>>>|)><big|int>\<mathd\><rsup|3>x\<mathd\><rsup|3>y
+        e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-i<wide|q|\<vect\>>\<cdot\><wide|y|\<vect\>>>\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|2><around*|(|-i<sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|w<rsub|<wide|p|\<vect\>>>>>-i<sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|w<rsub|<wide|q|\<vect\>>>>>|)><big|int>\<mathd\><rsup|3>x
+        e<rsup|i<around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|(|<sqrt|<frac|w<rsub|<wide|q|\<vect\>>>|w<rsub|<wide|p|\<vect\>>>>>+<sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|w<rsub|<wide|q|\<vect\>>>>>|)><around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>>>>>
+      </eqnarray*>
+
+      orz
+    </description>
   </enumerate>
 </body>
 
