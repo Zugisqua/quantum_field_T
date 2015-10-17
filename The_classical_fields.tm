@@ -43,14 +43,14 @@
       <item*|CM version>
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|S>|<cell|=>|<cell|<big|int>\<bbb-L\><around*|(|x,<wide|x|\<dot\>>|)>\<mathd\>t>>>>
+        <tformat|<table|<row|<cell|S>|<cell|=>|<cell|<big|int>\<bbb-L\><around*|(|x,<wide|x|\<dot\>>,t|)>\<mathd\>t>>>>
       </eqnarray*>
 
       under the transformation <math|x\<rightarrow\>x+\<delta\>x>
       ;one-dimension case. \ 
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|S>|<cell|=>|<cell|<big|int>\<bbb-L\><around*|(|x+\<delta\>x,<wide|x|\<dot\>>+\<delta\><wide|x|\<dot\>>|)>\<mathd\>t>>|<row|<cell|<big|int>\<mathd\>t<around*|{|\<bbb-L\><around*|(|x,<wide|x|\<dot\>>|)>+\<delta\>\<bbb-L\><around*|(|x,<wide|x|\<dot\>>|)>|}>>|<cell|=>|<cell|<big|int>\<bbb-L\><around*|(|x+\<delta\>x,<wide|x|\<dot\>>+\<delta\><wide|x|\<dot\>>|)>\<mathd\>t>>>>
+        <tformat|<table|<row|<cell|\<delta\>S>|<cell|=>|<cell|\<delta\><big|int>\<bbb-L\><around*|(|x,<wide|x|\<dot\>>,t|)>\<mathd\>t>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>t<around*|{|\<delta\>\<bbb-L\>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>t<around*|{|<frac|\<partial\>\<bbb-L\>|\<partial\>x>\<delta\>x+<frac|\<partial\>\<bbb-L\>|\<partial\><wide|x|\<dot\>>>\<delta\><wide|x|\<dot\>>+<frac|\<partial\>\<bbb-L\>|\<partial\>t>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>t<around*|{|<frac|\<partial\>\<bbb-L\>|\<partial\>x>\<delta\>x+<frac|\<partial\>\<bbb-L\>|\<partial\><wide|x|\<dot\>>><frac|\<mathd\>|\<mathd\>t><around*|(|\<delta\>x|)>+<frac|\<partial\>\<bbb-L\>|\<partial\>t>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>t<around*|{|<frac|\<partial\>\<bbb-L\>|\<partial\>x>\<delta\>x+<frac|\<mathd\>|\<mathd\>t><around*|(|<frac|\<partial\>\<bbb-L\>|\<partial\><wide|x|\<dot\>>>\<delta\>x|)>-<frac|\<mathd\>|\<mathd\>t><around*|(|<frac|\<partial\>\<bbb-L\>|\<partial\><wide|x|\<dot\>>>|)>\<delta\>x+<frac|\<partial\>\<bbb-L\>|\<partial\>t>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>t\<delta\>x<around*|{|<frac|\<partial\>\<bbb-L\>|\<partial\>x>-<frac|\<mathd\>|\<mathd\>t><around*|(|<frac|\<mathd\>\<bbb-L\>|\<mathd\><wide|x|\<dot\>>>|)>|}>+<big|int>\<mathd\>t<around*|{|<frac|\<mathd\>|\<mathd\>t><around*|(|<frac|\<partial\>\<bbb-L\>|\<partial\><wide|x|\<dot\>>>\<delta\>x|)>+<frac|\<partial\>\<bbb-L\>|\<partial\>t>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>t\<delta\>x<around*|{|<frac|\<partial\>\<bbb-L\>|\<partial\>x>-<frac|\<mathd\>|\<mathd\>t><around*|(|<frac|\<mathd\>\<bbb-L\>|\<mathd\><wide|x|\<dot\>>>|)>|}>+<big|int>\<mathd\>t<around*|{|<frac|\<mathd\>|\<mathd\>t><around*|(|<frac|\<partial\>\<bbb-L\>|\<partial\><wide|x|\<dot\>>><frac|\<partial\>x|\<partial\>t>|)>+<frac|\<partial\>\<bbb-L\>|\<partial\>t>|}>>>|<row|<cell|>|<cell|=>|<cell|\<ldots\>.>>>>
       </eqnarray*>
 
       have no idea orz.
