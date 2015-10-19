@@ -62,15 +62,7 @@
         <tformat|<table|<row|<cell|S>|<cell|=>|<cell|<big|int>L<around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>,x<rsup|\<mu\>>|)>\<mathd\><rsup|4>x>>>>
       </eqnarray*>
 
-      then under the transformation : <math|x<rsup|\<mu\><rprime|'>>=x<rsup|\<mu\>>+\<delta\>x<rsup|\<mu\>>>
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|\<delta\>S>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x
-        <rprime|'>L<around*|(|\<phi\><around*|(|x+\<delta\>x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x+\<delta\>x|)>,x<rsup|\<mu\>>+\<delta\>x<rsup|\<mu\>>|)>-<big|int>\<mathd\><rsup|4>x
-        L<around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>,x<rsup|\<mu\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|\||<frac|\<partial\>x<rsup|\<upsilon\><rprime|'>>|\<partial\>x<rsup|\<upsilon\>>>|\|>\<mathd\><rsup|4>x
-        L<around*|(|\<phi\><around*|(|x+\<delta\>x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x+\<delta\>x|)>,x<rsup|\<mu\>>+\<delta\>x<rsup|\<mu\>>|)>-<big|int>\<mathd\><rsup|4>x
-        L<around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>,x<rsup|\<mu\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|L<around*|(|\<phi\><around*|(|x+\<delta\>x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x+\<delta\>x|)>,x<rsup|\<mu\>>+\<delta\>x<rsup|\<mu\>>|)>-L<around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>,x<rsup|\<mu\>>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>L|\<partial\>\<phi\>><around*|(|\<phi\><around*|(|x+\<delta\>x|)>-\<phi\><around*|(|x|)>|)>+<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<partial\><rsub|\<mu\>>\<phi\><around*|(|x+\<delta\>x|)>-\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>|)>+\<partial\><rsub|\<mu\>>L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>L|\<partial\>\<phi\>>\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>+<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>\<delta\>x<rsup|\<nu\>>+\<partial\><rsub|\<mu\>>L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>L|\<partial\>\<phi\>>\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>+\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>|)>\<delta\>x<rsup|\<nu\>>-\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>|)>\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>+\<partial\><rsub|\<mu\>>L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<around*|(|<frac|\<partial\>L|\<partial\>\<phi\>>-\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>|)>|)>\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>+\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>|)>\<delta\>x<rsup|\<nu\>>+\<partial\><rsub|\<mu\>>L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>+L\<delta\>x<rsup|\<mu\>>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<delta\>x<rsup|\<nu\>>\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>+L\<delta\><rsup|\<mu\>><rsub|\<nu\>>|)>|}>>>>>
-      </eqnarray*>
+      \;
 
       <math|stress-energy \ \ tensor>: we have done = =(but I don't clear the
       motivation
@@ -78,12 +70,6 @@
       <\eqnarray*>
         <tformat|<table|<row|<cell|T<rsup|\<mu\>><op|<rsub|\<nu\>>>>|<cell|=>|<cell|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>-L\<delta\><rsup|\<mu\>><rsub|\<nu\>>>>>>
       </eqnarray*>
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|\<delta\>S>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<delta\>x<rsup|\<nu\>>\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>+<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>-T<rsup|\<mu\>><op|<rsub|\<nu\>>>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<delta\>x<rsup|\<nu\>>\<partial\><rsub|\<mu\>><around*|(|2\<times\><frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>-T<rsup|\<mu\>><op|<rsub|\<nu\>>>|)>|}>>>>>
-      </eqnarray*>
-
-      it seems strange = =
 
       <\description>
         <item*|More general case>
@@ -94,19 +80,7 @@
           <choice|<tformat|<table|<row|<cell|x<rsup|\<mu\><rprime|'>>\<rightarrow\>x<rsup|\<mu\>>+\<delta\>x<rsup|\<mu\>>>>|<row|<cell|\<phi\><rprime|'><around*|(|x|)>\<rightarrow\>\<phi\><around*|(|x|)>+\<delta\>\<phi\><around*|(|x|)>>>>>>
         </equation*>
 
-        When <math|\<delta\>\<phi\><around*|(|x|)>=0> could know\ 
-
-        <\eqnarray*>
-          <tformat|<table|<row|<cell|\<partial\><rsub|\<mu\>>T<rsup|\<mu\>><op|<rsub|\<nu\>>>>|<cell|=>|<cell|0>>>>
-        </eqnarray*>
-
-        however, as I tried just now ,under the transformation
-        <math|x<rsup|\<mu\><rprime|'>>\<rightarrow\>x<rsup|\<mu\>>+\<delta\>x<rsup|\<mu\>>>
-        only,a strange outcome occured :
-
-        <\eqnarray*>
-          <tformat|<table|<row|<cell|\<partial\><rsub|\<mu\>><around*|(|<frac|1|2>T<rsup|\<mu\>><op|<rsub|\<nu\>>>-<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>|)>>|<cell|=>|<cell|0>>>>
-        </eqnarray*>
+        \;
       </description>
 
       <math|Hint \ from \ the \ CM \ ver.>
@@ -117,7 +91,21 @@
         \<delta\>x<rsup|\<nu\>>|)>-T<rsup|\<mu\>><op|<rsub|\<nu\>>>\<delta\>x<rsup|\<nu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>\<sigma\><around*|{|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<Delta\>\<phi\>-T<rsup|\<mu\>><op|<rsub|\<nu\>>>\<delta\>x<rsup|\<nu\>>|}>>>>>
       </eqnarray*>
 
-      nearly...
+      could see <math|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>=\<Delta\>\<phi\>>
+
+      <item*|countexample>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<delta\>S>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<rsup|<rprime|'>>L<rprime|'>-<big|int>\<mathd\><rsup|4>x
+        L>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|\||<frac|\<partial\>x<rsup|\<mu\><rprime|'>>|\<partial\>x<rsup|\<mu\>>>|\|>\<mathd\><rsup|4>x
+        L<rprime|'>-<big|int>\<mathd\><rsup|4>x
+        L>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|L<rprime|'>-L|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>L|\<partial\>\<phi\>><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>|)>+<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<partial\><rsub|\<mu\>>\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>|)>+\<partial\><rsub|\<mu\>>L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<around*|(|<frac|\<partial\>L|\<partial\>\<phi\>>-\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>|)>|)><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>|)>+\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>|)>|)>+\<partial\><rsub|\<mu\>>L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|\<mu\>><around*|(|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>|)>|)>+\<partial\><rsub|\<mu\>>L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x\<partial\><rsub|\<mu\>><around*|{|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>|)>+L\<delta\>x<rsup|\<mu\>>|}>-<big|int>\<mathd\><rsup|4>x<around*|{|L\<partial\><rsub|\<mu\>><around*|(|\<delta\>x<rsup|\<mu\>>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>\<sigma\><around*|{|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>|)>+L\<delta\>x<rsup|\<mu\>>|}>-<big|int>\<mathd\><rsup|4>x
+        <around*|{|L\<delta\><around*|(|1|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>\<sigma\><around*|{|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x<rprime|'>|)>+\<phi\><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>|)>+L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>\<sigma\><around*|{|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<delta\>\<phi\><around*|(|x<rprime|'>|)>+\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>|)>+L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>\<sigma\><around*|{|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>><around*|(|\<delta\>\<phi\><around*|(|x<rprime|'>|)>-\<delta\>\<phi\><around*|(|x|)>+\<delta\>\<phi\><around*|(|x|)>+\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>|)>+L\<delta\>x<rsup|\<mu\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>\<sigma\><around*|{|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<delta\><around*|(|\<partial\><rsub|\<nu\>>\<phi\>\<delta\>x<rsup|\<nu\>>|)>+\<ldots\>.|}>>>>>
+      </eqnarray*>
+
+      not the derivation
+
+      \;
 
       \;
 
