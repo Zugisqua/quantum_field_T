@@ -501,6 +501,27 @@
       is physical meaning vacumm energy
     </description>
   </enumerate>
+
+  5. Stress-energy tensor and its lower-rasing respresentation.
+
+  <\description>
+    <item*|Stress-energy tensor>
+
+    <item*|Substitution by <math|a<around*|(|<wide|p|\<vect\>>|)>
+    ,a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>>>
+
+    <item*|The eigenproblem of some components of
+    <math|T<rsup|\<nu\>><op|<rsub|\<mu\>>>>>
+  </description>
+
+  6. Nomalization
+
+  <\description>
+    <\item*>
+      <math|<around|\||<wide|p|\<vect\>>|\<rangle\>>> ,under the requirement
+      of Lorenz invariant
+    </item*>
+  </description>
 </body>
 
 <\initial>
@@ -513,6 +534,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?>>
+    <associate|auto-4|<tuple|3|?>>
   </collection>
 </references>
 
