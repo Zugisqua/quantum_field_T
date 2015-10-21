@@ -505,22 +505,121 @@
   5. Stress-energy tensor and its lower-rasing respresentation.
 
   <\description>
-    <item*|Stress-energy tensor>
+    <item*|Stress-energy tensor>(form:the classical field.tm)
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<tformat|<table|<row|<cell|T<rsup|\<mu\>><op|<rsub|\<nu\>>>>|<cell|=>|<cell|<frac|\<partial\>L|\<partial\><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)>>\<partial\><rsub|\<nu\>>\<phi\>-L\<delta\><rsup|\<mu\>><rsub|\<nu\>>>>>>>|<cell|>|<cell|>>>>
+    </eqnarray*>
+
+    then <math|L=<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x|)>-<frac|1|2>m<rsup|2>\<phi\><around*|(|x|)><rsup|2>=<frac|1|2>\<eta\><rsup|\<mu\>\<mu\>><around*|(|\<partial\><rsub|\<mu\>>\<phi\>|)><rsup|2>-<frac|1|2>m<rsup|2>\<phi\>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|T<rsup|\<mu\>><op|<rsub|\<nu\>>>>|<cell|=>|<cell|\<eta\><rsup|\<mu\>\<mu\>>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsub|\<nu\>>\<phi\>-<around*|(|<frac|1|2>\<partial\><rsub|\<sigma\>>\<phi\>\<partial\><rsup|\<sigma\>>\<phi\>-<frac|1|2>m<rsup|2>\<phi\>|)>\<delta\><rsup|\<mu\>><rsub|\<nu\>>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<nu\>>\<phi\>-<frac|1|2>\<partial\><rsub|\<sigma\>>\<phi\>\<partial\><rsup|\<sigma\>>\<phi\>\<delta\><rsup|\<mu\>><rsub|\<nu\>>+<frac|1|2>m<rsup|2>\<phi\>\<delta\><rsup|\<mu\>><rsub|\<nu\>>>>>>
+    </eqnarray*>
+
+    <\description>
+      <item*|>
+
+      <math|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<table|<row|<cell|T<rsup|0><op|<rsub|0>>>|<cell|=>|<cell|\<partial\><rsub|0>\<phi\>\<partial\><rsup|0>\<phi\>-<frac|1|2>\<partial\><rsub|\<sigma\>>\<phi\>\<partial\><rsup|\<sigma\>>\<phi\>+<frac|1|2>m<rsup|2>\<phi\>>>|<row|<cell|>|<cell|>|<cell|<frac|1|2>\<partial\><rsub|0>\<phi\>\<partial\><rsup|0>\<phi\>-<frac|1|2>\<partial\><rsub|m>\<phi\>\<partial\><rsup|m>\<phi\>+<frac|1|2>m<rsup|2>\<phi\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|T<rsup|0><op|<rsub|m>>>|<cell|=>|<cell|\<partial\><rsup|0>\<phi\>\<partial\><rsub|m>\<phi\>
+      \ \ = \ \<pi\>\<partial\><rsub|m>\<phi\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|T<rsup|m><op|<rsub|0>>>|<cell|=>|<cell|\<partial\><rsup|m>\<phi\>\<partial\><rsub|0>\<phi\>
+      \ \ = \ \ \<pi\>\<partial\><rsup|m>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|-\<pi\>\<partial\><rsub|m>\<phi\>>>>>>>
+
+      In class, = = just talking about these operator.
+    </description>
 
     <item*|Substitution by <math|a<around*|(|<wide|p|\<vect\>>|)>
     ,a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>>>
 
-    <item*|The eigenproblem of some components of
-    <math|T<rsup|\<nu\>><op|<rsub|\<mu\>>>>>
+    already know
+
+    <math|\<pi\><around*|(|x|)>=<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>i<sqrt|<frac|w<rsub|<wide|p|\<vect\>>>|2>><around*|{|-a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>
+
+    <math|\<partial\><rsub|m>\<phi\>=><math|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>i<frac|1|<sqrt|2w<rsub|<wide|p|\<vect\>>>>>p<rsub|m><around*|{|-a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>
+
+    consider <math|x<rsub|0>=0>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|3>x
+      T<rsup|0><op|<rsub|m>>>|<cell|=>|<cell|<stack|<tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|-<big|int>\<mathd\><rsup|3>x<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6>>p<rsub|m>\<times\>>>|<row|<cell|<around*|{|<around*|(|-a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>|)><around*|(|-a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>+a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>e<rsup|i<wide|q|\<vect\>>\<cdot\><wide|x|\<vect\>>>|)>|}><rsup|>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<stack|<tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|-<big|int>\<mathd\><rsup|3>x<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6>>p<rsub|m>\<times\>>>|<row|<cell|<around*|{|a<around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|q|\<vect\>>|)>e<rsup|-i<around*|(|<wide|p|\<vect\>>+<wide|q|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>e<rsup|i<around*|(|<wide|q|\<vect\>>+<wide|p|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>|\<nobracket\>><rsup|>>>|<row|<cell|-a<around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>e<rsup|i<around*|(|<wide|q|\<vect\>>-<wide|p|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>>-a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|q|\<vect\>>|)><around*|\<nobracket\>|e<rsup|i<around*|(|<wide|p|\<vect\>>+<wide|q|\<vect\>>|)>\<cdot\><wide|x|\<vect\>>><rsup|>|}>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<stack|<tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|-<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|3>>p<rsub|m>\<times\>>>|<row|<cell|<around*|{|a<around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|q|\<vect\>>|)>\<delta\><around*|(|<wide|q|\<vect\>>+<wide|p|\<vect\>>|)>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>\<delta\><around*|(|<wide|q|\<vect\>>+<wide|p|\<vect\>>|)>|\<nobracket\>><rsup|>>>|<row|<cell|<around*|\<nobracket\>|-a<around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|<wide|q|\<vect\>>|)>\<delta\><around*|(|<wide|q|\<vect\>>-<wide|p|\<vect\>>|)>-a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|q|\<vect\>>|)>\<delta\><around*|(|<wide|q|\<vect\>>-<wide|p|\<vect\>>|)><rsup|>|}>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<stack|<tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|-<big|int><frac|\<mathd\><rsup|3>p|2<around*|(|2\<pi\>|)><rsup|3>>p<rsub|m><around*|{|a<around*|(|<wide|p|\<vect\>>|)>a<around*|(|-<wide|p|\<vect\>>|)>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|-<wide|p|\<vect\>>|)>-a<around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>-a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)><rsup|>|}>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|2<around*|(|2\<pi\>|)><rsup|3>>p<rsub|m><around*|{|a<around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)><rsup|>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>p<rsub|m>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)>+<big|int><frac|\<mathd\><rsup|3>p|2<around*|(|2\<pi\>|)><rsup|3>>p<rsub|m>\<times\><around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|0|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>p<rsub|m>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)>>>>>
+    </eqnarray*>
+
+    PS:here set
+
+    <\equation*>
+      P<rsub|m>=<big|int>\<mathd\><rsup|3>x<around*|{|\<pi\>\<partial\><rsub|m>\<phi\>|}>
+    </equation*>
+
+    <item*|The eigenproblem of <math|T<rsup|0><op|<rsub|\<mu\>>>>>
+
+    Something don't know how to know,but already know:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|a<rsub|<wide|p|\<vect\>>><around|\||0|\<rangle\>>>|<cell|=>|<cell|0>>>>
+    </eqnarray*>
+
+    then and don't care the constant term of
+    <math|<big|int>\<mathd\><rsup|3>x T<rsup|0><op|<rsub|\<mu\>>>> ? orz
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|3>x
+      T<rsup|0><op|<rsub|\<mu\>>> a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>><around|\||0|\<rangle\>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rsub|<wide|p|\<vect\>>><around|\||0|\<rangle\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>><around*|(|a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rsub|<wide|p|\<vect\>>>+<around*|[|a<rsub|<wide|p|\<vect\>>>,a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>|]>|)><around|\||0|\<rangle\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><rsub|<wide|p<rsub|1>|\<vect\>>>a<rsub|<wide|p|\<vect\>>>><around|\||0|\<rangle\>>|}>+<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|(|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>><around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p<rsub|1>|\<vect\>>-<wide|p|\<vect\>><rsub|1>|)><around|\||0|\<rangle\>>>|)>>>|<row|<cell|>|<cell|=>|<cell|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|1>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>><around|\||0|\<rangle\>>>>>>>
+    </eqnarray*>
+
+    where \ \ <math|\<theta\><rsup|0><op|<rsub|0>><around*|(|<wide|p|\<vect\>>|)>=w<rsub|<wide|p|\<vect\>>>>
+    ; <math|\<theta\><rsup|0><op|<rsub|m>><around*|(|<wide|p|\<vect\>>|)>=p<rsub|m>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|3>x
+      T<rsup|0><op|<rsub|\<mu\>>> a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>><around*|(|a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rsub|<wide|p|\<vect\>>>+<around*|[|a<rsub|<wide|p|\<vect\>>>,a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>|]>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<stack|<tformat|<cwith|2|2|1|1|cell-halign|l>|<table|<row|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|(|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>><around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p<rsub|1>|\<vect\>>-<wide|p|\<vect\>><rsub|1>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>>|)>>>|<row|<cell|+<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><rsub|<wide|p<rsub|1>|\<vect\>>>a<rsub|<wide|p|\<vect\>>>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>|}>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<stack|<tformat|<cwith|2|2|1|1|cell-halign|l>|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|1>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>>>>|<row|<cell|+<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><rsub|<wide|p<rsub|1>|\<vect\>>>a<rsub|<wide|p|\<vect\>>>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>|}>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<stack|<tformat|<cwith|2|2|1|1|cell-halign|l>|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|1>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>>>>|<row|<cell|+\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|2>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>>>>|<row|<cell|+<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><rsub|<wide|p<rsub|1>|\<vect\>>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>a<rsub|<wide|p|\<vect\>>>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>|}>>>>>>>>|<row|<cell|>|<cell|=>|<cell|\<ldots\>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<big|sum><rsub|i><rsup|n>\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|i>|)>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>>>>>
+    </eqnarray*>
+
+    could see :
+
+    <\itemize>
+      <item><math|a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|1>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|2>>\<ldots\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|n>><around|\||0|\<rangle\>>>
+      is a eigenstate of operator <math|<big|int>\<mathd\><rsup|3>x
+      T<rsup|0><op|<rsub|\<mu\>>>>
+
+      And the state call <math|N-particle \ state>
+
+      <item>the eigenvalue equel to <math|<big|sum><rsub|i><rsup|n>\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|i>|)>>>
+    </itemize>
   </description>
 
   6. Nomalization
 
   <\description>
     <\item*>
-      <math|<around|\||<wide|p|\<vect\>>|\<rangle\>>> ,under the requirement
-      of Lorenz invariant
+      the core is ensuring vector <math|<big|sum><rsub|i><rsup|n>\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|i>|)>>>
+      is under Lorenz invariant
     </item*>
+
+    <with|color|red|maybe they are similar with the relativity modified
+    classical mechanics.>
+
+    I know final outcome -- Nomalization like: (1-particle as a example)
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\||p|\<rangle\>>>|<cell|=>|<cell|<sqrt|w<rsub|<wide|p|\<vect\>>>>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>><around|\||0|\<rangle\>>>>>>
+    </eqnarray*>
+
+    now could checkout vector how to satisfy lorenz invariant
+
+    <\description>
+      <item*|step>1
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|3>x
+        T<rsup|0><op|<rsub|\<mu\>>> a<rprime|\<dag\>><rsub|<wide|p|\<vect\>><rsub|>><around|\||0|\<rangle\>>>|<cell|=>|<cell|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>><around|\||0|\<rangle\>>>>>|<row|<cell|<big|int>\<mathd\><rsup|3>x<frac|
+        T<rsup|0><op|<rsub|\<mu\>>>|<sqrt|w<rsub|<wide|p|\<vect\>><rsub|>>>><around|\||p|\<rangle\>>>|<cell|=>|<cell|<frac|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|>|)>>|<sqrt|w<rsub|<wide|p|\<vect\>>>>><around|\||p|\<rangle\>>>>>>
+      </eqnarray*>
+
+      <item*|step>2 clear the vector
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|[|<frac|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|>|)>>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>|]>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|<sqrt|w<rsub|<wide|p|\<vect\>>>|>>>|<row|<cell|<frac|p<rsub|x>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>>>|<row|<cell|<frac|p<rsub|y>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>>>|<row|<cell|<frac|p<rsub|z>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>>>>>>=<matrix|<tformat|<table|<row|<cell|<sqrt|m<rsup|2>+p<rsub|x><rsup|2>+p<rsup|2><rsub|y>+p<rsup|2><rsub|z>>>>|<row|<cell|>>>>>>>>>
+      </eqnarray*>
+    </description>
   </description>
 </body>
 
