@@ -493,7 +493,7 @@
           \ term|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|4<around*|(|2\<pi\>|)><rsup|3>><big|int>\<mathd\><rsup|3>p
           w<rsub|<wide|p|\<vect\>>>2<around*|{|a<around*|(|<wide|p|\<vect\>>|)>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|3>><big|int>\<mathd\><rsup|3>p<frac|w<rsub|<wide|p|\<vect\>>>|2><around*|{|<around*|[|a<around*|(|<wide|p|\<vect\>>|)>,<wide|a|\<vect\>><rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>|]>+2a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|3>><big|int>\<mathd\><rsup|3>p
           w<rsub|<wide|p|\<vect\>>><around*|{|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)>+<frac|1|2><around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|0|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|3>><big|int>w<rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>>|)>\<mathd\><rsup|3>p
-          +<big|int><frac|\<delta\><around*|(|0|)>|2>\<mathd\><rsup|3>p>>|<row|<cell|>|<cell|>|<cell|\<box\>>>>>
+          +<big|int>w<rsub|<wide|p|\<vect\>>><frac|\<delta\><around*|(|0|)>|2>\<mathd\><rsup|3>p>>|<row|<cell|>|<cell|>|<cell|\<box\>>>>>
         </eqnarray*>
       </description>
 
@@ -619,7 +619,15 @@
       <\eqnarray*>
         <tformat|<table|<row|<cell|<around*|[|<frac|\<theta\><rsup|0><op|<rsub|\<mu\>><around*|(|<wide|p|\<vect\>><rsub|>|)>>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>|]>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|<sqrt|w<rsub|<wide|p|\<vect\>>>|>>>|<row|<cell|<frac|p<rsub|x>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>>>|<row|<cell|<frac|p<rsub|y>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>>>|<row|<cell|<frac|p<rsub|z>|<sqrt|w<rsub|<wide|p|\<vect\>>>>>>>>>>=<matrix|<tformat|<table|<row|<cell|<sqrt|m<rsup|2>+p<rsub|x><rsup|2>+p<rsup|2><rsub|y>+p<rsup|2><rsub|z>>>>|<row|<cell|>>>>>>>>>
       </eqnarray*>
+
+      <item*|step end ?>orz anyhow, I couldn't continue it.
     </description>
+
+    <item*|The derivation of Nomalization <math|<around|\||p|\<rangle\>>>>
+
+    (blank)
+
+    \;
   </description>
 </body>
 
