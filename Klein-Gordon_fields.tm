@@ -625,9 +625,41 @@
 
     <item*|The derivation of Nomalization <math|<around|\||p|\<rangle\>>>>
 
-    (blank)
+    {do:
+  </description>
 
-    \;
+  7. Heisenberg picture
+
+  <\description>
+    <item*|Heisenberg envolution>
+
+    For an arbitary field
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<psi\><around*|(|<wide|x|\<vect\>>,t|)>>|<cell|=>|<cell|e<rsup|i\<Eta\>t>\<psi\><around*|(|<wide|x|\<vect\>>,0|)>e<rsup|-i\<Eta\>t>>>>>
+    </eqnarray*>
+
+    or the equivalent form : <math|Heisenberg \ \ MOE>.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<frac|\<partial\>\<psi\><around*|(|<wide|x|\<vect\>>,t|)>|\<partial\>t>>|<cell|=>|<cell|<around*|[|\<psi\><around*|(|<wide|x|\<vect\>>,t|)>,\<Eta\>|]>>>>>
+    </eqnarray*>
+
+    about where equivalent.
+
+    {do:
+
+    <item*|For the Klein-Gordon fields>
+
+    <\description>
+      <item*|Klein-Gordon equation>
+
+      {do:
+
+      <item*|verify the envolution><math|\<phi\><around*|(|<wide|x|\<vect\>>,0|)>\<rightarrow\>\<phi\><around*|(|<wide|x|\<vect\>>,t|)>>
+
+      {do:
+    </description>
   </description>
 </body>
 
