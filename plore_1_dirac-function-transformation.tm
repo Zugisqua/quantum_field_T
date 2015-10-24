@@ -1,0 +1,77 @@
+<TeXmacs|1.0.7.18>
+
+<style|generic>
+
+<\body>
+  <section|Transformation of Dirac function>
+
+  for arbitary transfromation: <math|<frac|\<partial\>x<rsup|\<mu\><rprime|'>>|\<partial\>x<rsup|\<mu\>>>>
+
+  any vectors do have :<math|V<rsup|\<mu\><rprime|'>>=<frac|\<partial\>x<rsup|\<mu\><rprime|'>>|\<partial\>x<rsup|\<mu\>>>V<rsup|\<mu\>>>
+
+  <\description>
+    <item*|counterexample>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<delta\><around*|(|x<rprime|'>-x<rprime|'><rsub|0>|)>>|<cell|=>|<cell|\<delta\><around*|(|<around*|[|<frac|\<partial\>x<rsup|\<mu\><rprime|'>>|\<partial\>x<rsup|\<mu\>>>|]>x<rsup|>-x<rprime|'><rsub|0>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|[|<frac|\<partial\>x<rsup|\<mu\><rprime|'>>|\<partial\>x<rsup|\<mu\>>>|]>\<delta\><around*|(|x-x<rsub|0><rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<mathd\>x<rsup|\<mu\><rprime|'>>|\<mathd\>x<rsup|\<mu\>>>\<delta\><around*|(|x-x<rprime|'><rsub|0>|)>>>>>
+    </eqnarray*>
+
+    not this case orz
+
+    therefore ,could see that <math|\<delta\><around*|(|x<rprime|'>-x<rsub|0><rprime|'>|)>>
+    \ could not transform as a single function.It's a normal function. \ 
+
+    <item*|start opoint>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<delta\><around*|(|h<around*|(|x|)>|)>>|<cell|=>|<cell|<frac|\<delta\><around*|(|x-h<rsup|-1><around*|(|0|)>|)>|h<rprime|'><around*|(|x|)>>>>>>
+    </eqnarray*>
+
+    proof
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>f<around*|(|x|)>\<delta\><around*|(|h<around*|(|x|)>|)>\<mathd\>x>|<cell|=>|<cell|<big|int>f<around*|(|h<rsup|-1><around*|(|x<rprime|'>|)>|)>\<delta\><around*|(|x<rprime|'>|)>\<mathd\>h<rsup|-1><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int>f<around*|(|h<rsup|-1><around*|(|x<rprime|'>|)>|)>\<delta\><around*|(|x<rprime|'>|)><frac|1|h<rprime|'><around*|(|h<rsup|-1><around*|(|x<rprime|'>|)>|)>>\<mathd\>x<rprime|'>>>|<row|<cell|>|<cell|=>|<cell|<frac|f<around*|(|h<rsup|-1><around*|(|0|)>|)>|h<rprime|'><around*|(|h<rsup|-1><around*|(|0|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>f<around*|(|x|)><frac|\<delta\><around*|(|x-h<rsup|-1><around*|(|0|)>|)>|h<rprime|'><around*|(|x|)>>\<mathd\>x>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|x<rprime|'>>|<cell|=>|<cell|h<around*|(|x|)>>>|<row|<cell|\<mathd\>x<rprime|'>>|<cell|=>|<cell|h<rprime|'><around*|(|x|)>\<mathd\>x>>>>
+    </eqnarray*>
+
+    higher demension
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|>|<cell|<choice|<tformat|<table|<row|<cell|x<rsup|1<rprime|'>>=h<rsub|1><around*|(|x<rsup|1>,x<rsup|2>|)>>>|<row|<cell|x<rsup|2<rprime|'>>=h<rsub|2><around*|(|x<rsup|1>,x<rsup|2>|)>>>>>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|\<mathd\>x<rsup|\<mu\><rprime|'>>=<frac|\<partial\>x<rsup|\<mu\><rprime|'>>|\<partial\>x<rsup|\<mu\>>>\<mathd\>x<rsup|\<mu\>>>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<mathd\>x<rsup|1<rprime|'>>\<mathd\>x<rsup|2<rprime|'>>>|<cell|=>|<cell|<around*|(|a<rsub|11>\<mathd\>x<rsup|1>+a<rsub|12>\<mathd\>x<rsup|2>|)><around*|(|a<rsub|21>\<mathd\>x<rsup|1>+a<rsub|22>\<mathd\>x<rsup|2>|)>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|11>a<rsub|21>\<mathd\>x<rsup|1>\<mathd\>x<rsup|1>+a<rsub|11>a<rsub|22>\<mathd\>x<rsup|1>\<mathd\>x<rsup|2>>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>f<around*|(|<wide|x|\<vect\>>|)>\<delta\><rsup|2><around*|(|h<around*|(|<wide|x|\<vect\>>|)>|)>\<mathd\><rsup|2>x>|<cell|=>|<cell|<big|int>f<around*|(|<wide|x|\<vect\>>|)>\<delta\><around*|(|h<rsub|1><around*|(|x<rsup|1>,x<rsup|2>|)>|)>\<delta\><around*|(|h<rsub|2><around*|(|x<rsup|1>,x<rsup|2>|)>|)>\<mathd\><rsup|2>x>>|<row|<cell|>|<cell|=>|<cell|<big|int>f<around*|(||)>\<delta\><around*|(|x<rsup|1<rprime|'>>|)>\<delta\><around*|(|x<rsup|2<rprime|'>>|)>>>>>
+    </eqnarray*>
+
+    \;
+
+    \;
+  </description>
+</body>
+
+<initial|<\collection>
+</collection>>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|?>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Transformation
+      of Dirac function> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>
