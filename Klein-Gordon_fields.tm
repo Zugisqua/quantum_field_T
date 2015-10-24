@@ -625,7 +625,21 @@
 
     <item*|The derivation of Nomalization <math|<around|\||p|\<rangle\>>>>
 
-    {do:
+    require <math|<around|\<langle\>|0|\|><around|\<nobracket\>|0|\<rangle\>>=1>
+
+    set: <math|<around|\||p|\<rangle\>>=\<lambda\>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>><around|\||0|\<rangle\>>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|p|\<nobracket\>><around|\||q|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|0|\|>a<rsub|<wide|p|\<vect\>>>\<lambda\><rsup|\<ast\>>\<lambda\>a<rprime|\<dag\>><rsub|<wide|q|\<vect\>>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<lambda\>|\|><rsup|2><around|\<langle\>|0|\|>a<rsub|<wide|p|\<vect\>>>a<rprime|\<dag\>><rsub|<wide|q|\<vect\>>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<lambda\>|\|><rsup|2><around|\<langle\>|0|\|><around*|(|a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rsub|<wide|q|\<vect\>>>+<around*|[|a<rsub|<wide|p|\<vect\>>>,a<rprime|\<dag\>><rsub|<wide|q|\<vect\>>>|]>|)><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<lambda\>|\|><rsup|2><around|\<langle\>|0|\|>a<rprime|\<dag\>><rsub|<wide|p|\<vect\>>>a<rsub|<wide|q|\<vect\>>><around|\||0|\<rangle\>>+<around*|\||\<lambda\>|\|><rsup|2><around|\<langle\>|0|\|><around*|[|a<rsub|<wide|p|\<vect\>>>,a<rprime|\<dag\>><rsub|<wide|q|\<vect\>>>|]><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<lambda\>|\|><rsup|2><around|\<langle\>|0|\|><around*|(|2\<pi\>|)><rsup|3>\<delta\><rsup|3><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<lambda\>|\|><rsup|2><around*|(|2\<pi\>|)><rsup|3>\<delta\><rsup|3><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>>>>>
+    </eqnarray*>
+
+    require Lorenz invariant
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<Lambda\><rsup|\<mu\>><op|<rsub|\<nu\>>><around|\<langle\>|p|\<nobracket\>><around|\||q|\<rangle\>>>|<cell|=>|<cell|\<Lambda\><rsup|\<mu\>><op|<rsub|\<nu\>>><around*|\||\<lambda\>|\|><rsup|2><around*|(|2\<pi\>|)><rsup|3>\<delta\><rsup|3><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<lambda\><rprime|'>|\|><rsup|2><around*|(|2\<pi\>|)><rsup|3>\<delta\><rsup|3><around*|(|<wide|p|\<vect\>><rprime|'>-<wide|q|\<vect\>><rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|\||\<lambda\><rprime|'>|\|><rsup|2><around*|(|2\<pi\>|)><rsup|3>\<delta\><rsup|3><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>>>>>
+    </eqnarray*>
+
+    \;
   </description>
 
   7. Heisenberg picture
@@ -642,17 +656,83 @@
     or the equivalent form : <math|Heisenberg \ \ MOE>.
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<frac|\<partial\>\<psi\><around*|(|<wide|x|\<vect\>>,t|)>|\<partial\>t>>|<cell|=>|<cell|<around*|[|\<psi\><around*|(|<wide|x|\<vect\>>,t|)>,\<Eta\>|]>>>>>
+      <tformat|<table|<row|<cell|i<frac|\<partial\>\<psi\><around*|(|<wide|x|\<vect\>>,t|)>|\<partial\>t>>|<cell|=>|<cell|<around*|[|\<psi\><around*|(|<wide|x|\<vect\>>,t|)>,\<Eta\>|]>>>>>
     </eqnarray*>
 
     about where equivalent.
 
-    {do:
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|i<frac|\<partial\>\<psi\><around*|(|<wide|x|\<vect\>>,t|)>|\<partial\>t>>|<cell|=>|<cell|i<frac|\<partial\>e<rsup|i\<Eta\>t>\<psi\><around*|(|<wide|x|\<vect\>>,0|)>e<rsup|-i\<Eta\>t>|\<partial\>t>>>|<row|<cell|>|<cell|=>|<cell|i<frac|\<partial\>e<rsup|i\<Eta\>t>|\<partial\>t>\<psi\><around*|(|<wide|x|\<vect\>>,0|)>e<rsup|-i\<Eta\>t>+i
+      e<rsup|i\<Eta\>t>\<psi\><around*|(|<wide|x|\<vect\>>,0|)><frac|\<partial\>e<rsup|-i\<Eta\>t>|\<partial\>t>>>|<row|<cell|>|<cell|=>|<cell|i<around*|(|i\<Eta\>e<rsup|i\<Eta\>t>\<psi\><around*|(|<wide|x|\<vect\>>,0|)>e<rsup|-i\<Eta\>t>+e<rsup|i\<Eta\>t>\<psi\><around*|(|<wide|x|\<vect\>>,0|)>e<rsup|-i\<Eta\>t><around*|(|-i\<Eta\>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|i<around*|(|i\<Eta\>\<psi\><around*|(|<wide|x|\<vect\>>,t|)>-i\<psi\><around*|(|<wide|x|\<vect\>>,t|)>\<Eta\>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|[|\<psi\><around*|(|<wide|x|\<vect\>>,t|)>,\<Eta\>|]>>>>>
+    </eqnarray*>
+
+    We learned some relation mostly at <math|t=0> above,here offer a kind of
+    envolution.
+
+    And I will give some checks below. \ 
 
     <item*|For the Klein-Gordon fields>
 
+    \;
+
     <\description>
       <item*|Klein-Gordon equation>
+
+      alreay know,and if sure the Heisenberg picture.
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<Eta\>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x<around*|{|<frac|1|2><around*|(|\<partial\><rsub|0>\<phi\>|)><rsup|2>+<frac|1|2><around*|(|\<nabla\>\<phi\>|)><rsup|2>+<frac|1|2>m<rsup|2>\<phi\><rsup|2>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x<with|math-font|cal|H>>>>>
+      </eqnarray*>
+
+      <\description>
+        <item*|step_1>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|i<frac|\<partial\>\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<partial\>t>>|<cell|=>|<cell|<around*|[|\<phi\><around*|(|<wide|x|\<vect\>>,t|)>,H|]>>>|<row|<cell|>|<cell|=>|<cell|\<phi\>\<Eta\>-\<Eta\>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x<around*|{|\<phi\><with|math-font|cal|H>-<with|math-font|cal|H>\<phi\>|}>>>>>
+        </eqnarray*>
+
+        <\description>
+          <item*|term_0>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|[|\<phi\>,A<rsup|2>|]>>|<cell|=>|<cell|\<phi\>A<rsup|2>-A<rsup|2>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|\<phi\>A<rsup|2>-A\<phi\>A+A\<phi\>A-A<rsup|2>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|<around*|[|\<phi\>,A|]>A+A<around*|[|\<phi\>,A|]>>>>>
+          </eqnarray*>
+
+          <item*|term_1>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|[|\<phi\>,\<partial\><rsub|0>\<phi\>|]>>|<cell|=>|<cell|<around*|[|\<phi\><around*|(|<wide|x|\<vect\>>,t|)>,\<pi\><around*|(|<wide|y|\<vect\>>,t|)>|]>>>|<row|<cell|>|<cell|=>|<cell|i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>>>>>
+          </eqnarray*>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|[|\<phi\>,<around*|(|\<partial\><rsub|0>\<phi\>|)><rsup|2>|]>>|<cell|=>|<cell|<around*|[|\<phi\>,\<partial\><rsub|0>\<phi\>|]>\<partial\><rsub|0>\<phi\>+\<partial\><rsub|0>\<phi\><around*|[|\<phi\>,\<partial\><rsub|0>\<phi\>|]>>>|<row|<cell|>|<cell|=>|<cell|i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>\<partial\><rsub|0>\<phi\>+\<partial\><rsub|0>\<phi\>i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>>>|<row|<cell|>|<cell|=>|<cell|2i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>\<partial\><rsub|0>\<phi\>>>>>
+          </eqnarray*>
+
+          <item*|term_2>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|[|\<phi\>,\<nabla\>\<phi\>|]>>|<cell|=>|<cell|\<phi\><around*|(|<wide|x|\<vect\>>,t|)>\<nabla\>\<phi\><around*|(|<wide|y|\<vect\>>,t|)>-<around*|(|\<nabla\>\<phi\><around*|(|<wide|y|\<vect\>>,t|)>|)>\<phi\><around*|(|<wide|x|\<vect\>>,t|)>>>|<row|<cell|>|<cell|=>|<cell|\<nabla\><around*|(|\<phi\><around*|(|<wide|x|\<vect\>>,t|)>\<phi\><around*|(|<wide|y|\<vect\>>,t|)>-\<phi\><around*|(|<wide|y|\<vect\>>,t|)>\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|)>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
+          </eqnarray*>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|[|\<phi\>,<around*|(|\<nabla\>\<phi\>|)><rsup|2>|]>>|<cell|=>|<cell|0>>>>
+          </eqnarray*>
+
+          <item*|term_3>
+
+          <\eqnarray*>
+            <tformat|<table|<row|<cell|<around*|[|\<phi\>,m<rsup|2>\<phi\><rsup|2>|]>>|<cell|=>|<cell|0>>>>
+          </eqnarray*>
+        </description>
+
+        therefore
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|i<frac|\<partial\>\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<partial\>t>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x<around*|{|\<phi\><with|math-font|cal|H>-<with|math-font|cal|H>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x<around*|(|<frac|1|2>\<times\>2i\<delta\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>\<partial\><rsub|0>\<phi\>|)>>>|<row|<cell|>|<cell|=>|<cell|i\<partial\><rsub|0>\<phi\><around*|(|<wide|x|\<vect\>>,t|)>>>>>
+        </eqnarray*>
+      </description>
+
+      <item*|Some check>
 
       {do:
 
