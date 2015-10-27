@@ -753,6 +753,61 @@
 
     \;
   </description>
+
+  8.Propagator and Causality
+
+  <\description>
+    <item*|<math|Causality>:>simply means no space-like propagating.
+  </description>
+
+  <\description>
+    <math|<item*|Quality \ \ \ \ <around|\<langle\>|\<phi\><around*|(|y|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>>describe
+    the degree of propagate <math|x\<rightarrow\>y>
+
+    <math|propagator \ \ it \ \ \ is!>
+
+    we already know:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|<sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<rsub|<wide|p|\<vect\>>>e<rsup|-i
+      p x>+a<rsub|<wide|p|\<vect\>>><rprime|\<dag\>>e<rsup|i p x>|}>>>>>
+    </eqnarray*>
+
+    <math|where \ \ p<rsub|0>=w<rsub|<wide|p|\<vect\>>>>
+
+    \;
+
+    <math|Calculation:>
+
+    <item*|<math|Quality \ \ <around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|y|)>,\<phi\><around*|(|x|)><around|\||0|\<rangle\>>|\<nobracket\>>>>maybe
+    this is the check point wheather causality is violent,in fact could
+    understood like this:
+
+    <\itemize>
+      <item>there are exiting a couple of propagators :\ 
+
+      <\equation*>
+        <choice|<tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|y|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|>|<cell|x\<rightarrow\>y>>|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x|)>|\<nobracket\>><around|\||\<phi\><around*|(|y|)>|\<rangle\>>>|<cell|>|<cell|y\<rightarrow\>x>>>>>
+      </equation*>
+
+      <item>The causality satisfied or not is depends on what we measure in
+      the phenomenon of the propagetors. [That sounds like a redefinition of
+      causality]
+
+      <\equation*>
+        <around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|y|)>,\<phi\><around*|(|x|)><around|\||0|\<rangle\>>|\<nobracket\>>
+        \ equel \ to \ 0 \ or \ not \ 
+      </equation*>
+
+      become a key when we consider about causality.
+    </itemize>
+
+    <math|Calculation:>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|y|)>,\<phi\><around*|(|x|)><around|\||0|\<rangle\>>|\<nobracket\>>>|<cell|>|<cell|>>>>
+    </eqnarray*>
+  </description>
 </body>
 
 <\initial>
