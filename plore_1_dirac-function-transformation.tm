@@ -37,7 +37,7 @@
       <tformat|<table|<row|<cell|x<rprime|'>>|<cell|=>|<cell|h<around*|(|x|)>>>|<row|<cell|\<mathd\>x<rprime|'>>|<cell|=>|<cell|h<rprime|'><around*|(|x|)>\<mathd\>x>>>>
     </eqnarray*>
 
-    higher demension
+    Higher demension .
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|>|<cell|>|<cell|<choice|<tformat|<table|<row|<cell|x<rsup|1<rprime|'>>=h<rsub|1><around*|(|x<rsup|1>,x<rsup|2>|)>>>|<row|<cell|x<rsup|2<rprime|'>>=h<rsub|2><around*|(|x<rsup|1>,x<rsup|2>|)>>>>>>>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|\<mathd\>x<rsup|\<mu\><rprime|'>>=<frac|\<partial\>x<rsup|\<mu\><rprime|'>>|\<partial\>x<rsup|\<mu\>>>\<mathd\>x<rsup|\<mu\>>>>>>
@@ -49,14 +49,19 @@
       <tformat|<table|<row|<cell|<big|int>f<around*|(|<wide|x|\<vect\>>|)>\<delta\><rsup|2><around*|(|<wide|h|\<vect\>><around*|(|<wide|x|\<vect\>>|)>|)>\<mathd\><rsup|2>x>|<cell|=>|<cell|<big|int>f<around*|(|<wide|x|\<vect\>>|)>\<delta\><around*|(|h<rsub|1><around*|(|x<rsup|1>,x<rsup|2>|)>|)>\<delta\><around*|(|h<rsub|2><around*|(|x<rsup|1>,x<rsup|2>|)>|)><around*|\||<frac|\<partial\><around*|(|x<rsup|1>,x<rsup|2>|)>|\<partial\><around*|(|x<rsup|1<rprime|'>>,x<rsup|2><rprime|'>|)>>|\|>\<mathd\><rsup|2>x<rsup|<rprime|'>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>f<around*|(|<wide|x|\<vect\>>|)>\<delta\><around*|(|x<rsup|1<rprime|'>>|)>\<delta\><around*|(|x<rsup|2<rprime|'>>|)><around*|\||<frac|\<partial\><around*|(|x<rsup|1>,x<rsup|2>|)>|\<partial\><around*|(|x<rsup|1<rprime|'>>,x<rsup|2><rprime|'>|)>>|\|>\<mathd\><rsup|2>x<rsup|<rprime|'>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|f<around*|(|<wide|x|\<vect\>>|)><around*|\||<frac|\<partial\><around*|(|x<rsup|1>,x<rsup|2>|)>|\<partial\><around*|(|x<rsup|1<rprime|'>>,x<rsup|2><rprime|'>|)>>|\|>|)><rsub|x<rsup|1<rprime|'>>=x<rsup|2<rprime|'>>=0>>>|<row|<cell|>|<cell|=>|<cell|<big|int>f<around*|(|<wide|x|\<vect\>>|)><around*|\||<frac|\<partial\><around*|(|x<rsup|1>,x<rsup|2>|)>|\<partial\><around*|(|x<rsup|1<rprime|'>>,x<rsup|2><rprime|'>|)>>|\|>\<delta\><around*|(|<wide|x|\<vect\>>-<wide|h|\<vect\>><rsup|-1><around*|(|0|)><rsup|>|)>\<mathd\><rsup|2>x>>>>
     </eqnarray*>
 
-    example: 2-D lorenz transformation
+    it maybe ture, but it's not I want to see.\ 
+
+    <emdash>--because for 2-D lorenz transformation
+    ,<math|<around*|\||<frac|\<partial\><around*|(|x<rsup|1>,x<rsup|2>|)>|\<partial\><around*|(|x<rsup|1<rprime|'>>,x<rsup|2><rprime|'>|)>>|\|>
+    > is always 1.
+
+    \ 
+
+    The same transformation,but only care about <math|\<delta\>> of one
+    demension:
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<matrix|<tformat|<table|<row|<cell|x<rsup|0>>>|<row|<cell|x<rsup|1>>>>>>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|>>>>>>>>>
-    </eqnarray*>
-
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|>|<cell|>|<cell|>>>>
+      <tformat|<table|<row|<cell|<big|int>f<around*|(|x<rsup|1>|)>\<delta\><around*|(|<frac|\<partial\>x<rsup|1<rprime|'>>|\<partial\>x<rsup|1>>x<rsup|1>+<frac|\<partial\>x<rsup|1<rprime|'>>|\<partial\>x<rsup|2>>x<rsup|2>-a|)>\<mathd\>x<rsup|1>>|<cell|=>|<cell|<big|int>f<around*|(|x<rsup|1>|)>\<delta\><around*|(|x<rsup|1<rprime|'>>-a|)><around*|(|<frac|\<partial\>x<rsup|1>|\<partial\>x<rsup|1><rprime|'>>\<mathd\>x<rsup|1<rprime|'>>+<frac|\<partial\>x<rsup|1>|\<partial\>x<rsup|2<rprime|'>>>\<mathd\>x<rsup|2><rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int>>>>>
     </eqnarray*>
 
     \;
