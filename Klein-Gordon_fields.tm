@@ -845,7 +845,8 @@
       <item>there are exiting a couple of propagators :\ 
 
       <\equation*>
-        <choice|<tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|y|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|>|<cell|x\<rightarrow\>y>>|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x|)>|\<nobracket\>><around|\||\<phi\><around*|(|y|)>|\<rangle\>>>|<cell|>|<cell|y\<rightarrow\>x>>>>>
+        <choice|<tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|y|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|>|<cell|<around*|[|m<rsub|+>|]>x\<rightarrow\>y>>|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x|)>|\<nobracket\>><around|\||\<phi\><around*|(|y|)>|\<rangle\>>>|<cell|>|<cell|y\<leftarrow\>x
+        <around*|[|m<rsub|->|]>>>>>>
       </equation*>
 
       <item>The causality satisfied or not is depends on what we measure in
@@ -859,6 +860,9 @@
 
       <item>become a key when we consider about causality.also because \ it's
       a kind of propagator in 4-demension form.
+
+      <item><math|<around|\<langle\>|0|\|><around*|[|\<psi\><around*|(|y|)>,\<psi\><around*|(|x|)>|]><around|\||0|\<rangle\>>>
+      is the Green's function of Klein-Gordon equation.
     </itemize>
 
     <math|Calculation:>
@@ -871,6 +875,8 @@
     <\description>
       <item*|i>it's propagator in 4-D form <emdash><emdash> Klein-Gordon
       propagator.
+
+      <item*|ii>Green's funtion verify
 
       \;
     </description>
