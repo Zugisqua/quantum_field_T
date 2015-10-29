@@ -3,6 +3,8 @@
 <style|generic>
 
 <\body>
+  \;
+
   <section|<math|<with|math-font-series|bold|Klein-Gordon \ fields>>>
 
   1. Klein-Gordon equation
@@ -779,7 +781,63 @@
 
     <math|Calculation:>
 
-    <item*|<math|Quality \ \ <around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|y|)>,\<phi\><around*|(|x|)><around|\||0|\<rangle\>>|\<nobracket\>>>>maybe
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|y|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|0|\|>\<phi\><around*|(|y|)>\<phi\><around*|(|x|)><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|0|\|><big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|<around*|(|2\<pi\>|)><rsup|6><sqrt|2w<rsub|<wide|p|\<vect\>>>><sqrt|2w<rsub|<wide|q|\<vect\>>>>><around*|{|<around*|(|a<rsub|<wide|p|\<vect\>>>e<rsup|-i
+      p y>+a<rsub|<wide|p|\<vect\>>><rprime|\<dag\>>e<rsup|i p
+      y>|)><around*|(|a<rsub|<wide|q|\<vect\>>>e<rsup|-i q
+      x>+a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>>e<rsup|i q
+      x>|)>|}><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>><around|\<langle\>|0|\|>a<rsub|<wide|p|\<vect\>>>a<rsub|<wide|q|\<vect\>>>e<rsup|-i
+      <around*|(|p y+ q x|)>>+a<rsub|<wide|p|\<vect\>>>a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>>e<rsup|i<around*|(|q
+      x -p y|)>>>>|<row|<cell|>|<cell|>|<cell|
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +a<rsub|<wide|p|\<vect\>>><rprime|\<dag\>>a<rsub|<wide|q|\<vect\>>>e<rsup|i<around*|(|p
+      y-q x|)>>+a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>>a<rsub|<wide|p|\<vect\>>><rprime|\<dag\>>e<rsup|i<around*|(|p
+      y+q x|)>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>><around*|{|<around*|(|<around|\<langle\>|<wide|p|\<vect\>>|\|>\<times\>0e<rsup|-i
+      <around*|(|p y+ q x|)>>|)>+<around|\<langle\>|<wide|p|\<vect\>>|\|><around|\<nobracket\>|<wide|q|\<vect\>>|\<rangle\>>e<rsup|i<around*|(|q
+      x-p y|)>>|\<nobracket\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +0\<times\>0e<rsup|-i<around*|(|p
+      y+q x|)>>+0\<times\><around|\||<wide|q|\<vect\>>|\<rangle\>>e<rsup|i<around*|(|p
+      y+q x|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>><around|\<langle\>|<wide|p|\<vect\>>|\|><around|\<nobracket\>|<wide|q|\<vect\>>|\<rangle\>>e<rsup|i<around*|(|q
+      x-p y|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|3><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>e<rsup|i<around*|(|q
+      x-p y|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|2<around*|(|2\<pi\>|)><rsup|3>w<rsub|<wide|p|\<vect\>>>>e<rsup|i
+      p<around*|(|x-y|)>>>>>>
+    </eqnarray*>
+
+    <\description>
+      <item*|ps><math|<around|\<langle\>|<wide|p|\<vect\>>\|<wide|q|\<vect\>>|\<rangle\>=<around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>>
+      > seem like the foudamental point in QM without more discussion.
+
+      But here could give a derivation about it.
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around|\<langle\>|<wide|p|\<vect\>>|\|><around|\<nobracket\>|<wide|q|\<vect\>>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|0|\|>a<rsub|<wide|p|\<vect\>>>a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|0|\|><around*|[|a<rsub|<wide|p|\<vect\>>>,a<rsub|<wide|q|\<vect\>>>|]>-a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>>a<rsub|<wide|p|\<vect\>>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|0|\|><around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)><around|\||0|\<rangle\>>-0>>|<row|<cell|>|<cell|=>|<cell|<around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>>>>>
+      </eqnarray*>
+    </description>
+
+    Example:
+
+    <\description>
+      <item*|i>space-like propagator [choose simplist case that
+      <math|x<rsub|0>=y<rsub|0>=0>]
+
+      <item*|ii>time-like propagator [choose simplist case that
+      <math|<wide|x|\<vect\>>=<wide|y|\<vect\>>=0>]
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|y|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|2<around*|(|2\<pi\>|)><rsup|3>w<rsub|<wide|p|\<vect\>>>>e<rsup|i
+        w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|2<around*|(|2\<pi\>|)><rsup|3><sqrt|<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>>>e<rsup|i
+        <sqrt|<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsub|0><rsup|+\<infty\>><big|int><rsub|0><rsup|2\<pi\>><big|int><rsub|0><rsup|\<pi\>><frac|<around*|\||<wide|p|\<vect\>>|\|><rsup|2><around|sin|\<theta\>|>\<mathd\>\<theta\>\<mathd\>\<phi\>\<mathd\><around*|\||<wide|p|\<vect\>>|\|>|2<around*|(|2\<pi\>|)><rsup|3><sqrt|<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>>>e<rsup|i
+        <sqrt|<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|4\<pi\>|2<around*|(|2\<pi\>|)><rsup|3>><big|int><rsub|0><rsup|\<infty\>><frac|r<rsup|2>\<mathd\>r|<sqrt|r<rsup|2>+m<rsup|2>>>e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|2\<pi\>|<around*|(|2\<pi\>|)><rsup|3>><big|int><rsub|0><rsup|\<infty\>><frac|r\<mathd\>r<rsup|2>|2<sqrt|r<rsup|2>+m<rsup|2>>>e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int><rsub|0><rsup|\<infty\>>r\<mathd\><sqrt|r<rsup|2>+m<rsup|2>>e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2>><big|int><rsub|0><rsup|\<infty\>><frac|1|i<around*|(|x<rsub|0>-y<rsub|0>|)>>r\<mathd\>e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<around*|(|2\<pi\>|)><rsup|2><around*|(|x<rsub|0>-y<rsub|0>|)>><around*|{|<around*|(|r
+        e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>|)><rsub|0><rsup|\<infty\>>-<big|int><rsub|0><rsup|\<infty\>>e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>\<mathd\>r|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<around*|(|2\<pi\>|)><rsup|2><around*|(|x<rsub|0>-y<rsub|0>|)>><around*|{|<around*|\<nobracket\>|r
+        e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>|\|><rsub|r=
+        \<infty\>>-<rsup|><around*|\<nobracket\>|<frac|e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>|i<around*|(|x<rsub|0>-y<rsub|0>|)>>|\|><rsub|0><rsup|\<infty\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|<around*|\<nobracket\>|r
+        e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>|\|><rsub|r=
+        \<infty\>>|i<around*|(|2\<pi\>|)><rsup|2><around*|(|x<rsub|0>-y<rsub|0>|)>>+<rsup|><frac|<around*|\<nobracket\>|e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>|\|><rsub|r=
+        \<infty\>>|<around*|(|2\<pi\>|)><rsup|2><around*|(|x<rsub|0>-y<rsub|0>|)><rsup|2>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|2\<pi\>|)><rsup|2><around*|(|x<rsub|0>-y<rsub|0>|)><rsup|2>><around*|(|<frac|r<around*|(|x<rsub|0>-y<rsub|0>|)>|i>+1|)><around*|\<nobracket\>|e<rsup|i<sqrt|r<rsup|2>+m<rsup|2>><around*|(|x<rsub|0>-y<rsub|0>|)>>|\|><rsub|r=
+        \<infty\>>>>>>
+      </eqnarray*>
+    </description>
+
+    <item*|<math|Quality \ \ <around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|y|)>,\<phi\><around*|(|x|)>|]><around|\||0|\<rangle\>>>>maybe
     this is the check point wheather causality is violent,in fact could
     understood like this:
 
@@ -799,20 +857,29 @@
         \ equel \ to \ 0 \ or \ not \ 
       </equation*>
 
-      become a key when we consider about causality.
+      <item>become a key when we consider about causality.also because \ it's
+      a kind of propagator in 4-demension form.
     </itemize>
 
     <math|Calculation:>
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|y|)>,\<phi\><around*|(|x|)><around|\||0|\<rangle\>>|\<nobracket\>>>|<cell|>|<cell|>>>>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|y|)>,\<phi\><around*|(|x|)><around|\||0|\<rangle\>>|\<nobracket\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|y|)>|\<nobracket\>><around|\||\<psi\><around*|(|x|)>|\<rangle\>>-<around|\<langle\>|\<psi\><around*|(|x|)>|\<nobracket\>><around|\||\<psi\><around*|(|y|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|2<around*|(|2\<pi\>|)><rsup|3>w<rsub|<wide|p|\<vect\>>>><around*|{|e<rsup|i
+      p<around*|(|x-y|)>>-e<rsup|i p<around*|(|y-x|)>>|}>>>>>
     </eqnarray*>
+
+    <\description>
+      <item*|i>it's propagator in 4-D form <emdash><emdash> Klein-Gordon
+      propagator.
+
+      \;
+    </description>
   </description>
 </body>
 
 <\initial>
   <\collection>
-    <associate|font|sys-chinese>
+    <associate|font|stix>
     <associate|language|chinese>
   </collection>
 </initial>
