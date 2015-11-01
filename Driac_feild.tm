@@ -104,7 +104,8 @@
         Lorentz invariant : <math|F<rsup|\<ast\>><around*|{|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
         b>\<partial\><rsub|\<nu\>>-m\<delta\><rsub|a
         b>|)>\<phi\><rsub|b>|}>=><math|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
-        b>\<partial\><rsub|\<nu\>>-m\<delta\><rsub|a b>|)>\<phi\><rsub|b>>
+        b>\<partial\><rsub|\<nu\>><rprime|'>-m\<delta\><rsub|a
+        b>|)>\<phi\><rsub|b><around*|(|x<rprime|'>|)>>
 
         <\eqnarray*>
           <tformat|<table|<row|<cell|F<rsup|\<ast\>><around*|{|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
@@ -119,20 +120,20 @@
           b>\<delta\><rsup|\<mu\>><rsub|\<nu\>>\<partial\><rsub|\<mu\>>-S<rsub|c
           b>m|)>\<phi\><rsub|b><around*|(|\<Lambda\><rsup|-1>x|)>>>|<row|<cell|>|<cell|=>|<cell|i
           S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\><rprime|'>><op|<rsub|\<nu\>>>\<Lambda\><rsup|\<mu\>><op|<rsub|\<sigma\><rprime|'>>>\<partial\><rsub|\<mu\>>\<phi\><rsub|b><around*|(|\<Lambda\><rsup|-1>x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|i
+          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<Lambda\><rsup|\<mu\>><op|<rsub|\<sigma\>>>\<partial\><rsub|\<mu\>>\<phi\><rsub|b><around*|(|\<Lambda\><rsup|-1>x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
           S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\><rprime|'>><op|<rsub|\<nu\>>>\<partial\><rsub|\<sigma\><rprime|'>>\<delta\><rsub|b
-          d>\<phi\><rsub|d><around*|(|\<Lambda\><rsup|-1>x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|i
+          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>\<delta\><rsub|b
+          d>\<phi\><rsub|d><around*|(|\<Lambda\><rsup|-1>x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
           S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\><rprime|'>><op|<rsub|\<nu\>>>\<partial\><rsub|\<sigma\><rprime|'>>S<rsub|b
+          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>S<rsub|b
           l><around*|(|\<Lambda\><rsup|-1>|)>S<rsub|l
-          d><around*|(|\<Lambda\>|)>\<phi\><rsub|d><around*|(|\<Lambda\><rsup|-1>x|)>>>|<row|<cell|>|<cell|>|<cell|-m\<phi\><rsub|c><rprime|'><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|i
+          d><around*|(|\<Lambda\>|)>\<phi\><rsub|d><around*|(|\<Lambda\><rsup|-1>x|)>>>|<row|<cell|>|<cell|>|<cell|-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
           S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\><rprime|'>><op|<rsub|\<nu\>>>\<partial\><rsub|\<sigma\><rprime|'>>S<rsub|b
-          l><around*|(|\<Lambda\><rsup|-1>|)>\<phi\><rsub|l><rprime|'><around*|(|x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|i
+          b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>S<rsub|b
+          l><around*|(|\<Lambda\><rsup|-1>|)>\<phi\><rsub|l><rprime|'><around*|(|x<rprime|'>|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
           S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a b>S<rsub|b
-          l><rsup|-1><around*|(|\<Lambda\>|)><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\><rprime|'>><op|<rsub|\<nu\>>>\<partial\><rsub|\<sigma\><rprime|'>>\<phi\><rsub|l><rprime|'><around*|(|x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|i<around*|(|S\<gamma\><rsup|\<nu\>>S<rsup|-1>|)><rsub|c
-          l><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\><rprime|'>><op|<rsub|\<nu\>>\<partial\><rsub|\<sigma\><rprime|'>>>\<phi\><rsub|l><rprime|'><around*|(|x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x|)>>>>>
+          l><rsup|-1><around*|(|\<Lambda\>|)><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>\<phi\><rsub|l><rprime|'><around*|(|x<rprime|'>|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i<around*|(|S\<gamma\><rsup|\<nu\>>S<rsup|-1>|)><rsub|c
+          l><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>\<partial\><rprime|'><rsub|\<sigma\>>>\<phi\><rsub|l><rprime|'><around*|(|x<rprime|'>|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>>>
         </eqnarray*>
 
         notice that <math|\<partial\><rsub|\<mu\>>><math|S<rsub|b
@@ -144,14 +145,14 @@
 
         <\eqnarray*>
           <tformat|<table|<row|<cell|<around*|(|S\<gamma\><rsup|\<nu\>>S<rsup|-1>|)><rsub|c
-          l><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<rho\><rprime|'>><op|<rsub|\<nu\>>>>|<cell|=>|<cell|\<gamma\><rsup|\<rho\><rprime|'>>>>>>
+          l><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<rho\>><op|<rsub|\<nu\>>>>|<cell|=>|<cell|\<gamma\><rprime|'><rsup|\<rho\>>>>>>
         </eqnarray*>
 
         namely\ 
 
         <\eqnarray*>
-          <tformat|<table|<row|<cell|\<gamma\><rsup|\<nu\><rprime|'>><rsub|a
-          b>>|<cell|=>|<cell|S<rsub|a k><around*|(|\<Lambda\>|)><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<rho\><rprime|'>><op|<rsub|\<nu\>>>\<gamma\><rsup|\<nu\>><rsub|k
+          <tformat|<table|<row|<cell|\<gamma\><rprime|'><rsup|\<rho\>><rsub|a
+          b>>|<cell|=>|<cell|S<rsub|a k><around*|(|\<Lambda\>|)><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<rho\>><op|<rsub|\<nu\>>>\<gamma\><rsup|\<nu\>><rsub|k
           l>S<rsub|l b><rsup|-1><around*|(|\<Lambda\>|)>>>>>
         </eqnarray*>
 
