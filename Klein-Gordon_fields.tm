@@ -866,6 +866,11 @@
       p<around*|(|x-y|)>>-e<rsup|i p<around*|(|y-x|)>>|}>>>>>
     </eqnarray*>
 
+    Form the book of Peskin claim it could write in 4-D from
+    <math|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|i|p<rsup|2>-m<rsup|2>>e<rsup|-i
+    p<around*|(|x-y|)>>>, but I haven't made it to evoluted it into the
+    former formation.\ 
+
     <item*|Quality <math|<around|\<langle\>|0|\|>T\<phi\><around*|(|x|)>\<phi\><around*|(|y|)><around|\||0|\<rangle\>>>>Feynman
     Propagators
 
