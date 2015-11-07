@@ -90,11 +90,159 @@
       </equation*>
     </enumerate>
   </enumerate>
+
+  <paragraph|3. the derivation of the operators>
+
+  <\itemize>
+    <item>the Lorentz transformation (from wiki) c=1 boost
+
+    <\equation*>
+      \<Lambda\>=<matrix|<tformat|<table|<row|<cell|\<gamma\>>|<cell|-\<gamma\>\<beta\><rsub|x>>|<cell|-\<gamma\>\<beta\><rsub|y>>|<cell|-\<gamma\>\<beta\><rsub|z>>>|<row|<cell|-\<gamma\>\<beta\><rsub|x>>|<cell|1+<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|x><rsup|2>|\<beta\><rsup|2>>>|<cell|<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|x>\<beta\><rsub|y>|\<beta\><rsup|2>>>|<cell|<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|x>\<beta\><rsub|z>|\<beta\><rsup|2>>>>|<row|<cell|-\<gamma\>\<beta\><rsub|y>>|<cell|<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|y>\<beta\><rsub|x>|\<beta\><rsup|2>>>|<cell|1+<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|y><rsup|2>|\<beta\><rsup|2>>>|<cell|<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|y>\<beta\><rsub|z>|\<beta\><rsup|2>>>>|<row|<cell|-\<gamma\>\<beta\><rsub|z>>|<cell|<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|z>\<beta\><rsub|y>|\<beta\><rsup|2>>>|<cell|<around*|(|\<gamma\>-1|)><frac|\<beta\><rsub|z>\<beta\><rsub|y>|\<beta\><rsup|2>>>|<cell|1+<around*|(|\<gamma\>-1|)><frac|\<beta\><rsup|2><rsub|z>|\<beta\><rsup|2>>>>>>>
+    </equation*>
+
+    where
+
+    \;
+  </itemize>
+
+  <\description>
+    <item*|step 1>the generator in matrix representation
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<frac|\<mathd\>\<gamma\>|\<mathd\>v<rsub|x>>>|<cell|=>|<cell|<frac|\<mathd\>|\<mathd\>v<rsub|x>><around*|(|<frac|1|<sqrt|1-v<rsub|x><rsup|2>-v<rsup|2><rsub|y>-v<rsup|2><rsub|z>>>|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|1-v<rsub|x><rsup|2>-v<rsup|2><rsub|y>-v<rsup|2><rsub|z>>\<times\><frac|-2v<rsub|x>|2<sqrt|1-v<rsub|x><rsup|2>-v<rsup|2><rsub|y>-v<rsup|2><rsub|z>>>>>|<row|<cell|>|<cell|=>|<cell|1>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|\<nobracket\>|<frac|\<mathd\>\<Lambda\>|\<mathd\>v<rsub|x>>|\|><rsub|<around*|(|0,0,0|)>>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|>>>>>>>>>
+    </eqnarray*>
+
+    it's not a difficult doing ,just need take some time.\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|J<rsub|1>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|-1>|<cell|>>|<row|<cell|>|<cell|>|<cell|1>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>|<cell|J<rsub|2>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>|<cell|-1>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|1>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>|<cell|J<rsub|3>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|-1>|<cell|>|<cell|>>|<row|<cell|>|<cell|1>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>>|<row|<cell|K<rsub|1>=<matrix|<tformat|<table|<row|<cell|0>|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|1>|<cell|0>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>|<cell|K<rsub|2>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>|<cell|>|<cell|>>|<row|<cell|1>|<cell|>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>|<cell|K<rsub|3>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|1>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>|<cell|>>|<row|<cell|1>|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>>|<row|<cell|A<rsub|0>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|>|<cell|1>>|<row|<cell|>|<cell|0>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>|<cell|A<rsub|1>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>|<cell|>|<cell|1>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>|<cell|A<rsub|2>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>|<cell|1>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>>|<row|<cell|A<rsub|3>=<matrix|<tformat|<table|<row|<cell|0>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|0>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>|<cell|1>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>|<cell|>|<cell|>>>>
+    </eqnarray*>
+
+    <item*|step 2>generators in operators representation
+
+    act on vector fields
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|P<around*|(|T|)>\<psi\><around*|(|x|)>>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<mathd\>|\<mathd\>t><around*|[|T\<psi\><around*|(|x|)>|]>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<mathd\>|\<mathd\>t><around*|(|M<around*|(|e<rsup|T
+      t>|)>\<psi\><around*|(|M<rsup|-1><around*|(|e<rsup|T
+      t>|)>x|)>|)>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<mathd\>|\<mathd\>t><around*|(|M<around*|(|e<rsup|T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>|)>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<mathd\>M<around*|(|e<rsup|T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>|\<mathd\>t>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>|\|><rsub|0>+<around*|\<nobracket\>|M<around*|(|e<rsup|T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>><frac|\<mathd\>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>|\<mathd\>t>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|M<around*|\<nobracket\>|<around*|(|<frac|\<mathd\>|\<mathd\>t>e<rsup|T
+      t>|)><rsup|\<mu\>><rsub| \ \ \ \ \ \ \<nu\>>|\<nobracket\>>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>|\|><rsub|0>>>|<row|<cell|>|<cell|>|<cell|+<around*|\<nobracket\>|M<around*|(|e<rsup|T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>
+      <frac|\<mathd\><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>|\<mathd\>t>\<partial\><rsub|\<sigma\>>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>
+      |\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|M<around*|\<nobracket\>|<around*|(|T
+      e<rsup|T t>|)><rsup|\<mu\>><rsub| \ \ \ \ \ \ \<nu\>>|\<nobracket\>>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>|\|><rsub|0>>>|<row|<cell|>|<cell|>|<cell|+<around*|\<nobracket\>|M<around*|(|e<rsup|T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>
+      <frac|\<mathd\><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<lambda\>>>x<rsup|\<lambda\>>|)>|\<mathd\>t>\<partial\><rsub|\<sigma\>>\<psi\><rsup|\<nu\>><around*|(|<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>
+      |\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|M<around*|(|T|)><rsup|\<mu\>><op|<rsub|\<nu\>>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|1|)><rsup|\<sigma\>><op|<rsub|\<rho\>>x<rsup|\<rho\>>>|)>>+M<around*|(|e<rsup|T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>
+      x<rsup|\<lambda\>>M<around*|\<nobracket\>|<around*|(|<frac|\<mathd\>|\<mathd\>t>e<rsup|-T
+      t>|)><rsup|\<sigma\>><rsub| \ \ \ \ \<lambda\>>\<partial\><rsub|\<sigma\>>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>
+      |\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|M<around*|(|T|)><rsup|\<mu\>><op|<rsub|\<nu\>>\<psi\><rsup|\<nu\>><around*|(|\<delta\><rsup|\<sigma\>><op|<rsub|\<rho\>>x<rsup|\<rho\>>>|)>>+M<around*|(|e<rsup|T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>
+      x<rsup|\<lambda\>>M<around*|\<nobracket\>|<around*|(|-T e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<lambda\>>>\<partial\><rsub|\<sigma\>>\<psi\><rsup|\<nu\>><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>
+      |\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|M<around*|(|T|)><rsup|\<mu\>><op|<rsub|\<nu\>>\<psi\><rsup|\<nu\>><around*|(|x<rsup|\<sigma\>>|)>>+\<delta\><rsup|\<mu\>><op|<rsub|\<nu\>>>
+      M<rsup|><around*|(|-T |)><rsup|\<sigma\>><op|<rsub|\<lambda\>>>x<rsup|\<lambda\>>\<partial\><rsub|\<sigma\>>\<psi\><rsup|\<nu\>><around*|(|\<delta\><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>
+      >>|<row|<cell|>|<cell|=>|<cell|M<around*|(|T|)><rsup|\<mu\>><op|<rsub|\<nu\>>\<psi\><rsup|\<nu\>><around*|(|x<rsup|\<sigma\>>|)>>+\<delta\><rsup|\<mu\>><op|<rsub|\<nu\>>>
+      M<rsup|><around*|(|-T |)><rsup|\<sigma\>><op|<rsub|\<lambda\>>>x<rsup|\<lambda\>>\<partial\><rsub|\<sigma\>>\<psi\><rsup|\<nu\>><around*|(|x<rsup|\<sigma\>>|)>
+      >>|<row|<cell|>|<cell|=>|<cell|<around*|(|M<around*|(|T|)><rsup|\<mu\>><op|<rsub|\<nu\>>>-\<delta\><rsup|\<mu\>><op|<rsub|\<nu\>>>
+      M<rsup|><around*|(|T |)><rsup|\<sigma\>><op|<rsub|\<lambda\>>>x<rsup|\<lambda\>>\<partial\><rsub|\<sigma\>>|)>\<psi\><rsup|\<nu\>><around*|(|x<rsup|\<sigma\>>|)>
+      >>>>
+    </eqnarray*>
+
+    act on scalar fields
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|P<around*|(|T|)>\<psi\><around*|(|x|)>>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<mathd\>|\<mathd\>t>\<psi\><around*|(|M<around*|(|e<rsup|-T
+      t>|)>x|)>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<mathd\>|\<mathd\>t>\<psi\><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>x<rsup|\<nu\>>|)>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<mathd\><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<mu\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>|)>|\<mathd\>t>\<partial\><rsub|\<mu\>>\<psi\><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>x<rsup|\<nu\>>|)>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|M<around*|(|<frac|\<mathd\>|\<mathd\>t>e<rsup|-T
+      t>|)><rsup|\<sigma\>><rsub| \ \ \ \ \<rho\>>x<rsup|\<rho\>>\<partial\><rsub|\<sigma\>>\<psi\><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>x<rsup|\<nu\>>|)>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|M<around*|(|-T
+      e<rsup|-T t>|)><rsup|\<sigma\>><op|<rsub|\<rho\>>x<rsup|\<rho\>>\<partial\><rsub|\<sigma\>>\<psi\><around*|(|M<around*|(|e<rsup|-T
+      t>|)><rsup|\<mu\>><op|<rsub|\<nu\>>>x<rsup|\<nu\>>|)>>|\|><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|M<around*|(|-T|)><rsup|\<sigma\>><op|<rsub|\<rho\>>x<rsup|\<rho\>>\<partial\><rsub|\<sigma\>>\<psi\><around*|(|x<rsup|\<mu\>>|)>>>>|<row|<cell|>|<cell|=>|<cell|-M<around*|(|T|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>\<partial\><rsub|\<sigma\>>\<psi\><around*|(|x<rsup|\<mu\>>|)>>>>>
+    </eqnarray*>
+
+    wait a minute
+
+    <\eqnarray*>
+      <tformat|<cwith|3|3|1|1|cell-halign|l>|<table|<row|<cell|<around*|\<nobracket\>|<frac|\<mathd\>|\<mathd\>t>M<around*|(|e<rsup|T
+      t>|)>|\|><rsub|0>>|<cell|=>|<cell|M<around*|(|T
+      |)>>>|<row|<cell|-<around*|\<nobracket\>|<frac|\<mathd\>|\<mathd\><around*|(|-t|)>>M<around*|(|e<rsup|-T
+      <around*|(|-t|)>>|)>|\|><rsub|0>>|<cell|=>|<cell|-M<around*|(|-T|)>>>|<row|<cell|therefore>|<cell|>|<cell|>>|<row|<cell|M<around*|(|-T|)>>|<cell|=>|<cell|-M<around*|(|T|)>>>>>
+    </eqnarray*>
+
+    then\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|P<around*|(|J<rsub|1>|)>>|<cell|=>|<cell|<around*|(|-M<around*|(|T|)><rsup|3><op|<rsub|2>x<rsup|2>\<partial\><rsub|3>-M<around*|(|T|)><rsup|2><op|<rsub|3>>x<rsup|3>\<partial\><rsub|2>>|)>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-x<rsup|2>\<partial\><rsub|3>+x<rsup|3>\<partial\><rsub|2>|)>\<psi\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|P<around*|(|J<rsub|2>|)>>|<cell|=>|<cell|<around*|(|-M<around*|(|T|)><rsup|3><op|<rsub|1>x<rsup|1>\<partial\><rsub|3>-M<around*|(|T|)><rsup|1><op|<rsub|3>>x<rsup|3>\<partial\><rsub|1>>|)>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-x<rsup|1>\<partial\><rsub|3>+x<rsup|3>\<partial\><rsub|1>|)>\<psi\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|P<around*|(|J<rsub|3>|)>>|<cell|=>|<cell|<around*|(|-M<around*|(|T|)><rsup|2><op|<rsub|1>x<rsup|1>\<partial\><rsub|2>-M<around*|(|T|)><rsup|1><op|<rsub|2>>x<rsup|2>\<partial\><rsub|1>>|)>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-x<rsup|1>\<partial\><rsub|2>+x<rsup|2>\<partial\><rsub|1>|)>\<psi\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|P<around*|(|K<rsub|1>|)>>|<cell|=>|<cell|-<around*|(|M<around*|(|T<rsup|>|)><rsup|0><op|<rsub|1>>x<rsup|1>\<partial\><rsub|0>+M<around*|(|T<rsup|>|)><rsup|1><op|<rsub|0>>x<rsup|0>\<partial\><rsub|1>|)>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-x<rsup|1>\<partial\><rsub|0>-x<rsup|0>\<partial\><rsub|1>|)>\<psi\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|P<around*|(|K<rsub|2>|)>>|<cell|=>|<cell|-<around*|(|M<around*|(|T<rsup|>|)><rsup|0><op|<rsub|2>>x<rsup|2>\<partial\><rsub|0>+M<around*|(|T<rsup|>|)><rsup|2><op|<rsub|0>>x<rsup|0>\<partial\><rsub|2>|)>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-x<rsup|2>\<partial\><rsub|0>-x<rsup|0>\<partial\><rsub|2>|)>\<psi\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|P<around*|(|K<rsub|3>|)>>|<cell|=>|<cell|-<around*|(|M<around*|(|T<rsup|>|)><rsup|0><op|<rsub|3>>x<rsup|3>\<partial\><rsub|0>+M<around*|(|T<rsup|>|)><rsup|3><op|<rsub|0>>x<rsup|0>\<partial\><rsub|3>|)>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-x<rsup|3>\<partial\><rsub|0>-x<rsup|0>\<partial\><rsub|3>|)>\<psi\>>>>>
+    </eqnarray*>
+
+    if consider the metric in the flat space-time
+    <math|\<eta\><rsub|\<mu\>\<nu\>>=diag<around*|{|\<noplus\>\<noplus\> + -
+    - -|}>>QFT convention ,then
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|P<around*|(|T|)>>|<cell|=>|<cell|-M<around*|(|T|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>\<partial\><rsub|\<sigma\>>>>|<row|<cell|>|<cell|=>|<cell|-M<around*|(|T|)><rsup|\<sigma\>><op|<rsub|\<rho\>>\<eta\><rsup|\<nu\>\<rho\>>x<rsub|\<nu\>>\<partial\><rsub|\<sigma\>>>>>>>
+    </eqnarray*>
+
+    <\itemize>
+      <item>the generators of momentum remain the anti-same. only lower the
+      indice
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|P<around*|(|J<rsub|1>|)>=T<rsub|23>>|<cell|P<around*|(|J<rsub|2>|)>=T<rsub|13>>|<cell|P<around*|(|J<rsub|3>|)>=T<rsub|12>>>>>
+      </eqnarray*>
+
+      <item>the generators of boost
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|P<around*|(|K<rsub|1>|)>>|<cell|=>|<cell|x<rsub|1>\<partial\><rsub|0>-x<rsub|0>\<partial\><rsub|1>
+        = T<rsub|10>>>|<row|<cell|P<around*|(|K<rsub|2>|)>>|<cell|=>|<cell|x<rsub|2>\<partial\><rsub|0>-x<rsub|0>\<partial\><rsub|2>
+        = T<rsub|20>>>|<row|<cell|P<around*|(|K<rsub|3>|)>>|<cell|=>|<cell|x<rsub|3>\<partial\><rsub|0>-x<rsub|0>\<partial\><rsub|3>
+        = T<rsub|30>>>>>
+      </eqnarray*>
+    </itemize>
+
+    <item*|step 3>how about the translation?\ 
+
+    could see <math|x<rsup|4>\<equiv\>1> then similarly
+    <math|<tabular|<tformat|<table|<row|<cell|P<around*|(|T|)>>|<cell|=>|<cell|-M<around*|(|T|)><rsup|\<sigma\>><op|<rsub|\<rho\>>>x<rsup|\<rho\>>\<partial\><rsub|\<sigma\>>>>>>>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|P<around*|(|A<rsub|1>|)>>|<cell|=>|<cell|-M<rsup|1><op|<rsub|4>>x<rsup|4>\<partial\><rsub|1>=-\<partial\><rsub|1>=-T<rsub|1>>>|<row|<cell|P<around*|(|A<rsub|2>|)>>|<cell|=>|<cell|-M<rsup|2><op|<rsub|4>>x<rsup|4>\<partial\><rsub|2>=-\<partial\><rsub|2>=-T<rsub|2>>>|<row|<cell|P<around*|(|A<rsub|3>|)>>|<cell|=>|<cell|-M<rsup|3><op|<rsub|4>>x<rsup|4>\<partial\><rsub|3>=-\<partial\><rsub|3>=-T<rsub|3>>>|<row|<cell|P<around*|(|A<rsub|4>|)>>|<cell|=>|<cell|-M<rsup|4><op|<rsub|4>>x<rsup|4>\<partial\><rsub|4>=-\<partial\><rsub|4>=-T<rsub|4>>>>>
+    </eqnarray*>
+
+    <item*|<math|done>>
+  </description>
+
+  <paragraph|Should notice that it's the case of scalar fields. there will be
+  different in vector or tensor fields. \ \ \ \ \ \ \ \ however,forturnatily
+  Klein-Gordon fields and Dirac fields are both scalar fields>
 </body>
 
 <\initial>
   <\collection>
-    <associate|font|sys-chinese>
+    <associate|font|stix>
     <associate|language|chinese>
   </collection>
 </initial>
@@ -103,6 +251,7 @@
   <\collection>
     <associate|auto-1|<tuple|1|?>>
     <associate|auto-2|<tuple|1|?>>
+    <associate|auto-3|<tuple|2|?>>
   </collection>
 </references>
 
@@ -110,7 +259,7 @@
   <\collection>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|<with|mode|<quote|math>|<with|math-font-series|<quote|bold>|The
-      properties of the generators of Lorenz transformation >>>
+      properties of the generators of Poincare transformation >>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
     </associate>
