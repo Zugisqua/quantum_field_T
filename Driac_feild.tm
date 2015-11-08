@@ -93,100 +93,124 @@
       <item*|ii>Lorentz invariant \| Quality: <math|S<rsub|a
       b><around*|(|\<Lambda\>|)>>
 
-      the transformation: <math|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|\<phi\><rprime|'><around*|(|x|)>>|<cell|=>|<cell|\<Lambda\>\<phi\><around*|(|x|)>>>|<row|<cell|or>|<cell|>|<cell|>>|<row|<cell|\<phi\><rsub|a><rprime|'><around*|(|x|)>>|<cell|=>|<cell|S<rsub|a
-      b><around*|(|\<Lambda\>|)>\<phi\><rsub|b><around*|(|\<Lambda\><rsup|-1>x|)>>>>>>>
+      requirement:
 
-      for the equation : <math|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
-      b>\<partial\><rsub|\<nu\>>-m\<delta\><rsub|a b>|)>\<phi\><rsub|b>=0
-      \ \ \ \<rightarrow\>> a equation of <math|\<phi\><rprime|'>>
+      under the condition :<math|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
+      b>\<partial\><rsub|\<nu\>>-m|)>\<psi\><around*|(|x|)>=0> should
+      <math|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
+      b>\<partial\><rprime|'><rsub|\<nu\>>-m\<delta\><rsub|a
+      b>|)>\<psi\><rsub|b><around*|(|x<rprime|'>|)>=0>
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ where
+      <math|\<partial\><rsub|\<nu\>>=<frac|\<partial\>|\<partial\>x<rsup|\<nu\>>>>;<math|\<partial\><rsub|\<nu\>><rprime|'>=<frac|\<partial\>|\<partial\>x<rprime|'><rsup|\<nu\>>>>
+      <math|x<rprime|'><rsup|\<mu\>>=\<Lambda\><rsup|\<mu\>><op|<rsub|\<nu\>>x<rsup|\<nu\>>=<frac|\<partial\>x<rprime|'><rsup|\<mu\>>|\<partial\>x<rsup|\<nu\>>>x<rsup|\<nu\>>>>
+      \ \ \ \ 
 
-      Lorentz invariant : <math|F<rsup|\<ast\>><around*|{|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
-      b>\<partial\><rsub|\<nu\>>-m\<delta\><rsub|a
-      b>|)>\<phi\><rsub|b>|}>=><math|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
-      b>\<partial\><rsub|\<nu\>><rprime|'>-m\<delta\><rsub|a
-      b>|)>\<phi\><rsub|b><around*|(|x<rprime|'>|)>>
+      reference plore_3
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|F<rsup|\<ast\>><around*|{|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
-        b>\<partial\><rsub|\<nu\>>-m\<delta\><rsub|a
-        b>|)>\<phi\><rsub|b>|}>>|<cell|=>|<cell|\<Lambda\><around*|{|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
-        b>\<partial\><rsub|\<nu\>>-m\<delta\><rsub|a
-        b>|)>\<phi\><rsub|b>|}>>>|<row|<cell|>|<cell|=>|<cell|S<rsub|c
-        a><around*|(|\<Lambda\>|)><around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
-        b>\<partial\><rsub|\<nu\>>-m\<delta\><rsub|a
-        b>|)>\<phi\><rsub|b><around*|(|\<Lambda\><rsup|-1>x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|i
-        S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-        b>\<delta\><rsup|\<mu\>><rsub|\<nu\>>\<partial\><rsub|\<mu\>>-S<rsub|c
-        b>m|)>\<phi\><rsub|b><around*|(|\<Lambda\><rsup|-1>x|)>>>|<row|<cell|>|<cell|=>|<cell|i
-        S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-        b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<Lambda\><rsup|\<mu\>><op|<rsub|\<sigma\>>>\<partial\><rsub|\<mu\>>\<phi\><rsub|b><around*|(|\<Lambda\><rsup|-1>x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
-        S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-        b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>\<delta\><rsub|b
-        d>\<phi\><rsub|d><around*|(|\<Lambda\><rsup|-1>x|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
-        S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-        b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>S<rsub|b
-        l><around*|(|\<Lambda\><rsup|-1>|)>S<rsub|l
-        d><around*|(|\<Lambda\>|)>\<phi\><rsub|d><around*|(|\<Lambda\><rsup|-1>x|)>>>|<row|<cell|>|<cell|>|<cell|-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
-        S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a
-        b><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>S<rsub|b
-        l><around*|(|\<Lambda\><rsup|-1>|)>\<phi\><rsub|l><rprime|'><around*|(|x<rprime|'>|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i
-        S<rsub|c a>\<gamma\><rsup|\<nu\>><rsub|a b>S<rsub|b
-        l><rsup|-1><around*|(|\<Lambda\>|)><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>>\<partial\><rprime|'><rsub|\<sigma\>>\<phi\><rsub|l><rprime|'><around*|(|x<rprime|'>|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|i<around*|(|S\<gamma\><rsup|\<nu\>>S<rsup|-1>|)><rsub|c
-        l><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<sigma\>><op|<rsub|\<nu\>>\<partial\><rprime|'><rsub|\<sigma\>>>\<phi\><rsub|l><rprime|'><around*|(|x<rprime|'>|)>-m\<phi\><rsub|c><rprime|'><around*|(|x<rprime|'>|)>>>>>
+        <tformat|<table|<row|<cell|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
+        b>\<partial\><rprime|'><rsub|\<nu\>>-m\<delta\><rsub|a
+        b>|)>\<psi\><rsub|b><rprime|'><around*|(|x<rprime|'>|)>>|<cell|=>|<cell|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
+        b><frac|\<partial\>|\<partial\>x<rprime|'><rsup|\<nu\>>>-m\<delta\><rsub|a
+        b>|)>S<rsub|b c><around*|(|\<Lambda\><rsup|>|)>\<psi\><rsub|c><around*|(|<frac|\<partial\>x<rprime|'><rsup|\<nu\>>|\<partial\>x<rsup|\<mu\>>>x<rsup|\<mu\>>|)>>>|<row|<cell|\<ast\>>|<cell|=>|<cell|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
+        b><frac|\<partial\>x<rsup|\<sigma\>>|\<partial\>x<rprime|'><rsup|\<nu\>>>\<partial\><rsub|\<sigma\>>-m\<delta\><rsub|a
+        b>|)>\<Lambda\>\<Lambda\><rsup|-1>S<rsub|b
+        c><around*|(|\<Lambda\><rsup|>|)>\<psi\><rsub|c><around*|(|<frac|\<partial\>x<rprime|'><rsup|\<nu\>>|\<partial\>x<rsup|\<mu\>>>x<rsup|\<mu\>>|)>>>|<row|<cell|\<ast\>>|<cell|=>|<cell|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
+        b><frac|\<partial\>x<rsup|\<sigma\>>|\<partial\>x<rprime|'><rsup|\<nu\>>>\<partial\><rsub|\<sigma\>>-m\<delta\><rsub|a
+        b>|)>\<Lambda\>S<around*|(|\<Lambda\><rsup|-1>|)><rsub|b d>S<rsub|d
+        c><around*|(|\<Lambda\>|)>\<psi\><rsub|c><around*|(|<frac|\<partial\>x<rsup|\<sigma\>>|\<partial\>x<rprime|'><rsup|\<nu\>>><frac|\<partial\>x<rprime|'><rsup|\<nu\>>|\<partial\>x<rsup|\<mu\>>>x<rsup|\<mu\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|i\<gamma\><rsup|\<nu\>><rsub|a
+        b><frac|\<partial\>|\<partial\>x<rprime|'><rsup|\<nu\>>>-m\<delta\><rsub|a
+        b>|)>\<Lambda\>\<psi\><rsub|b><around*|(|x<rsup|\<sigma\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|i\<Lambda\><around*|(|\<gamma\><rsup|\<nu\>><rsub|a
+        b><frac|\<partial\>|\<partial\>x<rprime|'><rsup|\<nu\>>>|)>-\<Lambda\>m\<delta\><rsub|a
+        b>|)>\<psi\><rsub|b><around*|(|x<rsup|\<sigma\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|i
+        S<around*|(|\<Lambda\><rsup|-1>|)><rsub|a
+        l><around*|(|\<gamma\><rsup|\<nu\>><rsub|l
+        k><frac|\<partial\>|\<partial\>x<rprime|'><rsup|\<nu\>>>|)>S<around*|(|\<Lambda\>|)><rsub|k
+        b>-m S<around*|(|\<Lambda\><rsup|-1>|)><rsub|a l>\<delta\><rsub|l
+        k>S<around*|(|\<Lambda\><rsup|>|)><rsub|k
+        b>|)>\<psi\><rsub|b>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|i
+        S<around*|(|\<Lambda\><rsup|-1>|)><rsub|a
+        l>\<gamma\><rsup|\<nu\>><rsub|l k>S<around*|(|\<Lambda\>|)><rsub|k
+        b><frac|\<partial\>|\<partial\>x<rprime|'><rsup|\<nu\>>>-m
+        \<delta\><rsub|a b>|)>\<psi\><rsub|b><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|i
+        S<rsup|-1><around*|(|\<Lambda\>|)><rsub|a
+        l>\<gamma\><rsup|\<nu\>><rsub|l k>S<around*|(|\<Lambda\>|)><rsub|k
+        b><frac|\<partial\>x<rsup|\<sigma\>>|\<partial\>x<rprime|'><rsup|\<nu\>>><frac|\<partial\>|\<partial\>x<rsup|\<sigma\>>>-m
+        \<delta\><rsub|a b>|)>\<psi\><rsub|b><around*|(|x|)>>>|<row|<cell|require>|<cell|=>|<cell|<around*|(|i
+        \<gamma\><rsup|\<sigma\>><rsub|a b>\<partial\><rsub|\<sigma\>>-m
+        \<delta\><rsub|a b>|)>\<psi\><rsub|b><around*|(|x|)>>>>>
       </eqnarray*>
 
-      notice that <math|\<partial\><rsub|\<mu\>>><math|S<rsub|b
-      l><around*|(|\<Lambda\><rsup|-1>|)>=0> ? strange \ and <math|S<rsub|b
-      l><around*|(|\<Lambda\><rsup|-1>|)>=><math|S<rsub|b
-      l><rsup|-1><around*|(|\<Lambda\>|)>?>
-
-      and here require :
+      require the equation equal to zero should
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|<around*|(|S\<gamma\><rsup|\<nu\>>S<rsup|-1>|)><rsub|c
-        l><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<rho\>><op|<rsub|\<nu\>>>>|<cell|=>|<cell|\<gamma\><rprime|'><rsup|\<rho\>>>>|<row|<cell|<around*|(|S\<gamma\><rsup|\<nu\>>S<rsup|-1>|)><rsub|c
-        l><around*|(|\<Lambda\><rsup|-1>|)><rsup|\<rho\>><op|<rsub|\<nu\>>>\<Lambda\><rsup|\<nu\>><op|<rsub|\<mu\>>>>|<cell|=>|<cell|\<Lambda\><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rprime|'><rsup|\<rho\>>>>|<row|<cell|<around*|(|S\<gamma\><rsup|\<nu\>>S<rsup|-1>|)><rsub|c
-        l>\<delta\><rsup|\<rho\>><rsub|\<mu\>>>|<cell|=>|<cell|\<Lambda\><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rprime|'><rsup|\<rho\>>>>|<row|<cell|S<rsub|c
-        b>\<gamma\><rsup|\<nu\>><rsub|b a>S<rsub|a
-        l>>|<cell|=>|<cell|\<Lambda\><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rprime|'><rsup|\<mu\>>>>>>
-      </eqnarray*>
-
-      namely\ 
-
-      therefore under the Lorentz invariant Require:
-
-      <\eqnarray*>
-        <tformat|<table|<row|<cell|S<rsub|a k>\<gamma\><rsup|\<nu\>><rsub|k
-        l>S<rsub|l b><rsup|-1>>|<cell|=>|<cell|\<gamma\><rsup|\<nu\>><rsub|a
+        <tformat|<table|<row|<cell|S<rsup|-1><around*|(|\<Lambda\>|)><rsub|a
+        l>\<gamma\><rsup|\<nu\>><rsub|l k>S<around*|(|\<Lambda\>|)><rsub|k
+        b><frac|\<partial\>x<rsup|\<sigma\>>|\<partial\>x<rprime|'><rsup|\<nu\>>>>|<cell|=>|<cell|\<gamma\><rsup|\<sigma\>><rsub|a
         b>>>>>
       </eqnarray*>
+
+      here could know that the Lorentz invariant for equations is <math|that
+      \<Lambda\>\<psi\><around*|(|x|)>> is still the solution ,providing
+      <math|\<psi\><around*|(|x|)>> is the solution ,
+
+      transform it\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|S<rsup|-1><around*|(|\<Lambda\>|)><rsub|a
+        l>\<gamma\><rsup|\<nu\>><rsub|l k>S<around*|(|\<Lambda\>|)><rsub|k
+        b><frac|\<partial\>x<rsup|\<sigma\>>|\<partial\>x<rprime|'><rsup|\<nu\>>>>|<cell|=>|<cell|\<gamma\><rsup|\<sigma\>><rsub|a
+        b>>>|<row|<cell|S<rsup|-1><around*|(|\<Lambda\>|)><rsub|a
+        l>\<gamma\><rsup|\<nu\>><rsub|l k>S<around*|(|\<Lambda\><rsup|>|)><rsub|k
+        b><frac|\<partial\>x<rsup|\<sigma\>>|\<partial\>x<rprime|'><rsup|\<nu\>>><frac|\<partial\>x<rprime|'><rsup|\<mu\>>|\<partial\>x<rsup|\<sigma\>>>>|<cell|=>|<cell|<frac|\<partial\>x<rprime|'><rsup|\<mu\>>|\<partial\>x<rsup|\<sigma\>>>\<gamma\><rsup|\<sigma\>><rsub|a
+        b>>>|<row|<cell|S<rsub|a l><rsup|-1>\<gamma\><rsup|\<mu\>><rsub|l
+        k>S<rsub|k b>>|<cell|=>|<cell|<frac|\<partial\>x<rprime|'><rsup|\<mu\>>|\<partial\>x<rsup|\<sigma\>>>\<gamma\><rsup|\<sigma\>><rsub|a
+        b>>>>>
+      </eqnarray*>
+
+      In more meaningful description : <math|\<Lambda\>\<gamma\>=\<gamma\>>
 
       <subsection|Solve it>
 
       <paragraph|Quality.1> <math|the spinor representation of Lorentz
-      transformation> <math|\<Lambda\><rsub|<frac|1|2>>>
+      transformation> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ here
+      mark <math|S<around*|(|\<Lambda\>|)>=\<Lambda\><rsub|<frac|1|2>>> \ 
 
-      introduce from: <math|<tabular|<tformat|<table|<row|<cell|S<rsub|c
-      b>\<gamma\><rsup|\<nu\>><rsub|b a>S<rsub|a
-      l>>|<cell|=>|<cell|\<Lambda\><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rprime|'><rsup|\<mu\>>>>>>>>
+      introduce from: <math|<tabular|<tformat|<table|<row|<cell|\<Lambda\><rsub|<frac|1|2>><rsup|-1>\<gamma\><rsup|\<nu\>>\<Lambda\><rsub|<frac|1|2>>>|<cell|=>|<cell|\<Lambda\><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rsup|\<mu\>>>>>>>>
 
-      <paragraph|Properities.><math|S<rsub|a b>> is the generators of
-      <math|\<Lambda\><rsub|<frac|1|2>>>
+      <paragraph|Properities.><math|S<rsup|\<mu\>\<nu\>>> is the generators
+      of <math|\<Lambda\><rsub|<frac|1|2>>>
 
       <\itemize>
-        <item><math|\<Lambda\><rsub|<frac|1|2>>=e<rsup|-<frac|i|2>w<rsub|\<mu\>\<nu\>>S<rsup|\<mu\>\<nu\>>>>
+        <item><math|This \ is \ from \ the \ connection \ between \ lie
+        \ algebra \ and \ lie \ gounp >,the coeffient could see as
+        convention.
 
-        <item> <math|S<rsup|\<mu\>\<nu\>> \ \<leftrightarrow\>
-        \ \ T<rsup|\<mu\>\<nu\>>> as saw before\ 
+        <\equation*>
+          \ \ \<Lambda\><rsub|<frac|1|2>>=e<rsup|-<frac|i|2>w<rsub|\<mu\>\<nu\>>S<rsup|\<mu\>\<nu\>>>
+        </equation*>
+
+        and here could mark <math|S<rsup|\<mu\>\<nu\>>> as the representation
+        of <math|T<rsup|\<mu\>\<nu\>>>
       </itemize>
 
-      calculate: claim:
+      <paragraph|Calculation>
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|\<Lambda\><rsub|<frac|1|2>>>|<cell|=>|<cell|e<rsup|<frac|i|4>w<rsub|\<mu\>\<nu\>><around*|[|\<gamma\><rsup|\<mu\>>,\<gamma\><rsup|\<nu\>>|]>>>>>>
+        <tformat|<table|<row|<cell|<tabular|<tformat|<table|<row|<cell|\<Lambda\><rsub|<frac|1|2>><rsup|-1>\<gamma\><rsup|\<nu\>>\<Lambda\><rsub|<frac|1|2>>>>>>>>|<cell|=>|<cell|\<Lambda\><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rsup|\<mu\>>>>|<row|<cell|e<rsup|<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>>\<gamma\><rsup|\<nu\>>e<rsup|-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>>>|<cell|=>|<cell|<around*|(|e<rsup|-<frac|i|2>w<rsub|\<tau\>\<iota\>>T<rsup|\<tau\>\<iota\>>>|)><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rsup|\<mu\>>>>>>
       </eqnarray*>
 
-      verify: <math|S=?<around*|(|relation with \<gamma\><rsup|\<nu\>>|)>>
+      <\description>
+        <item*|>not strictly calculation reference Peskin
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<around*|(|1+<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>|)>\<gamma\><rsup|\<nu\>><around*|(|1-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>|)>>|<cell|=>|<cell|<around*|(|1-<frac|i|2>w<rsub|\<tau\>\<iota\>>T<rsup|\<tau\>
+          \<iota\>>|)><rsup|\<mu\>><rsub|
+          \ \ \ \ \ \<nu\>>\<gamma\><rsup|\<mu\>>>>|<row|<cell|\<gamma\><rsup|\<nu\>><around*|(|1+<frac|1|4><around*|(|w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>|)><rsup|2>|)>>|<cell|=>|<cell|<around*|(|1-<frac|i|2>w<rsub|\<tau\>\<iota\>>T<rsup|\<tau\>
+          \<iota\>>|)><rsup|\<mu\>><rsub|
+          \ \ \ \ \ \<nu\>>\<gamma\><rsup|\<mu\>>>>>>
+        </eqnarray*>
+      </description>
 
       \;
     </description>
@@ -206,7 +230,7 @@
     <associate|auto-4|<tuple|1.1|?>>
     <associate|auto-5|<tuple|2|?>>
     <associate|auto-6|<tuple|3|?>>
-    <associate|auto-7|<tuple|3|?>>
+    <associate|auto-7|<tuple|4|?>>
   </collection>
 </references>
 
@@ -216,6 +240,25 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Dirac
       feilds> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <with|par-left|<quote|6fn>|relation.1
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|0.15fn>>
+
+      relation.2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.15fn>
+
+      <with|par-left|<quote|1.5fn>|Solve it
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|6fn>|Quality.1
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Properities.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
