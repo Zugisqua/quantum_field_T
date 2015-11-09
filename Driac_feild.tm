@@ -201,16 +201,50 @@
       </eqnarray*>
 
       <\description>
-        <item*|>not strictly calculation reference Peskin
+        <item*|> calculation reference Peskin
 
         <\eqnarray*>
-          <tformat|<table|<row|<cell|<around*|(|1+<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>|)>\<gamma\><rsup|\<nu\>><around*|(|1-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>|)>>|<cell|=>|<cell|<around*|(|1-<frac|i|2>w<rsub|\<tau\>\<iota\>>T<rsup|\<tau\>
-          \<iota\>>|)><rsup|\<mu\>><rsub|
-          \ \ \ \ \ \<nu\>>\<gamma\><rsup|\<mu\>>>>|<row|<cell|\<gamma\><rsup|\<nu\>><around*|(|1+<frac|1|4><around*|(|w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>|)><rsup|2>|)>>|<cell|=>|<cell|<around*|(|1-<frac|i|2>w<rsub|\<tau\>\<iota\>>T<rsup|\<tau\>
-          \<iota\>>|)><rsup|\<mu\>><rsub|
-          \ \ \ \ \ \<nu\>>\<gamma\><rsup|\<mu\>>>>>>
+          <tformat|<table|<row|<cell|<frac|\<mathd\>|\<mathd\>w<rsub|\<alpha\>\<beta\>>><around*|\<nobracket\>|<around*|(|e<rsup|<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>>\<gamma\><rsup|\<nu\>>e<rsup|-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>>|)>|\|><rsub|0>>|<cell|=>|<cell|<frac|i|2>S<rsup|\<alpha\>\<beta\>>e<rsup|<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>>\<gamma\><rsup|\<nu\>>e<rsup|-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>>>>|<row|<cell|>|<cell|>|<cell|-<frac|i|2>e<rsup|<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>>\<gamma\><rsup|\<nu\>>S<rsup|\<alpha\>\<beta\>>e<rsup|-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|2>e<rsup|<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>><around*|(|S<rsup|\<alpha\>\<beta\>>\<gamma\><rsup|\<nu\>>-\<gamma\><rsup|\<nu\>>S<rsup|\<alpha\>\<beta\>>|)>e<rsup|-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>e<rsup|<frac|i|2>w<rsub|\<sigma\>\<rho\>>S<rsup|\<sigma\>\<rho\>>><around*|[|\<gamma\><rsup|\<nu\>>,S<rsup|\<alpha\>\<beta\>>|]>e<rsup|-<frac|i|2>w<rsub|\<lambda\>\<kappa\>>S<rsup|\<lambda\>\<kappa\>>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><around*|[|\<gamma\><rsup|\<nu\>>,S<rsup|\<alpha\>\<beta\>>|]>>>>>
         </eqnarray*>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<frac|\<mathd\>|\<mathd\>w<rsub|\<alpha\>\<beta\>>><around*|\<nobracket\>|<around*|(|e<rsup|-<frac|i|2>w<rsub|\<tau\>\<iota\>>T<rsup|\<tau\>\<iota\>>>|)><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rsup|\<mu\>>|\|><rsub|0>>|<cell|=>|<cell|<around*|\<nobracket\>|-<frac|i|2><around*|(|T<rsup|\<alpha\>\<beta\>>e<rsup|-<frac|i|2>w<rsub|\<tau\>\<iota\>>T<rsup|\<tau\>\<iota\>>>|)><rsup|\<nu\>><op|<rsub|\<mu\>>>|\|><rsub|0>\<gamma\><rsup|\<mu\>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><around*|(|T<rsup|\<alpha\>\<beta\>>|)><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rsup|\<mu\>>>>>>
+        </eqnarray*>
+
+        therefore
+
+        <\equation*>
+          <around*|[|\<gamma\><rsup|\<nu\>>,S<rsup|\<alpha\>\<beta\>>|]> =
+          <around*|(|T<rsup|\<alpha\>\<beta\>>|)><rsup|\<nu\>><op|<rsub|\<mu\>>>\<gamma\><rsup|\<mu\>>
+        </equation*>
       </description>
+
+      solve it may be too difficult now ,here could verify at first.therefore
+      claim:
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|S<rsup|\<mu\>\<nu\>>>|<cell|=>|<cell|<frac|i|4><around*|[|\<gamma\><rsup|\<mu\>>,\<gamma\><rsup|\<nu\>>|]>>>>>
+      </eqnarray*>
+
+      then
+
+      <\eqnarray*>
+        <tformat|<cwith|5|5|3|3|cell-halign|l>|<table|<row|<cell|<around*|[|\<gamma\><rsup|\<nu\>>,S<rsup|\<alpha\>\<beta\>>|]>>|<cell|=>|<cell|<frac|i|4><around*|[|\<gamma\><rsup|\<nu\>>,<around*|[|\<gamma\><rsup|\<alpha\>>,\<gamma\><rsup|\<beta\>>|]>|]>=<frac|i|4><around*|[|\<gamma\><rsup|\<nu\>>,\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<beta\>>-\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<alpha\>>|]>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|4><around*|(|\<gamma\><rsup|\<nu\>>\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<beta\>>-\<gamma\><rsup|\<nu\>>\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<alpha\>>-\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<nu\>>+\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<nu\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|4><around*|(|2\<eta\><rsup|\<nu\>\<alpha\>>\<gamma\><rsup|\<beta\>>-\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<nu\>>\<gamma\><rsup|\<beta\>>-2\<eta\><rsup|\<nu\>\<beta\>>\<gamma\><rsup|\<alpha\>>+\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<nu\>>\<gamma\><rsup|\<alpha\>>-\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<nu\>>+\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<nu\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|4><around*|(|2\<eta\><rsup|\<nu\>\<alpha\>>\<gamma\><rsup|\<beta\>>-2\<eta\><rsup|\<nu\>\<beta\>>\<gamma\><rsup|\<alpha\>>-\<gamma\><rsup|\<alpha\>>2\<eta\><rsup|\<nu\>\<beta\>>+\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<nu\>>+\<gamma\><rsup|\<beta\>>2\<eta\><rsup|\<nu\>\<alpha\>>-\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<nu\>>|\<nobracket\>>>>|<row|<cell|>|<cell|>|<cell|
+        \ \ \ \ \ \ \ \ \ \ \ \ -\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<nu\>>+\<gamma\><rsup|\<beta\>>\<gamma\><rsup|\<alpha\>>\<gamma\><rsup|\<nu\>><around*|\<nobracket\>||)>>>|<row|<cell|>|<cell|=>|<cell|i<around*|(|\<eta\><rsup|\<nu\>\<alpha\>>\<gamma\><rsup|\<beta\>>-\<eta\><rsup|\<nu\>\<beta\>>\<gamma\><rsup|\<alpha\>>|)>>>|<row|<cell|>|<cell|=>|<cell|i<around*|(|\<eta\><rsup|\<nu\>\<alpha\>>\<delta\><rsup|\<beta\>><rsub|\<mu\>>-\<eta\><rsup|\<nu\>\<beta\>>\<delta\><rsup|\<alpha\>><rsub|\<mu\>>|)>\<gamma\><rsup|\<mu\>>>>>>
+      </eqnarray*>
+
+      the claim will cause \ <math| <around*|(|T<rsup|\<alpha\>\<beta\>>|)><rsup|\<nu\>><op|<rsub|\<mu\>>>
+      \ = \ i<around*|(|\<eta\><rsup|\<nu\>\<alpha\>>\<delta\><rsup|\<beta\>><rsub|\<mu\>>-\<eta\><rsup|\<nu\>\<beta\>>\<delta\><rsup|\<alpha\>><rsub|\<mu\>>|)>>
+      ,if it's obivious ,we could accept the claim.
+
+      for example
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|(|T<rsup|10>|)><op|<rsup|\<mu\>><op|<rsub|\<nu\>>>>>|<cell|=>|<cell|i<around*|(|\<eta\><rsup|\<mu\>1>\<delta\><rsup|0><rsub|\<nu\>>-\<eta\><rsup|\<mu\>0>\<delta\><rsup|1><rsub|\<nu\>>|)>>>|<row|<cell|>|<cell|=>|<cell|i<matrix|<tformat|<table|<row|<cell|0>|<cell|-1>|<cell|>|<cell|>>|<row|<cell|-1>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>>>>>=-i<matrix|<tformat|<table|<row|<cell|0>|<cell|1>|<cell|>|<cell|>>|<row|<cell|1>|<cell|0>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|0>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|0>>>>>>>>>
+      </eqnarray*>
+
+      oh! physical generator in matrix representation. not the matix
+      repentation of <math|D<rsub|a b>>
 
       \;
     </description>
@@ -259,6 +293,10 @@
       <with|par-left|<quote|6fn>|Properities.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-6><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Calculation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
