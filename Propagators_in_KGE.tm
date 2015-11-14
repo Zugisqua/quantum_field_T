@@ -95,9 +95,129 @@
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|<big|int><frac|\<mathd\>p<rsub|0>|2\<pi\>><frac|i|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>e<rsup|-i
-      p<rsub|0><around*|(|x<rsub|0>-y<rsub|0>|)>>>|<cell|=>|<cell|>>>>
+      p<rsub|0><around*|(|x<rsub|0>-y<rsub|0>|)>>>|<cell|=>|<cell|<around*|[|<big|oint><rsub|C>-<big|int><rsub|C<rsub|R>>-<big|int><rsub|C<rsub|\<varepsilon\>>>-<big|int><rsub|C<rsub|\<varepsilon\><rprime|'>>>|]><frac|\<mathd\>p<rsub|0>|2\<pi\>><frac|i|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>e<rsup|-i
+      p<rsub|0><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|-<around*|[|<big|int><rsub|C<rsub|R>>+<big|int><rsub|C<rsub|\<varepsilon\>>>+<big|int><rsub|C<rsub|\<varepsilon\><rprime|'>>>|]><frac|\<mathd\>p<rsub|0>|2\<pi\>><frac|i|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>e<rsup|-i
+      p<rsub|0><around*|(|x<rsub|0>-y<rsub|0>|)>>>>>>
+    </eqnarray*>
+
+    <\description>
+      <item*|i><math|x<rsub|0>\<gtr\>y<rsub|0>> ,we usually choose <math|R>
+      along lower half plane. Reference: plore_2
+
+      <item*|part 1-1>
+
+      <\description>
+        <item*|<math|C<rsub|R>>>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|lim<rsub|R\<rightarrow\>\<infty\>>z\<times\><around*|(|<frac|1|z<rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>|)>>|<cell|=>|<cell|0>>>>
+        </eqnarray*>
+
+        <item*|<math|C<rsub|\<varepsilon\>>>>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|lim<rsub|z\<rightarrow\>-w<rsub|<wide|p|\<vect\>>>><around*|(|z+w<rsub|<wide|p|\<vect\>>>|)>\<times\><frac|e<rsup|-i
+          z<around*|(|x<rsub|0>-y<rsub|0>|)>>|z<rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>>|<cell|=>|<cell|lim<rsub|z\<rightarrow\>-w<rsub|<wide|p|\<vect\>>>><frac|e<rsup|-i
+          z<around*|(|x<rsub|0>-y<rsub|0>|)>>|z-w<rsub|<wide|p|\<vect\>>>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|e<rsup|i
+          w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|2w<rsub|<wide|p|\<vect\>>>>=k>>>>
+        </eqnarray*>
+
+        <item*|<math|C<rsub|\<varepsilon\><rprime|'>>>>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|lim<rsub|z\<rightarrow\>w<rsub|<wide|p|\<vect\>>>><around*|(|z-w<rsub|<wide|p|\<vect\>>>|)>\<times\><frac|e<rsup|-i
+          z<around*|(|x<rsub|0>-y<rsub|0>|)>>|z<rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>>|<cell|=>|<cell|lim<rsub|z\<rightarrow\>w<rsub|<wide|p|\<vect\>>>><frac|e<rsup|-i
+          z<around*|(|x<rsub|0>-y<rsub|0>|)>>|z+w<rsub|<wide|p|\<vect\>>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|e<rsup|-i
+          w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|2w<rsub|<wide|p|\<vect\>>>>=k<rprime|'>>>>>
+        </eqnarray*>
+      </description>
+
+      therefore
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|integral>|<cell|=>|<cell|-<frac|i|2\<pi\>><around*|[|0+i
+        k<around*|(|2\<pi\>-\<pi\>|)>+i k<rprime|'><around*|(|2\<pi\>-\<pi\>|)>|]>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|[|k+k<rprime|'>|]>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|{|<frac|e<rsup|-i
+        w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|2w<rsub|<wide|p|\<vect\>>>>-<frac|e<rsup|i
+        w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|2w<rsub|<wide|p|\<vect\>>>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2>\<times\><frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|{|e<rsup|-i
+        w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>-e<rsup|i
+        w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|}>>>>>
+      </eqnarray*>
+
+      <item*|ii><math|x<rsub|0>\<less\>y<rsub|0>> choose upper half plane
+
+      the <math|K ,k ,k<rprime|'>> remain the same
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|integtral>|<cell|=>|<cell|-<frac|i|2\<pi\>><around*|[|0+i
+        k<around*|(|0-\<pi\>|)>+i k<rprime|'><around*|(|0-\<pi\>|)>|]>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|2><around*|[|k+k<rprime|'>|]>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|2>\<times\><frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|{|e<rsup|-i
+        w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>-e<rsup|i
+        w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|}>>>>>
+      </eqnarray*>
+
+      the integral have changed into the negative
+    </description>
+
+    <item*|Definition of some>
+
+    for case i :It's advanced propagator
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|G<rsub|adv><around*|(|x-y|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>e<rsup|i
+      <wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>><big|int><frac|\<mathd\>p<rsub|0>|2\<pi\>><frac|i|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>e<rsup|-i
+      p<rsub|0><around*|(|x<rsub|0>-y<rsub|0>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>e<rsup|i
+      <wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>>\<times\><frac|1|2>\<times\><frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|{|e<rsup|-i
+      w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>-e<rsup|i
+      w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|i
+      <wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>><around*|{|e<rsup|-i
+      w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>-e<rsup|i
+      w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|{|<around*|\<nobracket\>|<frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+      p<around*|(|x-y|)>>|\|><rsub|p<rsub|0>=w<rsub|<wide|p|\<vect\>>>>+<frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|i
+      <around*|(|<wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>+w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|{|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+      p<around*|(|x-y|)>>+<big|int><frac|\<mathd\><rsup|3><around*|(|-p|)>|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|-<wide|p|\<vect\>>>>e<rsup|i<around*|(|-<wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>+w<rsub|-<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|{|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+      p<around*|(|x-y|)>>-<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|i<around*|(|-<wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>>-<wide|y|\<vect\>>|)>+w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-y<rsub|0>|)>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|\<nobracket\>|<frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|{|e<rsup|-i
+      p<around*|(|x-y|)>>-e<rsup|i p<around*|(|x-y|)>>|}>|\|><rsub|p<rsub|0>=w<rsub|<wide|p|\<vect\>>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|x|)>,\<phi\><around*|(|y|)>|]><around|\||0|\<rangle\>>>>>>
+    </eqnarray*>
+
+    for case ii :call retarded propagator
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|G<rsub|ret><around*|(|x-y|)>>|<cell|=>|<cell|-<frac|1|2><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><around*|\<nobracket\>|<frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|{|e<rsup|-i
+      p<around*|(|x-y|)>>-e<rsup|i p<around*|(|x-y|)>>|}>|\|><rsub|p<rsub|0>=w<rsub|<wide|p|\<vect\>>>>>>>>
     </eqnarray*>
   </description>
+
+  <\description>
+    <item*|the physical>we only know :<math|\<less\>>Reference:
+    Klein-Gordon_feilds.tm\<gtr\>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|>\<phi\><around*|(|x|)>\<phi\><around*|(|y|)><around|\||0|\<rangle\>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+      p<around*|(|x-y|)>>>>>>
+    </eqnarray*>
+
+    and
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|x|)>,\<phi\><around*|(|y|)>|]><around|\||0|\<rangle\>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|{|e<rsup|-i
+      p<around*|(|x-y|)>>-e<rsup|i p<around*|(|x-y|)>>|}>>>>>
+    </eqnarray*>
+
+    where <math|p<rsub|0>=w<rsub|<wide|p|\<vect\>>>>
+  </description>
+
+  <paragraph|others>
+
+  see <math|<around|\<langle\>|0|\|>\<phi\><around*|(|x|)>\<phi\><around*|(|y|)><around|\||0|\<rangle\>>>
+  also could be the Green function?
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<around*|(|\<box\>
+    +m<rsup|2>|)><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+    p<around*|(|x-y|)>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|<around*|(|-w<rsub|<wide|p|\<vect\>>><rsup|2>+<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>|)>|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+    p<around*|(|x-y|)>>>>>>
+  </eqnarray*>
+
+  \;
 </body>
 
 <initial|<\collection>
@@ -108,6 +228,7 @@
     <associate|auto-1|<tuple|1|?>>
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|2|?>>
+    <associate|auto-4|<tuple|3|?>>
   </collection>
 </references>
 
