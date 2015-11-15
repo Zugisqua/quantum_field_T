@@ -218,6 +218,198 @@
   </eqnarray*>
 
   \;
+
+  \;
+
+  \;
+
+  <subsection|Appendix material :<math|\<Delta\>> function>
+
+  Reference:Greiner(1996)
+
+  should learn that there are some different with the imagine <math|i>(lack
+  time it).
+
+  <\description>
+    <item*|Base>solution function
+
+    <\description>
+      <item*|i>Pauli-Jordan function
+
+      form:1
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<Delta\><around*|(|x-y|)>>|<cell|=>|<cell|<around*|[|\<phi\><around*|(|x|)>,\<phi\><around*|(|y|)>|]>>>>>
+      </eqnarray*>
+
+      in so-call Fourier repsentation namely\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<Delta\><around*|(|x|)>>|<cell|=>|<cell|<around|\<langle\>|0|\|><around*|[|\<phi\><around*|(|x|)>,\<phi\><around*|(|y|)>|]><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|-i<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|(|e<rsup|-i
+        p x>-e<rsup|i p x>|)>>>>>
+      </eqnarray*>
+
+      verify :<math|\<Delta\><around*|(|x|)>> equel to the
+      <math|<big|oint><rsub|C>> where <math|C> include the two singulars
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<Delta\><around*|(|x|)>>|<cell|=>|<cell|<big|oint><rsub|C><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|1|p<rsup|2>-m<rsup|2>>e<rsup|-i
+        p x>>>>>
+      </eqnarray*>
+
+      <\description>
+        <item*|Properities>
+
+        {do:
+      </description>
+
+      <item*|ii>positive frequency & negatice frequency of Pauli-Jordan
+      function
+
+      Conception :
+
+      <\description>
+        <item*|<math|\<Delta\><rsub|+><around*|(|x|)>>>which is the positive
+        singular part of <math|\<Delta\><around*|(|x|)>>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|+><around*|(|x|)>>|<cell|=>|<cell|<big|oint><rsub|C<rsub|+>><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|1|p<rsup|2>-m<rsup|2>>e<rsup|-i
+          p x>>>>>
+        </eqnarray*>
+
+        <item*|<math|\<Delta\><rsub|-><around*|(|x|)>>>which is the negative
+        singular part of <math|\<Delta\><around*|(|x|)>>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|-><around*|(|x|)>>|<cell|=>|<cell|<big|oint><rsub|C<rsub|->><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|1|p<rsup|2>-m<rsup|2>>e<rsup|-i
+          p x>>>>>
+        </eqnarray*>
+      </description>
+
+      <item*|iii>anticomunitator
+
+      only the integral path differently
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<Delta\><rsub|1><around*|(|x|)>>|<cell|=>|<cell|\<Delta\><rsub|+><around*|(|x|)>-\<mathLaplace\><rsub|-><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|oint><rsub|C<rsub|1>><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|1|p<rsup|2>-m<rsup|2>>e<rsup|-i
+        p x>>>|<row|<cell|>|<cell|=>|<cell|-i<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|1|2w<rsub|<wide|p|\<vect\>>>><around*|(|e<rsup|-i
+        p x>+e<rsup|i p x>|)>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|0|\|><around*|{|\<phi\><around*|(|x|)>,\<phi\><around*|(|y|)>|}><around|\||0|\<rangle\>>>>>>
+      </eqnarray*>
+
+      the last form could see the origin of its name :anticomunitator
+
+      <\description>
+        <item*|Properities>
+
+        {do:
+      </description>
+
+      \ 
+    </description>
+
+    <item*|Green's funtion>which could be constructed by Base
+
+    <\description>
+      <item*|i>Feynman propagators
+
+      <\itemize>
+        <item>Definition : path minus below the singular,positive above the
+        singular.
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|F><around*|(|x|)>>|<cell|=>|<cell|\<Theta\><around*|(|x<rsub|0>|)>\<Delta\><rsub|+><around*|(|x|)>-\<Theta\><around*|(|-x<rsub|0>|)>\<Delta\><rsub|-><around*|(|x|)>>>>>
+        </eqnarray*>
+
+        where the function <math|\<Theta\><around*|(|x|)>> definite as
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Theta\><around*|(|x|)>>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|1>|<cell|x\<geqslant\>0>>|<row|<cell|0>|<cell|x\<less\>0>>>>>>>>>
+        </eqnarray*>
+
+        <\description>
+          <item*|Instruction>
+
+          <\itemize>
+            <item>The path the propagator definition is not a closed circle
+            any more. And if for calculation need add a big half circle ,it
+            will lead to including one singular as residue. [defining a
+            certain circle,the <math|\<Theta\><around*|(|x|)>> will cause
+            choosing different path,therefore...]
+
+            <item>PS. the defined path is far enough away form the
+            singular,therefore should not calculate the
+            <math|C<rsub|\<varepsilon\>>> integral value.
+
+            <item>the good properity is that it could ensure the
+            casuallity.here I haven't see it maybe need some calculation.
+          </itemize>
+        </description>
+
+        similarly we have anticausal propagator as:
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|D><around*|(|x|)>>|<cell|=>|<cell|\<Theta\><around*|(|x<rsub|0>|)>\<Delta\><rsub|-><around*|(|x|)>-\<Theta\><around*|(|-x<rsub|0>|)>\<Delta\><rsub|+><around*|(|x|)>>>>>
+        </eqnarray*>
+      </itemize>
+
+      <item*|ii>Retarded propagator & Advanced propagator
+
+      <\description>
+        <item*|<math|\<Delta\><rsub|R><around*|(|x|)>>>path above the two
+        singulars
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|R><around*|(|x|)>>|<cell|=>|<cell|\<Theta\><around*|(|x<rsub|0>|)>\<Delta\><around*|(|x|)>>>>>
+        </eqnarray*>
+
+        <item*|<math|\<Delta\><rsub|A><around*|(|x|)>>>path below the two
+        singulars
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|A><around*|(|x|)>>|<cell|=>|<cell|-\<Theta\><around*|(|-x<rsub|0>|)>\<Delta\><around*|(|x|)>>>>>
+        </eqnarray*>
+
+        alternatively could see how they are introced
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|R><around*|(|x|)>-\<Delta\><rsub|A><around*|(|x|)>>|<cell|=>|<cell|\<Theta\><around*|(|x<rsub|0>|)>\<Delta\><around*|(|x|)>+\<Theta\><around*|(|-x<rsub|0>|)>\<Delta\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|\<Theta\><around*|(|x<rsub|0>|)>+\<Theta\><around*|(|-x<rsub|0>|)>|)>\<Delta\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|\<Delta\><around*|(|x|)>>>>>
+        </eqnarray*>
+
+        <\description>
+          <item*|instruction>
+
+          <\itemize>
+            <item>they are similar with the Feynman propagator where the path
+            is not closed
+
+            <item>It's interesting to find the region
+            <math|\<Delta\><rsub|R><around*|(|x|)>-\<Delta\><rsub|A><around*|(|x|)>>
+            describe which is infinitely equal to a closed region
+            <math|\<Delta\><around*|(|x|)>> describe.
+          </itemize>
+        </description>
+      </description>
+
+      <item*|iii>Principal-part propagator
+
+      <\description>
+        <item*|Definition>choose the path along the real axis
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|<wide|\<Delta\>|\<bar\>><around*|(|x|)>>|<cell|=>|<cell|<frac|1|2>\<epsilon\><around*|(|x<rsub|0>|)>\<Delta\><around*|(|x|)>>>>>
+        </eqnarray*>
+
+        where <math|\<epsilon\><around*|(|x|)>=<choice|<tformat|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|1>|<cell|x\<geqslant\>0>>|<row|<cell|-1>|<cell|x\<less\>0>>>>>>
+
+        Orz : I calculate before all is this kind of propagator !
+      </description>
+    </description>
+
+    <item*|verify the Green's function>
+
+    for <math|\<Delta\><rsub|F><around*|(|x|)>> some delta functin properity
+    is not clear otz
+  </description>
 </body>
 
 <initial|<\collection>
@@ -229,6 +421,9 @@
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|2|?>>
     <associate|auto-4|<tuple|3|?>>
+    <associate|auto-5|<tuple|1.1|?>>
+    <associate|auto-6|<tuple|3.1|?>>
+    <associate|auto-7|<tuple|3|?>>
   </collection>
 </references>
 
@@ -246,6 +441,9 @@
       <with|par-left|<quote|6fn>|Physical \ meaning.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|others <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
