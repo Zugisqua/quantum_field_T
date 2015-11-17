@@ -277,6 +277,16 @@
           p x>>>>>
         </eqnarray*>
 
+        more detail
+
+        <math|<tabular|<tformat|<table|<row|<cell|\<Delta\><rsub|+><around*|(|x|)>>|<cell|=>|<cell|<big|oint><rsub|C<rsub|+>><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|1|p<rsup|2>-m<rsup|2>>e<rsup|-i
+        p x>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>e<rsup|i
+        <wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><big|oint><rsub|C<rsub|+>><frac|e<rsup|-i
+        p<rsub|0>x<rsub|0>>|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|4>>e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><around*|{|<around*|\<nobracket\>|-2\<pi\>i\<times\><frac|<around*|(|p<rsub|0>-w<rsub|<wide|p|\<vect\>>>|)>|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>e<rsup|-i
+        p<rsub|0>x<rsub|0>>|\|><rsub|p<rsub|0>=w<rsub|<wide|p|\<vect\>>>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|4>>e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><around*|(|-<frac|2\<pi\>i|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|-i|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+        p\<cdot\>x>>>>>>>
+
         <item*|<math|\<Delta\><rsub|-><around*|(|x|)>>>which is the negative
         singular part of <math|\<Delta\><around*|(|x|)>>
 
@@ -284,6 +294,17 @@
           <tformat|<table|<row|<cell|\<Delta\><rsub|-><around*|(|x|)>>|<cell|=>|<cell|<big|oint><rsub|C<rsub|->><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|1|p<rsup|2>-m<rsup|2>>e<rsup|-i
           p x>>>>>
         </eqnarray*>
+
+        detail
+
+        <math|<tabular|<tformat|<table|<row|<cell|\<Delta\><rsub|-><around*|(|x|)>>|<cell|=>|<cell|<big|oint><rsub|C<rsub|->><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|1|p<rsup|2>-m<rsup|2>>e<rsup|-i
+        p x>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>e<rsup|i
+        <wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><big|oint><rsub|C<rsub|->><frac|e<rsup|-i
+        p<rsub|0>x<rsub|0>>|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|4>>e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><around*|{|<around*|\<nobracket\>|-2\<pi\>i\<times\><frac|<around*|(|p<rsub|0>+w<rsub|<wide|p|\<vect\>>>|)>|p<rsub|0><rsup|2>-w<rsub|<wide|p|\<vect\>>><rsup|2>>e<rsup|-i
+        p<rsub|0>x<rsub|0>>|\|><rsub|p<rsub|0>=-w<rsub|<wide|p|\<vect\>>>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|4>>e<rsup|i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>><around*|(|<frac|2\<pi\>i|2w<rsub|<wide|p|\<vect\>>>>e<rsup|i
+        w<rsub|<wide|p|\<vect\>>>x<rsub|0>>|)>>>|<row|<cell|>|<cell|=>|<cell|-<big|int><frac|\<mathd\><rsup|3><around*|(|-p|)>|<around*|(|2\<pi\>|)><rsup|3>>e<rsup|-i<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>\<times\><frac|-i|2w<rsub|-<wide|p|\<vect\>>>>e<rsup|i
+        w<rsub|-<wide|p|\<vect\>>>x<rsub|0>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|-i|2w<rsub|<wide|p|\<vect\>>>>e<rsup|i
+        p\<cdot\>x>>>>>>>
       </description>
 
       <item*|iii>anticomunitator
@@ -324,6 +345,12 @@
 
         <\eqnarray*>
           <tformat|<table|<row|<cell|\<Theta\><around*|(|x|)>>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|1>|<cell|x\<geqslant\>0>>|<row|<cell|0>|<cell|x\<less\>0>>>>>>>>>
+        </eqnarray*>
+
+        another describe by <math|\<Delta\><around*|(|x|)>>and<math|\<Delta\><rsub|1><around*|(|x|)>>
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|\<Delta\><rsub|F>>|<cell|=>|<cell|\<Theta\><around*|(|x<rsub|0>|)>\<times\><frac|1|2><around*|(|\<Delta\><around*|(|x|)>+\<Delta\><rsub|1><around*|(|x|)>|)>-\<Theta\><around*|(|-x<rsub|0>|)>\<times\><frac|1|2><around*|(|\<Delta\><around*|(|x|)>-\<Delta\><rsub|1><around*|(|x|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|(|\<Theta\><around*|(|x<rsub|0>|)>-\<Theta\><around*|(|-x<rsub|0>|)>|)>\<Delta\><around*|(|x|)>+<frac|1|2><around*|(|\<Theta\><around*|(|x<rsub|0>|)>+\<Theta\><around*|(|-x<rsub|0>|)>|)>\<Delta\><rsub|1><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2>\<epsilon\><around*|(|x<rsub|0>|)>\<Delta\><around*|(|x|)>+\<Delta\><rsub|1><around*|(|x|)>>>>>
         </eqnarray*>
 
         <\description>
@@ -407,8 +434,43 @@
 
     <item*|verify the Green's function>
 
-    for <math|\<Delta\><rsub|F><around*|(|x|)>> some delta functin properity
-    is not clear otz
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<Delta\><rsub|F><around*|(|x|)>>|<cell|=>|<cell|\<Theta\><around*|(|x<rsub|0>|)>\<Delta\><rsub|+><around*|(|x|)>-\<Theta\><around*|(|-x<rsub|0>|)>\<Delta\><rsub|-><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<choice|<tformat|<table|<row|<cell|\<Delta\><rsub|+><around*|(|x|)>>|<cell|x<rsub|0>\<geqslant\>0>>|<row|<cell|-\<Delta\><rsub|-><around*|(|x|)>>|<cell|x<rsub|0>\<less\>0>>>>>>>>>
+    </eqnarray*>
+
+    case <math|x<rsub|0>\<gtr\>y<rsub|0>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|\<box\>
+      +m<rsup|2>|)>\<Delta\><rsub|F><around*|(|x-y|)>>|<cell|=>|<cell|<around*|(|\<box\>
+      +m<rsup|2>|)>\<Delta\><rsub|+><around*|(|x-y|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|\<partial\><rsub|0>\<partial\><rsup|0>+\<partial\><rsub|m>\<partial\><rsup|m>+m<rsup|2>|)><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>><frac|i|2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+      p\<cdot\><around*|(|x-y|)>>>>|<row|<cell|>|<cell|=>|<cell|i<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>>e<rsup|-i
+      p <around*|(|x-y|)>><around*|{|<frac|-w<rsub|<wide|p|\<vect\>>><rsup|2>+<around*|\||<wide|p|\<vect\>>|\|><rsup|2>+m<rsup|2>|2w<rsub|<wide|p|\<vect\>>>>|}>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
+    </eqnarray*>
+
+    this way can't make it, maybe need the entire properities.
+
+    see another describe <math|\<Delta\><rsub|F><around*|(|x|)>=<frac|1|2>\<epsilon\><around*|(|x<rsub|0>|)>\<Delta\><around*|(|x|)>+\<Delta\><rsub|1><around*|(|x|)>>
+    ,
+
+    Some based points [should verify]
+
+    <\itemize>
+      <item><math|\<partial\><rsub|0>\<epsilon\><around*|(|x<rsub|0>|)>=2\<delta\><around*|(|x<rsub|0>|)>>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|>|<cell|>|<cell|>>>>
+      </eqnarray*>
+
+      <item><math|\<partial\><rsub|0>\<delta\><around*|(|x|)>f<around*|(|x|)>=-\<delta\><around*|(|x|)>\<partial\><rsub|0>f<around*|(|x|)>>
+    </itemize>
+
+    verify it:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|\<box\>
+      +m<rsup|2>|)>\<Delta\><rsub|F><around*|(|x-y|)>>|<cell|=>|<cell|<around*|(|\<partial\><rsub|0>\<partial\><rsup|0>+\<partial\><rsub|m>\<partial\><rsup|m>+m<rsup|2>|)><around*|(|<frac|1|2>\<epsilon\><around*|(|x<rsub|0>-y<rsub|0>|)>\<Delta\><around*|(|x-y|)>+\<Delta\><rsub|1><around*|(|x-y|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><around*|(|\<partial\><rsub|0>\<partial\><rsub|0>-<big|sum><rsub|m>\<partial\><rsub|m>\<partial\><rsub|m>+m<rsup|2>|)>\<epsilon\><around*|(|x<rsub|0>-y<rsub|0>|)>\<Delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|0><around*|(|\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<Delta\><around*|(|x-y|)>|)>+<frac|1|2>\<partial\><rsub|0><around*|(|\<epsilon\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>|)>>>|<row|<cell|>|<cell|>|<cell|+<frac|1|2><around*|(|\<partial\><rsub|m>\<partial\><rsup|m>+m<rsup|2>|)>\<epsilon\><around*|(|x<rsub|0>-y<rsub|0>|)>\<Delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|0><around*|(|\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>|)>\<Delta\><around*|(|x-y|)>+\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|>|<cell|+\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>+<frac|1|2>\<epsilon\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|>|<cell|+<frac|1|2>\<epsilon\><around*|(|x<rsub|0>-y<rsub|0>|)><around*|(|\<partial\><rsub|m>\<partial\><rsup|m>+m<rsup|2>|)>\<Delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|0>\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<Delta\><around*|(|x-y|)>+2\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|=>|<cell|-\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>+2\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|=>|<cell|2\<delta\><around*|(|x<rsub|0>-y<rsub|0>|)>\<partial\><rsub|0>\<Delta\><around*|(|x-y|)>>>>>
+    </eqnarray*>
   </description>
 </body>
 
@@ -444,6 +506,11 @@
 
       <with|par-left|<quote|6fn>|others <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4><vspace|0.15fn>>
+
+      <with|par-left|<quote|1.5fn>|Appendix material
+      :<with|mode|<quote|math>|\<Delta\>> function
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
     </associate>
   </collection>
 </auxiliary>
