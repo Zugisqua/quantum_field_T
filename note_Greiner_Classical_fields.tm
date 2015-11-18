@@ -45,6 +45,20 @@
 
     <paragraph|Hamilton equation>
 
+    should notice that : the equation is not derive from minimal action
+    principle orz
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|S>|<cell|=>|<cell|<big|int>\<mathd\>t
+      H<around*|(|t|)>=<big|int>\<mathd\><rsup|4>x<around*|{|\<pi\><around*|(|x|)><wide|\<phi\>|\<dot\>><around*|(|x|)>-<with|math-font|cal|L>|}>>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<frac|\<delta\>S|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\><with|math-font|cal|L<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<partial\><rsub|0><around*|(|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|)>+<frac|\<partial\><with|math-font|cal|L><around*|[|\<phi\>|]>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<partial\><rsub|0>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>><around*|(|<with|math-font|cal|L><around*|[|\<phi\>|]>+<frac|\<partial\><with|math-font|cal|L>|\<partial\>\<phi\><around*|(|x|)>>\<epsilon\>\<delta\><around*|(|x-y|)>+<frac|\<partial\><with|math-font|cal|L>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<epsilon\>\<partial\><rsub|0>\<delta\><around*|(|x-y|)>|)>|\<nobracket\>>\<times\>>>|<row|<cell|>|<cell|>|<cell|<around*|\<nobracket\>|\<partial\><rsub|0><around*|(|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|)>+<frac|\<partial\><with|math-font|cal|L><around*|[|\<phi\>|]>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<partial\><rsub|0>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>|\<partial\><wide|\<phi\><around*|(|x|)>|\<dot\>>><around*|(||)>|}>>>>>
+    </eqnarray*>
+
+    \;
+
     <paragraph|Poisson bracket>
 
     <\description>
@@ -53,7 +67,7 @@
       Based\ 
 
       <\itemize>
-        <item>should verify {do:
+        <item>should verify {see exercise.4}
 
         <\eqnarray*>
           <tformat|<table|<row|<cell|<frac|\<delta\>\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<delta\>\<phi\><around*|(|<wide|x|\<vect\>><rprime|'>,t|)>>>|<cell|=>|<cell|\<delta\><around*|(|<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|)>>>>>
@@ -180,6 +194,36 @@
       <\eqnarray*>
         <tformat|<cwith|1|1|1|1|cell-halign|l>|<cwith|2|2|1|1|cell-halign|l>|<cwith|3|3|1|1|cell-halign|l>|<table|<row|<cell|1\<nosymbol\>\<nosymbol\>.F<around*|[|\<phi\>|]>=<big|int>\<mathd\>x\<phi\><rsup|n><around*|(|x|)>>|<cell|>|<cell|2.F<around*|[|\<phi\>|]>=<big|int>\<mathd\>x<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n>>>|<row|<cell|3.F<rsub|y><around*|[|\<phi\>|]>=<big|int>\<mathd\>x<rprime|'>K<around*|(|x<rprime|'>,y|)>\<phi\><around*|(|x<rprime|'>|)>>|<cell|>|<cell|4.F<rsub|x><around*|[|\<phi\>|]>=\<phi\><around*|(|x|)>>>|<row|<cell|5.F<rsub|x><around*|[|\<phi\>|]>=\<nabla\>\<phi\><around*|(|x|)>>|<cell|>|<cell|>>>>
       </eqnarray*>
+
+      <item*|1>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|F<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>-F<around*|[|\<phi\>|]>|\<epsilon\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\>x<around*|{|<around*|(|\<phi\><around*|(|x|)>+\<epsilon\>\<delta\><around*|(|x-y|)>|)><rsup|n>-\<phi\><rsup|n><around*|(|x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\>x<around*|{|\<phi\><rsup|n><around*|(|x|)>+n\<epsilon\>\<delta\><around*|(|x-y|)>\<phi\><rsup|n-1>+o<around*|(|\<epsilon\>|)>-\<phi\><rsup|n><around*|(|x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><big|int>\<mathd\>x<around*|{|n\<delta\><around*|(|x-y|)>\<phi\><rsup|n-1><around*|(|x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|n\<phi\><rsup|n-1><around*|(|y|)>>>>>
+      </eqnarray*>
+
+      <item*|2>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|F<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>-F<around*|[|\<phi\>|]>|\<epsilon\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\>x<around*|{|<around*|(|<frac|\<mathd\><around*|(|\<phi\><around*|(|x|)>+\<epsilon\>\<delta\><around*|(|x-y|)>|)>|\<mathd\>x>|)><rsup|n>-<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\>x<around*|{|<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>+\<epsilon\><frac|\<mathd\>\<delta\><around*|(|x-y|)>|\<mathd\>x>|)><rsup|n>-<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\>x<around*|{|<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n>+n<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n-1>\<epsilon\><frac|\<mathd\>\<delta\><around*|(|x-y|)>|\<mathd\>x>-<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><big|int>\<mathd\>x<around*|{|n<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n-1><frac|\<mathd\>\<delta\><around*|(|x-y|)>|\<mathd\>x>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>\<delta\><around*|(|x-y|)>n<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n-1>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|\<delta\><around*|(|x-y|)>n<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n-1>|\|><rsup|\<lambda\><rsub|1>><rsub|\<lambda\><rsub|0>>-<big|int>\<delta\><around*|(|x-y|)>\<mathd\>n<around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n-1>>>|<row|<cell|>|<cell|=>|<cell|-<big|int>\<delta\><around*|(|x-y|)><around*|{|n<around*|(|n-1|)><around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n-2><frac|\<mathd\><rsup|2>\<phi\><around*|(|x|)>|\<mathd\>x<rsup|2>>|}>\<mathd\>x>>|<row|<cell|>|<cell|=>|<cell|-<around*|\<nobracket\>|n<around*|(|n-1|)><around*|(|<frac|\<mathd\>\<phi\><around*|(|x|)>|\<mathd\>x>|)><rsup|n-2><frac|\<mathd\><rsup|2>\<phi\><around*|(|x|)>|\<mathd\>x<rsup|2>>|\|><rsub|x=y>>>>>
+      </eqnarray*>
+
+      <item*|3>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|F<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>-F<around*|[|\<phi\>|]>|\<epsilon\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\>x<rprime|'><around*|{|K<around*|(|x<rprime|'>,y|)><around*|(|\<phi\><around*|(|x<rprime|'>|)>+\<epsilon\>\<delta\><around*|(|x<rprime|'>-x|)>|)>-K<around*|(|x<rprime|'>,y|)>\<phi\><around*|(|x<rprime|'>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><big|int>\<mathd\>x<rprime|'><around*|{|K<around*|(|x<rprime|'>,y|)>\<delta\><around*|(|x<rprime|'>-x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|K<around*|(|x,y|)>>>>>
+      </eqnarray*>
+
+      <item*|4>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|F<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>-F<around*|[|\<phi\>|]>|\<epsilon\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><around*|{|\<phi\><around*|(|x|)>+\<epsilon\>\<delta\><around*|(|x-y|)>-\<phi\><around*|(|x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|\<delta\><around*|(|x-y|)>>>>>
+      </eqnarray*>
+
+      <item*|5>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|F<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>-F<around*|[|\<phi\>|]>|\<epsilon\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><around*|{|\<nabla\><around*|(|\<phi\><around*|(|x|)>+\<epsilon\>\<delta\><around*|(|x-y|)>|)>-\<nabla\>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|\<nabla\>\<delta\><around*|(|x-y|)>>>>>
+      </eqnarray*>
     </description>
   </description>
 </body>
@@ -207,9 +251,37 @@
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|classical
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Classical
       field> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <with|par-left|<quote|3fn>|Introduction
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|6fn>|Lagrange density.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Derivation.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Hamilton equation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Poisson bracket
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Noether's theorem.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Functional derivative
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
