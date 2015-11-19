@@ -7,7 +7,7 @@
 
   <section|Dirac feilds>
 
-  1. Dirac equation
+  <subsubsection|1. Dirac equation>
 
   Alternative .as the hint in class
 
@@ -245,12 +245,47 @@
 
       oh! physical generator in matrix representation. not the matix
       repentation of <math|D<rsub|a b>>
-
-      \;
     </description>
   </description>
 
-  \;
+  <paragraph|2. Covarivant Lagrangian>[from here on,change the symbol
+  <math|\<phi\>> as <math|\<psi\>>]
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<with|math-font|cal|L>>|<cell|=>|<cell|<wide|\<psi\>|\<bar\>><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>>>>>
+  </eqnarray*>
+
+  here <math|<wide|\<psi\>|\<bar\>>=\<psi\><rprime|\<dag\>>\<gamma\><rsup|0>>
+  ,should notice that <math|\<psi\>,\<gamma\><rsup|\<mu\>>> in matrix
+  representation are 4-conponent and 4x4 matrix.\ 
+
+  <\itemize>
+    <item>verify the covariant
+
+    {do:
+
+    <item>derive the equation of motion
+
+    {do:
+  </itemize>
+
+  <subsubsection|3. Partition-equation [Wely spinor]>
+
+  <\description>
+    <item*|The equation>write Dirac equation in 2-partition
+
+    {do:
+
+    if <math|m=0> ,could obtain the Wely equation
+
+    {write:
+
+    <item*|Lorentz transformation>
+
+    {do:
+
+    \;
+  </description>
 </body>
 
 <initial|<\collection>
@@ -259,12 +294,15 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?>>
+    <associate|auto-10|<tuple|1.1.1|?>>
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|1.1|?>>
-    <associate|auto-4|<tuple|1.1|?>>
-    <associate|auto-5|<tuple|2|?>>
-    <associate|auto-6|<tuple|3|?>>
-    <associate|auto-7|<tuple|4|?>>
+    <associate|auto-4|<tuple|1.1.1|?>>
+    <associate|auto-5|<tuple|1.1|?>>
+    <associate|auto-6|<tuple|1.1.0.2|?>>
+    <associate|auto-7|<tuple|1.1.0.3|?>>
+    <associate|auto-8|<tuple|1.1.0.4|?>>
+    <associate|auto-9|<tuple|1.1.0.5|?>>
   </collection>
 </references>
 
