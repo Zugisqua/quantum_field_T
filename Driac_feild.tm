@@ -262,6 +262,13 @@
   <\itemize>
     <item>verify the covariant
 
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|F<rsup|\<ast\>><with|math-font|cal|L>>|<cell|=>|<cell|\<Lambda\><around*|(|<wide|\<psi\>|\<bar\>><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>|)>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<psi\>|\<bar\>><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>>>>>
+    </eqnarray*>
+
+    cause we know every scalar is Lorentz invariant,So what does it mean
+    about the covariant.
+
     {do:
 
     <item>derive the equation of motion
@@ -274,15 +281,115 @@
   <\description>
     <item*|The equation>write Dirac equation in 2-partition
 
-    {do:
+    <\paragraph>
+      the rep we choose.
+    </paragraph>
 
-    if <math|m=0> ,could obtain the Wely equation
+    Wely representatin: I'm curious at how to find the choice
 
-    {write:
+    <\itemize>
+      <item><math|\<gamma\><rsup|0>=<matrix|<tformat|<table|<row|<cell|>|<cell|\<bbb-I\>>>|<row|<cell|\<bbb-I\>>|<cell|>>>>>,\<gamma\><rsup|m>=<matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|m>>>|<row|<cell|-\<sigma\><rsup|m>>|<cell|>>>>>>therefore
+      <math|<tabular|<tformat|<table|<row|<cell|S<rsup|\<mu\>\<nu\>>>|<cell|=>|<cell|<frac|i|4><around*|[|\<gamma\><rsup|\<mu\>>,\<gamma\><rsup|\<nu\>>|]>>>>>>>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|S<rsup|0m>>|<cell|=>|<cell|<frac|i|4><around*|(|\<gamma\><rsup|0>\<gamma\><rsup|m>-\<gamma\><rsup|m>\<gamma\><rsup|0>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|4><around*|(|<matrix|<tformat|<table|<row|<cell|>|<cell|\<bbb-I\>>>|<row|<cell|\<bbb-I\>>|<cell|>>>>><matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|m>>>|<row|<cell|-\<sigma\><rsup|m>>|<cell|>>>>>-<matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|m>>>|<row|<cell|-\<sigma\><rsup|m>>|<cell|>>>>><matrix|<tformat|<table|<row|<cell|>|<cell|\<bbb-I\>>>|<row|<cell|\<bbb-I\>>|<cell|>>>>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|4><around*|(|<matrix|<tformat|<table|<row|<cell|-\<sigma\><rsup|m>>|<cell|0>>|<row|<cell|0>|<cell|\<sigma\><rsup|m>>>>>>-<matrix|<tformat|<table|<row|<cell|\<sigma\><rsup|\<mu\>>>|<cell|0>>|<row|<cell|0>|<cell|-\<sigma\><rsup|m>>>>>>|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><matrix|<tformat|<table|<row|<cell|\<sigma\><rsup|m>>|<cell|0>>|<row|<cell|0>|<cell|-\<sigma\><rsup|m>>>>>>>>>>
+      </eqnarray*>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|S<rsup|n
+        m>>|<cell|=>|<cell|<frac|i|4><around*|(|\<gamma\><rsup|n
+        >\<gamma\><rsup|m>-\<gamma\><rsup|m>\<gamma\><rsup|n>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|4><around*|(|<matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|n>>>|<row|<cell|-\<sigma\><rsup|n>>|<cell|>>>>><matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|m>>>|<row|<cell|-\<sigma\><rsup|m>>|<cell|>>>>>-<matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|m>>>|<row|<cell|-\<sigma\><rsup|m>>|<cell|>>>>><matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|n>>>|<row|<cell|-\<sigma\><rsup|n>>|<cell|>>>>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|4><around*|(|<matrix|<tformat|<table|<row|<cell|-\<sigma\><rsup|n>\<sigma\><rsup|m>>|<cell|0>>|<row|<cell|0>|<cell|-\<sigma\><rsup|n>\<sigma\><rsup|m>>>>>>-<matrix|<tformat|<table|<row|<cell|-\<sigma\><rsup|m>\<sigma\><rsup|n>>|<cell|0>>|<row|<cell|0>|<cell|-\<sigma\><rsup|m>\<sigma\><rsup|n>>>>>>|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|4><matrix|<tformat|<table|<row|<cell|\<sigma\><rsup|n>\<sigma\><rsup|m>-\<sigma\><rsup|m>\<sigma\><rsup|n>>|<cell|0>>|<row|<cell|0>|<cell|\<sigma\><rsup|n>\<sigma\><rsup|m>-\<sigma\><rsup|m>\<sigma\><rsup|n>>>>>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|4><matrix|<tformat|<table|<row|<cell|2i
+        <wide|\<epsilon\>|~><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>>|<cell|>>|<row|<cell|>|<cell|2i
+        <wide|\<epsilon\>|~><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2><wide|\<epsilon\>|~><rsup|n
+        m><op|<rsub|k>><matrix|<tformat|<table|<row|<cell|\<sigma\><rsup|k>>|<cell|>>|<row|<cell|>|<cell|\<sigma\><rsup|k>>>>>>>>>>
+      </eqnarray*>
+
+      should notice that <math|\<sigma\><rsup|m>> is Pauli Matrix where
+      <math|<around*|[|\<sigma\><rsup|i>,\<sigma\><rsup|j>|]>=2i<wide|\<epsilon\>|~><rsup|i
+      j><op|<rsub|k>>\<sigma\><rsup|k>>
+    </itemize>
+
+    the equation:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>>|<cell|=>|<cell|i\<gamma\><rsup|0>\<partial\><rsub|0>\<psi\>+i\<gamma\><rsup|m>\<partial\><rsub|m>\<psi\>-m\<bbb-I\>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|i<matrix|<tformat|<table|<row|<cell|>|<cell|\<bbb-I\>>>|<row|<cell|\<bbb-I\>>|<cell|>>>>>\<partial\><rsub|0>\<psi\>+i<matrix|<tformat|<table|<row|<cell|>|<cell|\<sigma\><rsup|m>>>|<row|<cell|-\<sigma\><rsup|m>>|<cell|>>>>>\<partial\><rsub|m>\<psi\>-<matrix|<tformat|<table|<row|<cell|m>|<cell|>>|<row|<cell|>|<cell|m>>>>>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<cwith|2|2|2|2|cell-halign|c>|<cwith|1|1|1|1|cell-halign|c>|<table|<row|<cell|m>|<cell|i\<partial\><rsub|0>+i\<sigma\><rsup|m>\<partial\><rsub|m>>>|<row|<cell|i\<partial\><rsub|0>-i\<sigma\><rsup|m>\<partial\><rsub|m>>|<cell|m>>>>><matrix|<tformat|<table|<row|<cell|\<psi\><rsub|L>>>|<row|<cell|\<psi\><rsub|R>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|m\<psi\><rsub|L>+i<around*|(|\<partial\><rsub|0>+\<sigma\><rsup|m>\<partial\><rsub|m>|)>\<psi\><rsub|R>>>|<row|<cell|i<around*|(|\<partial\><rsub|0>-\<sigma\><rsup|m>\<partial\><rsub|m>|)>\<psi\><rsub|L>-m\<psi\><rsub|R>>>>>>=0>>>>
+    </eqnarray*>
+
+    for the <math|\<psi\>> ,we have motivation to write <math|\<psi\>> like
+    this:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<psi\>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|\<psi\><rsub|L>>>|<row|<cell|\<psi\><rsub|R>>>>>>>>>>
+    </eqnarray*>
+
+    if <math|m=0> ,could obtain the Wely equation,where dirac equation:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|i<around*|(|\<partial\><rsub|0>+\<sigma\><rsup|m>\<partial\><rsub|m>|)>\<psi\><rsub|R>>>|<row|<cell|i<around*|(|\<partial\><rsub|0>-\<sigma\><rsup|m>\<partial\><rsub|m>|)>\<psi\><rsub|L>>>>>>=0>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<choice|<tformat|<table|<row|<cell|i<around*|(|\<partial\><rsub|0>+\<sigma\><rsup|m>\<partial\><rsub|m>|)>\<psi\><rsub|R>>|<cell|=>|<cell|0>>|<row|<cell|i<around*|(|\<partial\><rsub|0>-\<sigma\><rsup|m>\<partial\><rsub|m>|)>\<psi\><rsub|L>>|<cell|=>|<cell|0>>>>>>>>>
+    </eqnarray*>
+
+    <math|\<psi\><rsub|R>,\<psi\><rsub|L>> have no relation with each other.
 
     <item*|Lorentz transformation>
 
-    {do:
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<psi\><rprime|'>=\<Lambda\><rsub|<frac|1|2>>\<psi\>>|<cell|=>|<cell|e<rsup|-<frac|i|2>w<rsub|\<mu\>\<nu\>>S<rsup|\<mu\>\<nu\>>>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|n><frac|1|n!><around*|(|-<frac|i|2>w<rsub|\<mu\>\<nu\>>S<rsup|\<mu\>\<nu\>>|)><rsup|n>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|n><frac|1|n!><matrix|<tformat|<table|<row|<cell|<around*|(|-<frac|1|2><around*|(|w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+      m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>|)><rsup|n>\<psi\><rsub|L>>>|<row|<cell|<around*|(|-<frac|1|2><around*|(|-w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+      m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>|)><rsup|n>\<psi\><rsub|R>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|<big|sum><rsub|n><frac|1|n!><around*|(|-<frac|1|2><around*|(|w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+      m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>|)><rsup|n>\<psi\><rsub|L>>>|<row|<cell|<big|sum><rsub|n><frac|1|n!><around*|(|-<frac|1|2><around*|(|-w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+      m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>|)><rsup|n>\<psi\><rsub|R>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|e<rsup|-<frac|1|2><around*|(|w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+      m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>>\<psi\><rsub|L>>>|<row|<cell|e<rsup|-<frac|1|2><around*|(|-w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+      m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>>\<psi\><rsub|R>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|e<rsup|-<frac|1|2><around*|(|w<rsub|0m>+w<rsub|n
+      k>\<epsilon\><rsup|n k><op|<rsub|m>>|)>\<sigma\><rsup|m>>\<psi\><rsub|L>>>|<row|<cell|e<rsup|-<frac|1|2><around*|(|-w<rsub|0m>+w<rsub|n
+      k>\<epsilon\><rsup|n k><op|<rsub|m>>|)>\<sigma\><rsup|m>>\<psi\><rsub|R>>>>>>>>>>
+    </eqnarray*>
+
+    <\description>
+      <item*|part 1><math|-<frac|i|2>w<rsub|\<mu\>\<nu\>>><math|S<rsup|\<mu\>\<nu\>>\<psi\>>
+
+      Part 1-1
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|-<frac|i|2>w<rsub|\<mu\>\<nu\>>S<rsup|\<mu\>\<nu\>>\<psi\>>|<cell|=>|<cell|-i
+        w<rsub|\<mu\>\<nu\>>S<rsup|\<mu\>\<nu\>>\<psi\>
+        <around*|(|\<mu\>\<less\>\<nu\>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|-i
+        w<rsub|0m>S<rsup|0m>-i w<rsub|n m>S<rsup|n
+        m>|)>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|-i<around*|(|w<rsub|0m><around*|(|-<frac|i|2><matrix|<tformat|<table|<row|<cell|\<sigma\><rsup|m>>|<cell|0>>|<row|<cell|0>|<cell|-\<sigma\><rsup|m>>>>>>|)>|\<nobracket\>>>>|<row|<cell|>|<cell|>|<cell|<around*|\<nobracket\>|-w<rsub|n
+        m><around*|(|<frac|1|2><wide|\<epsilon\>|~><rsup|n
+        m><op|<rsub|k>><matrix|<tformat|<table|<row|<cell|\<sigma\><rsup|k>>|<cell|>>|<row|<cell|>|<cell|\<sigma\><rsup|k>>>>>>|)>|)><matrix|<tformat|<table|<row|<cell|\<psi\><rsub|L>>>|<row|<cell|\<psi\><rsub|R>>>>>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|2><matrix|<tformat|<table|<row|<cell|w<rsub|0m>\<sigma\><rsup|m>\<psi\><rsub|L>>>|<row|<cell|-w<rsub|0m>\<sigma\><rsup|m>\<psi\><rsub|R>>>>>>-<frac|i|2><matrix|<tformat|<table|<row|<cell|w<rsub|n
+        m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>\<psi\><rsub|L>>>|<row|<cell|w<rsub|n
+        m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>\<psi\><rsub|R>>>>>>>>|<row|<cell|>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|-<frac|1|2><around*|(|w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+        m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>\<psi\><rsub|L>>>|<row|<cell|-<frac|1|2><around*|(|-w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+        m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>\<psi\><rsub|R>>>>>>>>>>
+      </eqnarray*>
+
+      Part 1-n
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|(|-<frac|i|2>w<rsub|\<mu\>\<nu\>>S<rsup|\<mu\>\<nu\>>|)><rsup|n>\<psi\>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|<around*|(|-<frac|1|2><around*|(|w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+        m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>|)><rsup|n>\<psi\><rsub|L>>>|<row|<cell|<around*|(|-<frac|1|2><around*|(|-w<rsub|0m>\<sigma\><rsup|m>+w<rsub|n
+        m>\<epsilon\><rsup|n m><op|<rsub|k>>\<sigma\><rsup|k>|)>|)><rsup|n>\<psi\><rsub|R>>>>>>>>>>
+      </eqnarray*>
+    </description>
+
+    could see the transformation are separately for
+    <math|\<psi\><rsub|R>,\<psi\><rsub|L>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<Lambda\>\<psi\><rsub|L>>|<cell|=>|<cell|e<rsup|-<frac|1|2><around*|(|w<rsub|0m>+w<rsub|n
+      k>\<epsilon\><rsup|n k><op|<rsub|m>>|)>\<sigma\><rsup|m>>\<psi\><rsub|L>=e<rsup|-<frac|1|2>sl<rsub|m>\<sigma\><rsup|m>>\<psi\><rsub|L>>>|<row|<cell|\<Lambda\>\<psi\><rsub|R>>|<cell|=>|<cell|e<rsup|-<frac|1|2><around*|(|-w<rsub|0m>+w<rsub|n
+      k>\<epsilon\><rsup|n k><op|<rsub|m>>|)>\<sigma\><rsup|m>>\<psi\><rsub|R>=e<rsup|-<frac|1|2>sr<rsub|m>\<sigma\><rsup|m>>\<psi\><rsub|R>>>>>
+    </eqnarray*>
+
+    <paragraph|instruction.>
+
+    <\itemize>
+      <item>where <math|sl<rsub|m> ,sr<rsub|m>> is transformation parameter
+      with the relation with the parameter of <math|S<rsup|\<mu\>\<nu\>>>.
+
+      <item>the Pauli Matrix is the generator of Lorentz transformation under
+      Wely rep.interesting.
+    </itemize>
 
     \;
   </description>
@@ -295,6 +402,8 @@
   <\collection>
     <associate|auto-1|<tuple|1|?>>
     <associate|auto-10|<tuple|1.1.1|?>>
+    <associate|auto-11|<tuple|1.1.1.1|?>>
+    <associate|auto-12|<tuple|1.1.1.2|?>>
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|1.1|?>>
     <associate|auto-4|<tuple|1.1.1|?>>
@@ -313,28 +422,40 @@
       feilds> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
+      <with|par-left|<quote|3fn>|1. Dirac equation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
       <with|par-left|<quote|6fn>|relation.1
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|0.15fn>>
+      <no-break><pageref|auto-3><vspace|0.15fn>>
 
       relation.2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3><vspace|0.15fn>
+      <no-break><pageref|auto-4><vspace|0.15fn>
 
       <with|par-left|<quote|1.5fn>|Solve it
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4>>
+      <no-break><pageref|auto-5>>
 
       <with|par-left|<quote|6fn>|Quality.1
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5><vspace|0.15fn>>
+      <no-break><pageref|auto-6><vspace|0.15fn>>
 
       <with|par-left|<quote|6fn>|Properities.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.15fn>>
+      <no-break><pageref|auto-7><vspace|0.15fn>>
 
       <with|par-left|<quote|6fn>|Calculation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7><vspace|0.15fn>>
+      <no-break><pageref|auto-8><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|2. Covarivant Lagrangian
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9><vspace|0.15fn>>
+
+      <with|par-left|<quote|3fn>|3. Partition-equation [Wely spinor]
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10>>
     </associate>
   </collection>
 </auxiliary>
