@@ -13,7 +13,7 @@
     <item*|Lagrangian>
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|L<around*|(|t|)>>|<cell|=>|<cell|L<around*|(|\<phi\><around*|(|x,t|)>,<wide|\<phi\>|\<dot\>><around*|(|x,t|)>|)>>>>>
+      <tformat|<table|<row|<cell|L<around*|(|t|)>>|<cell|=>|<cell|L<around*|[|\<phi\><around*|(|x,t|)>,<wide|\<phi\>|\<dot\>><around*|(|x,t|)>|]>>>>>
     </eqnarray*>
 
     should alter that\ 
@@ -27,39 +27,58 @@
     <paragraph|Lagrange density.>
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|L>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x<with|math-font|cal|L>>>>>
+      <tformat|<table|<row|<cell|L>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x<with|math-font|cal|L><around*|(|\<phi\><around*|(|x,t|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x,t|)>|)>>>>>
     </eqnarray*>
+
+    could see why like this, maybe define as this form.
+
+    some-tips:
+
+    <\itemize>
+      <item>Lagrangian is the functional of
+      <math|\<phi\>,\<partial\><rsub|\<mu\>>\<phi\>> ,and the function of
+      <math|t>
+
+      <item>Lagrangian density is the function of
+      <math|\<phi\>,\<partial\><rsub|\<mu\>>\<phi\>>
+    </itemize>
 
     <paragraph|Derivation.>Euler-Lagrange equation
 
     <item*|Hamiltonian>
 
-    Define momentum <math|\<pi\><around*|(|x|)>=<frac|\<partial\>L|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>>
+    Define momentum <math|\<pi\><around*|(|x|)>=<frac|\<delta\>L|\<delta\><wide|\<phi\>|\<dot\>>>>
     ,
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|H<around*|(|t|)>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3>x\<pi\><around*|(|x|)><wide|\<phi\>|\<dot\>><around*|(|x|)>-L>>>>
     </eqnarray*>
 
+    we thought that <math|H<around*|(|t|)>=H<around*|[|\<phi\><around*|(|x|)>,\<pi\><around*|(|x|)>|]>>
+
     the density
 
     <paragraph|Hamilton equation>
 
-    should notice that : the equation is not derive from minimal action
-    principle orz
+    should notice that : <math|<big|int>\<mathd\>t H<around*|(|t|)>> is not
+    action.action is unique
 
     <\eqnarray*>
       <tformat|<table|<row|<cell|S>|<cell|=>|<cell|<big|int>\<mathd\>t
-      H<around*|(|t|)>=<big|int>\<mathd\><rsup|4>x<around*|{|\<pi\><around*|(|x|)><wide|\<phi\>|\<dot\>><around*|(|x|)>-<with|math-font|cal|L>|}>>>>>
+      L<around*|(|t|)>=<big|int>\<mathd\>t<around*|{|<big|int>\<mathd\><rsup|3>x
+      \<pi\><around*|(|x|)><wide|\<phi\>|\<dot\>>-H|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<pi\><around*|(|x|)><wide|\<phi\>|\<dot\>><around*|(|x|)>-<with|math-font|cal|H>|}>>>>>
     </eqnarray*>
 
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<frac|\<delta\>S|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\><with|math-font|cal|L<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<partial\><rsub|0><around*|(|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|)>+<frac|\<partial\><with|math-font|cal|L><around*|[|\<phi\>|]>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<partial\><rsub|0>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>><around*|(|<with|math-font|cal|L><around*|[|\<phi\>|]>+<frac|\<partial\><with|math-font|cal|L>|\<partial\>\<phi\><around*|(|x|)>>\<epsilon\>\<delta\><around*|(|x-y|)>+<frac|\<partial\><with|math-font|cal|L>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<epsilon\>\<partial\><rsub|0>\<delta\><around*|(|x-y|)>|)>|\<nobracket\>>\<times\>>>|<row|<cell|>|<cell|>|<cell|<around*|\<nobracket\>|\<partial\><rsub|0><around*|(|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|)>+<frac|\<partial\><with|math-font|cal|L><around*|[|\<phi\>|]>|\<partial\><wide|\<phi\>|\<dot\>><around*|(|x|)>>\<partial\><rsub|0>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<partial\>|\<partial\><wide|\<phi\><around*|(|x|)>|\<dot\>>><around*|(||)>|}>>>>>
-    </eqnarray*>
-
-    \;
+    orz :<math|<with|math-font|cal|H=<with|math-font|cal|H<around*|(|\<phi\>,\<pi\>,\<nabla\>\<phi\>,\<nabla\>\<pi\>|)>>>>
+    why orz.
 
     <paragraph|Poisson bracket>
+
+    <\description>
+      <item*|intro>
+
+      \;
+    </description>
 
     <\description>
       <item*|Poisson conmunicators>
@@ -88,22 +107,34 @@
       <item>Modified variation:
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|<wide|\<delta\>|~>\<phi\><around*|(|x|)>>|<cell|=>|<cell|\<phi\><rprime|'><around*|(|x|)>=\<phi\><around*|(|x|)>>>>>
+        <tformat|<table|<row|<cell|<wide|\<delta\>|~>\<phi\><around*|(|x|)>>|<cell|=>|<cell|\<phi\><rprime|'><around*|(|x|)>-\<phi\><around*|(|x|)>>>>>
       </eqnarray*>
 
-      its relation with variation <math|\<delta\>\<phi\>> {do:
+      its relation with variation
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<delta\>\<phi\>>|<cell|=>|<cell|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>=\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><rprime|'><around*|(|x|)>+\<phi\><rprime|'><around*|(|x|)>-\<phi\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|\<mu\>>\<phi\><rprime|'><around*|(|x|)>\<delta\>x<rsup|\<mu\>>+<wide|\<delta\>|~>\<phi\>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<delta\>|~>\<phi\><around*|(|x|)>+\<partial\><rsub|\<mu\>><around*|(|\<phi\><around*|(|x|)>+<wide|\<delta\>|~>\<phi\><around*|(|x|)>|)>\<delta\>x<rsup|\<mu\>>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<delta\>|~>\<phi\><around*|(|x|)>+\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>\<delta\>x<rsup|\<mu\>>+\<partial\><rsub|\<mu\>><wide|\<delta\>|~>\<phi\><around*|(|x|)>\<delta\>x<rsup|\<mu\>>>>|<row|<cell|or>|<cell|>|<cell|>>|<row|<cell|>|<cell|=>|<cell|\<phi\><rprime|'><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x<rprime|'>|)>+\<phi\><around*|(|x<rprime|'>|)>-\<phi\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<delta\>|~>\<phi\><around*|(|x<rprime|'>|)>+\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>\<delta\>x<rsup|\<mu\>>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<delta\>|~>\<phi\><around*|(|x+\<delta\>x|)>+\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>\<delta\>x<rsup|\<mu\>>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<delta\>|~>\<phi\><around*|(|x|)>+\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>\<delta\>x<rsup|\<mu\>>+<wide|\<delta\>|~><around*|(|\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>\<delta\>x<rsup|\<mu\>>|)>>>>>
+      </eqnarray*>
     </itemize>
 
-    under the transformation
-
     <\description>
-      <item*|>
+      <item*|><math|>under the transformation
+
+      <\equation*>
+        <choice|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|x<rprime|'>>|<cell|=>|<cell|x+\<delta\>x>>|<row|<cell|\<phi\><rprime|'><around*|(|x<rprime|'>|)>>|<cell|=>|<cell|\<phi\><around*|(|x|)>+\<delta\>\<phi\><around*|(|x|)>>>>>>
+      </equation*>
+
+      for the case the lagrangian <math|>
+
+      <\equation*>
+        <with|math-font|cal|L<rprime|'><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>,\<partial\><rsub|\<mu\>>\<phi\><rprime|'><around*|(|x<rprime|'>|)>|)>>=<with|math-font|cal|L<around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>|)>+\<delta\>><with|math-font|cal|L><around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>|)>
+      </equation*>
     </description>
 
     Derivation\ 
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<delta\>W>|<cell|=>|<cell|>>>>
+      <tformat|<table|<row|<cell|\<delta\>S>|<cell|=>|<cell|<big|int>\<mathd\>t<around*|{|L<rprime|'><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>,\<partial\><rsub|\<mu\>>\<phi\><rprime|'><around*|(|x<rprime|'>|)>|)>-L<around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>t<around*|{|L<rprime|'><around*|(|\<phi\><rprime|'><around*|(|x<rprime|'>|)>,\<partial\><rsub|\<mu\>>\<phi\><rprime|'><around*|(|x<rprime|'>|)>|)>-L<around*|(|\<phi\><around*|(|x|)>,\<partial\><rsub|\<mu\>>\<phi\><around*|(|x|)>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|>>>>
     </eqnarray*>
 
     Instruction
@@ -161,7 +192,7 @@
     <paragraph|Functional derivative>
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|\<delta\>F<around*|[|\<phi\><around*|(|x|)>|]>>|<cell|=>|<cell|<big|int>\<mathd\>x<around*|{|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|}>\<delta\>\<phi\><around*|(|x|)>>>>>
+      <tformat|<table|<row|<cell|\<delta\>F<around*|[|\<phi\><around*|(|x|)>|]>>|<cell|:=>|<cell|<big|int>\<mathd\>x<around*|{|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|}>\<delta\>\<phi\><around*|(|x|)>>>>>
     </eqnarray*>
 
     \ \ where
@@ -169,6 +200,26 @@
     <\eqnarray*>
       <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|F<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>-F<around*|[|\<phi\>|]>|\<epsilon\>>>>>>
     </eqnarray*>
+
+    \ \ \ <math|\<phi\><rprime|'>=\<phi\>+\<delta\>\<phi\>> ,
+    <math|\<delta\>\<phi\>=\<epsilon\>\<delta\><around*|(|x-y|)>> and could
+    think that\ 
+
+    \ \ [all I guess bellow, put away the definition of <math|\<delta\>F>,if
+    known <math|<frac|\<delta\>\<phi\><around*|(|x|)>|\<delta\>\<phi\><around*|(|y|)>>=\<delta\><around*|(|x-y|)>>
+    ]
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|F<around*|[|\<phi\>+\<delta\>\<phi\>|]>>|<cell|=>|<cell|F<around*|[|\<phi\>|]>+<big|int>\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|}>\<delta\>\<phi\><around*|(|x|)>+<big|int>\<mathd\><rsup|n>y\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>|\<delta\>\<phi\><around*|(|y|)>><around*|(|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|)>|}>\<delta\>\<phi\><around*|(|x|)>\<delta\>\<phi\><around*|(|y|)>\<ldots\>.>>>>
+    </eqnarray*>
+
+    \ \ then if we could\ 
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<frac|F<around*|[|\<phi\>+\<delta\>\<phi\>|]>-F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|z|)>>>|<cell|=>|<cell|<frac|1|\<delta\>\<phi\><around*|(|z|)>><big|int>\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|}>\<delta\>\<phi\><around*|(|x|)>>>|<row|<cell|>|<cell|>|<cell|+<frac|1|\<delta\>\<phi\><around*|(|z|)>><big|int>\<mathd\><rsup|n>y\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>|\<delta\>\<phi\><around*|(|y|)>><around*|(|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|)>|}>\<delta\>\<phi\><around*|(|x|)>\<delta\>\<phi\><around*|(|y|)>\<ldots\>.>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|}><frac|\<delta\>\<phi\><around*|(|x|)>|\<delta\>\<phi\><around*|(|z|)>>+<big|int>\<mathd\><rsup|n>y\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>|\<delta\>\<phi\><around*|(|y|)>><around*|(|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|)>|}><frac|\<delta\>\<phi\><around*|(|x|)>\<delta\>\<phi\><around*|(|y|)>|\<delta\>\<phi\><around*|(|z|)>>\<ldots\>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|}>\<delta\><around*|(|x-z|)>+<big|int>\<mathd\><rsup|n>y\<mathd\><rsup|n>x<around*|{|<frac|\<delta\>|\<delta\>\<phi\><around*|(|y|)>><around*|(|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|x|)>>|)>|}>\<delta\>\<phi\><around*|(|y|)>\<delta\><around*|(|x-z|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|z|)>>+<big|int>\<mathd\><rsup|n>y<around*|{|<frac|\<delta\>|\<delta\>\<phi\><around*|(|y|)>><around*|(|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|z|)>>|)>|}>\<delta\>\<phi\><around*|(|y|)>\<ldots\>>>>>
+    </eqnarray*>
+
+    but not the cake orz
 
     <\description>
       <item*|Calculation properity>
@@ -224,6 +275,28 @@
       <\eqnarray*>
         <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|F<around*|[|\<phi\>+\<epsilon\>\<delta\><around*|(|x-y|)>|]>-F<around*|[|\<phi\>|]>|\<epsilon\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><around*|{|\<nabla\><around*|(|\<phi\><around*|(|x|)>+\<epsilon\>\<delta\><around*|(|x-y|)>|)>-\<nabla\>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|\<nabla\>\<delta\><around*|(|x-y|)>>>>>
       </eqnarray*>
+
+      <item*|from>this could see\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|F<around*|[|\<phi\>|]>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|n>x
+        f<around*|(|\<phi\>|)>>>>>
+      </eqnarray*>
+
+      and
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|<frac|\<delta\>|\<delta\>\<phi\><around*|(|y|)>><big|int>\<mathd\><rsup|n>x<big|sum><rsub|i><rsup|\<infty\>><frac|\<phi\><rsup|i><around*|(|x|)>|i!>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|\<infty\>><rsub|i><frac|1|i!>\<times\>lim<rsub|\<epsilon\>\<rightarrow\>0><frac|1|\<epsilon\>><big|int>\<mathd\><rsup|n>x<around*|{|<around*|(|\<phi\><around*|(|x|)>+\<epsilon\>\<delta\><around*|(|x-y|)>|)><rsup|i>-\<phi\><rsup|i><around*|(|x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|\<infty\>><rsub|i><frac|1|i!>\<times\>i\<phi\><rsup|i-1><around*|(|y|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|\<infty\>><rsub|i><frac|\<phi\><rsup|i-1>|<around*|(|i-1|)>!>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>f<around*|(|\<phi\>|)>|\<partial\>\<phi\><around*|(|y|)>>>>>>
+      </eqnarray*>
+
+      And we saw
+
+      <\eqnarray*>
+        <tformat|<cwith|3|3|1|1|cell-halign|l>|<table|<row|<cell|\<delta\>F<around*|[|\<phi\>|]>>|<cell|=>|<cell|\<delta\><big|int>\<mathd\><rsup|n>x
+        f<around*|(|\<phi\>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|n>x<frac|\<partial\>f<around*|(|\<phi\>|)>|\<partial\>\<phi\>>\<delta\>\<phi\><around*|(|x|)>>>|<row|<cell|then>|<cell|>|<cell|>>|<row|<cell|<frac|\<delta\>F<around*|[|\<phi\>|]>|\<delta\>\<phi\><around*|(|y|)>>>|<cell|=>|<cell|<frac|1|\<delta\>\<phi\><around*|(|x|)>><big|int>\<mathd\><rsup|n>x<frac|\<partial\>f<around*|(|\<phi\>|)>|\<partial\>\<phi\><around*|(|x|)>>\<delta\>\<phi\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|n>x<frac|\<partial\>f<around*|(|\<phi\>|)>|\<partial\>\<phi\><around*|(|x|)>><frac|\<delta\>\<phi\><around*|(|x|)>|\<delta\>\<phi\><around*|(|y|)>>=<big|int>\<mathd\><rsup|n>x<frac|\<partial\>f<around*|(|\<phi\>|)>|\<partial\>\<phi\><around*|(|x|)>>\<delta\><around*|(|x-y|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|\<partial\>f<around*|(|\<phi\>|)>|\<partial\>\<phi\><around*|(|y|)>>>>>>
+      </eqnarray*>
+
+      \;
     </description>
   </description>
 </body>
@@ -245,6 +318,7 @@
     <associate|auto-6|<tuple|1.4|?>>
     <associate|auto-7|<tuple|1.5|?>>
     <associate|auto-8|<tuple|1.6|?>>
+    <associate|auto-9|<tuple|1.7|?>>
   </collection>
 </references>
 
