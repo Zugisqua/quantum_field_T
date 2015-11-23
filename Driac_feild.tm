@@ -263,13 +263,24 @@
     <item>verify the covariant
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|F<rsup|\<ast\>><with|math-font|cal|L>>|<cell|=>|<cell|\<Lambda\><around*|(|<wide|\<psi\>|\<bar\>><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>|)>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<psi\>|\<bar\>><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>>>>>
+      <tformat|<cwith|9|9|3|3|cell-halign|r>|<table|<row|<cell|F<rsup|\<ast\>><with|math-font|cal|L>>|<cell|=>|<cell|\<Lambda\><around*|(|<wide|\<psi\>|\<bar\>><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rsub|\<mu\>>-m|)>\<psi\>|)>=<around*|\<nobracket\>|<wide|\<psi\><rprime|'>|\<bar\>><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rprime|'><rsub|\<mu\>>-m|)>\<psi\><rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|'\<dag\>>\<gamma\><rsup|0><around*|(|i\<gamma\><rsup|\<mu\>>\<partial\><rprime|'><rsub|\<mu\>>-m|)>\<psi\><rprime|'>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>\<Lambda\><rsub|<frac|1|2>><rprime|\<dag\>>\<gamma\><rsup|0><around*|(|i\<gamma\><rsup|\<mu\>><frac|\<partial\>x<rsup|\<nu\>>|\<partial\>x<rprime|'><rsup|\<mu\>>>\<partial\><rsub|\<nu\>>-m|)>\<Lambda\><rsub|<frac|1|2>>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>i\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<gamma\><rsup|\<mu\>><frac|\<partial\>x<rsup|\<nu\>>|\<partial\>x<rprime|'><rsup|\<mu\>>>\<Lambda\><rsub|<frac|1|2>>\<partial\><rsub|\<nu\>>\<psi\>-\<psi\><rprime|\<dag\>>m\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>i\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>>\<Lambda\><rsub|<frac|1|2>><rsup|-1>\<gamma\><rsup|\<mu\>><frac|\<partial\>x<rsup|\<nu\>>|\<partial\>x<rprime|'><rsup|\<mu\>>>\<Lambda\><rsub|<frac|1|2>>\<partial\><rsub|\<nu\>>\<psi\>-\<psi\><rprime|\<dag\>>m\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>i\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>>\<gamma\><rsup|\<nu\>>\<partial\><rsub|\<nu\>>\<psi\>-\<psi\><rprime|\<dag\>>m\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>i\<gamma\><rsup|0>\<gamma\><rsup|\<nu\>>\<partial\><rsub|\<nu\>>\<psi\>-\<psi\><rprime|\<dag\>>m\<gamma\><rsup|0>\<psi\>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<psi\>|\<bar\>><around*|(|i\<gamma\><rsup|\<nu\>>\<partial\><rsub|\<nu\>>-m|)>\<psi\>>>|<row|<cell|>|<cell|>|<cell|\<box\>>>>>
     </eqnarray*>
 
-    cause we know every scalar is Lorentz invariant,So what does it mean
-    about the covariant.
+    <\description>
+      <item*|Part.1>
 
-    {do:
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>>>|<cell|=>|<cell|\<gamma\><rsup|0>>>>>
+      </eqnarray*>
+
+      {do:
+
+      <item*|conclusion.1-1>should alter
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|F<rsup|\<ast\>><wide|\<psi\>|\<bar\>>>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>\<Lambda\><rsub|<frac|1|2>><rprime|\<dag\>>\<gamma\><rsup|0>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>\<Lambda\><rprime|\<dag\>><rsub|<frac|1|2>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>>\<Lambda\><rsub|<frac|1|2>><rsup|-1>>>|<row|<cell|>|<cell|=>|<cell|\<psi\><rprime|\<dag\>>\<gamma\><rsup|0>\<Lambda\><rsub|<frac|1|2>><rsup|-1>>>|<row|<cell|>|<cell|=>|<cell|<wide|\<psi\>|\<bar\>>\<Lambda\><rsup|-1><rsub|<frac|1|2>>>>>>
+      </eqnarray*>
+    </description>
 
     <item>derive the equation of motion
 
@@ -456,6 +467,14 @@
       <with|par-left|<quote|3fn>|3. Partition-equation [Wely spinor]
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10>>
+
+      <with|par-left|<quote|6fn>|the rep we choose.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|instruction.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
