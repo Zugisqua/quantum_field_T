@@ -144,7 +144,13 @@
     m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|t<rsub|k>-t<rsub|k-1>>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>e<rsup|<frac|i
     m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|n-1>|)><rsup|2>|t<rsub|n>-t<rsub|n-1>>>\<mathd\>x<rsub|l+1><big|prod><rsup|n-1><rsub|<stack|<tformat|<table|<row|<cell|k=1>>|<row|<cell|k\<neq\>l,l+1>>>>>><frac|\<mathd\>x<rsub|k>|<sqrt|t<rsub|k>-t<rsub|k-1>>>e<rsup|<frac|i
     m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|t<rsub|k>-t<rsub|k-1>>>>>|<row|<cell|>|<cell|>|<cell|\<times\><big|int><frac|\<mathd\>x<rsub|l>|<sqrt|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>>>e<rsup|<frac|i
-    m|2\<hbar\>><around*|(|<frac|<around*|(|x<rsub|l+1>-x<rsub|l>|)><rsup|2>|t<rsub|l+1>-t<rsub|l>>+<frac|<around*|(|x<rsub|l>-x<rsub|l-1>|)><rsup|2>|t<rsub|l>-t<rsub|l-1>>|)>>>>>>
+    m|2\<hbar\>><around*|(|<frac|<around*|(|x<rsub|l+1>-x<rsub|l>|)><rsup|2>|t<rsub|l+1>-t<rsub|l>>+<frac|<around*|(|x<rsub|l>-x<rsub|l-1>|)><rsup|2>|t<rsub|l>-t<rsub|l-1>>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|n-1>|)><rsup|2>|t<rsub|n>-t<rsub|n-1>>>\<mathd\>x<rsub|l+1><big|prod><rsup|n-1><rsub|<stack|<tformat|<table|<row|<cell|k=1>>|<row|<cell|k\<neq\>l,l+1>>>>>><frac|\<mathd\>x<rsub|k>|<sqrt|t<rsub|k>-t<rsub|k-1>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|t<rsub|k>-t<rsub|k-1>>>>>|<row|<cell|>|<cell|>|<cell|\<times\>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|l+1>-x<rsub|l-1>|)><rsup|2>|t<rsub|l+1>-t<rsub|l-1>>><sqrt|<frac|2\<pi\>i\<hbar\>|m<around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>>>>|<row|<cell|>|<cell|=>|<cell|<sqrt|<frac|2\<pi\>i\<hbar\>|m>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|n-1>|)><rsup|2>|t<rsub|n>-t<rsub|n-1>>><big|int><frac|\<mathd\>x<rsub|l+1>|<sqrt|t<rsub|l+1>-t<rsub|l-1>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|l+1>-x<rsub|l-1>|)><rsup|2>|t<rsub|l+1>-t<rsub|l-1>>><big|prod><rsup|n-1><rsub|<stack|<tformat|<table|<row|<cell|k=1>>|<row|<cell|k\<neq\>l,l+1>>>>>><frac|\<mathd\>x<rsub|k>|<sqrt|t<rsub|k>-t<rsub|k-1>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|t<rsub|k>-t<rsub|k-1>>>>>>>
   </eqnarray*>
 
   <paragraph|part.>
@@ -154,7 +160,43 @@
     m|2\<hbar\>><around*|(|<frac|<around*|(|x<rsub|l+1>-x<rsub|l>|)><rsup|2>|t<rsub|l+1>-t<rsub|l>>+<frac|<around*|(|x<rsub|l>-x<rsub|l-1>|)><rsup|2>|t<rsub|l>-t<rsub|l-1>>|)>>>>>>
   </eqnarray*>
 
-  {do:
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\>x<rsub|l>|<sqrt|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>>>e<rsup|<frac|i
+    m|2\<hbar\>><around*|(|<frac|<around*|(|x<rsub|l+1>-x<rsub|l>|)><rsup|2>|t<rsub|l+1>-t<rsub|l>>+<frac|<around*|(|x<rsub|l>-x<rsub|l-1>|)><rsup|2>|t<rsub|l>-t<rsub|l-1>>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\>x<rsub|l>|<sqrt|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>>>e<rsup|<frac|i
+    m|2\<hbar\>><around*|(|<frac|x<rsub|l+1><rsup|2>+x<rsub|l><rsup|2>-2x<rsub|l+1>x<rsub|l>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsub|l><rsup|2>+x<rsub|l-1><rsup|2>-2x<rsub|l>x<rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\>x<rsub|l>|<sqrt|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>>>e<rsup|<frac|i
+    m|2\<hbar\>><around*|(|<around*|(|x<rsub|l><rsup|2><around*|(|<frac|1|t<rsub|l+1>-t<rsub|l>>+<frac|1|t<rsub|l>-t<rsub|l-1>>|)>-2x<rsub|l><around*|(|<frac|x<rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)>|)>+<frac|x<rsup|2><rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsup|2><rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)>>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|<frac|i
+    m|2\<hbar\>><around*|(|<frac|x<rsup|2><rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsup|2><rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)>><frac|1|<sqrt|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>>>\<times\>>>|<row|<cell|>|<cell|>|<cell|<big|int>\<mathd\>x<rsub|l>e<rsup|<frac|i
+    m|2\<hbar\>><around*|(|x<rsub|l><rsup|2><around*|(|<frac|1|t<rsub|l+1>-t<rsub|l>>+<frac|1|t<rsub|l>-t<rsub|l-1>>|)>-2x<rsub|l><around*|(|<frac|x<rsub|l+1><rsup|2>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsub|l-1><rsup|2>|t<rsub|l>-t<rsub|l-1>>|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|<frac|i
+    m|2\<hbar\>><around*|(|<frac|x<rsup|2><rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsup|2><rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)>><frac|1|<sqrt|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>>>\<times\>>>|<row|<cell|>|<cell|>|<cell|e<rsup|-<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|l>+1<around*|(|t<rsub|l>-t<rsub|l-1>|)>+x<rsub|l-1><around*|(|t<rsub|l+1>-t<rsub|l>|)>|)><rsup|2>|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>><sqrt|<frac|2\<pi\>\<hbar\>i|m><around*|(|<frac|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|t<rsub|l+1>-t<rsub|l-1>>|)>>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|l+1>-x<rsub|l-1>|)><rsup|2>|t<rsub|l+1>-t<rsub|l-1>>><sqrt|<frac|2\<pi\>i\<hbar\>|m<around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>>>>>>
+  </eqnarray*>
+
+  \;
+
+  <\description>
+    <item*|part 1a>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|>|<cell|-<frac|<around*|(|x<rsub|l+1><around*|(|t<rsub|l>-t<rsub|l-1>|)>+x<rsub|l-1><around*|(|t<rsub|l+1>-t<rsub|l>|)>|)><rsup|2>|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>+<frac|x<rsup|2><rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsup|2><rsub|l-1>|t<rsub|l>-t<rsub|l-1>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|x<rsub|l><rsup|2><around*|(|t<rsub|l>-t<rsub|l-1>|)><rsup|2>+x<rsub|l-1><rsup|2><around*|(|t<rsub|l+1>-t<rsub|l>|)><rsup|2>+2x<rsub|l>x<rsub|l+1><around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>+<frac|x<rsup|2><rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsup|2><rsub|l-1>|t<rsub|l>-t<rsub|l-1>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|x<rsub|l+1><rsup|2><around*|(|t<rsub|l>-t<rsub|l-1>|)>|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>-<frac|x<rsup|2><rsub|l-1><around*|(|t<rsub|l+1>-t<rsub|l>|)>|<around*|(|t<rsub|l>-t<rsub|l-1>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>-<frac|2x<rsub|l>x<rsub|l+1>|t<rsub|l+1>-t<rsub|l-1>>+<frac|x<rsup|2><rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsup|2><rsub|l-1>|t<rsub|l>-t<rsub|l-1>>>>|<row|<cell|>|<cell|=>|<cell|<frac|x<rsup|2><rsub|l+1><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>-x<rsub|l+1><rsup|2><around*|(|t<rsub|l>-t<rsub|l-1>|)>|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>+<frac|x<rsup|2><rsub|l-1><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>-x<rsub|l-1><rsup|2><around*|(|t<rsub|l+1>-t<rsub|l>|)>|<around*|(|t<rsub|l>-t<rsub|l-1>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>-<frac|2x<rsub|l>x<rsub|l+1>|t<rsub|l+1>-t<rsub|l-1>>>>|<row|<cell|>|<cell|=>|<cell|<frac|x<rsup|2><rsub|l+1>|t<rsub|l+1>-t<rsub|l-1>>+<frac|x<rsup|2><rsub|l-1>|t<rsub|l+1>-t<rsub|l-1>>-<frac|2x<rsub|l>x<rsub|l+1>|t<rsub|l+1>-t<rsub|l-1>>>>|<row|<cell|>|<cell|=>|<cell|<frac|<around*|(|x<rsub|l+1>-x<rsub|l-1>|)><rsup|2>|t<rsub|l+1>-t<rsub|l-1>>>>>>
+    </eqnarray*>
+
+    <item*|part 1>set <math|a=><math|-<frac|i
+    m|2\<hbar\>><around*|(|<frac|1|t<rsub|l+1>-t<rsub|l>>+<frac|1|t<rsub|l>-t<rsub|l-1>>|)>>
+    ,<math|b=-<frac|i m|\<hbar\>><around*|(|<frac|x<rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|>|<cell|<big|int>\<mathd\>x<rsub|l>e<rsup|<frac|i
+      m|2\<hbar\>><around*|(|x<rsub|l><rsup|2><around*|(|<frac|1|t<rsub|l+1>-t<rsub|l>>+<frac|1|t<rsub|l>-t<rsub|l-1>>|)>-2x<rsub|l><around*|(|<frac|x<rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>x<rsub|l>e<rsup|-a
+      x<rsup|2><rsub|l>+b x<rsub|l>>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|<frac|b<rsup|2>|4a>><sqrt|<frac|\<pi\>|a>>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|-<frac|m<rsup|2>|\<hbar\><rsup|2>><around*|(|<frac|x<rsub|l+1>|t<rsub|l+1>-t<rsub|l>>+<frac|x<rsub|l-1>|t<rsub|l>-t<rsub|l-1>>|)><rsup|2>\<times\><around*|(|-<frac|2\<hbar\>|4m
+      i><around*|(|<frac|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|t<rsub|l+1>-t<rsub|l-1>>|)>|)>><sqrt|<frac|2\<pi\>\<hbar\>|m
+      i><around*|(|<frac|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|t<rsub|l+1>-t<rsub|l-1>>|)>>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|-<frac|i
+      m|2\<hbar\>><frac|<around*|(|x<rsub|l><around*|(|t<rsub|l>-t<rsub|l-1>|)>+x<rsub|l-1><around*|(|t<rsub|l+1>-t<rsub|l>|)>|)><rsup|2>|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)><rsup|2>>\<times\><frac|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|t<rsub|l+1>-t<rsub|l-1>>><sqrt|<frac|2\<pi\>\<hbar\>|m
+      i><around*|(|<frac|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|t<rsub|l+1>-t<rsub|l-1>>|)>>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|-<frac|i
+      m|2\<hbar\>><frac|<around*|(|x<rsub|l>+1<around*|(|t<rsub|l>-t<rsub|l-1>|)>+x<rsub|l-1><around*|(|t<rsub|l+1>-t<rsub|l>|)>|)><rsup|2>|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)><around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>><sqrt|<frac|2\<pi\>\<hbar\>|m
+      i><around*|(|<frac|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|t<rsub|l+1>-t<rsub|l-1>>|)>>>>>>
+    </eqnarray*>
+  </description>
 </body>
 
 <initial|<\collection>
@@ -169,6 +211,7 @@
     <associate|auto-5|<tuple|4|?>>
     <associate|auto-6|<tuple|1.1|?>>
     <associate|auto-7|<tuple|5|?>>
+    <associate|auto-8|<tuple|6|?>>
   </collection>
 </references>
 
@@ -191,6 +234,13 @@
       <with|par-left|<quote|6fn>|Result and Instruction
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5><vspace|0.15fn>>
+
+      <with|par-left|<quote|1.5fn>|Example
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|6fn>|part. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
