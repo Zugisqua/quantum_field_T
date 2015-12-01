@@ -5,6 +5,8 @@
 <\body>
   <section|Path integral>
 
+  <subsubsection|Quantum mechanic version.>
+
   Core: the technical method calculate the transistion amplitude.
   <math|<around|\<langle\>|x|\<nobracket\>><around|\||\<psi\><around*|(|t|)>|\<rangle\>>>
 
@@ -197,6 +199,74 @@
       i><around*|(|<frac|<around*|(|t<rsub|l+1>-t<rsub|l>|)><around*|(|t<rsub|l>-t<rsub|l-1>|)>|t<rsub|l+1>-t<rsub|l-1>>|)>>>>>>
     </eqnarray*>
   </description>
+
+  \;
+
+  <subsubsection|Path integral in quantum field theory>
+
+  here choose Klein-Gordon field as example: [reference: Geriner]
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<with|math-font|cal|L>>|<cell|=>|<cell|<frac|1|2>\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<mu\>>\<phi\>-<frac|m|2>\<phi\><rsup|2>>>>>
+  </eqnarray*>
+
+  the path integral
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>|)>|\|>e<rsup|<frac|i|\<hbar\>>H
+    t<rprime|'>>e<rsup|-<frac|i|\<hbar\>>H
+    t><around|\||\<phi\><around*|(|<wide|x|\<vect\>>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>|)>|\|>e<rsup|<frac|i|\<hbar\>>H
+    <around*|(|t<rprime|'>-t|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>|)>|\<rangle\>>>>>>
+  </eqnarray*>
+
+  {do:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|i<big|int>\<mathd\><rsup|4>x<around*|{|<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsup|\<mu\>>\<phi\>-<frac|m<rsup|2>|2>\<phi\><rsup|2>|}>|}>>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|\<mu\>><around*|(|\<phi\>\<partial\><rsup|\<mu\>>\<phi\>|)>-\<phi\>\<partial\><rsub|\<mu\>>\<partial\><rsup|\<mu\>>\<phi\>-m<rsup|2>\<phi\><rsup|2>|}>|}>>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|-<frac|i|2><big|int>\<mathd\><rsup|4>x\<phi\><around*|{|\<box\>
+    +m<rsup|2>|}>\<phi\>|}>>>>>
+  </eqnarray*>
+
+  solve it:\ 
+
+  Core: the transformation of <math|\<phi\>>
+  ,<math|<tabular|<tformat|<table|<row|<cell|\<phi\><rsub|i>>|<cell|=>|<cell|a<rsub|i
+  j>A<rsup|j>>>>>>> ,where <math|<around*|\<langle\>|A<rsup|j>,A<rsup|i>|\<rangle\>>=\<delta\><rsup|j
+  i>>require
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<box\> A<rsup|i>>|<cell|=>|<cell|\<lambda\><op|<op|<rsub|j>>>A<rsup|j>>>>>
+  </eqnarray*>
+
+  <\description>
+    <item*|part 1>{do:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|D\<phi\>>|<cell|=>|<cell|\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>>>|<row|<cell|>|<cell|=>|<cell|\<mathd\><around*|(|a<rsub|11>A<rsup|1>+a<rsub|12>A<rsup|2>|)>\<mathd\><around*|(|a<rsub|21>A<rsup|1>+a<rsub|22>A<rsup|2>|)>>>|<row|<cell|>|<cell|=>|<cell|\<mathd\><around*|(|a<rsub|11>A<rsup|1>|)>\<mathd\>>>>>
+    </eqnarray*>
+
+    <item*|part 2>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|4>x\<phi\><around*|{|\<box\>
+      +m<rsup|2>|}>\<phi\>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x
+      a<rsub|i j>A<rsup|j><around*|{|\<box\> +m<rsup|2>|}>a<rsub|a
+      b>A<rsup|b>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|i j>a<rsub|a
+      b><around*|{|\<lambda\><rsub|b>+m<rsup|2>|}><big|int>\<mathd\><rsup|4>x
+      A<rsup|j>A<rsup|b>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|i j>a<rsub|a
+      b><around*|{|\<lambda\><rsub|b>+m<rsup|2>|}>\<delta\><rsup|j
+      b>>>|<row|<cell|>|<cell|=>|<cell|>>>>
+    </eqnarray*>
+
+    the symbol are in a mess.
+  </description>
+
+  \;
+
+  \;
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|>|<cell|>|<cell|>>>>
+  </eqnarray*>
 </body>
 
 <initial|<\collection>
@@ -206,12 +276,13 @@
   <\collection>
     <associate|auto-1|<tuple|1|?>>
     <associate|auto-2|<tuple|1|?>>
-    <associate|auto-3|<tuple|2|?>>
-    <associate|auto-4|<tuple|3|?>>
-    <associate|auto-5|<tuple|4|?>>
-    <associate|auto-6|<tuple|1.1|?>>
-    <associate|auto-7|<tuple|5|?>>
-    <associate|auto-8|<tuple|6|?>>
+    <associate|auto-3|<tuple|1.1|?>>
+    <associate|auto-4|<tuple|1.2|?>>
+    <associate|auto-5|<tuple|1.3|?>>
+    <associate|auto-6|<tuple|1.4|?>>
+    <associate|auto-7|<tuple|1.1|?>>
+    <associate|auto-8|<tuple|1.1.0.5|?>>
+    <associate|auto-9|<tuple|1.1.1|?>>
   </collection>
 </references>
 
