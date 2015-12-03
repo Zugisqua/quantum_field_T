@@ -223,7 +223,11 @@
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|i<big|int>\<mathd\><rsup|4>x<around*|{|<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsup|\<mu\>>\<phi\>-<frac|m<rsup|2>|2>\<phi\><rsup|2>|}>|}>>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|\<mu\>><around*|(|\<phi\>\<partial\><rsup|\<mu\>>\<phi\>|)>-\<phi\>\<partial\><rsub|\<mu\>>\<partial\><rsup|\<mu\>>\<phi\>-m<rsup|2>\<phi\><rsup|2>|}>|}>>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|-<frac|i|2><big|int>\<mathd\><rsup|4>x\<phi\><around*|{|\<box\>
-    +m<rsup|2>|}>\<phi\>|}>>>>>
+    +m<rsup|2>|}>\<phi\>|}>>>|<row|<cell|>|<cell|>|<cell|verify
+    parts>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D a<rsub|i
+    j>e<rsup|-<frac|i|2><big|sum><rsub|j><rsub|>a<rsub|i j>a<rsub|a
+    j><around*|{|\<lambda\><rsub|j>+m<rsup|2>|}>><around*|(|?|)>>>|<row|<cell|>|<cell|>|<cell|<around*|{|do:|\<nobracket\>>>>|<row|<cell|>|<cell|>|<cell|<around*|(|somehow|)>const<big|int>D
+    a e<rsup|-<frac|i|2><big|sum>a<rsup|2><around*|{|\<lambda\><rsub|j>+m<rsup|2>|}>>>>|<row|<cell|>|<cell|=>|<cell|const\<times\><frac|1|<sqrt|det<around*|{|\<lambda\><rsub|j>+m<rsup|2>|}>>>>>>>
   </eqnarray*>
 
   solve it:\ 
@@ -257,7 +261,42 @@
       b>>>|<row|<cell|>|<cell|=>|<cell|>>>>
     </eqnarray*>
 
-    the symbol are in a mess.
+    althought the symbol are in a mess.
+  </description>
+
+  <paragraph|Corrlation function>
+
+  <\description>
+    <item*|Definition>2-point correlation function as a example
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|>T\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)><around|\||0|\<rangle\>>>|<cell|=>|<cell|<rsup|><frac|<big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|i<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<with|math-font|cal|L<with|math-font|cal|>>>|<big|int>D\<phi\>
+      e<rsup|i <big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<with|math-font|cal|L<with|math-font|cal|>>>><rsup|>>>>>
+    </eqnarray*>
+
+    where <math|T> maybe time-order opertor. I haven't see what could it do.
+
+    <item*|relation with lie algebra>
+
+    general the object as : the <math|J<around*|(|x|)>> call source term.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|W<around*|[|J|]>=<frac|<big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|i<around*|(|<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<with|math-font|cal|L<with|math-font|cal|>>+<big|int>\<mathd\>
+      <rsup|4>x J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>|<big|int>D\<phi\>
+      e<rsup|i <big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<with|math-font|cal|L<with|math-font|cal|>>>>>|<cell|>|<cell|>>>>
+    </eqnarray*>
+
+    then
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|>T\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)><around|\||0|\<rangle\>>>|<cell|=>|<cell|-<around*|\<nobracket\>|<frac|\<delta\><rsup|2>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>>|\|><rsub|J=0>>>>>
+    </eqnarray*>
+
+    verify {do:
+
+    <item*|introduce>
+
+    {more:
   </description>
 
   \;
@@ -275,6 +314,9 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?>>
+    <associate|auto-10|<tuple|1.1.1.1|?>>
+    <associate|auto-11|<tuple|1.1.1.2|?>>
+    <associate|auto-12|<tuple|1.1.1.3|?>>
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|1.1|?>>
     <associate|auto-4|<tuple|1.2|?>>
@@ -293,25 +335,33 @@
       integral> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
-      <with|par-left|<quote|6fn>|step 0. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-2><vspace|0.15fn>>
+      <with|par-left|<quote|3fn>|Quantum mechanic version.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
 
-      <with|par-left|<quote|6fn>|Step 1. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|6fn>|step 0. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|Step 2. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|6fn>|Step 1. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Step 2. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.15fn>>
 
       <with|par-left|<quote|6fn>|Result and Instruction
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-5><vspace|0.15fn>>
+      <no-break><pageref|auto-6><vspace|0.15fn>>
 
       <with|par-left|<quote|1.5fn>|Example
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6>>
+      <no-break><pageref|auto-7>>
 
       <with|par-left|<quote|6fn>|part. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7><vspace|0.15fn>>
+      <no-break><pageref|auto-8><vspace|0.15fn>>
+
+      <with|par-left|<quote|3fn>|Path integral in quantum field theory
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
     </associate>
   </collection>
 </auxiliary>
