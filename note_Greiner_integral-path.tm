@@ -190,9 +190,159 @@
 
   <subsection|ii. Vaccum presistence amplitude >
 
-  \;
+  <paragraph|Definition.>
+
+  <\description>
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<around|\<langle\>|0|\<nobracket\>><around|\||0|\<rangle\>><rsub|J>>>>>
+    </eqnarray*>
+
+    where <math|J=J<around*|(|t|)>>,is the source term ,which could be seen
+    as external macroscopic force fields.\ 
+
+    And which should be a term of lagrangian.
+
+    <item*|introduction>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|q<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||q,t|\<rangle\>><rsub|J>>|<cell|=>|<cell|<around*|(|<sqrt|<frac|2\<pi\>m\<hbar\>
+      |i\<epsilon\>>>|)><rsup|N><big|int>D x
+      exp<around*|(|<frac|i|\<hbar\>><big|int>\<mathd\>t<around*|{|p<wide|x|\<dot\>>-H+J<around*|(|t|)>x|}>|)>
+      >>|<row|<cell|>|<cell|>|<cell|>>>>
+    </eqnarray*>
+
+    {do:
+  </description>
+
+  <paragraph|Relation with Feyman Kernel.>
+
+  <\description>
+    <item*|a>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|>T<around*|[|<wide|x|^><rsub|1><wide|x|^><rsub|2>\<ldots\>.|]><around|\||0|\<rangle\>>>|<cell|=>|<cell|<around*|(|<frac|\<hbar\>|i>|)><rsup|n><around*|\<nobracket\>|<frac|\<delta\><rsup|2>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>\<ldots\>>|\|><rsub|J=0>>>>>
+    </eqnarray*>
+
+    {verify:
+  </description>
 
   <section|3. Fields and Quantum>
+
+  <\subsubsection>
+    i. Conception transplant
+  </subsubsection>
+
+  <paragraph|symbol convention:>
+
+  <\itemize>
+    <item><math|<around|\||\<phi\><around*|(|x|)>|\<rangle\>>=<around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>,
+    and <math|<around|\||\<phi\><around*|(|<wide|x|\<vect\>>,0|)>|\<rangle\>>=<around|\||\<phi\><around*|(|<wide|x|\<vect\>>|)>|\<rangle\>>>
+
+    <item>cause usually discretely case is easy to handle, therefore, set
+    <math|<around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>=
+    <around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|l>,t<rsub|n>|)>|\<rangle\>>=<around|\||\<phi\><rsub|l
+    n>|\<rangle\>>>
+
+    <item>Learn at first <math|<wide|\<phi\>|^><around|\||\<phi\><around*|(|x|)>|\<rangle\>>=\<phi\><around*|(|x|)><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>
+    <math|\<longrightarrow\>> <math|<wide|\<phi\>|^><around|\||\<phi\><rsub|l
+    n>|\<rangle\>>=\<phi\><rsub|l n><around|\||\<phi\><rsub|l n>|\<rangle\>>>
+  </itemize>
+
+  <paragraph|learned>
+
+  <\itemize>
+    <item><math|<big|int><frac|\<Delta\>V\<mathd\>\<pi\><rsub|l
+    n>|2\<pi\>\<hbar\>><around|\||\<pi\><rsub|l
+    n>|\<rangle\>><around|\<langle\>|\<pi\><rsub|l n>|\|>=1>
+  </itemize>
+
+  {more
+
+  <\description>
+    <item*|Feynman kernel>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rprime|'>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rprime|'>|)>|\|>e<rsup|-<frac|i|\<hbar\>><wide|H|^><around*|(|t<rprime|'>-t|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|l>|\|>e<rsup|-<frac|i|\<hbar\>><wide|H|^><around*|(|t<rsub|n>-t<rsub|0>|)>><around|\||\<phi\><rsub|k>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|do:|\<nobracket\>>there
+      are some different>>|<row|<cell|>|<cell|=>|<cell|>>|<row|<cell|similar
+      with classical>|<cell|\<rightarrow\>>|<cell|<big|int>D\<phi\>D\<pi\>exp<around*|(|<frac|i|\<hbar\>><big|int><rsup|t<rprime|'>><rsub|t><big|int>\<mathd\><rsup|4>x<around*|{|\<pi\>\<partial\><rsub|0>\<phi\>-<with|math-font|cal|H>|}>|)>>>>>
+    </eqnarray*>
+
+    Feynman path integral form:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|\<rightarrow\>>|<cell|const<big|int>D\<phi\>exp<around*|(|<frac|i|\<hbar\>><big|int><rsup|t<rprime|'>><rsub|t><big|int><rsub|V>\<mathd\><rsup|4>x<with|math-font|cal|L>|)>>>>>
+    </eqnarray*>
+
+    {do:
+
+    <item*|n-point function>
+
+    \;
+
+    reference the classical case
+
+    <\description>
+      <item*|a>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|W<around*|[|J<around*|(|x|)>|]>>|<cell|=>|<cell|<around|\<langle\>|0|\<nobracket\>><around|\||0|\<rangle\>><rsub|J>>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|(|<frac|i|\<hbar\>><big|int><rsup|t<rprime|'>><rsub|t><big|int><rsub|V>\<mathd\><rsup|4>x<around*|{|<with|math-font|cal|L><around*|(|\<phi\>,<wide|\<phi\>|\<dot\>>|)>+J<around*|(|x|)>\<phi\>|}>|)>>>>>
+      </eqnarray*>
+
+      should notice that the <math|\<phi\>> in the integral is only the
+      function of <math|<wide|x|\<vect\>>>,not <math|x>.
+
+      {do:
+
+      <item*|b>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around|\<langle\>|0|\|>T<around*|(|<wide|\<phi\>|^><around*|(|x<rsub|1>|)><wide|\<phi\>|^><around*|(|x<rsub|2>|)>\<ldots\>|)><around|\||0|\<rangle\>>>|<cell|=>|<cell|<around*|(|<frac|\<hbar\>|i>|)><rsup|n><around*|\<nobracket\>|<frac|\<delta\><rsup|n>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>\<ldots\>>|\|><rsub|J=0>>>>>
+      </eqnarray*>
+
+      {verify:
+
+      \;
+    </description>
+  </description>
+
+  <section|4. Euclidian fields theory>
+
+  Core: the same as above.
+
+  <paragraph|Re-identity:>
+
+  <\itemize>
+    <item><math|x<rsub|4>=i x<rsub|0>> ; <math|<wide|x|\<vect\>><rsub|E>=<wide|x|\<vect\>>>,name
+    the coordiante changed into <math|<around*|(|x<rsub|1>,x<rsub|2>,x<rsub|3>,x<rsub|4>|)>>
+
+    <item>for momentum: <math|p<rsub|4>=-i p<rsub|0>> ;
+    <math|<wide|p|\<vect\>><rsub|E>=<wide|p|\<vect\>>>
+  </itemize>
+
+  {do:
+
+  <section|5. Feynmann Propagator>
+
+  A example of concrete calculation. just: and text adopt the scenario that
+  using Euclidian fields theort at first.
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<with|math-font|cal|L>>|<cell|=>|<cell|<frac|\<hbar\><rsup|2>|2>\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<mu\>>\<phi\>-<frac|1|2>m<rsup|2>\<phi\><rsup|2>>>>>
+  </eqnarray*>
+
+  Reference:
+
+  <\itemize>
+    <item>multi-demension Feynmann kernel.
+  </itemize>
+
+  {do:
+
+  <paragraph|introduce the propagator.>
+
+  {more:
+
+  \;
 </body>
 
 <\initial>
@@ -206,8 +356,17 @@
     <associate|auto-1|<tuple|1|?>>
     <associate|auto-10|<tuple|4|?>>
     <associate|auto-11|<tuple|2.2|?>>
-    <associate|auto-12|<tuple|3|?>>
+    <associate|auto-12|<tuple|5|?>>
+    <associate|auto-13|<tuple|6|?>>
+    <associate|auto-14|<tuple|3|?>>
+    <associate|auto-15|<tuple|3.0.1|?>>
+    <associate|auto-16|<tuple|3.0.1.1|?>>
+    <associate|auto-17|<tuple|3.0.1.2|?>>
+    <associate|auto-18|<tuple|4|?>>
+    <associate|auto-19|<tuple|4.0.1.3|?>>
     <associate|auto-2|<tuple|1|?>>
+    <associate|auto-20|<tuple|5|?>>
+    <associate|auto-21|<tuple|5.0.1.4|?>>
     <associate|auto-3|<tuple|1.1|?>>
     <associate|auto-4|<tuple|1|?>>
     <associate|auto-5|<tuple|2|?>>
@@ -229,13 +388,43 @@
       Classical > <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
 
+      <with|par-left|<quote|1.5fn>|i. Simple case
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
       <with|par-left|<quote|6fn>|Calculate.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-3><vspace|0.15fn>>
+      <no-break><pageref|auto-4><vspace|0.15fn>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Fields
-      and Quantum> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-4><vspace|0.5fn>
+      <with|par-left|<quote|6fn>|{more <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|modify: <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.15fn>>
+
+      <with|par-left|<quote|1.5fn>|ii. multi-dememsion case.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2.
+      Intro conceptions> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8><vspace|0.5fn>
+
+      <with|par-left|<quote|1.5fn>|i. n-ponit function
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
+
+      <with|par-left|<quote|6fn>|instructions
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10><vspace|0.15fn>>
+
+      <with|par-left|<quote|1.5fn>|ii. Vaccum presistence amplitude
+      \ <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3.
+      Fields and Quantum> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
