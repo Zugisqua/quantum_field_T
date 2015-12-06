@@ -261,10 +261,31 @@
   <\description>
     <item*|Feynman kernel>
 
+    similarly: <math|t<rsub|n+1>-t<rsub|n>=\<epsilon\>>
+
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rprime|'>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rprime|'>|)>|\|>e<rsup|-<frac|i|\<hbar\>><wide|H|^><around*|(|t<rprime|'>-t|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|l>|\|>e<rsup|-<frac|i|\<hbar\>><wide|H|^><around*|(|t<rsub|n>-t<rsub|0>|)>><around|\||\<phi\><rsub|k>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|do:|\<nobracket\>>there
-      are some different>>|<row|<cell|>|<cell|=>|<cell|>>|<row|<cell|similar
-      with classical>|<cell|\<rightarrow\>>|<cell|<big|int>D\<phi\>D\<pi\>exp<around*|(|<frac|i|\<hbar\>><big|int><rsup|t<rprime|'>><rsub|t><big|int>\<mathd\><rsup|4>x<around*|{|\<pi\>\<partial\><rsub|0>\<phi\>-<with|math-font|cal|H>|}>|)>>>>>
+      <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rprime|'>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|l
+      N>|\<nobracket\>><around|\||\<phi\><rsub|k0>|\<rangle\>>=<big|int>\<mathd\>\<phi\><rsub|k1><around|\<langle\>|\<phi\><rsub|l
+      <rprime|'>n>|\<nobracket\>><around|\||\<phi\><rsub|k
+      1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|k1>|\<nobracket\>><around|\||\<phi\><rsub|l0>|\<rangle\>>=<big|int>\<mathd\>\<phi\><rsub|l<rsub|1>1><around|\<langle\>|\<phi\><rsub|l<rsub|k>n>|\<nobracket\>><around|\||\<phi\><rsub|l<rsub|1>1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|l<rsub|1>1>|\<nobracket\>><around|\||\<phi\><rsub|l<rsub|0>0>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|\<ldots\>\<ldots\>>>|<row|<cell|>|<cell|=>|<cell|<big|int><big|prod><rsup|N-1><rsub|k=1>\<mathd\>\<phi\><rsub|l<rsub|k
+      >k><around|\<langle\>|\<phi\><rsub|l<rsub|N
+      >N>|\<nobracket\>><around|\||\<phi\><rsub|l<rsub|N-1>
+      N-1>|\<rangle\>>\<ldots\><around|\<langle\>|\<phi\><rsub|l<rsub|j+1>
+      j+1>|\<nobracket\>><around|\||\<phi\><rsub|l<rsub|j>
+      j>|\<rangle\>>\<ldots\><around|\<langle\>|\<phi\><rsub|l<rsub|1>1>|\<nobracket\>><around|\||\<phi\><rsub|l<rsub|0>0>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><big|prod><rsup|N-1><rsub|k=1>\<mathd\>\<phi\><rsub|l<rsub|k>
+      k><around|\<langle\>|\<phi\><rsub|l<rsub|N>>|\|>e<rsup|<frac|i|\<hbar\>><wide|H|^>\<epsilon\>><around|\||\<phi\><rsub|l<rsub|N-1>
+      >|\<rangle\>>\<ldots\><around|\<langle\>|\<phi\><rsub|l<rsub|j>
+      >|\|>e<rsup|<frac|i|\<hbar\>><wide|H|^>\<epsilon\>><around|\||\<phi\><rsub|l<rsub|j>
+      >|\<rangle\>>\<ldots\><around|\<langle\>|\<phi\><rsub|l<rsub|1>>|\|>e<rsup|<frac|i|\<hbar\>><wide|H|^>\<epsilon\>><around|\||\<phi\><rsub|l<rsub|0>>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><big|prod><rsup|N-1><rsub|k=1>\<mathd\>\<phi\><rsub|l<rsub|k>
+      k><around|\<langle\>|\<phi\><rsub|l<rsub|N>>|\|>e<rsup|<frac|i|\<hbar\>>H<around*|(|<wide|\<pi\>|^>,<wide|\<phi\>|^>|)>\<epsilon\>><around|\||\<phi\><rsub|l<rsub|N-1>
+      >|\<rangle\>>\<ldots\><around|\<langle\>|\<phi\><rsub|l<rsub|j>
+      >|\|>e<rsup|<frac|i|\<hbar\>>H<around*|(|<wide|\<pi\>|^>,<wide|\<phi\>|^>|)>\<epsilon\>><around|\||\<phi\><rsub|l<rsub|j>
+      >|\<rangle\>>\<ldots\><around|\<langle\>|\<phi\><rsub|l<rsub|1>>|\|>e<rsup|<frac|i|\<hbar\>>H<around*|(|<wide|\<pi\>|^>,<wide|\<phi\>|^>|)>\<epsilon\>><around|\||\<phi\><rsub|l<rsub|0>>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><big|prod><rsup|N-1><rsub|k=1>\<mathd\>\<phi\><rsub|l<rsub|k>k><around|\<langle\>|\<phi\><rsub|l<rsub|N>>|\|>e<rsup|<frac|i|\<hbar\>>>\<ldots\>\<ldots\>.>>|<row|<cell|>|<cell|=>|<cell|<around*|{|do|\<nobracket\>>:>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|similar with
+      classical>|<cell|\<rightarrow\>>|<cell|<big|int>D\<phi\>D\<pi\>exp<around*|(|<frac|i|\<hbar\>><big|int><rsup|t<rprime|'>><rsub|t><big|int>\<mathd\><rsup|4>x<around*|{|\<pi\>\<partial\><rsub|0>\<phi\>-<with|math-font|cal|H>|}>|)>>>>>
     </eqnarray*>
 
     Feynman path integral form:
@@ -277,7 +298,11 @@
 
     <item*|n-point function>
 
-    \;
+    using the conclusion:
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<with|math-font|cal|<with|math-font|cal|N>><big|int>D\<phi\>exp<around*|(|<frac|i|\<hbar\>><big|int>\<mathd\><rsup|4>x<with|math-font|cal|L>|)>>>>>
+    </eqnarray*>
 
     reference the classical case
 
@@ -290,6 +315,14 @@
 
       should notice that the <math|\<phi\>> in the integral is only the
       function of <math|<wide|x|\<vect\>>>,not <math|x>.
+
+      <paragraph|introduce.>
+
+      consider the expansion <math|<around|\||\<phi\><around*|(|x|)>|\<rangle\>>=<big|sum><rsub|n><rsup|\<infty\>><around|\||n|\<rangle\>><around|\<langle\>|n\|\<phi\><around*|(|x|)>|\<rangle\>>=<big|sum><rsub|n><rsup|\<infty\>>\<psi\><rsub|n><around*|(|x|)><around|\||n|\<rangle\>>>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<big|sum><rsub|n,m><rsup|\<infty\>><around|\<langle\>|\<phi\><around*|(|x<rprime|'>|)>|\<nobracket\>><around|\||m|\<rangle\>>>>>>
+      </eqnarray*>
 
       {do:
 
@@ -336,7 +369,11 @@
     <item>multi-demension Feynmann kernel.
   </itemize>
 
-  {do:
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|x<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<with|math-font|cal|<with|math-font|cal|N>><big|int>D\<phi\>exp<around*|(|<frac|i|\<hbar\>><big|int>\<mathd\><rsup|4>x<with|math-font|cal|L>|)>>>|<row|<cell|>|<cell|=>|<cell|<with|math-font|cal|<with|math-font|cal|N>><big|int>D\<phi\>exp<around*|(|<frac|i|\<hbar\>><big|int>\<mathd\><rsup|4>x<around*|{|<frac|\<hbar\><rsup|2>|2>\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<mu\>>\<phi\>-<frac|1|2>m<rsup|2>\<phi\><rsup|2>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<with|math-font|cal|N><big|int>D\<phi\>
+    exp<around*|(|<frac|i|\<hbar\>><big|int>\<mathd\><rsup|4>x<around*|{|<frac|1|2>\<phi\><around*|(|\<hbar\><rsup|2>\<box\>
+    -m<rsup|2>|)>\<phi\>|}>|)>>>>>
+  </eqnarray*>
 
   <paragraph|introduce the propagator.>
 
@@ -362,11 +399,12 @@
     <associate|auto-15|<tuple|3.0.1|?>>
     <associate|auto-16|<tuple|3.0.1.1|?>>
     <associate|auto-17|<tuple|3.0.1.2|?>>
-    <associate|auto-18|<tuple|4|?>>
-    <associate|auto-19|<tuple|4.0.1.3|?>>
+    <associate|auto-18|<tuple|3.0.1.3|?>>
+    <associate|auto-19|<tuple|4|?>>
     <associate|auto-2|<tuple|1|?>>
-    <associate|auto-20|<tuple|5|?>>
-    <associate|auto-21|<tuple|5.0.1.4|?>>
+    <associate|auto-20|<tuple|4.0.1.4|?>>
+    <associate|auto-21|<tuple|5|?>>
+    <associate|auto-22|<tuple|5.0.1.5|?>>
     <associate|auto-3|<tuple|1.1|?>>
     <associate|auto-4|<tuple|1|?>>
     <associate|auto-5|<tuple|2|?>>
@@ -422,9 +460,44 @@
       \ <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-11>>
 
+      <with|par-left|<quote|6fn>|Definition.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Relation with Feyman Kernel.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-13><vspace|0.15fn>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3.
       Fields and Quantum> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-12><vspace|0.5fn>
+      <no-break><pageref|auto-14><vspace|0.5fn>
+
+      <with|par-left|<quote|3fn>|i. Conception transplant
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-15>>
+
+      <with|par-left|<quote|6fn>|symbol convention:
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-16><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|learned <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-17><vspace|0.15fn>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4.
+      Euclidian fields theory> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-18><vspace|0.5fn>
+
+      <with|par-left|<quote|6fn>|Re-identity:
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-19><vspace|0.15fn>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5.
+      Feynmann Propagator> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-20><vspace|0.5fn>
+
+      <with|par-left|<quote|6fn>|introduce the propagator.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-21><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
