@@ -127,7 +127,13 @@
 
   <subsection|ii. multi-dememsion case.>
 
-  {more:
+  Core: consider :<math|<around|\<langle\>|<wide|x|\<vect\>><rprime|'>,t<rprime|'>|\<nobracket\>><around|\||<wide|x|\<vect\>>,t|\<rangle\>>>
+  ,where set <math|<wide|x|\<vect\>>=<around*|(|x<rsub|1>,x<rsub|2>,\<ldots\>,x<rsub|n>|)>>
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<around|\<langle\>|<wide|x|\<vect\>><rprime|'>,t<rprime|'>|\<nobracket\>><around|\||<wide|x|\<vect\>>,t|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|x<rprime|'><rsub|1>,\<ldots\>,x<rsub|n><rprime|'>,t<rprime|'>|\<nobracket\>><around|\||x<rsub|1>,\<ldots\>,x<rsub|n>,t|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>D
+    x<rsub|1><around|\<langle\>|x<rprime|'><rsub|1>,\<ldots\>,x<rsub|n><rprime|'>,t<rprime|'>|\<nobracket\>><around|\||x<rsub|1N-1>,\<ldots\>,x<rsub|n>,t|\<rangle\>><around|\<langle\>|x<rsub|1N-1>,\<ldots\>,x<rsub|n>,t|\|><around|\||x<rsub|1N-1>,\<ldots\>,x<rsub|n>,t|\<rangle\>><around|\||x<rsub|1>,\<ldots\>,x<rsub|n>,t|\<rangle\>>>>>>
+  </eqnarray*>
 
   <section|2. Intro conceptions>
 
@@ -185,7 +191,46 @@
       i>>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><frac|<around|\<langle\>|x<rprime|'>,t<rprime|'>|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||x,t|\<rangle\>>|<around|\<langle\>|x<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||x,t|\<rangle\>>>>>>>
     </eqnarray*>
 
-    {verify:
+    verify:
+
+    1.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><around|\<langle\>|x<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||x,t|\<rangle\>>>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n><around|\<langle\>|x<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||n|\<rangle\>><around|\<langle\>|n|\<nobracket\>><around|\||x,t|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n><around|\<langle\>|x<rprime|'>|\<nobracket\>><around|\||n|\<rangle\>>e<rsup|<frac|i|\<hbar\>>E<rsub|n>t<rprime|'>>e<rsup|-<frac|i|\<hbar\>>E<rsub|n>t><around|\<langle\>|n|\<nobracket\>><around|\||x|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n>\<psi\><rsup|\<ast\>><rsub|n><around*|(|x<rprime|'>|)>\<psi\><rsub|n><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|n><around*|(|t<rprime|'>-t|)>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|\<tau\><rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|\<tau\>\<rightarrow\>\<infty\>>>>>>><big|sum><rsub|n>\<psi\><rsup|\<ast\>><rsub|n><around*|(|x<rprime|'>|)>\<psi\><rsub|n><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|n><around*|(|e<rsup|i\<delta\><rprime|'>>\<tau\><rprime|'>-e<rsup|i<around*|(|\<delta\>+\<pi\>|)>>\<tau\>|)>>=lim<rsub|<stack|<tformat|<table|<row|<cell|\<tau\><rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|\<tau\>\<rightarrow\>\<infty\>>>>>>><big|sum>\<psi\><rsup|\<ast\>><rsub|n><around*|(|x<rprime|'>|)>\<psi\><rsub|n><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|n><around*|(|e<rsup|i\<delta\><rprime|'>>\<tau\><rprime|'>+e<rsup|i\<delta\>>\<tau\>|)>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|\<tau\><rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|\<tau\>\<rightarrow\>\<infty\>>>>>>><big|sum><rsub|n>\<psi\><rsup|\<ast\>><rsub|n><around*|(|x<rprime|'>|)>\<psi\><rsub|n><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|n><around*|(|<around*|(|<around|cos|\<delta\><rprime|'>|>+i<around|sin|\<delta\><rprime|'>|>|)>\<tau\><rprime|'>+<around*|(|<around|cos|\<delta\>+i<around|sin|\<delta\>|\<nobracket\>>|\<nobracket\>>|)>\<tau\>|)>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|\<tau\><rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|\<tau\>\<rightarrow\>\<infty\>>>>>>><big|sum><rsub|n>\<psi\><rsup|\<ast\>><rsub|n><around*|(|x<rprime|'>|)>\<psi\><rsub|n><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|n><around*|(|<around|cos|\<delta\><rprime|'>\<tau\><rprime|'>+<around|cos|\<delta\>|>\<tau\>|>|)>>e<rsup|-<frac|1|\<hbar\>>E<rsub|n><around*|(|<around|sin|\<delta\><rprime|'>\<tau\><rprime|'>+<around|sin|\<delta\>|>\<tau\>|>|)>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|\<tau\><rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|\<tau\>\<rightarrow\>\<infty\>>>>>>>\<psi\><rsup|\<ast\>><rsub|0><around*|(|x<rprime|'>|)>\<psi\><rsub|0><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|0><around*|(|<around|cos|\<delta\><rprime|'>\<tau\><rprime|'>+<around|cos|\<delta\>|>\<tau\>|>|)>>e<rsup|-<frac|1|\<hbar\>>E<rsub|0><around*|(|<around|sin|\<delta\><rprime|'>\<tau\><rprime|'>+<around|sin|\<delta\>|>\<tau\>|>|)>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|\<tau\><rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|\<tau\>\<rightarrow\>\<infty\>>>>>>>\<psi\><rsup|\<ast\>><rsub|0><around*|(|x<rprime|'>|)>\<psi\><rsub|0><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|0><around*|(|e<rsup|i\<delta\><rprime|'>>\<tau\><rprime|'>+e<rsup|i\<delta\>>\<tau\>|)>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n>\<psi\><rsup|\<ast\>><rsub|0><around*|(|x<rprime|'>|)>\<psi\><rsub|0><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|0><around*|(|t<rprime|'>-t|)>>>>>>
+    </eqnarray*>
+
+    instruction.
+
+    <\itemize>
+      <item>about <math|<around*|(|t<rprime|'>,t|)>\<rightarrow\><around*|(|\<infty\>,-\<infty\>|)>>,<math|T<rsub|n>\<rightarrow\>0>.here
+      should require <math|\<delta\><rprime|'>,\<delta\>>.that's interesting
+      to think why we should require like that and what meanings of them.
+
+      <item>the term,<math|T<rsub|n>=><math|\<psi\><rsup|\<ast\>><rsub|n><around*|(|x<rprime|'>|)>\<psi\><rsub|n><around*|(|x|)>e<rsup|<frac|i|\<hbar\>>E<rsub|n><around*|(|t<rprime|'>-t|)>>>,as
+      <math|<around*|(|t<rprime|'>,t|)>\<rightarrow\><around*|(|\<infty\>,-\<infty\>|)>>
+      <math|T<rsub|n>\<rightarrow\>0, max <around*|{|T<rsub|n>|}>=T<rsub|0>>\ 
+
+      and therefore the max term contribute most, namely
+      <math|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum>T<rsub|n>=im<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>>T<rsub|0>>
+    </itemize>
+
+    2.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><around|\<langle\>|x<rprime|'>,t<rprime|'>|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||x,t|\<rangle\>>>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n,m><around|\<langle\>|x<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||n|\<rangle\>><around|\<langle\>|n|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||m|\<rangle\>><around|\<langle\>|m|\<nobracket\>><around|\||x,t|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n,m><around|\<langle\>|x<rprime|'>|\|>e<rsup|<frac|i|\<hbar\>><wide|H|^>t<rprime|'>><around|\||n|\<rangle\>><around|\<langle\>|n|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||m|\<rangle\>><around|\<langle\>|m|\|>e<rsup|-<frac|i|\<hbar\>><wide|H|^>t><around|\||x|\<rangle\>>=<big|sum><rsub|n,m><around|\<langle\>|x<rprime|'>|\|>e<rsup|<frac|i|\<hbar\>>E<rsub|n>t<rprime|'>><around|\||n|\<rangle\>><around|\<langle\>|n|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||m|\<rangle\>><around|\<langle\>|m|\|>e<rsup|-<frac|i|\<hbar\>>E<rsub|m>t><around|\||x|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n,m>\<psi\><rsub|n><rsup|\<ast\>><around*|(|x<rprime|'>|)>e<rsup|<frac|i|\<hbar\>>E<rsub|n>t<rprime|'>><around|\<langle\>|n|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||m|\<rangle\>>e<rsup|-<frac|i|\<hbar\>>E<rsub|m>t>\<psi\><rsub|m><around*|(|x|)>
+      >>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><big|sum><rsub|n,m>\<psi\><rsub|n><rsup|\<ast\>><around*|(|x<rprime|'>|)>\<psi\><rsub|m><around*|(|x|)>
+      e<rsup|<frac|i|\<hbar\>>E<rsub|n>t<rprime|'>-E<rsub|m>t><around|\<langle\>|n|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||m|\<rangle\>>
+      >>|<row|<cell|>|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>>\<psi\><rsub|0><rsup|\<ast\>><around*|(|x<rprime|'>|)>\<psi\><rsub|0><around*|(|x|)>
+      e<rsup|<frac|i|\<hbar\>>E<rsub|0><around*|(|t<rprime|'>-t|)>><around|\<langle\>|0|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||0|\<rangle\>>
+      >>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|0|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||0|\<rangle\>>lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><around|\<langle\>|x<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||x,t|\<rangle\>>>>>>
+    </eqnarray*>
+
+    therefore
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around|\<langle\>|0|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||0|\<rangle\>>
+      >|<cell|=>|<cell|lim<rsub|<stack|<tformat|<table|<row|<cell|t<rprime|'>\<rightarrow\>\<infty\>>>|<row|<cell|t\<rightarrow\>-\<infty\>>>>>>><frac|<around|\<langle\>|x<rprime|'>,t<rprime|'>|\|>T<around*|[|<wide|x|^><rsub|j><wide|x|^><rsub|i>|]><around|\||x,t|\<rangle\>>|<around|\<langle\>|x<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||x,t|\<rangle\>>>>>>>
+    </eqnarray*>
   </description>
 
   <subsection|ii. Vaccum presistence amplitude >
@@ -202,16 +247,37 @@
 
     And which should be a term of lagrangian.
 
+    <paragraph|instruction>
+
+    <\itemize>
+      <item>the existence of the term <math|J<around*|(|t|)>>, mean that ,for
+      every inner product between vectors, the products won't be normalised
+      constant,but a quality with respect to <math|J<around*|(|t|)>>\ 
+
+      <item>
+    </itemize>
+
     <item*|introduction>
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<around|\<langle\>|q<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||q,t|\<rangle\>><rsub|J>>|<cell|=>|<cell|<around*|(|<sqrt|<frac|2\<pi\>m\<hbar\>
+      <tformat|<table|<row|<cell|<around|\<langle\>|x<rprime|'>,t<rprime|'>|\<nobracket\>><around|\||x,t|\<rangle\>><rsub|J>>|<cell|=>|<cell|<around*|(|<sqrt|<frac|2\<pi\>m\<hbar\>
       |i\<epsilon\>>>|)><rsup|N><big|int>D x
-      exp<around*|(|<frac|i|\<hbar\>><big|int>\<mathd\>t<around*|{|p<wide|x|\<dot\>>-H+J<around*|(|t|)>x|}>|)>
+      exp<around*|(|<frac|i|\<hbar\>><big|int>\<mathd\>t<around*|{|L+J<around*|(|t|)>x|}>|)>
       >>|<row|<cell|>|<cell|>|<cell|>>>>
     </eqnarray*>
 
     {do:
+
+    \;
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<big|int>\<mathd\>x<rprime|'>\<mathd\>x<around|\<langle\>|0|\<nobracket\>><around|\||x<rprime|'>,t<rprime|'>|\<rangle\>><around|\<langle\>|x<rprime|'>,t|\<nobracket\>><around|\||x,t|\<rangle\>><around|\<langle\>|x,t|\<nobracket\>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>x<rprime|'>\<mathd\>x
+      <around|\<langle\>|0|\|>e<rsup|<frac|i|\<hbar\>><around*|(|<wide|H|^>t-J<around*|(|t|)><wide|x|^>|)>><around|\||x<rprime|'>|\<rangle\>><around|\<langle\>|x<rprime|'>,t|\<nobracket\>><around|\||x,t|\<rangle\>><around|\<langle\>|x|\|>e<rsup|-<frac|i|\<hbar\>><around*|(|<wide|H|^>-J<around*|(|t|)><wide|x|^>|)>><around|\||0|\<rangle\>>>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|>|<cell|>|<cell|>>>>
+    </eqnarray*>
   </description>
 
   <paragraph|Relation with Feyman Kernel.>
@@ -395,16 +461,17 @@
     <associate|auto-11|<tuple|2.2|?>>
     <associate|auto-12|<tuple|5|?>>
     <associate|auto-13|<tuple|6|?>>
-    <associate|auto-14|<tuple|3|?>>
-    <associate|auto-15|<tuple|3.0.1|?>>
-    <associate|auto-16|<tuple|3.0.1.1|?>>
-    <associate|auto-17|<tuple|3.0.1.2|?>>
-    <associate|auto-18|<tuple|3.0.1.3|?>>
-    <associate|auto-19|<tuple|4|?>>
+    <associate|auto-14|<tuple|7|?>>
+    <associate|auto-15|<tuple|3|?>>
+    <associate|auto-16|<tuple|3.0.1|?>>
+    <associate|auto-17|<tuple|3.0.1.1|?>>
+    <associate|auto-18|<tuple|3.0.1.2|?>>
+    <associate|auto-19|<tuple|3.0.1.3|?>>
     <associate|auto-2|<tuple|1|?>>
-    <associate|auto-20|<tuple|4.0.1.4|?>>
-    <associate|auto-21|<tuple|5|?>>
-    <associate|auto-22|<tuple|5.0.1.5|?>>
+    <associate|auto-20|<tuple|4|?>>
+    <associate|auto-21|<tuple|4.0.1.4|?>>
+    <associate|auto-22|<tuple|5|?>>
+    <associate|auto-23|<tuple|5.0.1.5|?>>
     <associate|auto-3|<tuple|1.1|?>>
     <associate|auto-4|<tuple|1|?>>
     <associate|auto-5|<tuple|2|?>>
@@ -483,21 +550,25 @@
       <with|par-left|<quote|6fn>|learned <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-17><vspace|0.15fn>>
 
+      <with|par-left|<quote|6fn>|introduce.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-18><vspace|0.15fn>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4.
       Euclidian fields theory> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-18><vspace|0.5fn>
+      <no-break><pageref|auto-19><vspace|0.5fn>
 
       <with|par-left|<quote|6fn>|Re-identity:
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19><vspace|0.15fn>>
+      <no-break><pageref|auto-20><vspace|0.15fn>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5.
       Feynmann Propagator> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20><vspace|0.5fn>
+      <no-break><pageref|auto-21><vspace|0.5fn>
 
       <with|par-left|<quote|6fn>|introduce the propagator.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21><vspace|0.15fn>>
+      <no-break><pageref|auto-22><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
