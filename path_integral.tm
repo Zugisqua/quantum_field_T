@@ -210,7 +210,7 @@
     <tformat|<table|<row|<cell|<with|math-font|cal|L>>|<cell|=>|<cell|<frac|1|2>\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<mu\>>\<phi\>-<frac|m|2>\<phi\><rsup|2>>>>>
   </eqnarray*>
 
-  the path integral
+  <paragraph|i. the path integral>
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>|)>|\|>e<rsup|<frac|i|\<hbar\>>H
@@ -275,6 +275,38 @@
     althought the symbol are in a mess.
   </description>
 
+  <paragraph|ii .the vaccum amplitude & corrlation function>
+
+  1.
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|i<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<around*|(|<with|math-font|cal|L<with|math-font|cal|>>+J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|i<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<around*|(|<frac|1|2>\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<mu\>>\<phi\>-<frac|m|2>\<phi\><rsup|2>+J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|(|\<phi\>\<box\>\<phi\>+m\<phi\><rsup|2>-2J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|do:|\<nobracket\>>>>>>
+  </eqnarray*>
+
+  \ where <math|Z=><math|<big|int>D\<phi\> e<rsup|i
+  <big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<with|math-font|cal|L<with|math-font|cal|>>>>
+
+  \ Technical:
+
+  <\itemize>
+    <item>for using the Gauss integral should eliminate the linear term:
+
+    shift: <math|\<phi\><rprime|'><around*|(|x|)>=\<phi\><around*|(|x|)>+\<alpha\><around*|(|x|)>>,and
+    finally determind <math|\<alpha\><around*|(|x|)>>
+
+    {more:
+  </itemize>
+
+  \ 2.
+
+  <\description>
+    <item*|1-ponit function><math|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>|\<rangle\>>>
+  </description>
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<around*|\<nobracket\>|<frac|\<delta\>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>>|\|><rsub|J=0>|\<nobracket\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|do:|\<nobracket\>>>>>>
+  </eqnarray*>
+
   <paragraph|Corrlation function>
 
   <\description>
@@ -326,7 +358,7 @@
   <\collection>
     <associate|auto-1|<tuple|1|?>>
     <associate|auto-10|<tuple|1.1.1.1|?>>
-    <associate|auto-11|<tuple|0.1.1.1|?>>
+    <associate|auto-11|<tuple|1.1.1.2|?>>
     <associate|auto-12|<tuple|1.1.1.3|?>>
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|1.1|?>>
