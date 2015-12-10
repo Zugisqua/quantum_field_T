@@ -384,16 +384,14 @@
     <item*|2-point function>
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<delta\><rsup|2>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<delta\>|\<delta\>J<around*|(|x<rsub|1>|)>><around*|(|i<big|int>\<mathd\><rsup|4>x<around*|{|J<around*|(|x|)>G<around*|(|x<rsub|2>-x|)>|}>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|i<big|int>\<mathd\><rsup|4>x<around*|{|\<delta\><around*|(|x<rsub|2>-x<rsub|1>|)>G<around*|(|x<rsub|2>-x<rsub|1>|)>|}>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|i
+      <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<delta\><rsup|2>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<delta\>|\<delta\>J<around*|(|x<rsub|1>|)>><around*|(|i<big|int>\<mathd\><rsup|4>x<around*|{|J<around*|(|x|)>G<around*|(|x<rsub|2>-x|)>|}>e<rsup|<frac|i|2><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>J<around*|(|x|)>G<around*|(|x<rprime|'>-x|)>|}>>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|i<big|int>\<mathd\><rsup|4>x<around*|{|\<delta\><around*|(|x<rsub|2>-x<rsub|1>|)>G<around*|(|x<rsub|2>-x<rsub|1>|)>|}>e<rsup|<frac|i|2><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>J<around*|(|x|)>G<around*|(|x<rprime|'>-x|)>|}>>|\|><rsub|J=0>>>|<row|<cell|>|<cell|>|<cell|+i<big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x|)>G<around*|(|x<rsub|2>-x|)>|\<nobracket\>><around*|\<nobracket\>|J<around*|(|x<rprime|'>|)>G<around*|(|x<rsub|1>-x<rprime|'>|)>|}>e<rsup|<frac|i|2><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>J<around*|(|x|)>G<around*|(|x<rprime|'>-x|)>|}>>>>|<row|<cell|>|<cell|=>|<cell|i
       G<around*|(|x<rsub|2>-x<rsub|1>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|-<frac|i|p<rsup|2>-m<rsup|2>>|}>e<rsup|-i
       p<around*|(|x<rsub|2>-x<rsub|1>|)>>>>>>
     </eqnarray*>
 
-    <item*|n-point function (n\<gtr\>2)><math|n=3> as an example.
+    <item*|3-point function><math|n=3> as an example.
 
-    <\eqnarray*>
-      <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>\<phi\><rsub|3><around*|(|x<rsub|3>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<around*|\<nobracket\>|<frac|\<delta\><rsup|3>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>\<delta\>J<around*|(|x<rsub|3>|)>>|\|><rsub|J=0>|\<nobracket\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|i<frac|\<delta\>G<around*|(|x<rsub|3>-x<rsub|1>|)>|\<delta\>J<around*|(|x<rsub|1>|)>>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
-    </eqnarray*>
+    <item*|n-point function>
   </description>
 
   <paragraph|Corrlation function>
