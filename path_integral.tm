@@ -248,8 +248,6 @@
     k>\<delta\><rsup|k><rsub|j>>>>>
   </eqnarray*>
 
-  \;
-
   <\description>
     <item*|part 1>
 
@@ -280,8 +278,30 @@
   1.
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|i<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<around*|(|<with|math-font|cal|L<with|math-font|cal|>>+J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|i<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<around*|(|<frac|1|2>\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<mu\>>\<phi\>-<frac|m|2>\<phi\><rsup|2>+J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|(|\<phi\>\<box\>\<phi\>+m\<phi\><rsup|2>-2J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|do:|\<nobracket\>>>>>>
+    <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>e<rsup|i<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<around*|(|<with|math-font|cal|L<with|math-font|cal|>>+J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>e<rsup|i<big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<around*|(|<frac|1|2>\<partial\><rsup|\<mu\>>\<phi\>\<partial\><rsub|\<mu\>>\<phi\>-<frac|m|2>\<phi\><rsup|2>+J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|(|\<phi\>\<box\>\<phi\>+m\<phi\><rsup|2>-2J<around*|(|x|)>\<phi\><around*|(|x|)>|)>>>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|<frac|1|Z><big|int>D<around*|(|\<phi\>+\<alpha\>|)>e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|(|<around*|(|\<phi\>+\<alpha\>|)><around*|(|\<box\>+m<rsup|2>|)><around*|(|\<phi\>+\<alpha\>|)>-2J<around*|(|x|)><around*|(|\<phi\><around*|(|x|)>+\<alpha\>|)>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|(|\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+\<alpha\><around*|(|\<box\>
+    +m<rsup|2>|)>\<alpha\>+\<alpha\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<alpha\>-2J\<phi\>-2J\<alpha\>|)>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|(|\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>|)>>\<times\>e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x\<alpha\><around*|{|\<alpha\><around*|(|\<box\>
+    +m<rsup|2>|)>\<alpha\>-2J\<alpha\>|}>>\<times\>e<rsup|-i<big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|[|<around*|(|\<box\>
+    +m<rsup|2>|)>\<alpha\>-J|]>|}>>|}>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<alpha\><around*|(|\<box\>
+    +m<rsup|2>|)>\<alpha\>-2J\<alpha\>|}>>\<times\><frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|(|\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>|)>>\<times\>e<rsup|-i<big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|[|<around*|(|\<box\>
+    +m<rsup|2>|)>\<alpha\>-J|]>|}>>|}>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|<frac|i|2><big|int>J\<alpha\>\<mathd\><rsup|4>x>\<times\><frac|Z|Z>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|<frac|i|2><big|int>J<around*|(|<big|int>\<mathd\><rsup|4>x
+    <rprime|'>J<around*|(|x<rprime|'>|)> G<around*|(|x<rprime|'>-x|)>|)>\<mathd\><rsup|4>x>=exp<around*|(|<frac|i|2><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>J<around*|(|x|)>G<around*|(|x<rprime|'>-x|)>|}>|)>>>>>
   </eqnarray*>
+
+  <\description>
+    <item*|part>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<alpha\><around*|(|x|)><around*|(|\<box\>
+      +<around*|(|m|)><rsup|2>|)>\<phi\><around*|(|x|)>|}>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|x><around*|(|\<alpha\>\<partial\><rsup|x>\<phi\>|)>-\<partial\><rsub|x>\<alpha\>\<partial\><rsup|x>\<phi\>+m<rsup|2>\<alpha\>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|0+<big|int>\<mathd\><rsup|4>x<around*|{|-\<partial\><rsup|x><around*|(|\<phi\>\<partial\><rsub|x>\<alpha\>|)>+\<phi\>\<partial\><rsup|x>\<partial\><rsub|x>\<alpha\>+m<rsup|2>\<alpha\>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|0+0+<big|int>\<mathd\><rsup|4>x\<phi\><around*|{|\<box\>
+      +m<rsup|2>|}>\<alpha\>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x\<phi\><around*|{|\<box\>
+      +m<rsup|2>|}>\<alpha\>>>>>
+    </eqnarray*>
+  </description>
 
   \ where <math|Z=><math|<big|int>D\<phi\> e<rsup|i
   <big|int><rsup|T><rsub|-T>\<mathd\><rsup|4>x<with|math-font|cal|L<with|math-font|cal|>>>>
@@ -294,18 +314,87 @@
     shift: <math|\<phi\><rprime|'><around*|(|x|)>=\<phi\><around*|(|x|)>+\<alpha\><around*|(|x|)>>,and
     finally determind <math|\<alpha\><around*|(|x|)>>
 
-    {more:
+    what we need: <math|<around*|(|\<box\> +m<rsup|2>|)>\<alpha\>=J> \ and
+    solve it using Green's function
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|\<box\>
+      +m<rsup|2>|)>G<around*|(|x-x<rprime|'>|)>>|<cell|=>|<cell|\<delta\><around*|(|x-x<rprime|'>|)>>>>>
+    </eqnarray*>
+
+    expand the solve into Green's function
+    <math|\<alpha\>=<big|int>\<mathd\><rsup|4>x
+    <rprime|'>a<around*|(|x<rprime|'>|)> G<around*|(|x<rprime|'>-x|)>> then
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|\<box\>
+      +m<rsup|2>|)>\<alpha\>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<rprime|'>a<around*|(|x<rprime|'>|)><around*|(|\<box\><rsub|x>+m<rsup|2>|)>G<around*|(|x-x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<rprime|'>a<around*|(|x<rprime|'>|)>\<delta\><around*|(|x-x<rprime|'>|)>>>|<row|<cell|>|<cell|=>|<cell|a<around*|(|x|)>=J<around*|(|x|)>>>>>
+    </eqnarray*>
+
+    part: solve the Green's function.
+
+    could see the solution is <math|\<alpha\>=<big|int>\<mathd\><rsup|4>x
+    <rprime|'>J<around*|(|x<rprime|'>|)> G<around*|(|x<rprime|'>-x|)>>
+
+    <\description>
+      <item*|part> solve the Green's function.
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int>\<mathd\><rsup|4>x<around*|(|<around*|(|\<box\>
+        +m<rsup|2>|)>G<around*|(|x-x<rprime|'>|)>|)>e<rsup|i p
+        x>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x\<delta\><around*|(|x-x<rprime|'>|)>
+        \ e<rsup|i p x>>>|<row|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x-x<rprime|'>|)><around*|(|\<box\>
+        +m<rsup|2>|)>e<rsup|i p x>|}>>|<cell|=>|<cell|e<rsup|i p
+        x<rprime|'>>>>|<row|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x-x<rprime|'>|)><around*|(|-p<rsup|2>+m<rsup|2>|)>e<rsup|i
+        p x>|}>>|<cell|=>|<cell|e<rsup|i p
+        x<rprime|'>>>>|<row|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x-x<rprime|'>|)>e<rsup|i
+        p x>|}>>|<cell|=>|<cell|-<frac|e<rsup|i p
+        x<rprime|'>>|p<rsup|2>-m<rsup|2>>>>>>
+      </eqnarray*>
+
+      then
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>>e<rsup|-i
+        p x<rprime|''>><big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x-x<rprime|'>|)>e<rsup|i
+        p x>|}>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|-<frac|e<rsup|i
+        p x<rprime|'>>|p<rsup|2>-m<rsup|2>>|}>e<rsup|-i p
+        x<rprime|''>>>>|<row|<cell|<big|int>\<mathd\><rsup|4>x
+        G<around*|(|x-x<rprime|'>|)><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>>e<rsup|i
+        p <around*|(|x-x<rprime|''>|)>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|-<frac|e<rsup|i
+        p x<rprime|'>>|p<rsup|2>-m<rsup|2>>|}>e<rsup|-i p
+        x<rprime|''>>>>|<row|<cell|<big|int>\<mathd\><rsup|4>x
+        G<around*|(|x-x<rprime|'>|)>\<delta\><around*|(|x-x<rprime|''>|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|-<frac|e<rsup|i
+        p x<rprime|'>>|p<rsup|2>-m<rsup|2>>|}>e<rsup|-i p
+        x<rprime|''>>>>|<row|<cell|G<around*|(|x<rprime|''>-x<rprime|'>|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|-<frac|1|p<rsup|2>-m<rsup|2>>|}>e<rsup|-i
+        p <around*|(|x<rprime|''>-x<rprime|'>|)>>>>>>
+      </eqnarray*>
+    </description>
   </itemize>
 
   \ 2.
 
   <\description>
-    <item*|1-ponit function><math|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>|\<rangle\>>>
-  </description>
+    <item*|1-point function><math|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>|\<rangle\>>>
 
-  <\eqnarray*>
-    <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<around*|\<nobracket\>|<frac|\<delta\>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>>|\|><rsub|J=0>|\<nobracket\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|{|do:|\<nobracket\>>>>>>
-  </eqnarray*>
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<around*|\<nobracket\>|<frac|\<delta\>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>>|\|><rsub|J=0>|\<nobracket\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<delta\>|\<delta\>J<around*|(|x<rsub|1>|)>><around*|(|e<rsup|<frac|i|2><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>J<around*|(|x|)>G<around*|(|x<rprime|'>-x|)>|}>>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|e<rsup|<frac|i|2><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>J<around*|(|x|)>G<around*|(|x<rprime|'>-x|)>|}>>>>|<row|<cell|>|<cell|>|<cell|<around*|\<nobracket\>|\<times\><frac|i|2><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|{|\<delta\><around*|(|x<rprime|'>-x<rsub|1>|)>J<around*|(|x|)>G<around*|(|x<rprime|'>-x|)>+J<around*|(|x<rprime|'>|)>\<delta\><around*|(|x-x<rsub|1>|)>G<around*|(|x<rprime|'>-x|)>|}>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|i|2><around*|(|<big|int>\<mathd\><rsup|4>x<around*|{|J<around*|(|x|)>G<around*|(|x<rsub|1>-x|)>|}>+<big|int>\<mathd\><rsup|4>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>G<around*|(|x<rprime|'>-x<rsub|1>|)>|}>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|i<big|int>\<mathd\><rsup|4>x<around*|{|J<around*|(|x|)>G<around*|(|x<rsub|1>-x|)>|}>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
+    </eqnarray*>
+
+    <item*|2-point function>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<delta\><rsup|2>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|\<delta\>|\<delta\>J<around*|(|x<rsub|1>|)>><around*|(|i<big|int>\<mathd\><rsup|4>x<around*|{|J<around*|(|x|)>G<around*|(|x<rsub|2>-x|)>|}>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|i<big|int>\<mathd\><rsup|4>x<around*|{|\<delta\><around*|(|x<rsub|2>-x<rsub|1>|)>G<around*|(|x<rsub|2>-x<rsub|1>|)>|}>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|i
+      G<around*|(|x<rsub|2>-x<rsub|1>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|-<frac|i|p<rsup|2>-m<rsup|2>>|}>e<rsup|-i
+      p<around*|(|x<rsub|2>-x<rsub|1>|)>>>>>>
+    </eqnarray*>
+
+    <item*|n-point function (n\<gtr\>2)><math|n=3> as an example.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>\<phi\><rsub|3><around*|(|x<rsub|3>|)>|\<rangle\>>>|<cell|=>|<cell|<around*|\<nobracket\>|<around*|\<nobracket\>|<frac|\<delta\><rsup|3>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>\<delta\>J<around*|(|x<rsub|3>|)>>|\|><rsub|J=0>|\<nobracket\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|i<frac|\<delta\>G<around*|(|x<rsub|3>-x<rsub|1>|)>|\<delta\>J<around*|(|x<rsub|1>|)>>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|0>>>>
+    </eqnarray*>
+  </description>
 
   <paragraph|Corrlation function>
 
@@ -406,9 +495,17 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9>>
 
-      <with|par-left|<quote|6fn>|Corrlation function
+      <with|par-left|<quote|6fn>|i. the path integral
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|ii .the vaccum amplitude & corrlation
+      function <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Corrlation function
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
