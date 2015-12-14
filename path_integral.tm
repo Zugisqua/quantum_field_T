@@ -223,27 +223,27 @@
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|y|\<vect\>>,t<rprime|'>|)>|\<nobracket\>><around|\||\<phi\><around*|(|<wide|x|\<vect\>>,t|)>|\<rangle\>>>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|i<big|int>\<mathd\><rsup|4>x<around*|{|<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsup|\<mu\>>\<phi\>-<frac|m<rsup|2>|2>\<phi\><rsup|2>|}>|}>>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|\<mu\>><around*|(|\<phi\>\<partial\><rsup|\<mu\>>\<phi\>|)>-\<phi\>\<partial\><rsub|\<mu\>>\<partial\><rsup|\<mu\>>\<phi\>-m<rsup|2>\<phi\><rsup|2>|}>|}>>>|<row|<cell|>|<cell|=>|<cell|const<big|int>D\<phi\>exp<around*|{|-<frac|i|2><big|int>\<mathd\><rsup|4>x\<phi\><around*|{|\<box\>
-    +m<rsup|2>|}>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|=>|<cell|const\<times\><frac|1|<sqrt|det<around*|{|\<lambda\><rsub|j>+m<rsup|2>|}>>>>>>>
+    +m<rsup|2>|}>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|>>|<row|<cell|>|<cell|=>|<cell|const\<times\><frac|1|<sqrt|det<around*|{|\<lambda\><rsub|j>+m<rsup|2>|}>>>>>>>
   </eqnarray*>
 
   solve it:\ 
 
   Core: the transformation of <math|\<phi\>>
-  ,<math|<tabular|<tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|a<rsub|j>A<rsup|j><around*|(|x|)>>>>>>>
+  ,<math|<tabular|<tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|sum><rsub|j>a<rsub|j>A<rsup|j><around*|(|x|)>>>>>>>
   ,
 
   therefore
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\>|\<nobracket\>><around|\||\<phi\>|\<rangle\>>>|<cell|=>|<cell|<big|int>\<mathd\>x<around|\<langle\>|\<phi\>|\<nobracket\>><around|\||x|\<rangle\>><around|\<langle\>|x|\<nobracket\>><around|\||\<phi\>|\<rangle\>>=<big|int>\<mathd\>x
-    a<rsub|j><rsup|\<ast\>>A<rsup|\<ast\>j><around*|(|x|)>a<rsub|i>A<rsup|j><rsup|>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|j><rsup|\<ast\>>a<rsub|i><big|int>\<mathd\>x<around|\<langle\>|A<rsup|j>|\<nobracket\>><around|\||x|\<rangle\>><around|\<langle\>|x|\<nobracket\>><around|\||A<rsup|i>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|j><rsup|\<ast\>>a<rsub|i><around|\<langle\>|A<rsup|j>|\<nobracket\>><around|\||A<rsup|i>|\<rangle\>>=1>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<around|\<langle\>|A<rsup|j>|\<nobracket\>><around|\||A<rsup|i>|\<rangle\>>=<frac|\<delta\><rsup|j
+    <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\>|\<nobracket\>><around|\||\<phi\>|\<rangle\>>>|<cell|=>|<cell|<big|int>\<mathd\>x<around|\<langle\>|\<phi\>|\<nobracket\>><around|\||x|\<rangle\>><around|\<langle\>|x|\<nobracket\>><around|\||\<phi\>|\<rangle\>>=<big|int>\<mathd\>x<big|sum><rsub|j,i>
+    a<rsub|j><rsup|\<ast\>>A<rsup|\<ast\>j><around*|(|x|)>a<rsub|i>A<rsup|i><rsup|><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|j,i>a<rsub|j><rsup|\<ast\>>a<rsub|i><big|int>\<mathd\>x<around|\<langle\>|A<rsup|j>|\<nobracket\>><around|\||x|\<rangle\>><around|\<langle\>|x|\<nobracket\>><around|\||A<rsup|i>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|j><rsup|\<ast\>>a<rsub|i><around|\<langle\>|A<rsup|j>|\<nobracket\>><around|\||A<rsup|i>|\<rangle\>>=1>>|<row|<cell|>|<cell|\<Rightarrow\>>|<cell|<around|\<langle\>|A<rsup|j>|\<nobracket\>><around|\||A<rsup|i>|\<rangle\>>=<frac|\<delta\><rsup|j
     i>|<around*|\||a<rsub|i>|\|><rsup|2>>>>>>
   </eqnarray*>
 
   where <math|>require
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|\<box\> A<rsup|i>>|<cell|=>|<cell|\<lambda\><rsup|i><op|<rsub|j>>A<rsup|j>>>|<row|<cell|>|<cell|>|<cell|where
+    <tformat|<table|<row|<cell|\<box\> A<rsup|i><around*|(|x|)>>|<cell|=>|<cell|\<lambda\><rsup|i><op|>A<rsup|i><around*|(|x|)>>>|<row|<cell|>|<cell|>|<cell|where
     \<lambda\><rsup|i><op|<rsub|j>>=\<lambda\><rsup|i><rsub|
     k>\<delta\><rsup|k><rsub|j>>>>>
   </eqnarray*>
@@ -256,7 +256,23 @@
     </eqnarray*>
 
     <\eqnarray*>
-      <tformat|<table|<row|<cell|<big|int>D\<phi\>>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><around*|(|x<rsub|1>|)>\<mathd\>\<phi\><around*|(|x<rsub|2>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|\||<frac|\<partial\><around*|(|\<phi\><around*|(|x<rsub|1>|)>,\<phi\><around*|(|x<rsub|2>|)>|)>|\<partial\><around*|(|A<rsup|1><around*|(|x<rsub|1>|)>,A<rsup|2><around*|(|x<rsub|2>|)>|)>>|\|>\<mathd\>A<rsup|1><around*|(|x<rsub|1>|)>\<mathd\>A<rsup|2><around*|(|x<rsub|2>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><det|<tformat|<table|<row|<cell|a<rsub|1>>|<cell|a<rsub|2>>>|<row|<cell|a<rsub|1>>|<cell|a<rsub|2>>>>>>\<ast\>=0>>|<row|<cell|>|<cell|>|<cell|orz>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|(|a<rsub|1>A<rsup|1>|)>>>>>
+      <tformat|<table|<row|<cell|<big|int>D\<phi\>>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><around*|(|x<rsub|1>|)>\<mathd\>\<phi\><around*|(|x<rsub|2>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><around*|\||<frac|\<partial\><around*|(|\<phi\><around*|(|x<rsub|1>|)>,\<phi\><around*|(|x<rsub|2>|)>|)>|\<partial\><around*|(|a<rsub|1>,a<rsub|2>|)>>|\|>\<mathd\>a<rsub|1>\<mathd\>a<rsub|2>>>|<row|<cell|>|<cell|=>|<cell|<big|int><det|<tformat|<table|<row|<cell|A<rsup|1><around*|(|x<rsub|1>|)>>|<cell|A<rsup|2><around*|(|x<rsub|1>|)>>>|<row|<cell|A<rsup|1><around*|(|x<rsub|2>|)>>|<cell|A<rsup|2><around*|(|x<rsub|2>|)>>>>>>\<mathd\>a<rsub|1>\<mathd\>a<rsub|2>>>|<row|<cell|>|<cell|=>|<cell|>>>>
+    </eqnarray*>
+
+    more instructiveness version
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|D\<phi\>>|<cell|=>|<cell|\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>>>>>
+    </eqnarray*>
+
+    And the transformation between different representation.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<matrix|<tformat|<table|<row|<cell|\<phi\><rsub|1>>>|<row|<cell|\<phi\><rsub|2>>>>>>>|<cell|=>|<cell|<matrix|<tformat|<table|<row|<cell|A<rsub|11>>|<cell|A<rsub|12>>>|<row|<cell|A<rsub|21>>|<cell|A<rsub|22>>>>>><matrix|<tformat|<table|<row|<cell|a<rsub|1>>>|<row|<cell|a<rsub|2>>>>>>>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|\<phi\><rsub|1>=<around|\<langle\>|1|\<nobracket\>><around|\||\<phi\>|\<rangle\>>>|<cell|=>|<cell|A<rsub|11>a<rsub|1>+A<rsub|12>a<rsub|2>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsub|n><around|\<langle\>|1|\|><wide|A|^><around|\||n|\<rangle\>><around|\<langle\>|n|\<nobracket\>><around|\||a|\<rangle\>>>>>>
     </eqnarray*>
 
     <item*|part 2>
