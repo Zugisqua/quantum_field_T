@@ -133,13 +133,33 @@
   <\eqnarray*>
     <tformat|<table|<row|<cell|G<around*|(|x-x<rprime|'>|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|-<frac|1|p<rsup|2>-m<rsup|2>>|}>e<rsup|-i
     p<around*|(|x-x<rprime|'>|)>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2<around*|(|2\<pi\>|)><rsup|3>><big|int><frac|1|w<rsub|<wide|p|\<vect\>>>>\<times\><around*|\||<wide|p|\<vect\>>|\|><rsup|2><around|sin|\<theta\>|>\<mathd\><around*|\||<wide|p|\<vect\>>|\|>\<mathd\>\<theta\>\<mathd\>\<varphi\>e<rsup|i<around*|\||<wide|p|\<vect\>>|\|><around*|(|<around*|(|x<rsub|0>-x<rsub|0><rprime|'>|)>+<around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|><around|cos|\<theta\>|>|)>>
-    <around*|(|?.1|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2<around*|(|2\<pi\>|)><rsup|2><around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>><big|int><rsub|0><rsup|\<infty\>><frac|\<rho\><rsup|2>|\<rho\><rsup|2>+m<rsup|2>>\<mathd\>\<rho\><around*|{|e<rsup|i\<rho\><around*|(|<around*|(|x<rsub|0>-x<rsub|0><rprime|'>|)>-<around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>|)>>-e<rsup|i\<rho\><around*|(|<around*|(|x<rsub|0>-x<rsub|0><rprime|'>|)>+<around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2<around*|(|2\<pi\>|)><rsup|2><around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>><big|int><rsub|0><rsup|\<infty\>><frac|\<rho\><rsup|2>|\<rho\><rsup|2>+m<rsup|2>>\<mathd\>\<rho\><around*|{|e<rsup|i\<rho\>\<alpha\><rsub|->>-e<rsup|i\<rho\>\<alpha\><rsub|+>>|}>>>|<row|<cell|>|<cell|>|<cell|and
+    <around*|(|?.1|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2<around*|(|2\<pi\>|)><rsup|2><around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>><big|int><rsub|0><rsup|\<infty\>><frac|\<rho\><rsup|2>|\<rho\><sqrt|\<rho\><rsup|2>+m<rsup|2>>>\<mathd\>\<rho\><around*|{|e<rsup|i\<rho\><around*|(|<around*|(|x<rsub|0>-x<rsub|0><rprime|'>|)>-<around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>|)>>-e<rsup|i\<rho\><around*|(|<around*|(|x<rsub|0>-x<rsub|0><rprime|'>|)>+<around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2<around*|(|2\<pi\>|)><rsup|2><around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>><big|int><rsub|0><rsup|\<infty\>><frac|\<rho\>|<sqrt|\<rho\><rsup|2>+m<rsup|2>>>\<mathd\>\<rho\><around*|{|e<rsup|i\<rho\>\<alpha\><rsub|->>-e<rsup|i\<rho\>\<alpha\><rsub|+>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2<around*|(|2\<pi\>|)><rsup|2><around*|\||<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|\|>><around*|(|<around*|{|part.1|}><around*|(|\<alpha\><rsub|->|)>-<around*|{|part.1|}><around*|(|\<alpha\><rsub|+>|)>|)>>>|<row|<cell|>|<cell|>|<cell|and
     then maybe refer to special function\<ldots\>\<ldots\>orz>>|<row|<cell|>|<cell|>|<cell|<around*|{|do|\<nobracket\>>:>>>>
   </eqnarray*>
 
   <\description>
     <item*|(?.1)>compare to the <math|m=0> case and next serveral steps need
     ,too.
+  </description>
+
+  <\description>
+    <item*|part.1<math|<around*|(|\<alpha\>|)>>><math|<big|int><rsub|0><rsup|\<infty\>>\<mathd\>\<rho\><frac|\<rho\>|<sqrt|\<rho\><rsup|2>+m<rsup|2>>>e<rsup|i\<rho\>\<alpha\>>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int><rsup|\<infty\>><rsub|0><frac|\<rho\>|<sqrt|\<rho\><rsup|2>+m<rsup|2>>>e<rsup|i\<rho\>\<alpha\>>\<mathd\>\<rho\>>|<cell|=>|<cell|m<big|int><rsub|0><rsup|\<infty\>><frac|<frac|\<rho\>|m>|<sqrt|<frac|\<rho\><rsup|2>|m<rsup|2>>+1>>e<rsup|i<frac|\<rho\>|m>\<times\>\<alpha\>m>\<mathd\><frac|\<rho\>|m>>>|<row|<cell|>|<cell|=>|<cell|m<big|int><rsub|0><rsup|\<infty\>><frac|u|<sqrt|u<rsup|2>+1>>e<rsup|i\<lambda\>u>\<mathd\>u>>|<row|<cell|>|<cell|=>|<cell|m<around*|{|part.1.1|}>>>>>
+    </eqnarray*>
+
+    <paragraph|part.1.1<math|>,><math|<big|int><rsub|0><rsup|\<infty\>><frac|u|<sqrt|u<rsup|2>+1>>e<rsup|i\<lambda\>u>\<mathd\>u>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<big|int><rsub|0><rsup|\<infty\>><frac|u|<sqrt|u<rsup|2>+1>>e<rsup|i\<lambda\>u>\<mathd\>u<long-arrow|\<rubber-equal\>|\<upsilon\><rsup|2>=<sqrt|u<rsup|2>+1>|>>|<cell|\<rightarrow\>>|<cell|>>|<row|<cell|>|<cell|=>|<cell|>>|<row|<cell|>|<cell|=>|<cell|>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|(|<frac|u|<sqrt|u<rsup|2>+1>>|)><rprime|'>>|<cell|=>|<cell|<frac|1|<sqrt|u<rsup|2>+1>>-u\<times\><frac|1|u<rsup|2>+1>\<times\><frac|u|<sqrt|u<rsup|2>+1>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<sqrt|u<rsup|2>+1>>-<frac|u<rsup|2>+1-1|<around*|(|u<rsup|2>+1|)><sqrt|u<rsup|2>+1>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<sqrt|u<rsup|2>+1>>-<frac|1|<sqrt|u<rsup|2>+1>>+<frac|1|<around*|(|u<rsup|2>+1|)><sqrt|u<rsup|2>+1>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<around*|(|u<rsup|2>+1|)><sqrt|u<rsup|2>+1>>>>|<row|<cell|<long-arrow|\<rubber-equal\>|u=<frac|1|t>|>>|<cell|\<rightarrow\>>|<cell|>>>>
+    </eqnarray*>
+
+    \;
   </description>
 </body>
 
@@ -156,6 +176,7 @@
     <associate|auto-3|<tuple|1|?>>
     <associate|auto-4|<tuple|2|?>>
     <associate|auto-5|<tuple|3|?>>
+    <associate|auto-6|<tuple|4|?>>
   </collection>
 </references>
 
