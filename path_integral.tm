@@ -134,7 +134,9 @@
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|<around|\<langle\>|x<rsub|n>|\|>e<rsup|-<frac|i|\<hbar\>><wide|H|^><around*|(|t<rsub|n>-t<rsub|0>|)>><around|\||x<rsub|0>|\<rangle\>>>|<cell|=>|<cell|<frac|1|<sqrt|t<rsub|n>-t<rsub|n-1>>><around*|(|<frac|2\<pi\>m\<hbar\>|i>|)><rsup|<frac|n|2>><big|int><big|prod><rsub|i=1><rsup|n-1><frac|\<mathd\>x<rsub|i>|<sqrt|t<rsub|i>-t<rsub|i-1>>>e<rsup|<big|sum><rsub|k><rsup|n><frac|i
-    m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|<around*|(|t<rsub|k>-t<rsub|k-1>|)><rsup|>>>>>>>
+    m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|<around*|(|t<rsub|k>-t<rsub|k-1>|)><rsup|>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|<sqrt|t<rsub|n>-t<rsub|n-1>>><around*|(|<frac|2\<pi\>m\<hbar\>|i>|)><rsup|<frac|n|2>>\<times\><around*|(|<frac|2\<pi\>i\<hbar\>|m>|)><rsup|<frac|n|2>><sqrt|t<rsub|n>-t<rsub|n-1>>\<times\><frac|1|<sqrt|t<rsub|n>-t<rsub|0>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n-1>-x<rsub|0>|)><rsup|2>|t<rsub|n>-t<rsub|0>>>>>|<row|<cell|>|<cell|=>|<cell|<frac|<around*|(|2\<pi\>\<hbar\>|)><rsup|n>|<sqrt|t<rsub|n>-t<rsub|0>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|0>|)><rsup|2>|t<rsub|n>-t<rsub|0>>>>>>>
   </eqnarray*>
 
   here only consider the integral\ 
@@ -152,7 +154,13 @@
     m|2\<hbar\>><frac|<around*|(|x<rsub|l+1>-x<rsub|l-1>|)><rsup|2>|t<rsub|l+1>-t<rsub|l-1>>><sqrt|<frac|2\<pi\>i\<hbar\>|m<around*|(|t<rsub|l+1>-t<rsub|l-1>|)>>>>>|<row|<cell|>|<cell|=>|<cell|<sqrt|<frac|2\<pi\>i\<hbar\>|m>>e<rsup|<frac|i
     m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|n-1>|)><rsup|2>|t<rsub|n>-t<rsub|n-1>>><big|int><frac|\<mathd\>x<rsub|l+1>|<sqrt|t<rsub|l+1>-t<rsub|l-1>>>e<rsup|<frac|i
     m|2\<hbar\>><frac|<around*|(|x<rsub|l+1>-x<rsub|l-1>|)><rsup|2>|t<rsub|l+1>-t<rsub|l-1>>><big|prod><rsup|n-1><rsub|<stack|<tformat|<table|<row|<cell|k=1>>|<row|<cell|k\<neq\>l,l+1>>>>>><frac|\<mathd\>x<rsub|k>|<sqrt|t<rsub|k>-t<rsub|k-1>>>e<rsup|<frac|i
-    m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|t<rsub|k>-t<rsub|k-1>>>>>>>
+    m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|t<rsub|k>-t<rsub|k-1>>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<sqrt|<frac|2\<pi\>i\<hbar\>|m>>|)><rsup|2>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|n-1>|)><rsup|2>|t<rsub|n>-t<rsub|n-1>>><big|int><frac|\<mathd\>x<rsub|l+1>|<sqrt|t<rsub|l+1>-t<rsub|l-2>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|l+1>-x<rsub|l-2>|)><rsup|2>|t<rsub|l+1>-t<rsub|l-2>>><big|prod><rsup|n-1><rsub|<stack|<tformat|<table|<row|<cell|k=1>>|<row|<cell|k\<neq\>l,l+1,l+2>>>>>><frac|\<mathd\>x<rsub|k>|<sqrt|t<rsub|k>-t<rsub|k-1>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|k>-x<rsub|k-1>|)><rsup|2>|t<rsub|k>-t<rsub|k-1>>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<sqrt|<frac|2\<pi\>i\<hbar\>|m>>|)><rsup|n-1>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|n-1>|)><rsup|2>|t<rsub|n>-t<rsub|n-1>>><big|int><frac|\<mathd\>x<rsub|n-1>|<sqrt|t<rsub|n-1>-t<rsub|0>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n-1>-x<rsub|0>|)><rsup|2>|t<rsub|n>-t<rsub|0>>>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|<frac|2\<pi\>i\<hbar\>|m>|)><rsup|<frac|n|2>><sqrt|t<rsub|n>-t<rsub|n-1>>\<times\><frac|1|<sqrt|t<rsub|n>-t<rsub|0>>>e<rsup|<frac|i
+    m|2\<hbar\>><frac|<around*|(|x<rsub|n>-x<rsub|0>|)><rsup|2>|t<rsub|n>-t<rsub|0>>>>>>>
   </eqnarray*>
 
   <paragraph|part.>
