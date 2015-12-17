@@ -479,18 +479,41 @@
 
   showed the interaction
 
-  about how to calculate it, I feel very bad,because of 4-order term, I can't
-  handle the integral!
+  Technical
 
-  {more:
+  <\itemize>
+    <item>let <math|\<lambda\>=0> ,which under the fraction
+
+    <item>expand the term of <math|\<lambda\>>,which over the fraction
+  </itemize>
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|>|<cell|>|<cell|>>>>
+    <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|<big|int>D\<phi\><around*|{|e<rsup|i<big|int>\<mathd\><rsup|4>x<around*|{|<with|math-font|cal|L><rsub|0>+J\<phi\>|}>><around*|(|<big|int>\<mathd\><rsup|4>x<around*|{|1+<frac|i\<lambda\>|4!>\<phi\><rsup|4><around*|(|x|)>+\<ldots\>|}>|)>|}>|<big|int>D\<phi\>e<rsup|i<big|int>\<mathd\><rsup|4>x<with|math-font|cal|L><rsub|0>>>>>>>
   </eqnarray*>
-</body>
 
-<initial|<\collection>
-</collection>>
+  {do:
+
+  <paragraph|Feynman diagram>
+
+  using <math|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>
+  for example
+
+  the non-free term\ 
+
+  {do:
+
+  <subparagraph|Rules and conception>
+
+  <\itemize>
+    <item>
+
+    <item>
+
+    <item>
+  </itemize>
+
+  \;
+</body>
 
 <\references>
   <\collection>
@@ -499,6 +522,8 @@
     <associate|auto-11|<tuple|1.1.1.2|?>>
     <associate|auto-12|<tuple|1.1.1.3|?>>
     <associate|auto-13|<tuple|1.1.1.4|?>>
+    <associate|auto-14|<tuple|1.1.1.5|?>>
+    <associate|auto-15|<tuple|1.1.1.5.1|?>>
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|1.1|?>>
     <associate|auto-4|<tuple|1.2|?>>
@@ -556,6 +581,11 @@
       <with|par-left|<quote|6fn>|Corrlation function
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-12><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Interact and
+      <with|mode|<quote|math>|\<phi\><rsup|4>> theory of boson
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-13><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
