@@ -488,32 +488,73 @@
   </itemize>
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|<big|int>D\<phi\><around*|{|e<rsup|i<big|int>\<mathd\><rsup|4>x<around*|{|<with|math-font|cal|L><rsub|0>+J\<phi\>|}>><around*|(|<big|int>\<mathd\><rsup|4>x<around*|{|1+<frac|i\<lambda\>|4!>\<phi\><rsup|4><around*|(|x|)>+\<ldots\>|}>|)>|}>|<big|int>D\<phi\>e<rsup|i<big|int>\<mathd\><rsup|4>x<with|math-font|cal|L><rsub|0>>>>>>>
+    <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|<big|int>D\<phi\><around*|{|e<rsup|i<big|int>\<mathd\><rsup|4>x<around*|{|<with|math-font|cal|L><rsub|0>+J\<phi\>|}>><around*|(|<big|int>\<mathd\><rsup|4>x<rprime|'><around*|{|1-<frac|i\<lambda\>|4!>\<phi\><rsup|4><around*|(|x<rprime|'>|)>+\<ldots\>|}>|)>|}>|<big|int>D\<phi\>e<rsup|i<big|int>\<mathd\><rsup|4>x<with|math-font|cal|L><rsub|0>>>>>>>
   </eqnarray*>
 
-  {do:
+  Case: only remain the order-1 term
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|1|Z><big|int>\<mathd\><rsup|4>x<big|int>D\<phi\><around*|{|<around*|(|1-<frac|i\<lambda\>|4!>\<phi\><rsup|4><around*|(|x|)>|)>exp<around*|(|i<big|int>\<mathd\><rsup|4>x<rprime|'><around*|{|<with|math-font|cal|L<rsub|0>>+J\<phi\>|}>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>\<mathd\><rsup|4>x<big|int>D\<phi\>exp<around*|(|i<big|int>\<mathd\><rsup|4>x<rprime|'><around*|{|<with|math-font|cal|L<rsub|0>>+J\<phi\>|}>|)>-<frac|i\<lambda\>|4!Z><big|int>\<mathd\><rsup|4>x<big|int>D\<phi\>\<phi\><rsup|4><around*|(|x|)>exp<around*|(|i<big|int>\<mathd\><rsup|4>x<rprime|'><around*|{|<with|math-font|cal|L<rsub|0>>+J\<phi\>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x
+    exp<around*|(|<frac|i|2><big|int>\<mathd\>x<rprime|'>\<mathd\>x<rprime|'><around*|{|J<around*|(|x<rprime|'>|)>J<around*|(|x<rprime|''>|)>G<around*|(|x<rprime|'>-x<rprime|''>|)>|}>|)>-\<times\>\<times\>\<times\><around*|(|orz|)>>>|<row|<cell|>|<cell|=>|<cell|W<rsub|0><around*|[|J|]><big|int>\<mathd\><rsup|4>x-<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|{|<frac|1|i<rsup|4>><frac|\<delta\><rsup|4>W<rsub|0><around*|[|J|]>|\<delta\>J<around*|(|x|)><rsup|4>>|}>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  where <math|W<rsub|0><around*|[|J|]>> is free boson vaccum amplitude.
+
+  that's all\ 
 
   <paragraph|Feynman diagram>
 
+  <paragraph|introduce.>
+
   using <math|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>
-  for example
+  in <math|\<phi\><rsup|4>> interaction for example
 
   the non-free term\ 
 
-  {do:
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>|<cell|=>|<cell|<frac|1|i<rsup|2>><around*|\<nobracket\>|<frac|\<delta\><rsup|2>W<around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\><rsup|2>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>><around*|\<nobracket\>|<around*|(|W<rsub|0><around*|[|J|]><big|int>\<mathd\><rsup|4>x-<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|{|<frac|1|i<rsup|4>><frac|\<delta\><rsup|4>W<rsub|0><around*|[|J|]>|\<delta\>J<around*|(|x|)><rsup|4>>|}>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><around*|\<nobracket\>|<frac|\<delta\><rsup|2>W<rsub|0><around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>>|\|><rsub|J=0><big|int>\<mathd\><rsup|4>x-<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|{|<around*|\<nobracket\>|<frac|1|i<rsup|6>><frac|\<delta\><rsup|6>W<rsub|0><around*|[|J|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<delta\>J<around*|(|x<rsub|2>|)>\<delta\>J<around*|(|x|)><rsup|4>>|\|><rsub|J=0>|}>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>><rsub|0><big|int>\<mathd\><rsup|4>x-<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>\<phi\><rsup|4><around*|(|x|)>|\<rangle\>><rsub|0>>>|<row|<cell|>|<cell|>|<cell|\<Iota\><rprime|'>m
+    \ \ a \ lilltle \ confused \ there \ is \ no \ time\<um\>order
+    \ operator. >>|<row|<cell|>|<cell|=>|<cell|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>><rsub|0><big|int>\<mathd\><rsup|4>x+<around*|{|interact|}>>>|<row|<cell|>|<cell|=>|<cell|G<around*|(|x<rsub|1>-x<rsub|2>|)><big|int>\<mathd\><rsup|4>x>>|<row|<cell|>|<cell|>|<cell|-<frac|i\<lambda\>|8><big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x<rsub|1>-x<rsub|2>|)>G<rsup|2><around*|(|0|)>|}>-<frac|i\<lambda\>|2><big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x<rsub|1>-x|)>G<around*|(|x<rsub|2>-x|)>G<around*|(|0|)>|}>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  the term <math|-<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>\<phi\><rsup|4><around*|(|x|)>|\<rangle\>><rsub|0>>
+  indicate the interaction
+
+  <paragraph|interaction term>
+
+  <\equation*>
+    -<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>\<phi\><rsup|4><around*|(|x|)>|\<rangle\>><rsub|0>
+  </equation*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|interact>|<cell|=>|<cell|-<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>\<phi\><rsup|4><around*|(|x|)>|\<rangle\>><rsub|0>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i\<lambda\>|4!><big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x<rsub|1>-x<rsub|2>|)>G<rsup|2><around*|(|x-x|)>\<times\>3+G<around*|(|x<rsub|1>-x|)>G<around*|(|x<rsub|2>-x|)>G<around*|(|x-x|)>\<times\>4\<times\>3|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i\<lambda\>|8><big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x<rsub|1>-x<rsub|2>|)>G<rsup|2><around*|(|0|)>|}>-<frac|i\<lambda\>|2><big|int>\<mathd\><rsup|4>x<around*|{|G<around*|(|x<rsub|1>-x|)>G<around*|(|x<rsub|2>-x|)>G<around*|(|0|)>|}>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  Quality: which under the <math|\<lambda\>> call symmetric factor.
 
   <subparagraph|Rules and conception>
 
   <\itemize>
-    <item>
+    <item>line<emdash>--propagator
 
-    <item>
+    <item>ponit<emdash>--position ,<math|x<rsub|1>>,<math|x<rsub|2>> and ect.
+    </itemize>
 
-    <item>
-  </itemize>
+  in general ,the Feynman diagram for free boson is: all the posible
+  connected line between two ponts.and here is no different.
+
+  for the interaction term there are 6 points. beacause 4 of them are the
+  same,here are only two kinds of Feynman diagram as calculate above.
+
+  {more:
+
+  orz it's difficult to paint here
 
   \;
 </body>
+
+<initial|<\collection>
+</collection>>
 
 <\references>
   <\collection>
@@ -523,7 +564,9 @@
     <associate|auto-12|<tuple|1.1.1.3|?>>
     <associate|auto-13|<tuple|1.1.1.4|?>>
     <associate|auto-14|<tuple|1.1.1.5|?>>
-    <associate|auto-15|<tuple|1.1.1.5.1|?>>
+    <associate|auto-15|<tuple|1.1.1.6|?>>
+    <associate|auto-16|<tuple|1.1.1.7|?>>
+    <associate|auto-17|<tuple|1.1.1.7.1|?>>
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|1.1|?>>
     <associate|auto-4|<tuple|1.2|?>>
@@ -586,6 +629,13 @@
       <with|mode|<quote|math>|\<phi\><rsup|4>> theory of boson
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-13><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Feynman diagram
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-14><vspace|0.15fn>>
+
+      Rules and conception <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-15><vspace|0.15fn>
     </associate>
   </collection>
 </auxiliary>
