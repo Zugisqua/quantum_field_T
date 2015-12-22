@@ -78,8 +78,30 @@
   </eqnarray*>
 
   <\eqnarray*>
-    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<cwith|9|9|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|p<rsub|1>|)>\<phi\><around*|(|p<rsub|2>|)>|\<rangle\>>>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\><rsup|2>|\<delta\>J<around*|(|p<rsub|1>|)>\<delta\>J<around*|(|p<rsub|2>|)>>exp<around*|(|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\>|\<delta\>J<around*|(|p<rsub|1>|)>><around*|(|-<frac|i|2><around*|(|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|\<delta\><around*|(|p-p<rsub|2>|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>+<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|J<around*|(|p|)>\<delta\><around*|(|-p-p<rsub|2>|)>|p<rsup|2>-m<rsup|2>>|)>|\<nobracket\>>>>|<row|<cell|>|<cell|>|<cell|\<times\>exp<around*|\<nobracket\>|<around*|(|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\>|\<delta\>J<around*|(|p<rsub|1>|)>><around*|(|-<frac|i|2><around*|(|<frac|J<around*|(|-p<rsub|2>|)>|p<rsup|2><rsub|2>-m<rsup|2>>+<frac|J<around*|(|-p<rsub|2>|)>|p<rsup|2><rsub|2>-m<rsup|2>>|)>e<rsup|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\>|\<delta\>J<around*|(|p<rsub|1>|)>><around*|(|-i<frac|J<around*|(|-p<rsub|2>|)>|p<rsup|2><rsub|2>-m<rsup|2>>e<rsup|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|1|i<rsup|2>><around*|(|-i<around*|(|<frac|\<delta\><around*|(|-p<rsub|2>-p<rsub|1>|)>|p<rsup|2><rsub|2>-m<rsup|2>>-i<frac|J<around*|(|-p<rsub|1>|)>|p<rsup|2><rsub|1>-m<rsup|2>>|)>e<rsup|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|i>\<times\><frac|\<delta\><around*|(|-p<rsub|2>-p<rsub|1>|)>|p<rsup|2><rsub|2>-m<rsup|2>>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|p<rsup|2><rsub|2>-m<rsup|2>>\<delta\><around*|(|p<rsub|2>+p<rsub|1>|)>>>|<row|<cell|>|<cell|>|<cell|right?>>>>>>|<cell|>|<cell|>>>>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|\<phi\><around*|(|p<rsub|1>|)>\<phi\><around*|(|p<rsub|2>|)>|\<rangle\>>>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\><rsup|2>|\<delta\>J<around*|(|p<rsub|1>|)>\<delta\>J<around*|(|p<rsub|2>|)>>exp<around*|(|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\>|\<delta\>J<around*|(|p<rsub|1>|)>><around*|(|-<frac|i|2><around*|(|<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|\<delta\><around*|(|p-p<rsub|2>|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>+<big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><frac|J<around*|(|p|)>\<delta\><around*|(|-p-p<rsub|2>|)>|p<rsup|2>-m<rsup|2>>|)>|\<nobracket\>>>>|<row|<cell|>|<cell|>|<cell|\<times\>exp<around*|\<nobracket\>|<around*|(|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\>|\<delta\>J<around*|(|p<rsub|1>|)>><around*|(|-<frac|i|2><around*|(|<frac|J<around*|(|-p<rsub|2>|)>|p<rsup|2><rsub|2>-m<rsup|2>>+<frac|J<around*|(|-p<rsub|2>|)>|p<rsup|2><rsub|2>-m<rsup|2>>|)>e<rsup|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|i<rsup|2>><frac|\<delta\>|\<delta\>J<around*|(|p<rsub|1>|)>><around*|(|-i<frac|J<around*|(|-p<rsub|2>|)>|p<rsup|2><rsub|2>-m<rsup|2>>e<rsup|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<frac|1|i<rsup|2>><around*|(|-i<around*|(|<frac|\<delta\><around*|(|-p<rsub|2>-p<rsub|1>|)>|p<rsup|2><rsub|2>-m<rsup|2>>-i<frac|J<around*|(|-p<rsub|1>|)>|p<rsup|2><rsub|1>-m<rsup|2>>|)>e<rsup|-<frac|i|2><big|int><frac|\<mathd\><rsup|4>p|<around*|(|2\<pi\>|)><rsup|4>><around*|{|<frac|J<around*|(|p|)>J<around*|(|-p|)>|p<rsup|2>-m<rsup|2>>|}>>|)>|\|><rsub|J=0>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|i>\<times\><frac|\<delta\><around*|(|-p<rsub|2>-p<rsub|1>|)>|p<rsup|2><rsub|2>-m<rsup|2>>>>|<row|<cell|>|<cell|=>|<cell|<frac|i|p<rsup|2><rsub|2>-m<rsup|2>>\<delta\><around*|(|p<rsub|2>+p<rsub|1>|)>>>>>>>|<cell|>|<cell|>>>>
   </eqnarray*>
+
+  <paragraph|Feynman diagram in <math|\<phi\><rsup|4> > theory>
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|W<around*|[|J<around*|(|x|)>|]>>|<cell|=>|<cell|<frac|<big|int>D\<phi\>exp<around*|(|i<around*|(|S+<big|int>\<mathd\><rsup|4>x
+    J\<phi\>+<big|int>\<mathd\><rsup|4>x\<phi\><rsup|4><around*|(|x|)>|)>|)>|<big|int>D\<phi\>exp<around*|(|i
+    <around*|(|S+<big|int>\<mathd\><rsup|4>x\<phi\><rsup|4><around*|(|x|)>|)>|)>>>>>>
+  </eqnarray*>
+
+  Trans into momentum space
+
+  \ {do:
+
+  Calculation : <math|<around*|\<langle\>|\<phi\><around*|(|p<rsub|1>|)>\<phi\><around*|(|p<rsub|2>|)>|\<rangle\>>>
+
+  {do:
+
+  Feynman diagram
+
+  {more:
+
+  \;
 </body>
 
 <initial|<\collection>
@@ -91,6 +113,7 @@
     <associate|auto-2|<tuple|1|?>>
     <associate|auto-3|<tuple|2|?>>
     <associate|auto-4|<tuple|3|?>>
+    <associate|auto-5|<tuple|4|?>>
   </collection>
 </references>
 
