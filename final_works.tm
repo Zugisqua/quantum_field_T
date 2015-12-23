@@ -48,7 +48,7 @@
   verify:
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|f>,t<rsub|f>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|f>-t<rsub|i>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|i>,t<rsub|i>|)>|\<rangle\>>>|<cell|=>|<cell|<big|int>D\<phi\>e<rsup|i
+    <tformat|<table|<row|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|f>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|f>-t<rsub|i>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|i>|)>|\<rangle\>>>|<cell|=>|<cell|<big|int>D\<phi\>e<rsup|i
     S<around*|[|\<phi\>|]>>>>>>
   </eqnarray*>
 
@@ -56,6 +56,18 @@
     <tformat|<cwith|1|1|1|1|cell-halign|l>|<cwith|2|2|2|2|cell-halign|l>|<cwith|2|2|1|1|cell-halign|l>|<cwith|3|3|1|1|cell-halign|l>|<table|<row|<cell|where
     \ we \ know>|<cell|>|<cell|>>|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<table|<row|<cell|H>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3><wide|x|\<vect\>><around*|(|<frac|1|2>\<pi\><rsup|2>+<frac|1|2><around*|(|\<nabla\>\<phi\>|)><rsup|2>+<frac|1|2>m<rsup|2>\<phi\><rsup|2>+V<around*|(|\<phi\>|)>|)>>>|<row|<cell|S<around*|[|\<phi\>|]>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|(|<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsup|\<mu\>>\<phi\>-<frac|1|2>m<rsup|2>\<phi\><rsup|2>-V<around*|(|\<phi\>|)>|)>>>>>>>|<cell|>|<cell|>>|<row|<cell|where
     \ \<pi\>=\<partial\><rsub|\<mu\>>\<phi\>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  set <math|x<rsub|f>=x<rsub|N>,x<rsub|i>=x<rsub|0>>
+
+  therefore:
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<table|<row|<cell|>|<cell|>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|f>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|f>-t<rsub|i>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|i>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|N>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|N>|)>|\<rangle\>>\<rightarrow\><around|\<langle\>|\<phi\><rsub|N>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N>|)>><around|\||\<phi\><rsub|0>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1>>>|<row|<cell|>|<cell|>|<cell|<around|\<langle\>|\<phi\><rsub|N>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N-1>|)>><around|\||\<phi\><rsub|N-1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|N-1>|\|>\<ldots\><around|\||\<phi\><rsub|1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|1>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|1->t<rsub|0>|)>><around|\||\<phi\><rsub|0>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1><around*|{|<around*|\<langle\>|pat.1<around*|(|N,N-1|)>|\<rangle\>><around*|\<langle\>|pat.1<around*|(|N-1,N-2|)>|\<rangle\>>\<ldots\><around*|\<langle\>|pat.1<around*|(|1,0|)>|\<rangle\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1><around*|{|<big|prod><rsub|j=1><rsup|N><around*|\<langle\>|part.1<around*|(|j,j-1|)>|\<rangle\>>|}>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1<around*|(|j,j-1|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<wide|H|^><around*|(|t<rsub|j>-t<rsub|j-1>|)>><around|\||\<phi\><rsub|j-1>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<big|int>\<mathd\><rsup|3><wide|x|\<vect\>><around*|(|<frac|1|2><wide|\<pi\>|^><rsup|2>+<frac|1|2><around*|(|\<nabla\><wide|\<phi\>|^>|)><rsup|2>+<frac|1|2>m<rsup|2><wide|\<phi\>|^><rsup|2>+V<around*|(|<wide|\<phi\>|^>|)>|)>><around|\||\<phi\><rsub|j-1>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<big|sum><rsub|k=0><rsup|N><around*|(|<frac|1|2><wide|\<pi\>|^><rsup|2><rsub|k>+<frac|1|2><around*|(|\<nabla\>\<phi\>\<ldots\>|)>|)>>>>>>>>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>>>>
   </eqnarray*>
 
   <paragraph|problem 3>
@@ -66,7 +78,47 @@
     <tformat|<table|<row|<cell|<around*|\<langle\>|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>>\<ldots\>e<rsup|a<rsub|N>\<phi\><around*|(|x<rsub|N>|)>>|\<rangle\>>>|<cell|>|<cell|>>>>
   </eqnarray*>
 
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|it>|<cell|=>|<cell|<around*|\<langle\>|<big|sum><rsub|k<rsub|1>=0><rsup|\<infty\>><frac|1|k<rsub|1>!><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>|)><rsup|k<rsub|1>>\<ldots\><big|sum><rsup|\<infty\>><rsub|k<rsub|N>><frac|1|k<rsub|N>!><around*|(|a<rsub|N>\<phi\><around*|(|x<rsub|N>|)>|)><rsup|k<rsub|N>>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|\<infty\>><rsub|k<rsub|1>=0><big|sum><rsup|\<infty\>><rsub|k<rsub|2>=0>\<ldots\><big|sum><rsup|\<infty\>><rsub|k<rsub|N>=0><frac|<around*|(|a<rsub|1>|)><rsup|k<rsub|1>><around*|(|a<rsub|2>|)><rsup|k<rsub|2>>\<ldots\><around*|(|a<rsub|N>|)><rsup|k<rsub|N>>|k<rsub|1>!k<rsub|2>!\<ldots\>k<rsub|N>!><around*|\<langle\>|\<phi\><rsup|k<rsub|1>><around*|(|x<rsub|1>|)>\<phi\><rsup|k<rsub|1>><around*|(|x<rsub|2>|)>\<ldots\>\<phi\><rsup|k<rsub|N>><around*|(|x<rsub|N>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|\<ldots\>\<ldots\>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\itemize>
+    <item>compute from <math|<around*|\<langle\>|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>>e<rsup|a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>|\<rangle\>>>
+
+    <item>clear up the <math|Hint>
+  </itemize>
+
   <paragraph|problem 4>
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|S>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsup|\<mu\>>\<phi\>-<frac|1|2>m<rsup|2>\<phi\><rsup|2>-<frac|\<lambda\><rsub|1>|3!>\<phi\><rsup|3>-<frac|\<lambda\><rsub|2>|4!>\<phi\><rsup|4>|}>>>>>
+  </eqnarray*>
+
+  calculate second order interaction Feynman diagram
+
+  mainly,calculate <math|<around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>
+  in momentum space
+
+  <paragraph|problem 5>
+
+  verify
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<gamma\><rsub|m>\<gamma\><rsup|m<rsub|1>m<rsub|2>m<rsub|3>m<rsub|4>m<rsub|5>>\<gamma\><rsup|m>>|<cell|=>|<cell|0>>>>
+  </eqnarray*>
+
+  where using:
+
+  <\itemize>
+    <item><math|<around*|{|\<gamma\><rsup|m>,\<gamma\><rsup|m>|}>=2g<rsup|m
+    n>>
+
+    <item><math|\<gamma\><rsup|m<rsub|1>m<rsub|2>m<rsub|3>m<rsub|4>m<rsub|5>>=\<gamma\><rsup|<around*|\<nobracket\>||[>m<rsub|1>>\<gamma\><rsup|m<rsub|2>>\<gamma\><rsup|m<rsub|3>>\<gamma\><rsup|m<rsub|4>>\<gamma\><rsup|m<rsub|5><around*|\<nobracket\>||]>>>
+  </itemize>
+
+  \;
+
+  \;
 
   \;
 </body>
@@ -80,15 +132,28 @@
     <associate|auto-2|<tuple|2|?>>
     <associate|auto-3|<tuple|3|?>>
     <associate|auto-4|<tuple|4|?>>
+    <associate|auto-5|<tuple|5|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <with|par-left|<quote|6fn>|problem 1
+      <with|par-left|<quote|6fn>|Problem 1
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|problem 2
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|problem 3
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|problem 4
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
