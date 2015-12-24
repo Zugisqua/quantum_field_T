@@ -102,6 +102,28 @@
   {more:
 
   \;
+
+  <paragraph|More percise <math|\<phi\><rsup|4>> theory>(where considering
+  percise denominator)\ 
+
+  Core: they could cancel the disconnected diagram
+
+  <\description>
+    <item*|conception>
+
+    (dis-)connected diagram: there are existing propagators of
+    <math|\<phi\><rsup|4>> (dis-)connect with corelation point function\ 
+  </description>
+
+  calcuation:
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|<frac|<big|int>D\<phi\>exp<around*|(|i<around*|(|S+<big|int>\<mathd\><rsup|4>x
+    J\<phi\>+<big|int>\<mathd\><rsup|4>x\<phi\><rsup|4><around*|(|x|)>|)>|)>|<big|int>D\<phi\>exp<around*|(|i
+    <around*|(|S+<big|int>\<mathd\><rsup|4>x\<phi\><rsup|4><around*|(|x|)>|)>|)>>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  \;
 </body>
 
 <initial|<\collection>
@@ -114,6 +136,7 @@
     <associate|auto-3|<tuple|2|?>>
     <associate|auto-4|<tuple|3|?>>
     <associate|auto-5|<tuple|4|?>>
+    <associate|auto-6|<tuple|5|?>>
   </collection>
 </references>
 
@@ -134,6 +157,11 @@
       <with|par-left|<quote|6fn>|Propagator
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Feynman diagram in
+      <with|mode|<quote|math>|\<phi\><rsup|4> > theory
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
