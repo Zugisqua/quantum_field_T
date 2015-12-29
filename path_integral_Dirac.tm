@@ -35,6 +35,42 @@
     <tformat|<table|<row|<cell|<around*|\<langle\>|\<psi\><around*|(|x<rsub|1>|)>\<ldots\>\<psi\><around*|(|x<rsub|N<rsub|1>>|)><wide|\<psi\>|\<bar\>><around*|(|y<rsub|1>|)>\<ldots\><wide|\<psi\>|\<bar\>><around*|(|y<rsub|N<rsub|2>>|)>|\<rangle\>>>|<cell|=>|<cell|<frac|1|i<rsup|N<rsub|1>+N<rsub|2>>><around*|\<nobracket\>|<frac|\<delta\><rsup|N<rsub|1>>\<delta\><rsup|N<rsub|1>>W<around*|[|J,<wide|J|\<bar\>>|]>|\<delta\>J<around*|(|x<rsub|1>|)>\<ldots\>\<delta\>J<around*|(|x<rsub|N<rsub|1>>|)>\<delta\><wide|J|\<bar\>><around*|(|y<rsub|1>|)>\<ldots\>\<delta\><wide|J|\<bar\>><around*|(|y<rsub|N<rsub|1>>|)>>|\|><rsub|J,<wide|J|\<bar\>>=0>>>>>
   </eqnarray*>
 
+  <paragraph|i. Calculate the <math|W<around*|[|J,<wide|J|\<bar\>>|]>>>
+
+  Technical
+
+  <\itemize>
+    <item>shift <math|\<psi\><rsub|a><around*|(|x|)>\<longrightarrow\>\<psi\><rsub|a><around*|(|x|)>+\<lambda\><rsub|a><around*|(|x|)>>,
+    \ <math|<wide|\<psi\>|\<bar\>><rsub|a><around*|(|x|)>\<longrightarrow\><wide|\<psi\>|\<bar\>><rsub|a><around*|(|x|)>+<wide|\<lambda\>|\<bar\>><rsub|a><around*|(|x|)>>
+
+    <item>Green's function of operater <math|<around*|(|<neg|\<partial\>>-m|)>>
+  </itemize>
+
+  Result
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|W<around*|[|J|]>>|<cell|=>|<cell|exp<around*|(|i<big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>y<around*|{|J<rsub|a><around*|(|x|)>G<rsub|a
+    b><around*|(|x-y|)>J<rsub|b><around*|(|y|)><rsub|>|}>|)>>>>>
+  </eqnarray*>
+
+  {do:
+
+  Properities
+
+  <\itemize>
+    <item>only when <math|N<rsub|1>=N<rsub|2>> thar
+    <math|<around*|\<langle\>|\<psi\><around*|(|x<rsub|1>|)>\<psi\><around*|(|x<rsub|2>|)>\<ldots\>\<psi\><around*|(|x<rsub|N<rsub|1>>|)><wide|\<psi\>|\<bar\>><around*|(|y<rsub|1>|)><wide|\<psi\>|\<bar\>><around*|(|y<rsub|2>|)>\<ldots\><wide|\<psi\>|\<bar\>><around*|(|y<rsub|N<rsub|2>>|)>|\<rangle\>>\<neq\>0>\ 
+
+    <item>Anti-symmetric of <math|\<psi\><around*|(|x|)>> and
+    <math|<wide|\<psi\>|\<bar\>><around*|(|y|)>> ,namely
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|\<langle\>|\<psi\><rsub|a><around*|(|x<rsub|1>|)><wide|\<psi\>|\<bar\>><rsub|b><around*|(|x<rsub|2>|)>|\<rangle\>>>|<cell|=>|<cell|-<around*|\<langle\>|<wide|\<psi\>|\<bar\>><rsub|b><around*|(|x<rsub|2>|)>\<psi\><rsub|a><around*|(|x<rsub|1>|)>|\<rangle\>>>>>>
+    </eqnarray*>
+  </itemize>
+
+  {verify:
+
   \;
 </body>
 
@@ -44,6 +80,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?>>
+    <associate|auto-2|<tuple|1|?>>
   </collection>
 </references>
 
