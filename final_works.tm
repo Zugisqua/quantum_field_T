@@ -62,22 +62,23 @@
 
   <\eqnarray*>
     <tformat|<cwith|1|1|1|1|cell-halign|l>|<cwith|2|2|2|2|cell-halign|l>|<cwith|2|2|1|1|cell-halign|l>|<cwith|3|3|1|1|cell-halign|l>|<table|<row|<cell|where
-    \ we \ know>|<cell|>|<cell|>>|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<table|<row|<cell|H>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3><wide|x|\<vect\>><around*|(|<frac|1|2>\<pi\><rsup|2>+<frac|1|2><around*|(|\<nabla\>\<phi\>|)><rsup|2>+<frac|1|2>m<rsup|2>\<phi\><rsup|2>+V<around*|(|\<phi\>|)>|)>>>|<row|<cell|S<around*|[|\<phi\>|]>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|(|<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsup|\<mu\>>\<phi\>-<frac|1|2>m<rsup|2>\<phi\><rsup|2>-V<around*|(|\<phi\>|)>|)>>>>>>>|<cell|>|<cell|>>|<row|<cell|where
+    \ we \ know>|<cell|>|<cell|>>|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|H>|<cell|=>|<cell|<big|int>\<mathd\><rsup|3><wide|x|\<vect\>><around*|(|<frac|1|2>\<pi\><rsup|2>+<frac|1|2><around*|(|\<nabla\>\<phi\>|)><rsup|2>+<frac|1|2>m<rsup|2>\<phi\><rsup|2>+V<around*|(|\<phi\>|)>|)>>>|<row|<cell|S<around*|[|\<phi\>|]>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|(|<frac|1|2>\<partial\><rsub|\<mu\>>\<phi\>\<partial\><rsup|\<mu\>>\<phi\>-<frac|1|2>m<rsup|2>\<phi\><rsup|2>-V<around*|(|\<phi\>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|1|2><big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+2V<around*|(|\<phi\>|)>|}>>>>>>>|<cell|>|<cell|>>|<row|<cell|where
     \ \<pi\>=\<partial\><rsub|\<mu\>>\<phi\>>|<cell|>|<cell|>>>>
   </eqnarray*>
 
   <\description>
     <item*|Base>
 
-    1.<math|<around|\||\<phi\><around*|(|x|)>|\<rangle\>>>
+    1. <math|<around|\||\<phi\><around*|(|x|)>|\<rangle\>>>
 
     <\eqnarray*>
-      <tformat|<cwith|1|1|1|1|cell-halign|l>|<cwith|2|2|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<table|<row|<cell|<around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<wide|\<phi\>|^><around*|(|x|)><around|\||0|\<rangle\>>=<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>>>>>|<cell|>|<cell|>>|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<table|<row|<cell|\<phi\><around*|(|x|)><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p<rprime|'>|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0>+<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>><rprime|'>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0>+<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>>|)>>|}><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0>+<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>>|)>>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|<around*|(|w<rsub|<wide|p|\<vect\>>>-w<rsub|<wide|p|\<vect\>><rprime|'>>|)>x<rsub|0>+<around*|(|<wide|p|\<vect\>>-<wide|p|\<vect\>><rprime|'>|)>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|<around*|(|<around*|[|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>,a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>|]>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>><rprime|'>|)>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|<around*|(|w<rsub|<wide|p|\<vect\>>>-w<rsub|<wide|p|\<vect\>><rprime|'>>|)>x<rsub|0>+<around*|(|<wide|p|\<vect\>>-<wide|p|\<vect\>><rprime|'>|)>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|<around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|p|\<vect\>><rprime|'>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|<around*|(|w<rsub|<wide|p|\<vect\>>>-w<rsub|<wide|p|\<vect\>><rprime|'>>|)>x<rsub|0>+<around*|(|<wide|p|\<vect\>>-<wide|p|\<vect\>><rprime|'>|)>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>2w<rsub|<wide|p|\<vect\>>>><around|\||0|\<rangle\>>>>>>>>|<cell|>|<cell|>>>>
+      <tformat|<cwith|1|1|1|1|cell-halign|l>|<cwith|2|2|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<table|<row|<cell|<around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<wide|\<phi\>|^><around*|(|x|)><around|\||0|\<rangle\>>=<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>>>>>|<cell|>|<cell|>>|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<cwith|9|9|3|3|cell-halign|l>|<table|<row|<cell|\<phi\><around*|(|x<rprime|'>|)><around|\||\<phi\><around*|(|x|)>|\<rangle\>>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p<rprime|'>|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0><rprime|'>+<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>><rprime|'>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>><rprime|'>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0><rprime|'>+<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>><rprime|'>|)>>|}><big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|
+      >|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0><rprime|'>+<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>><rprime|'>|)>>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>-w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0><rprime|'>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>><rprime|'>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|<around*|(|<around*|[|a<around*|(|<wide|p|\<vect\>><rprime|'>|)>,a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>|]>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>a<around*|(|<wide|p|\<vect\>><rprime|'>|)>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>-w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0><rprime|'>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>><rprime|'>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p<rprime|'>\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|6>2<sqrt|w<rsub|<wide|p|\<vect\>><rprime|'>>w<rsub|<wide|p|\<vect\>>>>><around*|{|<around*|(|2\<pi\>|)><rsup|3>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|p|\<vect\>><rprime|'>|)><around|\||0|\<rangle\>>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>-w<rsub|<wide|p|\<vect\>><rprime|'>>x<rsub|0><rprime|'>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>-<wide|p|\<vect\>><rprime|'>\<cdot\><wide|x|\<vect\>><rprime|'>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>2w<rsub|<wide|p|\<vect\>>>>e<rsup|i
+      <around*|(|w<rsub|<wide|p|\<vect\>>><around*|(|x<rsub|0>-x<rsub|0><rprime|'>|)>+<wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>>-<wide|x|\<vect\>><rprime|'>|)>|)>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|-\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>2w<rsub|-<wide|p|\<vect\>>>>e<rsup|-i
+      <around*|(|w<rsub|-<wide|p|\<vect\>>><around*|(|x<rsub|0><rprime|'>-x<rsub|0>|)>-<wide|p|\<vect\>>\<cdot\><around*|(|<wide|x|\<vect\>><rprime|'>-<wide|x|\<vect\>>|)>|)>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|<big|int><frac|-\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3>2w<rsub|<wide|p|\<vect\>>>>e<rsup|-i
+      p <around*|(|x<rprime|'>-x|)>>|\|><rsub|p<rsub|0>=w<rsub|<wide|p|\<vect\>>>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|>>>>>>|<cell|>|<cell|>>>>
     </eqnarray*>
-  </description>
-
-  <\description>
-    \;
   </description>
 
   set <math|x<rsub|f>=x<rsub|N>,x<rsub|i>=x<rsub|0>>
@@ -85,11 +86,11 @@
   therefore:
 
   <\eqnarray*>
-    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<table|<row|<cell|>|<cell|>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|f>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|f>-t<rsub|i>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|i>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|N>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|N>|)>|\<rangle\>>\<rightarrow\><around|\<langle\>|\<phi\><rsub|N>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N>|)>><around|\||\<phi\><rsub|0>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1>>>|<row|<cell|>|<cell|>|<cell|<around|\<langle\>|\<phi\><rsub|N>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N-1>|)>><around|\||\<phi\><rsub|N-1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|N-1>|\|>\<ldots\><around|\||\<phi\><rsub|1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|1>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|1->t<rsub|0>|)>><around|\||\<phi\><rsub|0>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1><around*|{|<around*|\<langle\>|pat.1<around*|(|N,N-1|)>|\<rangle\>><around*|\<langle\>|pat.1<around*|(|N-1,N-2|)>|\<rangle\>>\<ldots\><around*|\<langle\>|pat.1<around*|(|1,0|)>|\<rangle\>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1><around*|{|<big|prod><rsub|j=1><rsup|N><around*|\<langle\>|part.1<around*|(|j,j-1|)>|\<rangle\>>|}>>>>>>>|<cell|>|<cell|>>>>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|3|3|2|2|cell-halign|l>|<cwith|2|2|2|2|cell-halign|l>|<cwith|4|4|2|2|cell-halign|l>|<cwith|5|5|2|2|cell-halign|l>|<cwith|6|6|2|2|cell-halign|l>|<table|<row|<cell|>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|f>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|f>-t<rsub|i>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|i>|)>|\<rangle\>>>>|<row|<cell|=>|<cell|<around|\<langle\>|\<phi\><around*|(|<wide|x|\<vect\>><rsub|N>|)>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N>|)>><around|\||\<phi\><around*|(|<wide|x|\<vect\>><rsub|N>|)>|\<rangle\>>\<rightarrow\><around|\<langle\>|\<phi\><rsub|N>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N>|)>><around|\||\<phi\><rsub|0>|\<rangle\>>>>|<row|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1>>>|<row|<cell|>|<cell|<around|\<langle\>|\<phi\><rsub|N>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|N>-t<rsub|N-1>|)>><around|\||\<phi\><rsub|N-1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|N-1>|\|>\<ldots\><around|\||\<phi\><rsub|1>|\<rangle\>><around|\<langle\>|\<phi\><rsub|1>|\|>e<rsup|-i<wide|H|^><around*|(|t<rsub|1->t<rsub|0>|)>><around|\||\<phi\><rsub|0>|\<rangle\>>>>|<row|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1><around*|{|<around*|\<langle\>|pat.1<around*|(|N,N-1|)>|\<rangle\>><around*|\<langle\>|pat.1<around*|(|N-1,N-2|)>|\<rangle\>>\<ldots\><around*|\<langle\>|pat.1<around*|(|1,0|)>|\<rangle\>>|}>>>|<row|<cell|=>|<cell|<big|int>\<mathd\>\<phi\><rsub|1>\<mathd\>\<phi\><rsub|2>\<ldots\>\<mathd\>\<phi\><rsub|N-1><around*|{|<big|prod><rsub|j=1><rsup|N><around*|\<langle\>|part.1<around*|(|j,j-1|)>|\<rangle\>>|}>>>>>>>|<cell|>|<cell|>>>>
   </eqnarray*>
 
   <\eqnarray*>
-    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1<around*|(|j,j-1|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<wide|H|^><around*|(|t<rsub|j>-t<rsub|j-1>|)>><around|\||\<phi\><rsub|j-1>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<big|int>\<mathd\><rsup|3><wide|x|\<vect\>><around*|(|<frac|1|2><wide|\<pi\>|^><rsup|2>+<frac|1|2><around*|(|\<nabla\><wide|\<phi\>|^>|)><rsup|2>+<frac|1|2>m<rsup|2><wide|\<phi\>|^><rsup|2>+V<around*|(|<wide|\<phi\>|^>|)>|)>><around|\||\<phi\><rsub|j-1>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<big|sum><rsub|k=0><rsup|N><around*|(|<frac|1|2><wide|\<pi\>|^><rsup|2><rsub|k>+<frac|1|2><around*|(|\<nabla\>\<phi\>\<ldots\>|)>|)>>>>>>>>|<cell|>|<cell|>>>>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1<around*|(|j,j-1|)>|\<rangle\>>>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<wide|H|^>\<epsilon\>><around|\||\<phi\><rsub|j-1>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<big|int>\<mathd\><rsup|3><wide|x|\<vect\>><around*|(|<frac|1|2><wide|\<pi\>|^><rsup|2>+<frac|1|2><around*|(|\<nabla\><wide|\<phi\>|^>|)><rsup|2>+<frac|1|2>m<rsup|2><wide|\<phi\>|^><rsup|2>+V<around*|(|<wide|\<phi\>|^>|)>|)>><around|\||\<phi\><rsub|j-1>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<around|\<langle\>|\<phi\><rsub|j>|\|>e<rsup|i<big|sum><rsub|k=0><rsup|N><around*|(|<frac|1|2><wide|\<pi\>|^><rsup|2><rsub|k>+<frac|1|2><around*|(|\<nabla\>\<phi\>\<ldots\>|)>|)>>>>>>>>|<cell|>|<cell|>>>>
   </eqnarray*>
 
   \;
@@ -130,13 +131,70 @@
   2.
 
   <\eqnarray*>
-    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<table|<row|<cell|W<around*|[|<around*|{|a<rsub|k>|}>|]>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|<big|sum><rsub|k=1><rsup|N>a<rsub|k>\<phi\><around*|(|x<rsub|k>|)>>\<times\>e<rsup|i
-    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<around*|(|<big|sum><rsub|j=0><rsup|\<infty\>><frac|1|j!><around*|(|<big|sum><rsup|N><rsub|k=1>a<rsub|k>\<phi\><around*|(|x<rsub|k>|)>|)><rsup|j>|)>e<rsup|i
-    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|sum><rsup|\<infty\>><rsub|j=0><frac|1|j!><big|int>D\<phi\><around*|{|<around*|(|<big|sum><rsup|N><rsub|k=1>a<rsub|k>\<phi\><around*|(|x<rsub|k>|)>|)><rsup|j>e<rsup|i
-    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|sum><rsup|\<infty\>><rsub|j=0><frac|1|j!><big|int>D\<phi\><around*|{|<big|sum><rsub|<around*|{|k<rsub|\<ast\>>|}>=1><rsup|N><around*|(|<big|prod><rsub|l=0><rsup|j>a<rsub|k<rsub|l>>\<phi\><around*|(|x<rsub|k<rsub|l>>|)>|)>e<rsup|i
-    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|sum><rsup|\<infty\>><rsub|j=0><big|sum><rsub|<around*|{|k<rsub|\<ast\>>|}>=1><rsup|N><big|prod><rsub|l=0><rsup|j><frac|a<rsub|k<rsub|l>>|j!><big|int>D\<phi\><around*|{|\<phi\><around*|(|x<rsub|k<rsub|1>>|)>\<phi\><around*|(|x<rsub|k<rsub|2>>|)>\<ldots\>\<phi\><around*|(|x<rsub|k<rsub|j>>|)>e<rsup|i
-    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|\<infty\>><rsub|j=even><big|sum><rsub|<around*|{|k<rsub|\<ast\>>|}>=1><rsup|N><big|prod><rsub|l=0><rsup|j><frac|a<rsub|k<rsub|l>>|j!><around*|\<langle\>|\<phi\><around*|(|x<rsub|k<rsub|1>>|)>\<phi\><around*|(|x<rsub|k<rsub|2>>|)>\<ldots\>\<phi\><around*|(|x<rsub|k<rsub|j>>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|\<infty\>><rsub|j=even><big|sum><rsub|<around*|{|k<rsub|\<ast\>>|}>=1><rsup|N><big|prod><rsub|l=0><rsup|j><frac|a<rsub|k<rsub|l>>|j!><big|sum><rsup|j><rsub|m,n=1><around*|\<langle\>|\<phi\><around*|(|x<rsub|k<rsub|m>>|)>\<phi\><around*|(|x<rsub|k<rsub|n>>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|\<infty\>><rsub|j=even><frac|1|j!>>>>>>>|<cell|>|<cell|>>>>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|2|2|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<cwith|9|9|3|3|cell-halign|l>|<table|<row|<cell|W<around*|[|<around*|{|a<rsub|k>|}>|]>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|<big|sum><rsup|N><rsub|k=1>a<rsub|k>\<phi\><around*|(|x<rsub|k>|)>+i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|exp<around*|(|<big|sum><rsup|N><rsub|k=1><around*|(|a<rsub|k>\<phi\><around*|(|x<rsub|k>|)>-<frac|i|2>\<phi\><around*|(|x<rsub|k>|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x<rsub|k>|)>|)>-<frac|i|2><big|int><rsub|x\<neq\><around*|{|x<rsub|k>|}>>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|exp<around*|(|<big|sum><rsup|N><rsub|k=1><around*|(|a<rsub|k>\<phi\><rsub|k>-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>|)>-<frac|i|2><big|int><rsub|x\<neq\><around*|{|x<rsub|k>|}>>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|exp<around*|(|<big|sum><rsup|N><rsub|k=1><around*|\<langle\>|part.1|\<rangle\>>-<frac|i|2><big|int><rsub|x\<neq\><around*|{|x<rsub|k>|}>>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|exp<around*|(|<big|sum><rsup|N><rsub|k=1><around*|(|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>-<frac|i|2>\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>-\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>-<frac|i|2><big|sum><rsup|N><rsub|k<rprime|'>=1>a<rsub|k>G<rsub|k<rprime|'>k>a<rsub|k<rprime|'>>|)>-<frac|i|2><big|int><rsub|x\<neq\><around*|{|x<rsub|k>|}>>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|exp<around*|(|-<frac|i|2><big|sum><rsup|N><rsub|k=1><big|sum><rsup|N><rsub|<stack|<tformat|<table|<row|<cell|k<rprime|'>=1>>>>>>a<rsub|k>G<rsub|k<rprime|'>k>a<rsub|k<rprime|'>>|)>\<times\><frac|1|Z><big|int>D\<phi\>exp<around*|(|-<frac|i|2><big|int><rsub|>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>-<big|sum><rsup|N><rsub|k=1><around*|(|<frac|i|2>\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x<rsub|k>|)>-\<phi\><around*|(|x<rsub|k>|)>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|exp<around*|(|-<frac|i|2><big|sum><rsup|N><rsub|k=1><big|sum><rsup|N><rsub|<stack|<tformat|<table|<row|<cell|k<rprime|'>=1>>>>>>a<rsub|k>G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>a<rsub|k<rprime|'>>|)>\<times\><frac|1|Z><big|int>D\<phi\>exp<around*|(|-<frac|i|2><big|int><rsub|>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>-<frac|i|2><around*|\<langle\>|part.2|\<rangle\>>|)>>>|<row|<cell|>|<cell|=>|<cell|exp<around*|(|-<frac|i|2><big|sum><rsup|N><rsub|k=1><big|sum><rsup|N><rsub|<stack|<tformat|<table|<row|<cell|k<rprime|'>=1>>>>>>a<rsub|k>G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>a<rsub|k<rprime|'>>|)>\<times\><frac|1|Z><big|int>D\<phi\>exp<around*|(|-<frac|i|2><big|int><rsub|>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>|)>>>|<row|<cell|>|<cell|=>|<cell|exp<around*|(|-<frac|i|2><big|sum><rsup|N><rsub|k=1><big|sum><rsup|N><rsub|<stack|<tformat|<table|<row|<cell|k<rprime|'>=1>>>>>>a<rsub|k>G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>a<rsub|k<rprime|'>>|)>>>>>>>|<cell|>|<cell|>>>>
   </eqnarray*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|1|1|cell-halign|r>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.2|\<rangle\>>>|<cell|=>|<cell|<big|sum><rsup|N><rsub|k=1><around*|(|\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x<rsub|k>|)>-\<phi\><around*|(|x<rsub|k>|)>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|sum><rsup|N><rsub|k=1><around*|(|\<partial\><rsub|\<mu\>><around*|(|<big|sum><rsup|N><rsub|k<rprime|'>=1>G<rsub|k<rprime|'>k><frac|i
+    a<rsub|k<rprime|'>>|2>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x<rsub|k>|)>-\<phi\><around*|(|x<rsub|k>|)><big|sum><rsup|N><rsub|k<rprime|'>=1>\<partial\><rsub|\<mu\>><around*|(|G<rsub|k<rprime|'>k><frac|i
+    a<rsub|k<rprime|'>>|2>|)>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|sum><rsup|N><rsub|k=1><around*|(|\<partial\><rsub|\<mu\>><around*|(|<big|sum><rsup|N><rsub|k<rprime|'>=1><around*|(|G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>a<rsub|k<rprime|'>>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x<rsub|k>|)>-\<phi\><around*|(|x<rsub|k>|)>a<rsub|k<rprime|'>>\<partial\><rsub|\<mu\>>G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>|)>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|sum><rsup|N><rsub|k=1><big|sum><rsup|N><rsub|k<rprime|'>=1>a<rsub|k<rprime|'>><around*|(|\<partial\><rsub|\<mu\>><around*|(|G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x<rsub|k>|)>|)>-\<phi\><around*|(|x<rsub|k>|)>\<partial\><rsub|\<mu\>>G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|sum><rsup|N><rsub|k=1><big|sum><rsup|N><rsub|k<rprime|'>=1>a<rsub|k<rprime|'>><around*|(|\<partial\><rsub|\<mu\>><around*|(|G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x<rsub|k>|)>|)>-\<phi\><around*|(|x<rsub|k>|)>\<partial\><rsub|\<mu\>>G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>|)>>>|<row|<cell|<around*|(|!.|)>>|<cell|=>|<cell|k=1,2,\<ldots\>,N
+    could obtain all ergodic <around*|{|x|}> then
+    >>|<row|<cell|>|<cell|=>|<cell|-<big|int>\<mathd\><rsup|4>x<rsub|k>\<mathd\><rsup|4>x<rsub|k<rprime|'>><around*|{|<frac|1|2>\<partial\><rsub|\<mu\>><around*|(|a<rsub|k<rprime|'>><around*|(|G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x<rsub|k>|)>|)>-\<phi\><around*|(|x<rsub|k>|)>\<partial\><rsub|\<mu\>>G<around*|(|x<rsub|k<rprime|'>>-x<rsub|k>|)>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|0>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|8|8|1|1|cell-halign|r>|<cwith|8|8|3|3|cell-halign|l>|<cwith|9|9|3|3|cell-halign|l>|<cwith|10|10|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1|\<rangle\>>>|<cell|=>|<cell|a<rsub|k>\<phi\><rsub|k>-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|a<rsub|k><around*|(|\<phi\><rsub|k>+\<lambda\><rsub|k>|)>-<frac|i|2><around*|(|\<phi\><rsub|k>+\<lambda\><rsub|k>|)><around*|(|\<box\>
+    +m<rsup|2>|)><around*|(|\<phi\><rsub|k>+\<lambda\><rsub|k>|)>>>|<row|<cell|>|<cell|=>|<cell|a<rsub|k>\<phi\><rsub|k>+a<rsub|k>\<lambda\><rsub|k>-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>-<frac|i|2>\<lambda\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>-<frac|i|2>\<lambda\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>+\<phi\><rsub|k><around*|(|a<rsub|k>-<frac|i|2><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>|)>-<frac|i|2>\<lambda\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>-<frac|i|2>\<lambda\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>+a<rsub|k>\<lambda\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>+\<phi\><rsub|k><around*|(|a<rsub|k>-<frac|i|2><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>|)>-<frac|i|2><around*|\<langle\>|part.1.1|\<rangle\>>-<frac|i|2>\<lambda\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>+a<rsub|k>\<lambda\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>+\<phi\><rsub|k><around*|(|a<rsub|k>-<frac|i|2><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>|)>-<frac|i|2>\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>-\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>-<frac|i|2>\<lambda\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>+a<rsub|k>\<lambda\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>+\<phi\><rsub|k><around*|(|a<rsub|k>-i<around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>|)>-<frac|i|2>\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>-\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>-<frac|i|2>\<lambda\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><rsub|k>+a<rsub|k>\<lambda\><rsub|k>>>|<row|<cell|<around*|(|!.|)>>|<cell|=>|<cell|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>-<frac|i|2>\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>-\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>-<frac|1|2>\<lambda\><rsub|k>a<rsub|k>+a<rsub|k>\<lambda\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>-<frac|i|2>\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>-\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>-<frac|1|2><big|sum><rsup|N><rsub|k<rprime|'>=1>a<rsub|k>G<rsub|k<rprime|'>k>i
+    a<rsub|k<rprime|'>>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><rsub|k><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><rsub|k>-<frac|i|2>\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>-\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>-<frac|i|2><big|sum><rsup|N><rsub|k<rprime|'>=1>a<rsub|k>G<rsub|k<rprime|'>k>a<rsub|k<rprime|'>>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\description>
+    <\eqnarray*>
+      <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1.1|\<rangle\>>>|<cell|=>|<cell|\<lambda\><rsub|k><around*|(|\<box\>
+      +m<rsup|2>|)>\<phi\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|\<lambda\><rsub|k>\<partial\><rsub|\<mu\>>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>+i\<phi\><rsub|k>m<rsup|2>\<lambda\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>|)>-\<partial\><rsub|\<mu\>>\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>+\<phi\><rsub|k>m<rsup|2>\<lambda\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>|)>-\<partial\><rsup|\<mu\>><around*|(|\<phi\><rsub|k>\<partial\><rsub|\<mu\>>\<lambda\><rsub|k>|)>+\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<partial\><rsub|\<nu\>>\<lambda\><rsub|k>+\<phi\><rsub|k>m<rsup|2>\<lambda\><rsub|k>>>|<row|<cell|>|<cell|=>|<cell|\<partial\><rsub|\<mu\>><around*|(|\<lambda\><rsub|k>\<partial\><rsup|\<mu\>>\<phi\><rsub|k>-\<phi\><rsub|k>\<partial\><rsup|\<mu\>>\<lambda\><rsub|k>|)>+\<phi\><rsub|k><around*|(|\<box\>
+      +m<rsup|2>|)>\<lambda\><rsub|k>>>>>>>|<cell|>|<cell|>>>>
+    </eqnarray*>
+
+    <\eqnarray*>
+      <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|2|2|cell-halign|l>|<cwith|1|1|2|2|cell-halign|l>|<table|<row|<cell|<around*|(|!.|)>>|<cell|a<rsub|k>-i<around*|(|\<box\>
+      +m<rsup|2>|)>\<lambda\><rsub|k>=0>>|<row|<cell|>|<cell|<stack|<tformat|<cwith|2|2|2|2|cell-halign|r>|<cwith|1|1|4|4|cell-halign|l>|<table|<row|<cell|\<Rightarrow\>>|<cell|<around*|(|\<box\>+m<rsup|2>|)>\<lambda\><rsub|k>>|<cell|=>|<cell|-i
+      a<rsub|k>>>|<row|<cell|\<Rightarrow\>>|<cell|\<lambda\><rsub|k>>|<cell|=>|<cell|-<big|sum><rsup|N><rsub|k<rprime|'>=1>G<rsub|k<rprime|'>k>i
+      a<rsub|k<rprime|'>>>>>>>>>>>>>|<cell|>|<cell|>>>>
+    </eqnarray*>
+  </description>
 
   consider low-order case
 
@@ -144,6 +202,146 @@
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|<around*|\<langle\>|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>|\<rangle\>>>|<cell|=>|<cell|e<rsup|a<rsub|1><rsup|2><around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|1>|)>|\<rangle\>>+2a<rsub|1>a<rsub|2><around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>+a<rsup|2><rsub|2><around*|\<langle\>|\<phi\><around*|(|x<rsub|2>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>>>>>
+  </eqnarray*>
+
+  <math|7<rsup|o>>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>|\<rangle\>>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<around*|(|<big|sum><rsub|k=0><rsup|\<infty\>><frac|1|k!><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|k>|)>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<big|sum><rsup|\<infty\>><rsub|k=0><frac|1|k!><around*|(|<big|int>\<mathd\><rsup|4>x<around*|{|<around*|(|a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>+a<rsub|2>\<delta\><around*|(|x-x<rsub|2>|)>|)>\<phi\><around*|(|x|)>|}>|)><rsup|k>e<rsup|i
+    S<rsub|KG>>|}>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  \;
+
+  <math|6<rsup|o>>\ 
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>|\<rangle\>>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>+i<big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|<around*|\<langle\>|part.1|\<rangle\>>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>|}>>>>>>>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  the part.1 calculate reference: my classmates.
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<cwith|7|7|3|3|cell-halign|l>|<cwith|9|9|3|3|cell-halign|l>|<cwith|8|8|3|3|cell-halign|l>|<cwith|10|10|3|3|cell-halign|l>|<cwith|11|11|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1|\<rangle\>>>|<cell|=>|<cell|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x
+    <around*|{|a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<phi\><around*|(|x|)>|}>-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|i2a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<phi\><around*|(|x|)>+\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)><around*|(|\<phi\><around*|(|x|)>+\<lambda\><around*|(|x|)>|)>+<around*|(|\<phi\><around*|(|x|)>+\<lambda\><around*|(|x|)>|)><around*|(|\<box\>
+    +m<rsup|2>|)><around*|(|\<phi\><around*|(|x|)>+\<lambda\><around*|(|x|)>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<phi\><around*|(|x|)>+2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<lambda\><around*|(|x|)>+\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>+\<lambda\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><around*|(|x|)>+\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\><around*|(|x|)>+\<lambda\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>+<around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\>|)> +\<lambda\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+\<phi\><around*|(|\<box\> +m<rsup|2>|)>\<phi\>+2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<lambda\>+\<lambda\><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>+<around*|(|\<box\>
+    +2m<rsup|2>|)>\<lambda\>|)>+\<partial\><rsub|\<mu\>><around*|(|\<lambda\>\<partial\><rsup|\<mu\>>\<phi\>|)>-\<partial\><rsup|\<mu\>><around*|(|\<phi\>\<partial\><rsub|\<mu\>>\<lambda\>|)>+\<phi\>\<box\>\<lambda\>+\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+2i a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<lambda\>+\<lambda\><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>+2<around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\>|)>+<around*|\<langle\>|part.1|\<rangle\>>+\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+2i a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<lambda\>+\<lambda\><around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\>|}>>>|<row|<cell|<around*|(|!.|)>>|<cell|=>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|<around*|\<langle\>|part.1|\<rangle\>>+\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+i a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>\<lambda\>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|<around*|\<langle\>|part.1|\<rangle\>>+\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>+i a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)><around*|(|-i
+    a<rsub|1>G<around*|(|x-x<rsub|1>|)>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>a<rsub|1>G<around*|(|0|)>a<rsub|1>-<frac|i|2><big|int>\<mathd\><rsup|4>x<around*|{|<around*|\<langle\>|part.1|\<rangle\>>+\<phi\><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\>|}>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|1|1|3|3|cell-halign|l>|<cwith|2|2|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|3|3|1|1|cell-halign|r>|<table|<row|<cell|<big|int>\<mathd\><rsup|4>x<around*|\<langle\>|part.1|\<rangle\>>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|\<mu\>><around*|(|\<lambda\>\<partial\><rsup|\<mu\>>\<phi\>|)>-\<partial\><rsup|\<mu\>><around*|(|\<phi\>\<partial\><rsub|\<mu\>>\<lambda\>|)>|}>>>|<row|<cell|>|<cell|=>|<cell|-i
+    a<rsub|1><big|int>\<mathd\><rsup|4>x<around*|{|\<partial\><rsub|\<mu\>><around*|(|G<around*|(|x-x<rsub|1>|)>\<partial\><rsup|\<mu\>>\<phi\>|)>-\<partial\><rsup|\<mu\>><around*|(|\<phi\>\<partial\><rsub|\<mu\>>G<around*|(|x-x<rsub|1>|)>|)>|}>=0
+    nothing woring seems>>|<row|<cell|\<ast\>>|<cell|=>|<cell|-i
+    a<rsub|1><big|int>\<mathd\><rsup|4>x\<mathd\><rsup|4>x<rprime|'><around*|(|\<partial\><rsub|\<mu\>><around*|(|G<around*|(|x-x<rprime|'>|)>\<delta\><around*|(|x<rprime|'>-x<rsub|1>|)>\<partial\><rsup|\<mu\>>\<phi\><around*|(|x|)>-\<partial\><rsup|\<mu\>><around*|(|\<phi\><around*|(|x|)>\<partial\><rsub|\<mu\>><around*|(|G<around*|(|x-x<rprime|'>|)>\<delta\><around*|(|x<rprime|'>-x<rsub|1>|)>|)>|)>|)>|)>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  (!.)
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<cwith|2|2|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<table|<row|<cell|require:>|<cell|>|<cell|2i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>+2<around*|(|\<box\>
+    +m<rsup|2>|)>\<lambda\>>|<cell|=0>>>>>>|<cell|>|<cell|>>|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|r>|<cwith|2|2|5|5|cell-halign|l>|<table|<row|<cell|\<Rightarrow\>>|<cell|>|<cell|<around*|(|\<box\>+m<rsup|2>|)>\<lambda\>>|<cell|=>|<cell|-i
+    a<rsub|1>\<delta\><around*|(|x-x<rsub|1>|)>>>|<row|<cell|\<Rightarrow\>>|<cell|>|<cell|\<lambda\>>|<cell|=>|<cell|-i
+    a<rsub|1>G<around*|(|x-x<rsub|1>|)>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  \;
+
+  <math|5<rsup|o>> more hints !
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>|\<rangle\>>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>+i<big|int>\<mathd\><rsup|4>x<around*|{|\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>|}>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>+i<big|sum><rsub|j><around*|(|\<phi\><around*|(|x<rsub|j>|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x<rsub|j>|)>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+i\<phi\><around*|(|x<rsub|1>|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>+i\<phi\><around*|(|x<rsub|2>|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x<rsub|2>|)>+i<big|sum><rsub|j\<neq\>1,2><around*|(|\<phi\><around*|(|x<rsub|j>|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x<rsub|j>|)>|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|<around*|\<langle\>|part.1|\<rangle\>><rsub|1>+<around*|\<langle\>|part.1|\<rangle\>><rsub|2>+i<big|sum><rsub|j\<neq\>1,2><around*|(|\<phi\><around*|(|x<rsub|j>|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x<rsub|j>|)>|)>>|}>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1|\<rangle\>>>|<cell|=>|<cell|a\<phi\><around*|(|x|)>-<frac|i|2>\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|a<around*|(|\<phi\><around*|(|x|)>+\<beta\><around*|(|x|)>|)>-<frac|i|2><around*|(|\<phi\><around*|(|x|)>+\<beta\><around*|(|x|)>|)><around*|(|\<box\>
+    +m<rsup|2>|)><around*|(|\<phi\><around*|(|x|)>+\<beta\><around*|(|x|)>|)>>>|<row|<cell|>|<cell|=>|<cell|a\<phi\><around*|(|x|)>+a\<beta\><around*|(|x|)>-<frac|i|2>\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>-<frac|i|2>\<beta\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<beta\><around*|(|x|)>-<frac|i|2>\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<beta\><around*|(|x|)>-<frac|i|2>\<beta\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>>>|<row|<cell|<around*|(|?.|)>>|<cell|=>|<cell|-<frac|i|2>\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>+\<phi\><around*|(|x|)><around*|(|a-i<around*|(|\<box\>
+    +m<rsup|2>|)>\<beta\><around*|(|x|)>|)>+a\<beta\><around*|(|x|)>-<frac|i|2>\<beta\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<beta\><around*|(|x|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>+a\<beta\><around*|(|x|)>+<frac|1|2>\<beta\><around*|(|x|)>\<times\><around*|(|-i
+    a|)>>>|<row|<cell|>|<cell|=>|<cell|-<frac|i|2>\<phi\><around*|(|x|)><around*|(|\<box\>
+    +m<rsup|2>|)>\<phi\><around*|(|x|)>-<frac|i|2>a\<beta\><around*|(|x|)>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\itemize>
+    <item>require here
+
+    <math|a-i<around*|(|\<box\> +m<rsup|2>|)>\<beta\><around*|(|x|)>=0>
+    \ \ <math|\<Rightarrow\>> \ <math|<around*|(|\<box\>
+    +m<rsup|2>|)>\<beta\><around*|(|x|)>=-i a>
+
+    therefore
+
+    <\eqnarray*>
+      <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<table|<row|<cell|\<beta\><around*|(|x|)>>|<cell|=>|<cell|<big|int>\<mathd\><rsup|4>x<rprime|'><around*|(|-i
+      a|)>G<around*|(|x<rprime|'>-x|)>=-i
+      a<big|int>\<mathd\><rsup|4>x<rprime|'>G<around*|(|x<rprime|'>-x|)>>>>>>>|<cell|>|<cell|>>>>
+    </eqnarray*>
+  </itemize>
+
+  <math|4<rsup|o>>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<cwith|5|5|3|3|cell-halign|l>|<cwith|6|6|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>|\<rangle\>>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|e<rsup|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<around*|(|<big|sum><rsub|k=0><rsup|\<infty\>><frac|1|k!><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|k>|)>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<around*|(|1+<around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)>+<frac|1|2><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|2>+\<ldots\>|)>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<around*|(|1+<frac|1|2><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|2>+<frac|1|4!><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|4>+\<ldots\>|)>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<around*|(|1+<frac|1|2>a<rsub|1><rsup|2>\<phi\><rsup|2><around*|(|x<rsub|1>|)>+<frac|1|2>a<rsub|2><rsup|2>\<phi\><rsup|2><around*|(|x<rsub|2>|)>+a<rsub|1>a<rsub|2>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>+<frac|1|4!><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|4>|)>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\>e<rsup|i
+    S<rsub|KG>>+<around*|\<langle\>|part.1|\<rangle\>>+<around*|\<langle\>|part.2|\<rangle\>>+\<ldots\>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.1|\<rangle\>>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<around*|(|<frac|1|2>a<rsub|1><rsup|2>\<phi\><rsup|2><around*|(|x<rsub|1>|)>+<frac|1|2>a<rsub|2><rsup|2>\<phi\><rsup|2><around*|(|x<rsub|2>|)>+a<rsub|1>a<rsub|2>\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|)>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2>a<rsub|1><rsup|2><around*|\<langle\>|\<phi\><rsup|2><around*|(|x<rsub|1>|)>|\<rangle\>>+<frac|1|2>a<rsub|2><rsup|2><around*|\<langle\>|\<phi\><rsup|2><around*|(|x<rsub|2>|)>|\<rangle\>>+a<rsub|1>a<rsub|2><around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>>>>>>>|<cell|>|<cell|>>>>
+  </eqnarray*>
+
+  <\eqnarray*>
+    <tformat|<cwith|1|1|1|1|cell-halign|l>|<table|<row|<cell|<stack|<tformat|<cwith|2|2|3|3|cell-halign|l>|<cwith|1|1|3|3|cell-halign|l>|<cwith|3|3|3|3|cell-halign|l>|<cwith|4|4|3|3|cell-halign|l>|<table|<row|<cell|<around*|\<langle\>|part.2|\<rangle\>>>|<cell|=>|<cell|<frac|1|Z><big|int>D\<phi\><around*|{|<frac|1|4!><around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|4>e<rsup|i
+    S<rsub|KG>>|}>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|4!><around*|\<langle\>|<around*|(|a<rsub|1>\<phi\><around*|(|x<rsub|1>|)>+a<rsub|2>\<phi\><around*|(|x<rsub|2>|)>|)><rsup|4>|\<rangle\>>=<frac|1|4!><around*|\<langle\>|a<rsub|1><rsup|4>\<phi\><rsup|4><around*|(|x<rsub|1>|)>+4a<rsub|1><rsup|3>a<rsub|2>\<phi\><rsup|3><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>+6a<rsub|1><rsup|2>a<rsub|2><rsup|2>\<phi\><rsup|2><around*|(|x<rsub|1>|)>\<phi\><rsup|2><around*|(|x<rsub|2>|)>+4a<rsub|1>a<rsup|3><rsub|2>\<phi\><around*|(|x<rsub|1>|)>\<phi\><rsup|3><around*|(|x<rsub|2>|)>+a<rsub|2><rsup|4>\<phi\><rsup|4><around*|(|x<rsub|2>|)>|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|4!><around*|(|a<rsub|1><rsup|4><around*|\<langle\>|\<phi\><rsup|4><around*|(|x<rsub|1>|)>|\<rangle\>>+4a<rsub|1><rsup|3>a<rsub|2><around*|\<langle\>|\<phi\><rsup|3><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>+6a<rsub|1><rsup|2>a<rsub|2><rsup|2><around*|\<langle\>|\<phi\><rsup|2><around*|(|x<rsub|1>|)>\<phi\><rsup|2><around*|(|x<rsub|2>|)>|\<rangle\>>+4a<rsub|1>a<rsub|2><rsup|3><around*|\<langle\>|\<phi\><around*|(|x<rsub|1>|)>\<phi\><around*|(|x<rsub|2>|)>|\<rangle\>>+a<rsub|2><rsup|4><around*|\<langle\>|\<phi\><rsup|4><around*|(|x<rsub|2>|)>|\<rangle\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|4!><around*|(|a<rsub|1><rsup|4><around*|\<langle\>|\<phi\><rsup|4><around*|(|x<rsub|1>|)>|\<rangle\>>|)>>>>>>>|<cell|>|<cell|>>>>
   </eqnarray*>
 
   <math|3<rsup|o>>
