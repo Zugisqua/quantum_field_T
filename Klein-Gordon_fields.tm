@@ -269,8 +269,11 @@
       is a good idea
 
       <\eqnarray*>
-        <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>>>
+        <tformat|<table|<row|<cell|\<phi\><around*|(|x|)>>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p|<around*|(|2\<pi\>|)><rsup|3><sqrt|2w<rsub|<wide|p|\<vect\>>>>><around*|{|a<around*|(|<wide|p|\<vect\>>|)>e<rsup|-i<around*|(|-w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>+a<rprime|\<dag\>><around*|(|<wide|p|\<vect\>>|)>e<rsup|i<around*|(|-w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>|)>>|}>>>>>
       </eqnarray*>
+
+      !! there seems wrong ,have changed <math|w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>\<rightarrow\>-w<rsub|<wide|p|\<vect\>>>x<rsub|0>+<wide|p|\<vect\>>\<cdot\><wide|x|\<vect\>>>
+      ,and not change below
 
       then
 
@@ -788,13 +791,11 @@
       x>+a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>>e<rsup|i q
       x>|)>|}><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>><around|\<langle\>|0|\|>a<rsub|<wide|p|\<vect\>>>a<rsub|<wide|q|\<vect\>>>e<rsup|-i
       <around*|(|p y+ q x|)>>+a<rsub|<wide|p|\<vect\>>>a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>>e<rsup|i<around*|(|q
-      x -p y|)>>>>|<row|<cell|>|<cell|>|<cell|
-      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +a<rsub|<wide|p|\<vect\>>><rprime|\<dag\>>a<rsub|<wide|q|\<vect\>>>e<rsup|i<around*|(|p
+      x -p y|)>> \ +a<rsub|<wide|p|\<vect\>>><rprime|\<dag\>>a<rsub|<wide|q|\<vect\>>>e<rsup|i<around*|(|p
       y-q x|)>>+a<rsub|<wide|q|\<vect\>>><rprime|\<dag\>>a<rsub|<wide|p|\<vect\>>><rprime|\<dag\>>e<rsup|i<around*|(|p
       y+q x|)>><around|\||0|\<rangle\>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>><around*|{|<around*|(|<around|\<langle\>|<wide|p|\<vect\>>|\|>\<times\>0e<rsup|-i
       <around*|(|p y+ q x|)>>|)>+<around|\<langle\>|<wide|p|\<vect\>>|\|><around|\<nobracket\>|<wide|q|\<vect\>>|\<rangle\>>e<rsup|i<around*|(|q
-      x-p y|)>>|\<nobracket\>>>>|<row|<cell|>|<cell|=>|<cell|<around*|\<nobracket\>|
-      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +0\<times\>0e<rsup|-i<around*|(|p
+      x-p y|)>>|\<nobracket\>><around*|\<nobracket\>|+0\<times\>0e<rsup|-i<around*|(|p
       y+q x|)>>+0\<times\><around|\||<wide|q|\<vect\>>|\<rangle\>>e<rsup|i<around*|(|p
       y+q x|)>>|}>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|6><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>><around|\<langle\>|<wide|p|\<vect\>>|\|><around|\<nobracket\>|<wide|q|\<vect\>>|\<rangle\>>e<rsup|i<around*|(|q
       x-p y|)>>>>|<row|<cell|>|<cell|=>|<cell|<big|int><frac|\<mathd\><rsup|3>p\<mathd\><rsup|3>q|2<around*|(|2\<pi\>|)><rsup|3><sqrt|w<rsub|<wide|p|\<vect\>>>w<rsub|<wide|q|\<vect\>>>>>\<delta\><around*|(|<wide|p|\<vect\>>-<wide|q|\<vect\>>|)>e<rsup|i<around*|(|q
@@ -981,6 +982,7 @@
   <\collection>
     <associate|font|stix>
     <associate|language|chinese>
+    <associate|page-type|a3>
   </collection>
 </initial>
 
